@@ -277,7 +277,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NCIsImlzcyI6Imh0dHBzOi8vd3d3Lmthbmdhcm9vYmFieWN
 	or 609021076@qq.com
 	-----1234
 	https://github.com/ganyankai/wp001stu
-
+    https://github.com/ganyankai/wp-parent (new)
 	
 	线上数据库
 	47.94.173.245
