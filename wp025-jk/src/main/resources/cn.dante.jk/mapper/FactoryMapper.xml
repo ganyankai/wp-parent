@@ -31,4 +31,28 @@
 		where 1=1
 	</select>
 
+    <!-- 新增  oracle jdbc驱动 当这个值为null时，必须告诉它当前字段默认值的类型jdbcType=VARCHAR （mybatis定义）,
+			无效的列类型: 1111; nested exception is java.sql.SQLException
+	 		mysql不用写  -->
+    <insert id="insert" parameterType="cn.itcast.jk.domain.Factory">
+		insert into factory_c
+		(FACTORY_ID,FULL_NAME,FACTORY_NAME,CONTACTS,PHONE,MOBILE,FAX,CNOTE,INSPECTOR,ORDER_NO,STATE,CREATE_BY,CREATE_DEPT,CREATE_TIME)
+		values
+		(	#{id},
+			#{fullName, jdbcType=VARCHAR},
+			#{factoryName, jdbcType=VARCHAR},
+			#{contacts, jdbcType=VARCHAR},
+			#{phone, jdbcType=VARCHAR},
+			#{mobile, jdbcType=VARCHAR},
+			#{fax, jdbcType=VARCHAR},
+			#{cnote, jdbcType=VARCHAR},
+			#{inspector, jdbcType=VARCHAR},
+			#{orderNo, jdbcType=INTEGER},
+			#{state, jdbcType=VARCHAR},
+			#{createBy, jdbcType=VARCHAR},
+			#{createDept, jdbcType=VARCHAR},
+			#{createTime, jdbcType=TIMESTAMP}
+		)
+	</insert>
+
 </mapper>

@@ -22,4 +22,16 @@ public class FactoryController extends BaseController {
         return "/basicinfo/factory/jFactoryList.jsp";			//逻辑名
     }
 
+    //转向新增页面
+    @RequestMapping("/basicinfo/factory/tocreate.action")
+    public String tocreate(){
+        return "/basicinfo/factory/jFactoryCreate.jsp";
+    }
+
+    //新增保存
+    @RequestMapping("/basicinfo/factory/insert.action")
+    public String insert(Factory factory){
+        factoryService.insert(factory);
+        return "redirect:/basicinfo/factory/list.action";
+    }
 }

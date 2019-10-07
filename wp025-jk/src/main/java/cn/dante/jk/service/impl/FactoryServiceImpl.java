@@ -3,6 +3,7 @@ package cn.dante.jk.service.impl;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +32,7 @@ public class FactoryServiceImpl implements FactoryService {
 	}
 
 	public void insert(Factory factory) {
+		factory.setId(UUID.randomUUID().toString());
 		factoryDao.insert(factory);
 	}
 
