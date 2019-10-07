@@ -1,4 +1,89 @@
 010 杰信商贸
+	25 代码开发规范
+		
+		09 webapp/js/common.js 它是整个项目通用的js
+			
+		08 webapp/components 第三方组件的目录,例如jQuery
+			
+		07 jsp,它放在WEB-INF/pages目录下,也创建两级目录,第一层就是大模块名称,
+			第二层是小模块名称
+		06 cn.dante.jk.controller存放所有的springmvc的controller,它不必须继承BaseController,
+			它创建两层目录结构,一层是大模块名称,第二层是小模块名称,业务内容都放在下面
+			
+		05 cn.dante.jk.service存放所有的service接口和实现类,无需继承
+		04 cn.dante.jk.dao存放所有dao的接口和实现类,业务接口必须继承BaseDao接口,
+			业务的实现必须继承BaseDaoImpl层实现
+
+		03 cn.dante.jk.domain存放所有的实体文件PO
+		02 类文件放在src/main/java下;资源文件src/main/resources;
+			发布以后类和配置文件都在classes下,静态文件在webapps下
+			
+		01 将静态资源直接放在webapps下,将动态资源需要验证权限放在WEB-INF/pages
+
+	24 数据库设计的规范
+		08 记录创建时间CREATE_TIME
+		07 权限两个字段CREATE_BY创建人,CREATE_DEPT
+		06 排序号定死名称ORDER_NO
+		05 类型 int/long/double/timestamp/char/varchar2,尽量划在这几个类型中,
+			这样的数据库设计简单
+		04 字段多个单词时,全大写,用下划线隔开
+		03 必须有主键,主键是表名去掉业务后缀,加_id
+		02 表都要加业务后缀 _C 客户表 _B基础表 _P权限表
+		01 数据库字段和表名都大写
+
+	23 maven项目完全可以用传统的web项目取代
+	
+	22 某些xml文件读取报错目前还不知道啥原因
+
+	21 jar包如果打不开表示jar包有错误,maven不会自动修正错误jar,需手动删除重新下载
+
+	20 tomcat包加载顺序
+		先找Tomcat /lib下的jar包，再找application所在的WEB-INF/lib目录。
+		我没有把lib文件夹放在WEB-INF下虽然引入了jar包，tomcat却找不到
+		
+		遇到这种错误可以尝试把项目的jar包复制到tomcat本身的jar包目录下,
+		将tomcat部署后的目录标记为源文件夹
+
+	19 idea中还可以这样配置tomcat插件,但是好像没什么用
+		 <plugins>
+		    <plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+			<configuration>
+			    <port>80</port>
+			    <path>/SSM</path>
+			    <uriEncoding>UTF-8</uriEncoding>
+			    <server>tomcat7</server>
+			</configuration>
+		    </plugin>
+		</plugins>
+		
+		注意上面有底色部分,简要说明一下:
+
+		path  是访问应用的路径，例如我上面写的是/SSM，则访问路径是     http://localhost/SSM
+
+		port 是tomcat 的端口号　　
+
+		uriEncoding  URL按UTF-8进行编码，这样就解决了中文参数乱码。
+
+		Server 指定tomcat名称。
+
+	18 java1.8版本只支持spring4.0以上
+
+	17 部署时可直接选择
+
+	16 原来idea在tomcat部署可以设置需要部署的jar包
+		这是由于pom.xml中下载的jar包未被部署。我们先ctrl+shift+alt+s打开Project Structure窗口，
+		选择Artifacts，选择要打包部署的项目，在Output Layout –> Web-INF查看是否有lib目录，
+		如果右边Available Elements窗口还显示有jar包，说明这些jar包未添加，
+		则应右击选择Put into Output Root，这样就OK啦~
+
+	15 今天在idea的基本部署方面浪费了太多时间,其实这种很基础的问题应该很快就搞定的,这主要是由于idea和eclipse的差异构成的,
+		要解决这样的问题主要是要搞明白部署的原理和插件的工作原理,不然你这样持续的盲目摸索浪费的时间更多.
+		
+	14 有些maven依赖报错需要重启idea解决吗?
+		
 	13 其实父工程当成一个空工程比较合适
 		
 	12 jar包依赖添加原则
