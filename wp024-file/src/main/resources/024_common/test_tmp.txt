@@ -1,11 +1,14 @@
-0999 current
+ï»¿0999 current
+2019å¹´10æœˆ8æ—¥
+112 
+	02 
+	01 å‘å¸ƒä¸€ä¸ªç‹¬ç«‹çš„æœåŠ¡ 
 
-
-111 ĞèÒª´¦Àí½Ó¿Ú
+111 éœ€è¦å¤„ç†æ¥å£
 	02 /api/carPerson/updateNeedApprove
 	01 /api/carPerson/create 
 	
-110	µ¥Ò»Êı¾İÑİ±ä¶àÊı¾İ²âÊÔ·¨
+110	å•ä¸€æ•°æ®æ¼”å˜å¤šæ•°æ®æµ‹è¯•æ³•
 	1 2 3 4 5 6 7 0 0
 	4 5 6 0 0 0 0 0 0
 	7 0 0 0 0 0 0 0 0
@@ -16,24 +19,24 @@
 	0 0 0 0 0 0 0 0 0
 	0 0 0 0 0 0 7 8 9
 
-109 ¶àÀÍ¶àµÃµÄ¹ÜÀíÄ£Ê½
+109 å¤šåŠ³å¤šå¾—çš„ç®¡ç†æ¨¡å¼
 	
-108 ÔÚgitÖĞrename file¿ÉÄÜ»áµ¼ÖÂ°æ±¾³åÍ»?
+108 åœ¨gitä¸­rename fileå¯èƒ½ä¼šå¯¼è‡´ç‰ˆæœ¬å†²çª?
 
 107 plan
-	02 ÕÂ·¨
-		04 ×îºÃÊÇ½¨Á¢¿ª·¢ÏîÄ¿,±¸·İÏîÄ¿,²âÊÔÏîÄ¿·½±ãÏîÄ¿½á¹¹ÎÉÂÒºó¿ÉÒÔ»¹Ô­
+	02 ç« æ³•
+		04 æœ€å¥½æ˜¯å»ºç«‹å¼€å‘é¡¹ç›®,å¤‡ä»½é¡¹ç›®,æµ‹è¯•é¡¹ç›®æ–¹ä¾¿é¡¹ç›®ç»“æ„ç´Šä¹±åå¯ä»¥è¿˜åŸ
 
-		03 ÒªÇó¸üÁé»îµÄµ¥Ôª²âÊÔ¿ÉÄÜĞèÒªÄ£ÄâÔÚÒ»¶¨½×¶Î³ÌĞòĞèÒªµÄ¼ÙÊı¾İ,ÈçºÎÄ£Äâ¼ÙÊı¾İ½«ÊÇÒ»¸öÄÑµã
+		03 è¦æ±‚æ›´çµæ´»çš„å•å…ƒæµ‹è¯•å¯èƒ½éœ€è¦æ¨¡æ‹Ÿåœ¨ä¸€å®šé˜¶æ®µç¨‹åºéœ€è¦çš„å‡æ•°æ®,å¦‚ä½•æ¨¡æ‹Ÿå‡æ•°æ®å°†æ˜¯ä¸€ä¸ªéš¾ç‚¹
 
-		02 ¸ãÃ÷°×´úÂëÖ´ĞĞµÄÏÈºóË³ĞòºÍÇ°Ãæ´úÂë²»Ö´ĞĞ¿ÉÄÜ¶ÔºóÃæ´úÂëµÄÓ°ÏìÊÇ¸öÄÑµã,Õâ¶ÔÈËÀí½â´úÂëÂß¼­ÓĞ
-			ºÜ¸ßµÄÒªÇó
-		01 ±ÈÈçËµÑ§Ï°ĞÂ¼¼Êõ,×îºÃÊÇÄÜ°ÑÏà¹ØµÄÄÚÈİ¶¼¸ãÇå³ş,²»½¨Òé¶¼¼ÇÔÚÄÔÖĞ,¼ÇÔÚÎÄµµÀïÕùÈ¡ËæÊ±¶¼¿ÉÒÔ²éµ½
+		02 ææ˜ç™½ä»£ç æ‰§è¡Œçš„å…ˆåé¡ºåºå’Œå‰é¢ä»£ç ä¸æ‰§è¡Œå¯èƒ½å¯¹åé¢ä»£ç çš„å½±å“æ˜¯ä¸ªéš¾ç‚¹,è¿™å¯¹äººç†è§£ä»£ç é€»è¾‘æœ‰
+			å¾ˆé«˜çš„è¦æ±‚
+		01 æ¯”å¦‚è¯´å­¦ä¹ æ–°æŠ€æœ¯,æœ€å¥½æ˜¯èƒ½æŠŠç›¸å…³çš„å†…å®¹éƒ½ææ¸…æ¥š,ä¸å»ºè®®éƒ½è®°åœ¨è„‘ä¸­,è®°åœ¨æ–‡æ¡£é‡Œäº‰å–éšæ—¶éƒ½å¯ä»¥æŸ¥åˆ°
 		
-	01 Ğ´µ¥Ôª²âÊÔ´úÂë,ÕùÈ¡Áé»îĞÔ,¸ß¿ÉÓÃ,ÉÏ´ÎÄÇ¸öÎÄ¼şµ¼³öµÄÎÊÌâÈç¹û²»È¥ÍøÉÏÕÒ×ÊÁÏ¿ÉÄÜºÜÄÑ¸ã¶¨,
-		ÔÚµ¥ÔªÊ±¼äÀàÈË×î¿ìÏëµ½µÄÒ»¶¨ÊÇ½è¼ø,½è¼øÓöµ½µÄÖ÷ÒªÎÊÌâÊÇÎÒÃÇ²¢²»ÍêÈ«Àí½â±ğÈËµÄ´úÂë,
-		Ñ­»·¶àÒ»µã¾Í»á°ÑÈË¸ãÔÎ,¸ãÁËÄÇÃ´³¤Ê±¼äÖ»¸ã³öÒ»¸öµ¥±í,Áé»îĞÔ¼«µØ,ÕâÑùµÄÎÊÌâ×îºÃÊÇÌáÇ°
-		Á·Ï°Ö®ºó²Å¶®
+	01 å†™å•å…ƒæµ‹è¯•ä»£ç ,äº‰å–çµæ´»æ€§,é«˜å¯ç”¨,ä¸Šæ¬¡é‚£ä¸ªæ–‡ä»¶å¯¼å‡ºçš„é—®é¢˜å¦‚æœä¸å»ç½‘ä¸Šæ‰¾èµ„æ–™å¯èƒ½å¾ˆéš¾æå®š,
+		åœ¨å•å…ƒæ—¶é—´ç±»äººæœ€å¿«æƒ³åˆ°çš„ä¸€å®šæ˜¯å€Ÿé‰´,å€Ÿé‰´é‡åˆ°çš„ä¸»è¦é—®é¢˜æ˜¯æˆ‘ä»¬å¹¶ä¸å®Œå…¨ç†è§£åˆ«äººçš„ä»£ç ,
+		å¾ªç¯å¤šä¸€ç‚¹å°±ä¼šæŠŠäººææ™•,æäº†é‚£ä¹ˆé•¿æ—¶é—´åªæå‡ºä¸€ä¸ªå•è¡¨,çµæ´»æ€§æåœ°,è¿™æ ·çš„é—®é¢˜æœ€å¥½æ˜¯æå‰
+		ç»ƒä¹ ä¹‹åæ‰æ‡‚
 		
 106 
 	java.io.InvalidClassException: com.catt.oil.repository.form.lockPrice.CusLockOrderForm;
@@ -42,20 +45,20 @@
 
 105 
 	/**
-     * ÓÍÕ¾ÊÛ¼Û
+     * æ²¹ç«™å”®ä»·
      */
     private Double retailPrice;
 
-104 ²éÑ¯µ±Ç°ÓÍÆ·ÊµÊ±¼Û¸ñ
-	²éÑ¯²ÎÓëËø¼ÛµÄÓÍÆ·
+104 æŸ¥è¯¢å½“å‰æ²¹å“å®æ—¶ä»·æ ¼
+	æŸ¥è¯¢å‚ä¸é”ä»·çš„æ²¹å“
 	
-103 ×ªÈÃ²âÊÔ
+103 è½¬è®©æµ‹è¯•
 	 id 1
 	 15073018427
  	 1000
 102 
 	
-	´úÂëjks
+	ä»£ç jks
 	t_cus_lock_trans_record  CusLockTransRecord cusLockTransRecord
 	t_cus_lock_use_record	 CusLockUseRecord	cusLockUseRecord
 	
@@ -64,19 +67,19 @@
 	
 	06 
 	   
-	05 serviceË³Ğò
+	05 serviceé¡ºåº
 		02	
-			µ÷ÓÃ
+			è°ƒç”¨
 			applicationContext-bis-rmi-client.xml
 			
-		01	¶¨Òå
+		01	å®šä¹‰
 			applicationContext-bis-rmi.xml
 	
-	04 Àı×Ó
+	04 ä¾‹å­
 		CusInfoService
 		
 
-	03 ´úÂë
+	03 ä»£ç 
 		04 dao
 			02 mapper
 				xml
@@ -86,9 +89,9 @@
 		02 dto
 		01 controller
 		
-	02 ÊµÌå o
+	02 å®ä½“ o
 		 
-	01 ±í o 
+	01 è¡¨ o 
 		tb_coupon
 	    user_coupon	
 		t_pub_setup
@@ -96,11 +99,11 @@
 102 
 	/admin/cusLockOrder
 
-101 ÓÅ»İÈ¯±à¼­
+101 ä¼˜æƒ åˆ¸ç¼–è¾‘
 	
-	08 Êı¾İ¿âÈÕÆÚÀàĞÍÓÃstring½ÓÊÕºÃÏñÒ²ÊÇ¿ÉÒÔµÄ
+	08 æ•°æ®åº“æ—¥æœŸç±»å‹ç”¨stringæ¥æ”¶å¥½åƒä¹Ÿæ˜¯å¯ä»¥çš„
 
-	07 ÇëÇó²ÎÊı»ñÈ¡ 
+	07 è¯·æ±‚å‚æ•°è·å– 
 		public Page<Map> pageList(@CurrentUser("deptShortName") String groupId, @RequestParam Map<String, Object> paramMap) {
 		}
 		
@@ -109,19 +112,19 @@
 			return "/admin/cloudMgr/cusInfo/detail";
 		 }
 		
-	06 ×¢Òâ¹¤¾ßÀà
+	06 æ³¨æ„å·¥å…·ç±»
 		MapUtils 
 		 Integer pageSise = MapUtils.getInteger(paramMap, "pageSize");
 		 String cateId = MapUtils.getString(paramMap, "cateId");
 	
-	05 ×Ô¼º×ö¹¦ÄÜ²Å¸Ğ¾õÍ¨ÓÃµÄÔöÉ¾¸Ä²éÓĞ¶àÖØÒª,ÒòÎª×Ô¼º×öµÄÊ±ºò¸Ğ¾õ×Ô¼ºÃ»Ê±¼ä´¦ÀíÍ¨ÓÃÔöÉ¾¸Ä²é
+	05 è‡ªå·±åšåŠŸèƒ½æ‰æ„Ÿè§‰é€šç”¨çš„å¢åˆ æ”¹æŸ¥æœ‰å¤šé‡è¦,å› ä¸ºè‡ªå·±åšçš„æ—¶å€™æ„Ÿè§‰è‡ªå·±æ²¡æ—¶é—´å¤„ç†é€šç”¨å¢åˆ æ”¹æŸ¥
 		
-	04 ÈÕÖ¾´¦Àí
+	04 æ—¥å¿—å¤„ç†
 		
 				
-	03 ĞŞ¸Ä´úÂë²Î¿¼
+	03 ä¿®æ”¹ä»£ç å‚è€ƒ
 		02 
-			  //02 ĞŞ¸ÄÉúÈÕ,»ı·Ö½Ó¿Ú
+			  //02 ä¿®æ”¹ç”Ÿæ—¥,ç§¯åˆ†æ¥å£
 				String sql = "UPDATE t_cus_info a set a.s_remark = a.s_remark ";
 				Map<String, Object> params = new HashMap<>();
 				params.put("birth", "20900820");
@@ -146,53 +149,53 @@
 				
 		01 
 		/**
-		 * ĞŞ¸ÄÕË»§×´Ì¬
+		 * ä¿®æ”¹è´¦æˆ·çŠ¶æ€
 		 *
-		 * @param ids           ÓÃ»§id¼¯ºÏ
-		 * @param accountStatus 1»ò2  1Îª¶³½á 2Îª½â³ı¶³½á
+		 * @param ids           ç”¨æˆ·idé›†åˆ
+		 * @param accountStatus 1æˆ–2  1ä¸ºå†»ç»“ 2ä¸ºè§£é™¤å†»ç»“
 		 * @return
 		 */
 		@RequestMapping(value = "/updateAccountStatus", method = RequestMethod.POST)
 		@ResponseBody
 		public Message updateAccountStatus(@RequestParam("id") List<Long> ids, Integer accountStatus) {
-			Assert.state(CollectionUtil.isNotEmpty(ids), "ÇëÑ¡ÔñÓÍÕ¾");
+			Assert.state(CollectionUtil.isNotEmpty(ids), "è¯·é€‰æ‹©æ²¹ç«™");
 			cusInfoService.updateByIdInAndStatus(ids, accountStatus);
 			return SUCCESS_MSG;
 		}
 		
-	02 ½ûÓÃ
-		×´Ì¬ status
+	02 ç¦ç”¨
+		çŠ¶æ€ status
 		
-	01 ×Ö¶Î
+	01 å­—æ®µ
 		id				id
-		ÓÅ»İÈ¯ÀàĞÍ		coupon_type
-		·¢ĞĞÊıÁ¿		publish_qty
-		ÃæÖµ			coupon_value
-		Ê¹ÓÃÌõ¼ş		coupon_condition
+		ä¼˜æƒ åˆ¸ç±»å‹		coupon_type
+		å‘è¡Œæ•°é‡		publish_qty
+		é¢å€¼			coupon_value
+		ä½¿ç”¨æ¡ä»¶		coupon_condition
 
-		ÉúĞ§Ê±¼ä		start_date
-		¹ıÆÚÊ±¼ä		expiration_date
+		ç”Ÿæ•ˆæ—¶é—´		start_date
+		è¿‡æœŸæ—¶é—´		expiration_date
 	
 		
 		
-100 ÊµÌåÀà
+100 å®ä½“ç±»
 	project-oil-data
 	
 
-099 ÓÅ»İÈ¯Ô­ĞÍ
+099 ä¼˜æƒ åˆ¸åŸå‹
 	https://run.mockplus.cn/anbo1zz2SwaCtAl5/index.html
 
 	06 
 
-	05 serviceË³Ğò
+	05 serviceé¡ºåº
 		
 		01	applicationContext-bis-rmi.xml
 	
-	04 Àı×Ó
+	04 ä¾‹å­
 		CusInfoService
 		
 
-	03 ´úÂë
+	03 ä»£ç 
 		04 dao
 			02 mapper
 				xml
@@ -202,65 +205,65 @@
 		02 dto
 		01 controller
 		
-	02 ÊµÌå o
+	02 å®ä½“ o
 		 
-	01 ±í o 
+	01 è¡¨ o 
 		tb_coupon
 	    user_coupon	
 		t_pub_setup
 	
 
-098 Ç°¶ËĞèÒªĞŞ¸ÄÄÚÈİ
-	1.¿Í·ş
-	2.³µÁ¾Î»ÖÃ
-	3.³µÁ¾×´Ì¬
+098 å‰ç«¯éœ€è¦ä¿®æ”¹å†…å®¹
+	1.å®¢æœ
+	2.è½¦è¾†ä½ç½®
+	3.è½¦è¾†çŠ¶æ€
 	
 097 createMes o 
 	
-096 ¼«¹âjar°üÅäÖÃ
+096 æå…‰jaråŒ…é…ç½®
 	    <dependency>
             <groupId>cn.jpush.api</groupId>
             <artifactId>jpush-client</artifactId>
             <version>3.3.10</version>
         </dependency>
 	
-095 ³µÁ¾²âÊÔÍø
-	01 ³µÁ¾	car		id 1	¶õA12345
-		01 ³µÖ÷	 id 	12  cusid 15  
-			01 Â·Ïß id 3 ³ö·¢Ê¡  ºş±±Ê¡ ÎäººÊĞ
-		02 ÔËµ¥Ïî id 4 
-			01 ÔËµ¥ 1 
-				01 »õÔ´ id 1
-					01 µ½´ïÊ¡ ºş±±Ê¡ ÎäººÊĞ
-					02 ×´Ì¬ ·¢²¼ÖĞ
-		03 ÍÆËÍ
+095 è½¦è¾†æµ‹è¯•ç½‘
+	01 è½¦è¾†	car		id 1	é„‚A12345
+		01 è½¦ä¸»	 id 	12  cusid 15  
+			01 è·¯çº¿ id 3 å‡ºå‘çœ  æ¹–åŒ—çœ æ­¦æ±‰å¸‚
+		02 è¿å•é¡¹ id 4 
+			01 è¿å• 1 
+				01 è´§æº id 1
+					01 åˆ°è¾¾çœ æ¹–åŒ—çœ æ­¦æ±‰å¸‚
+					02 çŠ¶æ€ å‘å¸ƒä¸­
+		03 æ¨é€
 			
 094 
 	select * from cargo where end_province =#{province} and end_city = #{city} and c.status = 'cargo_source_status_release' and 'end_date' >= now()  ORDER BY 'create_date' limit 5 
 	
-	select * from cargo where end_province ='ºş±±' and end_city = 'Îäºº' and c.status = 'cargo_source_status_release' and 'end_date' >= now()  ORDER BY 'create_date' limit 5 
+	select * from cargo where end_province ='æ¹–åŒ—' and end_city = 'æ­¦æ±‰' and c.status = 'cargo_source_status_release' and 'end_date' >= now()  ORDER BY 'create_date' limit 5 
 	//ok
-	select * from cargo where end_province ='ºş±±' and end_city = 'Îäºº' and status = 'cargo_source_status_release' and end_date >= now()  ORDER BY create_date limit 5 
+	select * from cargo where end_province ='æ¹–åŒ—' and end_city = 'æ­¦æ±‰' and status = 'cargo_source_status_release' and end_date >= now()  ORDER BY create_date limit 5 
 	
-	select * from cargo where start_province ='ºş±±Ê¡' and start_city = 'ÎäººÊĞ' and status = 'cargo_source_status_release' and end_date >= now() limit 5
+	select * from cargo where start_province ='æ¹–åŒ—çœ' and start_city = 'æ­¦æ±‰å¸‚' and status = 'cargo_source_status_release' and end_date >= now() limit 5
 
 	end_province,end_city 
 	and c.status = 'cargo_source_status_release'
           and 'end_date' >= now()
 093 
-	01 Ä¿µÄµØĞèÒªÆ¥Åä³µÖ÷³£ÓÃÂ·ÏßµÄ³ö·¢Ê¡
+	01 ç›®çš„åœ°éœ€è¦åŒ¹é…è½¦ä¸»å¸¸ç”¨è·¯çº¿çš„å‡ºå‘çœ
 		
 092
-	1.ÒÑÍê³É
-	¿Í·ş,³µÁ¾Î»ÖÃÍ³¼Æ,³µÁ¾×´Ì¬¿ØÖÆ
-	2.´ıÍê³É
-	³µÁ¾µ½´ïÄ¿µÄµØºóÍÆ¼ö»õÔ´,ÏûÏ¢ÍÆËÍ
-	3.´ıÈ·ÈÏ
-	Æ½Ì¨¼Æ¼Û¹æÔò
+	1.å·²å®Œæˆ
+	å®¢æœ,è½¦è¾†ä½ç½®ç»Ÿè®¡,è½¦è¾†çŠ¶æ€æ§åˆ¶
+	2.å¾…å®Œæˆ
+	è½¦è¾†åˆ°è¾¾ç›®çš„åœ°åæ¨èè´§æº,æ¶ˆæ¯æ¨é€
+	3.å¾…ç¡®è®¤
+	å¹³å°è®¡ä»·è§„åˆ™
 	
 	
 091
-	//ĞŞ¸ÄÔËµ¥ÖĞµÄÔËµ¥ÏîµÄ³µÁ¾×´Ì¬
+	//ä¿®æ”¹è¿å•ä¸­çš„è¿å•é¡¹çš„è½¦è¾†çŠ¶æ€
 			List<WaybillDetail> waybillDetailList = waybillDetailMapper.getWaybillDetailList(waybillId);
 			if (waybillDetailList!=null && waybillDetailList.size()>0){
 				for (WaybillDetail waybillDetail:
@@ -294,8 +297,8 @@
 		}  
 		  
 		public static String getAdd(String log, String lat ){  
-			//lat Ğ¡  log  ´ó  
-			//²ÎÊı½âÊÍ: Î³¶È,¾­¶È type 001 (100´ú±íµÀÂ·£¬010´ú±íPOI£¬001´ú±íÃÅÖ·£¬111¿ÉÒÔÍ¬Ê±ÏÔÊ¾Ç°ÈıÏî)  
+			//lat å°  log  å¤§  
+			//å‚æ•°è§£é‡Š: çº¬åº¦,ç»åº¦ type 001 (100ä»£è¡¨é“è·¯ï¼Œ010ä»£è¡¨POIï¼Œ001ä»£è¡¨é—¨å€ï¼Œ111å¯ä»¥åŒæ—¶æ˜¾ç¤ºå‰ä¸‰é¡¹)  
 			String urlString = "http://gc.ditu.aliyun.com/regeocoding?l="+lat+","+log+"&type=010";  
 			String res = "";     
 			try {     
@@ -319,13 +322,13 @@
 			JSONObject j_2 = JSONObject.fromObject(jsonArray.get(0));  
 			String allAdd = j_2.getString("admName");  
 			//String arr[] = allAdd.split(",");  
-		   // System.out.println("Ê¡£º"+arr[0]+"\nÊĞ£º"+arr[1]+"\nÇø£º"+arr[2]);  
+		   // System.out.println("çœï¼š"+arr[0]+"\nå¸‚ï¼š"+arr[1]+"\nåŒºï¼š"+arr[2]);  
 			
 			return allAdd;    
 		}  
 	}
 
-087 redisÅäÖÃ
+087 redisé…ç½®
 	
 	host: 127.0.0.1
     password: 
@@ -339,12 +342,12 @@
 
 	CustomerServiceService
 
-085 ¸ü¼ÓÁé»îµÄÕıÔòÆ¥Åä Æ¥ÅäµÄÊ±ºòÒª¹´Ñ¡ÕıÔòÑ¡Ïî
+085 æ›´åŠ çµæ´»çš„æ­£åˆ™åŒ¹é… åŒ¹é…çš„æ—¶å€™è¦å‹¾é€‰æ­£åˆ™é€‰é¡¹
 	@.*/api/usedAddress
 	
-2019Äê8ÔÂ15ÈÕ
-084 quartz µÄxmlÅäÖÃ
-	05 ×Ô¶¨ÒåÅäÖÃ³É¹¦
+2019å¹´8æœˆ15æ—¥
+084 quartz çš„xmlé…ç½®
+	05 è‡ªå®šä¹‰é…ç½®æˆåŠŸ
 
 	04  
 		quartz.xml:
@@ -359,26 +362,26 @@
 		
 	03 
 		quartz.xml:
-		<!-- ***************** ¶¨ÒåÍ³¼Æ´¥·¢Æ÷¿ªÊ¼ ***************** -->
-		<!-- ½áËãÍ³¼Æ´¥·¢Æ÷ -->
+		<!-- ***************** å®šä¹‰ç»Ÿè®¡è§¦å‘å™¨å¼€å§‹ ***************** -->
+		<!-- ç»“ç®—ç»Ÿè®¡è§¦å‘å™¨ -->
 		<bean id="autoStationPrice" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
 			<property name="jobDetail">
 				<ref bean="stationPriceJobDetail"/>
 			</property>
 			<property name="cronExpression">
-				<value>0 0 * * * ?</value><!-- ÕûµãÖ´ĞĞÒ»´Î -->
+				<value>0 0 * * * ?</value><!-- æ•´ç‚¹æ‰§è¡Œä¸€æ¬¡ -->
 			</property>
 		</bean>
 	
 	02  
 		<!--
-			µ÷¶È×÷Òµ
-			Èç¹ûlazy-init='false',ÔòÈİÆ÷Æô¶¯Ê±¾Í»áÖ´ĞĞµ÷¶È³ÌĞò;·ñÔòĞèÒªÊµÀı»¯¸Ãbean²ÅÄÜÖ´ĞĞµ÷¶È³ÌĞò
+			è°ƒåº¦ä½œä¸š
+			å¦‚æœlazy-init='false',åˆ™å®¹å™¨å¯åŠ¨æ—¶å°±ä¼šæ‰§è¡Œè°ƒåº¦ç¨‹åº;å¦åˆ™éœ€è¦å®ä¾‹åŒ–è¯¥beanæ‰èƒ½æ‰§è¡Œè°ƒåº¦ç¨‹åº
 		-->
 		<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean" lazy-init="false">
 			<property name="triggers">
 				<list>
-					<!-- Í³¼ÆÈÎÎñ -->
+					<!-- ç»Ÿè®¡ä»»åŠ¡ -->
 					<ref local="autoSettlementStat"/>
 					<ref local="autoStationPrice"/>
 					<!--<ref local="sinaOperRecord"/>-->
@@ -392,43 +395,43 @@
 			
 		
 	project-oil-settlement-service-impl
-	Õâ¸öÏîÄ¿¾¹È»ÊÇ¸ù¾İmain·½·¨Æô¶¯ÅäÖÃÎÄ¼şµÄ
+	è¿™ä¸ªé¡¹ç›®ç«Ÿç„¶æ˜¯æ ¹æ®mainæ–¹æ³•å¯åŠ¨é…ç½®æ–‡ä»¶çš„
 	
-2019Äê8ÔÂ15ÈÕ
+2019å¹´8æœˆ15æ—¥
 083 
 	@PersistenceContext
     protected EntityManager entityManager;
 
-	×öÈí¼şÓöµ½²»Àí½âµÄµØ·½²»µÃ²»×ö´óÁ¿µÄÎŞÓÃ¹¦
+	åšè½¯ä»¶é‡åˆ°ä¸ç†è§£çš„åœ°æ–¹ä¸å¾—ä¸åšå¤§é‡çš„æ— ç”¨åŠŸ
 	
-	¸Ã¶ÔÏóÄ¿Ç°Ã»Ïëµ½ÔÚ±¾µØ²âÊÔµÄÍæ·¨
-	ËµÃ÷ÄãÕâ¿ò¼ÜÍæµÄ²»¹»6
-	ÆäÊµÓÃnew¹Ø¼ü×Ö´úÂë»¹ºÃÎ¬»¤Ò»µã
-	ÓÃ×¢½âÒÔºóÄãºÜÄÑÅĞ¶Ï³ö¸Ã¶ÔÏó¾ßÌåÊÇÉ¶Ê±ºò´´½¨µÄ
+	è¯¥å¯¹è±¡ç›®å‰æ²¡æƒ³åˆ°åœ¨æœ¬åœ°æµ‹è¯•çš„ç©æ³•
+	è¯´æ˜ä½ è¿™æ¡†æ¶ç©çš„ä¸å¤Ÿ6
+	å…¶å®ç”¨newå…³é”®å­—ä»£ç è¿˜å¥½ç»´æŠ¤ä¸€ç‚¹
+	ç”¨æ³¨è§£ä»¥åä½ å¾ˆéš¾åˆ¤æ–­å‡ºè¯¥å¯¹è±¡å…·ä½“æ˜¯å•¥æ—¶å€™åˆ›å»ºçš„
 	
 082
 	project-oil-common-service-impl
 
 
-2019Äê8ÔÂ14ÈÕ
-082 ÒµÎñ¹¦ÄÜ
-		ÉúÈÕ¹Ø»³
-		frame deactivation ºÃÏñÊÇÇĞ»»µ½ºóÌ¨´¥·¢
-		deactivation	Ê¹ÎŞĞ§£¬Ê¹Ê§È¥Ğ§¹û
+2019å¹´8æœˆ14æ—¥
+082 ä¸šåŠ¡åŠŸèƒ½
+		ç”Ÿæ—¥å…³æ€€
+		frame deactivation å¥½åƒæ˜¯åˆ‡æ¢åˆ°åå°è§¦å‘
+		deactivation	ä½¿æ— æ•ˆï¼Œä½¿å¤±å»æ•ˆæœ
 		
-		»ı·ÖÄ£¿é
-		ÓÅ»İÈ¯´òÕÛ
-		¶ÌĞÅÄ£¿é
+		ç§¯åˆ†æ¨¡å—
+		ä¼˜æƒ åˆ¸æ‰“æŠ˜
+		çŸ­ä¿¡æ¨¡å—
 		
-	ÈÎÎñµ÷¶ÈÄ£¿é
-	01 »áÔ±¶ÔÓ¦Êı¾İ¿â±í
+	ä»»åŠ¡è°ƒåº¦æ¨¡å—
+	01 ä¼šå‘˜å¯¹åº”æ•°æ®åº“è¡¨
 		
 
 081
-	jsp\safeMgr\index.jsp È·¶¨bugÔÚÕâ¸öÒ³Ãæ
+	jsp\safeMgr\index.jsp ç¡®å®šbugåœ¨è¿™ä¸ªé¡µé¢
 
-	 1. ÇøÓò¹ÜÀíºóÌ¨£¨¾É¼¯ÍÅ°æ¹ÜÀí£©£º
-    ÕËºÅÃÜÂë£º33333/888888
+	 1. åŒºåŸŸç®¡ç†åå°ï¼ˆæ—§é›†å›¢ç‰ˆç®¡ç†ï¼‰ï¼š
+    è´¦å·å¯†ç ï¼š33333/888888
     http://group.youyilian.net.cn 
     http://39.108.86.28:8080/MrOilGroup
 	http://localhost:8080/MrOilGroup
@@ -440,9 +443,9 @@
 		I_RECHARGE_TYPE
 	
 079	
-	ÄÇ¸ö¹îÒìµÄ´íÎó¾ÍÕâÑù¹ıÈ¥ÁË ÔÙÒ²ÕÒ²»µ½ÁË
+	é‚£ä¸ªè¯¡å¼‚çš„é”™è¯¯å°±è¿™æ ·è¿‡å»äº† å†ä¹Ÿæ‰¾ä¸åˆ°äº†
 
-	 ËµÃ÷Õû¸ö·şÎñÃ»Æô
+	 è¯´æ˜æ•´ä¸ªæœåŠ¡æ²¡å¯
 	 Connection refused to host: 127.0.0.1
 	 
 
@@ -468,7 +471,7 @@
 077	
 	<find>D:\oil-workspace\project-oil-common</find>
 
-076 Ô­À´.ideaÏÂÃæµÄÎÄ¼ş±£´æÁËideaËùÓĞµÄ²ã¼¶½á¹¹ºÍ²å¼şÅäÖÃ
+076 åŸæ¥.ideaä¸‹é¢çš„æ–‡ä»¶ä¿å­˜äº†ideaæ‰€æœ‰çš„å±‚çº§ç»“æ„å’Œæ’ä»¶é…ç½®
 
 075
 	http://localhost:8080/MrOilMerchant
@@ -476,9 +479,9 @@
 	http://localhost:8080/MrOilMerchant/admin/order/getOrders
 	pageNo=1&pageSize=15&keyWord=&startTime=&endTime=&settlementStatus=4&paymentStatus=2&rechargeType=&prodName=&staffId=
 	
-	´ıÖ§¸¶			paymentStatus=1
-	Ê§°Ü			paymentStatus=2
-	Ö§¸¶³É¹¦		paymentStatus: 3
+	å¾…æ”¯ä»˜			paymentStatus=1
+	å¤±è´¥			paymentStatus=2
+	æ”¯ä»˜æˆåŠŸ		paymentStatus: 3
 	
 	package com.catt.oil.web.controller.merchant.admin.order;
 	OrderController
@@ -486,48 +489,48 @@
 	project-oil-service-impl
 		CusOrderServiceImpl
 		
-	±í T_CUS_ORDER
+	è¡¨ T_CUS_ORDER
 		
 
-	Õâ¸öÏîÄ¿ºóÌ¨Í£Ö¹ºóÇ°¶ËÒ³ÃæÒ²»á±¨´í
-	²éÑ¯Ã÷ÏÔÓĞ»º´æ,ÄÑµÀÊÇÓÃµÄÒ³Ãæ»º´æ¼¼Êõ
+	è¿™ä¸ªé¡¹ç›®åå°åœæ­¢åå‰ç«¯é¡µé¢ä¹Ÿä¼šæŠ¥é”™
+	æŸ¥è¯¢æ˜æ˜¾æœ‰ç¼“å­˜,éš¾é“æ˜¯ç”¨çš„é¡µé¢ç¼“å­˜æŠ€æœ¯
 		
 074 
-	02  ÊÕÒøÏµÍ³£º
-		ÕËºÅÃÜÂë£º	55555/888888
+	02  æ”¶é“¶ç³»ç»Ÿï¼š
+		è´¦å·å¯†ç ï¼š	55555/888888
 		http://merchant.youyilian.net.cn 
 		http://39.108.86.28:8080/MrOilMerchant
 		
-		ÓÍÕ¾¹ÜÀíÆ½Ì¨web(ÊÕÒøÏµÍ³)      
-		11¡¢MrOilMerchant    
+		æ²¹ç«™ç®¡ç†å¹³å°web(æ”¶é“¶ç³»ç»Ÿ)      
+		11ã€MrOilMerchant    
 			project-oil-service-impl			 y
             project-oil-stat-service-impl
             project-oilSettlement-service-impl
 			
 073
-	Èı¡¢Ë¼Â·£ºÅÅ³ı·¨
+	ä¸‰ã€æ€è·¯ï¼šæ’é™¤æ³•
 	
-¡¡¡¡1¡¢ÅÅ³ı´óĞ´×ÖÄ¸¡¢Ğ¡Ğ´×ÖÄ¸¡¢Êı×Ö¡¢ÌØÊâ·ûºÅÖĞ1ÖÖ×éºÏ¡¢2ÖÖ×éºÏ¡¢3ÖÖ×éºÏ£¬ÄÇÃ´¾ÍÖ»Ê£ÏÂ4ÖÖ¶¼°üº¬µÄ×éºÏÁË
+ã€€ã€€1ã€æ’é™¤å¤§å†™å­—æ¯ã€å°å†™å­—æ¯ã€æ•°å­—ã€ç‰¹æ®Šç¬¦å·ä¸­1ç§ç»„åˆã€2ç§ç»„åˆã€3ç§ç»„åˆï¼Œé‚£ä¹ˆå°±åªå‰©ä¸‹4ç§éƒ½åŒ…å«çš„ç»„åˆäº†
 
-¡¡¡¡2¡¢±í´ïÊ½Îª£º^(?![A-Za-z0-9]+$)(?![a-z0-9\\W]+$)(?![A-Za-z\\W]+$)(?![A-Z0-9\\W]+$)[a-zA-Z0-9\\W]{8,}$
+ã€€ã€€2ã€è¡¨è¾¾å¼ä¸ºï¼š^(?![A-Za-z0-9]+$)(?![a-z0-9\\W]+$)(?![A-Za-z\\W]+$)(?![A-Z0-9\\W]+$)[a-zA-Z0-9\\W]{8,}$
 
-¡¡¡¡3¡¢²ğ·Ö½âÊÍ£ºÆäÖĞ£¨2£©-£¨6£©ÔËÓÃÁËÁã¿í¶ÏÑÔ¡¢»·ÊÓµÈÕıÔò¹¦ÄÜ
+ã€€ã€€3ã€æ‹†åˆ†è§£é‡Šï¼šå…¶ä¸­ï¼ˆ2ï¼‰-ï¼ˆ6ï¼‰è¿ç”¨äº†é›¶å®½æ–­è¨€ã€ç¯è§†ç­‰æ­£åˆ™åŠŸèƒ½
 
-¡¡¡¡¡¡¡¡£¨1£©^Æ¥Åä¿ªÍ·
+ã€€ã€€ã€€ã€€ï¼ˆ1ï¼‰^åŒ¹é…å¼€å¤´
 
-¡¡¡¡¡¡¡¡£¨2£©(?![A-Za-z0-9]+$)Æ¥ÅäºóÃæ²»È«ÊÇ£¨´óĞ´×ÖÄ¸»òĞ¡Ğ´×ÖÄ¸»òÊı×Ö£©µÄÎ»ÖÃ£¬ÅÅ³ıÁË£¨´óĞ´×ÖÄ¸¡¢Ğ¡Ğ´×ÖÄ¸¡¢Êı×Ö£©µÄ1ÖÖ2ÖÖ3ÖÖ×éºÏ
+ã€€ã€€ã€€ã€€ï¼ˆ2ï¼‰(?![A-Za-z0-9]+$)åŒ¹é…åé¢ä¸å…¨æ˜¯ï¼ˆå¤§å†™å­—æ¯æˆ–å°å†™å­—æ¯æˆ–æ•°å­—ï¼‰çš„ä½ç½®ï¼Œæ’é™¤äº†ï¼ˆå¤§å†™å­—æ¯ã€å°å†™å­—æ¯ã€æ•°å­—ï¼‰çš„1ç§2ç§3ç§ç»„åˆ
 
-¡¡¡¡¡¡¡¡£¨3£©(?![a-z0-9\\W]+$)Í¬Àí£¬ÅÅ³ıÁË£¨Ğ¡Ğ´×ÖÄ¸¡¢Êı×Ö¡¢ÌØÊâ·ûºÅ£©µÄ1ÖÖ2ÖÖ3ÖÖ×éºÏ
+ã€€ã€€ã€€ã€€ï¼ˆ3ï¼‰(?![a-z0-9\\W]+$)åŒç†ï¼Œæ’é™¤äº†ï¼ˆå°å†™å­—æ¯ã€æ•°å­—ã€ç‰¹æ®Šç¬¦å·ï¼‰çš„1ç§2ç§3ç§ç»„åˆ
 
-¡¡¡¡¡¡¡¡£¨4£©(?![A-Za-z\\W]+$)Í¬Àí£¬ÅÅ³ıÁË£¨´óĞ´×ÖÄ¸¡¢Ğ¡Ğ´×ÖÄ¸¡¢ÌØÊâ·ûºÅ£©µÄ1ÖÖ2ÖÖ3ÖÖ×éºÏ
+ã€€ã€€ã€€ã€€ï¼ˆ4ï¼‰(?![A-Za-z\\W]+$)åŒç†ï¼Œæ’é™¤äº†ï¼ˆå¤§å†™å­—æ¯ã€å°å†™å­—æ¯ã€ç‰¹æ®Šç¬¦å·ï¼‰çš„1ç§2ç§3ç§ç»„åˆ
 
-¡¡¡¡¡¡¡¡£¨5£©(?![A-Z0-9\\W]+$)Í¬Àí£¬ÅÅ³ıÁË£¨´óĞ´×ÖÄ¸¡¢Êı×é¡¢ÌØÊâ·ûºÅ£©µÄ1ÖÖ2ÖÖ3ÖÖ×éºÏ
+ã€€ã€€ã€€ã€€ï¼ˆ5ï¼‰(?![A-Z0-9\\W]+$)åŒç†ï¼Œæ’é™¤äº†ï¼ˆå¤§å†™å­—æ¯ã€æ•°ç»„ã€ç‰¹æ®Šç¬¦å·ï¼‰çš„1ç§2ç§3ç§ç»„åˆ
 
-¡¡¡¡¡¡¡¡£¨6£©[a-zA-Z0-9\\W]Æ¥Åä£¨Ğ¡Ğ´×ÖÄ¸»ò´óĞ´×ÖÄ¸»òÊı×Ö»òÌØÊâ·ûºÅ£©ÒòÎªÅÅ³ıÁËÉÏÃæµÄ×éºÏ£¬ËùÒÔ¾ÍÖ»Ê£ÏÂÁË4ÖÖ¶¼°üº¬µÄ×éºÏÁË
+ã€€ã€€ã€€ã€€ï¼ˆ6ï¼‰[a-zA-Z0-9\\W]åŒ¹é…ï¼ˆå°å†™å­—æ¯æˆ–å¤§å†™å­—æ¯æˆ–æ•°å­—æˆ–ç‰¹æ®Šç¬¦å·ï¼‰å› ä¸ºæ’é™¤äº†ä¸Šé¢çš„ç»„åˆï¼Œæ‰€ä»¥å°±åªå‰©ä¸‹äº†4ç§éƒ½åŒ…å«çš„ç»„åˆäº†
 
-¡¡¡¡¡¡¡¡£¨7£©{8,}8Î»ÒÔÉÏ
+ã€€ã€€ã€€ã€€ï¼ˆ7ï¼‰{8,}8ä½ä»¥ä¸Š
 
-¡¡¡¡¡¡¡¡£¨8£©$Æ¥Åä×Ö·û´®½áÎ²
+ã€€ã€€ã€€ã€€ï¼ˆ8ï¼‰$åŒ¹é…å­—ç¬¦ä¸²ç»“å°¾
 	
 072 
 	http://120.25.212.63:10101/r/HazardousLogistics.git
@@ -535,9 +538,9 @@
 	Push to wuliu-my/master was rejected
 	
 071
-	´ò¿îÒ³ÃæÎÄ¼şµ¼³ö
+	æ‰“æ¬¾é¡µé¢æ–‡ä»¶å¯¼å‡º
 
-	ÌáÏÖÁ÷Ë®Ò³ÃæÎÄ¼şµ¼³ö	
+	æç°æµæ°´é¡µé¢æ–‡ä»¶å¯¼å‡º	
 
 	
 
@@ -551,7 +554,7 @@ import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
  
 /**
- * Ò³ÃæÊı¾İ¶ÔÏó
+ * é¡µé¢æ•°æ®å¯¹è±¡
  * 
  */
 public class PageData extends HashMap implements Map{
@@ -559,22 +562,22 @@ public class PageData extends HashMap implements Map{
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * Êı¾İmap
+	 * æ•°æ®map
 	 */
 	Map map = null;
 	/**
-	 * ÇëÇó¶ÔÏó
+	 * è¯·æ±‚å¯¹è±¡
 	 */
 	HttpServletRequest request;
 	
 	/**
-	 * ÓĞ²Î¹¹ÔìÆ÷
-	 * @param request ÇëÇó¶ÔÏó
+	 * æœ‰å‚æ„é€ å™¨
+	 * @param request è¯·æ±‚å¯¹è±¡
 	 */
 	public PageData(HttpServletRequest request){
 		this.request = request;
 		/**
-		 * »ñÈ¡²ÎÊıMap
+		 * è·å–å‚æ•°Map
 		 */
 		String pageSize = request.getParameter("pageSize");
 		Map properties = request.getParameterMap();
@@ -604,14 +607,14 @@ public class PageData extends HashMap implements Map{
 	}
 	
 	/**
-	 * ÎŞ²Î¹¹Ôì
+	 * æ— å‚æ„é€ 
 	 */
 	public PageData() {
 		map = new HashMap();
 	}
 	
 	/**
-	 * »ñÈ¡²ÎÊıÖµ
+	 * è·å–å‚æ•°å€¼
 	 */
 	@Override
 	public Object get(Object key) {
@@ -646,35 +649,35 @@ public class PageData extends HashMap implements Map{
 	}
 	
 	/**
-	 * Çå¿ÕÇëÇóÊı¾İ
+	 * æ¸…ç©ºè¯·æ±‚æ•°æ®
 	 */
 	public void clear() {
 		map.clear();
 	}
  
 	/**
-	 * ÅĞ¶ÏÊÇ·ñ´æÔÚÇëÇó²ÎÊı
+	 * åˆ¤æ–­æ˜¯å¦å­˜åœ¨è¯·æ±‚å‚æ•°
 	 */
 	public boolean containsKey(Object key) {
 		return map.containsKey(key);
 	}
  
 	/**
-	 * ÅĞ¶ÏÊÇ·ñ´æÔÚÇëÇóÖµ
+	 * åˆ¤æ–­æ˜¯å¦å­˜åœ¨è¯·æ±‚å€¼
 	 */
 	public boolean containsValue(Object value) {
 		return map.containsValue(value);
 	}
  
 	/**
-	 * »ñÈ¡entry¼¯ºÏ
+	 * è·å–entryé›†åˆ
 	 */
 	public Set entrySet() {
 		return map.entrySet();
 	}
  
 	/**
-	 * ÅĞ¶Ï²ÎÊı¼¯ºÏÊÇ·ñÎª¿Õ
+	 * åˆ¤æ–­å‚æ•°é›†åˆæ˜¯å¦ä¸ºç©º
 	 */
 	public boolean isEmpty() {
 		return map.isEmpty();
@@ -685,7 +688,7 @@ public class PageData extends HashMap implements Map{
 	}
  
 	/**
-	 * Ìí¼Ó¼¯ºÏ
+	 * æ·»åŠ é›†åˆ
 	 */
 	@SuppressWarnings("unchecked")
 	public void putAll(Map t) {
@@ -693,14 +696,14 @@ public class PageData extends HashMap implements Map{
 	}
  
 	/**
-	 * »ñÈ¡ÇëÇó¼¯ºÏµÄ´óĞ¡
+	 * è·å–è¯·æ±‚é›†åˆçš„å¤§å°
 	 */
 	public int size() {
 		return map.size();
 	}
  
 	/**
-	 * »ñÈ¡ÇëÇó²ÎÊı¼¯ºÏ
+	 * è·å–è¯·æ±‚å‚æ•°é›†åˆ
 	 */
 	public Collection values() {
 		return map.values();
@@ -710,10 +713,10 @@ public class PageData extends HashMap implements Map{
 
 
 --------------------- 
-×÷Õß£ºÒ»¼ûÄã¾ÍĞ¦i 
-À´Ô´£ºCSDN 
-Ô­ÎÄ£ºhttps://blog.csdn.net/zxwu_1993/article/details/84979291 
-°æÈ¨ÉùÃ÷£º±¾ÎÄÎª²©Ö÷Ô­´´ÎÄÕÂ£¬×ªÔØÇë¸½ÉÏ²©ÎÄÁ´½Ó£¡
+ä½œè€…ï¼šä¸€è§ä½ å°±ç¬‘i 
+æ¥æºï¼šCSDN 
+åŸæ–‡ï¼šhttps://blog.csdn.net/zxwu_1993/article/details/84979291 
+ç‰ˆæƒå£°æ˜ï¼šæœ¬æ–‡ä¸ºåšä¸»åŸåˆ›æ–‡ç« ï¼Œè½¬è½½è¯·é™„ä¸Šåšæ–‡é“¾æ¥ï¼
 
 
 069
@@ -725,7 +728,7 @@ import org.apache.poi.hssf.usermodel.*;
 
 /**
 
- * µ¼³ö²¢·¢ËÍµ½ÓÊÏäÄÚ
+ * å¯¼å‡ºå¹¶å‘é€åˆ°é‚®ç®±å†…
 
  * /
 
@@ -769,23 +772,23 @@ public class toExcel {
 
     public static void toExcel(List<String> titles,List<PageData> list)throws Exception{
 
-        HSSFWorkbook wb=new HSSFWorkbook(); // ¶¨ÒåÒ»¸öĞÂµÄ¹¤×÷²¾
+        HSSFWorkbook wb=new HSSFWorkbook(); // å®šä¹‰ä¸€ä¸ªæ–°çš„å·¥ä½œç°¿
 
-        HSSFSheet sheet=wb.createSheet("µÚÒ»¸öSheetÒ³");  // ´´½¨µÚÒ»¸öSheetÒ³
+        HSSFSheet sheet=wb.createSheet("ç¬¬ä¸€ä¸ªSheeté¡µ");  // åˆ›å»ºç¬¬ä¸€ä¸ªSheeté¡µ
 
-        // µÚËÄ²½£¬´´½¨µ¥Ôª¸ñ£¬²¢ÉèÖÃÖµ±íÍ· ÉèÖÃ±íÍ·¾ÓÖĞ  
+        // ç¬¬å››æ­¥ï¼Œåˆ›å»ºå•å…ƒæ ¼ï¼Œå¹¶è®¾ç½®å€¼è¡¨å¤´ è®¾ç½®è¡¨å¤´å±…ä¸­  
 
         HSSFCellStyle style = wb.createCellStyle();
 
-        style.setAlignment(HSSFCellStyle.ALIGN_CENTER); // ´´½¨Ò»¸ö¾ÓÖĞ¸ñÊ½  
+        style.setAlignment(HSSFCellStyle.ALIGN_CENTER); // åˆ›å»ºä¸€ä¸ªå±…ä¸­æ ¼å¼  
 
-        HSSFRow row=sheet.createRow(0); // ´´½¨Ò»¸öĞĞ
+        HSSFRow row=sheet.createRow(0); // åˆ›å»ºä¸€ä¸ªè¡Œ
 
-        HSSFCell cell=row.createCell(0); // ´´½¨Ò»¸öµ¥Ôª¸ñ  µÚ1ÁĞ
+        HSSFCell cell=row.createCell(0); // åˆ›å»ºä¸€ä¸ªå•å…ƒæ ¼  ç¬¬1åˆ—
 
-        //cell.setCellValue(new Date());  // ¸øµ¥Ôª¸ñÉèÖÃÖµ
+        //cell.setCellValue(new Date());  // ç»™å•å…ƒæ ¼è®¾ç½®å€¼
 
-        for (int i = 0; i < titles.size(); i++) { //ÉèÖÃ±êÌâ
+        for (int i = 0; i < titles.size(); i++) { //è®¾ç½®æ ‡é¢˜
 
             String title = titles.get(i);
 
@@ -817,7 +820,7 @@ public class toExcel {
 
         
 
-        FileOutputStream fileOut=new FileOutputStream("D://³ÉÔ±ĞÅÏ¢±í.xls");
+        FileOutputStream fileOut=new FileOutputStream("D://æˆå‘˜ä¿¡æ¯è¡¨.xls");
 
         wb.write(fileOut);
 
@@ -828,23 +831,23 @@ public class toExcel {
     }
 
 
-	//´´½¨HSSFWorkbook¶ÔÏó
+	//åˆ›å»ºHSSFWorkbookå¯¹è±¡
 	HSSFWorkbook wb = new HSSFWorkbook();
-	//´´½¨HSSFSheet¶ÔÏó
+	//åˆ›å»ºHSSFSheetå¯¹è±¡
 	HSSFSheet sheet = wb.createSheet("sheet0");
-	//´´½¨HSSFRow¶ÔÏó
+	//åˆ›å»ºHSSFRowå¯¹è±¡
 	HSSFRow row = sheet.createRow(0);
-	//´´½¨HSSFCell¶ÔÏó
+	//åˆ›å»ºHSSFCellå¯¹è±¡
 	HSSFCell cell=row.createCell(0);
-	//ÉèÖÃµ¥Ôª¸ñµÄÖµ
-	cell.setCellValue("µ¥Ôª¸ñÖĞµÄÖĞÎÄ");
-	//Êä³öExcelÎÄ¼ş
+	//è®¾ç½®å•å…ƒæ ¼çš„å€¼
+	cell.setCellValue("å•å…ƒæ ¼ä¸­çš„ä¸­æ–‡");
+	//è¾“å‡ºExcelæ–‡ä»¶
 	FileOutputStream output=new FileOutputStream("d:\\workbook.xls");
 	wkb.write(output);
 	output.flush();
 	
 
-	ÕâÁ½ĞĞ
+	è¿™ä¸¤è¡Œ
 	genExcel(dto);
     workbook.write(out);
 	
@@ -852,20 +855,20 @@ public class toExcel {
 068
 	https://yybackend.b-ymedia.com:8181/front/mealManage/getResourceListByMealId
 	
-	1.resource¼Ólogo,×î³¤300	
+	1.resourceåŠ logo,æœ€é•¿300	
 		data o, code
 		
-	2.Ì×²Í×ÊÔ´ÕûºÏ½Ó¿Ú·µ»Ølogo  
+	2.å¥—é¤èµ„æºæ•´åˆæ¥å£è¿”å›logo  
 		
-	3.Ì×²Ímeal + seqno
+	3.å¥—é¤meal + seqno
 		
-	4.Ì×²ÍÅÅĞò ÏÈĞòºÅ,ÔÙ¼Û¸ñ
+	4.å¥—é¤æ’åº å…ˆåºå·,å†ä»·æ ¼
 		
 
 067	
 	/backend/orderManage
 	
-	        //5.Ìí¼Ó½»Ò×¼ÇÂ¼
+	        //5.æ·»åŠ äº¤æ˜“è®°å½•
 	//        TradeLog trade = new TradeLog();
 	//        trade.setCustomerId(user.getId());
 	//        trade.setTradeMoney(countPrice);
@@ -874,9 +877,9 @@ public class toExcel {
 	//        trade.setTradeTime(new Date());
 	//        tradeLogMapper.insert(trade);
 	
-066 Î¢ĞÅÊÚÈ¨
+066 å¾®ä¿¡æˆæƒ
 	
-	°ó¶¨ÊÖ»úºÅ
+	ç»‘å®šæ‰‹æœºå·
 	
 065	
 	/tx/verifcode
@@ -886,7 +889,7 @@ public class toExcel {
 	http://ganyankai@120.25.212.63:10101/r/oilStation.git
 
 063	
-	´æ´¢¹ı³ÌÑĞ¾¿
+	å­˜å‚¨è¿‡ç¨‹ç ”ç©¶
 	
 	--ok
 	DELIMITER $
@@ -921,44 +924,44 @@ public class toExcel {
 	
 
 062  
-	ÓÃ»§µÈ¼¶´¦Àí  o 
+	ç”¨æˆ·ç­‰çº§å¤„ç†  o 
 
-	Ê±¼äÄ¬ÈÏÖµ¸ñÊ½´¦Àí	
+	æ—¶é—´é»˜è®¤å€¼æ ¼å¼å¤„ç†	
 	
-	ÆäËû×´Ì¬×Ö¶Î´¦Àí	
-	divisionStatus Ä¿Ç°´æÖĞÎÄ
+	å…¶ä»–çŠ¶æ€å­—æ®µå¤„ç†	
+	divisionStatus ç›®å‰å­˜ä¸­æ–‡
 
 	division_status_code
 	
 	
 
 061
-	ÌáÏÖ×´Ì¬trade_status ÏÖ´æ×Ö·û´®
+	æç°çŠ¶æ€trade_status ç°å­˜å­—ç¬¦ä¸²
 	
 	/**
-     * vip_type:VIPÀà±ğ;
+     * vip_type:VIPç±»åˆ«;
      * */
     public static final String CUSTOMER_LEVEL = "customer_level";
 
-    public static final String LEVEL_PARTNERNER = "partnerner";    //ºÏ»ïÈË
-    public static final String LEVEL_CEO = "ceo";                  //×Ü¾­Àí
-    public static final String LEVEL_CTO = "cto";                  //×Ü¼à
-    public static final String LEVEL_MANAGER = "manager";          //¾­Àí
-    public static final String LEVEL_LEADER = "leader";            //Ö÷¹Ü
-    public static final String LEVEL_VIP = "vip";                  //»áÔ±
+    public static final String LEVEL_PARTNERNER = "partnerner";    //åˆä¼™äºº
+    public static final String LEVEL_CEO = "ceo";                  //æ€»ç»ç†
+    public static final String LEVEL_CTO = "cto";                  //æ€»ç›‘
+    public static final String LEVEL_MANAGER = "manager";          //ç»ç†
+    public static final String LEVEL_LEADER = "leader";            //ä¸»ç®¡
+    public static final String LEVEL_VIP = "vip";                  //ä¼šå‘˜
 	
 	
-	parterner("partnerner", "ºÏ»ïÈË", 1),
-    ceo("ceo", "×Ü¾­Àí", 2),
-    cto("cto", "×Ü¼à", 3),
-    manager("manager", "¾­Àí", 4),
-    leader("leader", "Ö÷¹Ü", 5),
-    vip_a("leader", "·ÖÏúA", 6),
-    vip_b("leader", "·ÖÏúB", 7),
-    vip("vip", "»áÔ±", 8);
+	parterner("partnerner", "åˆä¼™äºº", 1),
+    ceo("ceo", "æ€»ç»ç†", 2),
+    cto("cto", "æ€»ç›‘", 3),
+    manager("manager", "ç»ç†", 4),
+    leader("leader", "ä¸»ç®¡", 5),
+    vip_a("leader", "åˆ†é”€A", 6),
+    vip_b("leader", "åˆ†é”€B", 7),
+    vip("vip", "ä¼šå‘˜", 8);
 	
 060 
-	dis_commission_log ×Ö¶ÎÀ´Ô´
+	dis_commission_log å­—æ®µæ¥æº
 	id 
 	order_no	ys_withdraw.out_trade_no 
 	money		ys_withdraw.total_amount
@@ -987,7 +990,7 @@ public class toExcel {
 		and date_format(dcl.create_time,'%Y-%m-%d') between '2019-05-30' and '2019-07-31')
 	
 058
-	ºóÌ¨ÌáÏÖÁ÷Ë®
+	åå°æç°æµæ°´
 		ys_withdraw_log
 		
 		select ywl.id as id,ywl.total_amount as money,ywl.fee as fee,ywl.create_time as createTime,
@@ -998,7 +1001,7 @@ public class toExcel {
 		and yu.user_id = 25 
 		and date_format(ywl.create_time,'%Y-%m-%d') between '2019-05-30' and '2019-07-31'
 		
-	Ç°Ì¨ÌáÏÖÁ÷Ë®(ÔİÊ±Ã»ÓĞÊÖĞø·Ñ) ¸ù¾İÓÃ»§id²éÑ¯Ö¸¶¨ÌáÏÖÁ÷Ë®
+	å‰å°æç°æµæ°´(æš‚æ—¶æ²¡æœ‰æ‰‹ç»­è´¹) æ ¹æ®ç”¨æˆ·idæŸ¥è¯¢æŒ‡å®šæç°æµæ°´
 		
 		--ok
 		select dcl.id as id,dcl.money as money,dcl.balance as balance,dcl.create_time as createTime,
@@ -1012,42 +1015,42 @@ public class toExcel {
 		
 		
 		dis_commission_log
-			ÌáÏÖ½ğ¶î
-					Ç°Ì¨:
+			æç°é‡‘é¢
+					å‰å°:
 						dis_commission_log.money
 						
-			µ±Ç°Óà¶î
-					Ç°Ì¨
+			å½“å‰ä½™é¢
+					å‰å°
 						dis_commission_log.balance
 					
-			ÌáÏÖÈË
-					Ç°Ì¨:
+			æç°äºº
+					å‰å°:
 						customer_extend.name 
 						customer_extend.level_name
-					ºóÌ¨
+					åå°
 						ys_user.cust_name
 						ys_user.user_type
 			
-			ÊÕ¿îÕËºÅ	
-					Ç°Ì¨:
+			æ”¶æ¬¾è´¦å·	
+					å‰å°:
 						vip_bankcard.bank_card_no
-					ºóÌ¨
+					åå°
 						ys_user.bank_account_no
 					
-			¿ª»§ĞĞ	
-						Ç°Ì¨:
+			å¼€æˆ·è¡Œ	
+						å‰å°:
 							vip_bankcard.bank_type
-						ºóÌ¨
+						åå°
 							ys_user.bank_type
-			¿ª»§ĞĞÖ§ĞĞ
-						Ç°Ì¨:
+			å¼€æˆ·è¡Œæ”¯è¡Œ
+						å‰å°:
 							vip_bankcard.bank_branch
-						ºóÌ¨
+						åå°
 							ys_user.bank_name
-			ÒøÊ¢ÉÌ»§ºÅ	
-						Ç°Ì¨:
-							ÎŞ
-						ºóÌ¨:
+			é“¶ç››å•†æˆ·å·	
+						å‰å°:
+							æ— 
+						åå°:
 							ys_user.usercode
 			
 
@@ -1064,70 +1067,70 @@ public class toExcel {
 	from ys_withdraw yw,customer_extend ce,vip_bankcard vb
 	where yw.user_id = ce.customer_id and ce.customer_id=vb.user_id
 	
-	ÌáÏÖ´ò¿îÇ°Ì¨Ò³Ãæ
-		ÌáÏÖÈË
-					Ç°Ì¨:
+	æç°æ‰“æ¬¾å‰å°é¡µé¢
+		æç°äºº
+					å‰å°:
 						customer_extend.name 
 						customer_extend.level_name
-					ºóÌ¨
+					åå°
 						ys_user.cust_name
 						ys_user.user_type
-		¿ÉÌáÏÖ½ğ¶î
-					Ç°Ì¨
+		å¯æç°é‡‘é¢
+					å‰å°
 						customer_extend.today_money
-		ÌáÏÖ½ğ¶î
-					Ç°Ì¨:
+		æç°é‡‘é¢
+					å‰å°:
 						ys_withdraw.total_amount
-		µ±Ç°Óà¶î
-					Ç°Ì¨
+		å½“å‰ä½™é¢
+					å‰å°
 						customer_extend.balance
 						
-		ÊÕ¿îÕËºÅ	
-					Ç°Ì¨:
+		æ”¶æ¬¾è´¦å·	
+					å‰å°:
 						vip_bankcard.bank_card_no
-					ºóÌ¨
+					åå°
 						ys_user.bank_account_no
 					
-		¿ª»§ĞĞ	
-					Ç°Ì¨:
+		å¼€æˆ·è¡Œ	
+					å‰å°:
 						vip_bankcard.bank_type
-					ºóÌ¨
+					åå°
 						ys_user.bank_type
-		¿ª»§ĞĞÖ§ĞĞ
-					Ç°Ì¨:
+		å¼€æˆ·è¡Œæ”¯è¡Œ
+					å‰å°:
 						vip_bankcard.bank_branch
-					ºóÌ¨
+					åå°
 						ys_user.bank_name
-		ÒøÊ¢ÉÌ»§ºÅ	
-					Ç°Ì¨:
-						ÎŞ
-					ºóÌ¨:
+		é“¶ç››å•†æˆ·å·	
+					å‰å°:
+						æ— 
+					åå°:
 						ys_user.usercode
 		
 		
 
-	ÌáÏÖ´ò¿îÒ³Ãæ(ÃÅµêÓëÇşµÀÎŞÈ·ÈÏ´ò¿î²Ù×÷)
+	æç°æ‰“æ¬¾é¡µé¢(é—¨åº—ä¸æ¸ é“æ— ç¡®è®¤æ‰“æ¬¾æ“ä½œ)
 		
 
-	ÌáÏÖ¶©µ¥ºÅËæ»úÉú³É,¸ú¶©µ¥Ã»ÓĞ¹ØÏµ
+	æç°è®¢å•å·éšæœºç”Ÿæˆ,è·Ÿè®¢å•æ²¡æœ‰å…³ç³»
 		
 
-	ys_withdraw Ä¿Ç°¸ù¾İÌáÏÖ¶©µ¥ºÅÒ»Ò»¶ÔÓ¦
+	ys_withdraw ç›®å‰æ ¹æ®æç°è®¢å•å·ä¸€ä¸€å¯¹åº”
 		
 
-	ºóÌ¨
-		ÔİÊ±²»×ö
+	åå°
+		æš‚æ—¶ä¸åš
 		
-	Ç°Ì¨Ôö¼ÓÌáÏÖ½ğ¶î×Ö¶Î ys_withdraw.total_amount
+	å‰å°å¢åŠ æç°é‡‘é¢å­—æ®µ ys_withdraw.total_amount
 		
 		
-	ÌáÏÖÁ÷Ë®Ò³Ãæ(²éÑ¯µ¥¸öÓÃ»§µÄÌáÏÖÁ÷Ë®)
+	æç°æµæ°´é¡µé¢(æŸ¥è¯¢å•ä¸ªç”¨æˆ·çš„æç°æµæ°´)
 		
 		
 	
 
 056 
-	03 µ±Ç°Ç°Ì¨Ê¹ÓÃ --ok
+	03 å½“å‰å‰å°ä½¿ç”¨ --ok
 		select ydd.div_amount as divAmount,ydd.div_fee as divFee,
 		ce.name as name,ce.level_name as type,
 		vb.bank_card_no as cardNo,vb.bank_type as bankType,
@@ -1138,7 +1141,7 @@ public class toExcel {
 		and ydd.divition_id = 2
 		
 		
-	02 µ±Ç°ºóÌ¨Ê¹ÓÃ
+	02 å½“å‰åå°ä½¿ç”¨
 	select ydd.div_amount,ydd.div_fee,
 	yu.cust_name,yu.user_type,yu.bank_account_no,yu.bank_type,yu.bank_name,yu.usercode
 	from ys_divition_detail ydd,ys_user yu where  
@@ -1150,63 +1153,63 @@ public class toExcel {
           AND a.bank_id=#{dto.bankId}
      </if>
 
-	01 Ç°Ì¨sql -- ok
+	01 å‰å°sql -- ok
 	select * from ys_divition_detail ydd,ys_divition yd,dis_commission_log dcl,customer_extend ce
 	where ydd.divition_id = yd.id and yd.out_trade_no = dcl.order_no and dcl.create_id = ce.customer_id
 	
 	
-	ºóÌ¨sql -- yes
+	åå°sql -- yes
 	select ydd.*,yu.* from ys_divition_detail ydd,ys_user yu where ydd.divition_id = 1 and 
 	ydd.division_mer_usercode=yu.usercode and yu.user_type in('user_agent' ,'user_shop')	
 	
 		
 	https://note.youdao.com/ynoteshare1/index.html?id=4fb1fe2f50c60bbd67682335cfffd013&type=note
-	Ä¿Ç°Ö»¶ÔÆ½Ì¨¿ª·¢
+	ç›®å‰åªå¯¹å¹³å°å¼€å‘
 
-	·ÖÕËÓë·ÖÕËÃ÷Ï¸
+	åˆ†è´¦ä¸åˆ†è´¦æ˜ç»†
 	ys_divition	,		ys_divition_detail
 			
-			¶©µ¥ºÅ		ys_divition.out_trade_no 
-			½ğ¶î		ys_divition.total_amount
-			·ÖÕË×´Ì¬	ys_divition.division_status
-			·ÖÕËÊ±¼ä    ys_divition.div_time
+			è®¢å•å·		ys_divition.out_trade_no 
+			é‡‘é¢		ys_divition.total_amount
+			åˆ†è´¦çŠ¶æ€	ys_divition.division_status
+			åˆ†è´¦æ—¶é—´    ys_divition.div_time
 			
-			·ÖÕË½ğ¶î	ys_divition_detail.div_amount
-			ÊÖĞø·Ñ		ys_divition_detail.div_fee
+			åˆ†è´¦é‡‘é¢	ys_divition_detail.div_amount
+			æ‰‹ç»­è´¹		ys_divition_detail.div_fee
 						
-			ÊÕ¿îÃû³Æ+ÀàĞÍ	
-						Ç°Ì¨:
+			æ”¶æ¬¾åç§°+ç±»å‹	
+						å‰å°:
 							customer_extend.name 
 							customer_extend.level_name
 
-						ºóÌ¨
+						åå°
 							ys_user.cust_name
 							ys_user.user_type
 								
-			ÊÕ¿îÕËºÅ	
-						Ç°Ì¨:
+			æ”¶æ¬¾è´¦å·	
+						å‰å°:
 							vip_bankcard.bank_card_no
-						ºóÌ¨
+						åå°
 							ys_user.bank_account_no
 						
-			¿ª»§ĞĞ	
-						Ç°Ì¨:
+			å¼€æˆ·è¡Œ	
+						å‰å°:
 							vip_bankcard.bank_type
-						ºóÌ¨
+						åå°
 							ys_user.bank_type
-			¿ª»§ĞĞÖ§ĞĞ
-						Ç°Ì¨:
+			å¼€æˆ·è¡Œæ”¯è¡Œ
+						å‰å°:
 							vip_bankcard.bank_branch
-						ºóÌ¨
+						åå°
 							ys_user.bank_name
-			ÒøÊ¢ÉÌ»§ºÅ	
-						Ç°Ì¨:
-							ÎŞ
-						ºóÌ¨:
+			é“¶ç››å•†æˆ·å·	
+						å‰å°:
+							æ— 
+						åå°:
 							ys_user.usercode
 			
 			
-		ÔİÊ±ÈÏÎªÒ»¸ö¶©µ¥ÓĞ¼¸ÌõÏêÇé,Õ¹Ê¾¼¸Ìõ¼ÇÂ¼
+		æš‚æ—¶è®¤ä¸ºä¸€ä¸ªè®¢å•æœ‰å‡ æ¡è¯¦æƒ…,å±•ç¤ºå‡ æ¡è®°å½•
 
 	select * from ys_divition
 	
@@ -1218,7 +1221,7 @@ public class toExcel {
 	keytool -export -alias mykey -keystore D:\home\mykey.p12 -storetype PKCS12 -storepass 123456 -rfc -file D:\home\mykey.cer 
 
 054
-	http://120.79.243.99:8080/#/login ¹ã¸æºóÌ¨
+	http://120.79.243.99:8080/#/login å¹¿å‘Šåå°
 	
 	https://120.79.243.99:8080/#/login --no
 	
@@ -1244,23 +1247,23 @@ public class toExcel {
             and sr.id = 1 
 
 051 
-	È·¶¨½ÇÉ«±íÖĞidÎª1µÄ±êÊ¶Îª¿Í·ş 
-	¿ÉÒÔÉèÖÃ¶à¸ö±êÇ©
-	²éÑ¯°üÀ¨ÓÃ»§µÄÇşµÀid,ÇşµÀÃû³Æ(Ó¦¸ÃÊÇÃ¿¸öÓÃ»§¶¼ÓĞ),ÓÃ»§À´Ô´
+	ç¡®å®šè§’è‰²è¡¨ä¸­idä¸º1çš„æ ‡è¯†ä¸ºå®¢æœ 
+	å¯ä»¥è®¾ç½®å¤šä¸ªæ ‡ç­¾
+	æŸ¥è¯¢åŒ…æ‹¬ç”¨æˆ·çš„æ¸ é“id,æ¸ é“åç§°(åº”è¯¥æ˜¯æ¯ä¸ªç”¨æˆ·éƒ½æœ‰),ç”¨æˆ·æ¥æº
 	
-050	ÎÒµÄtoken
+050	æˆ‘çš„token
 	{"token":"eyJhbGciOiJIUzI1NiJ9.
 	eyJqdGkiOiIyNSIsImlzcyI6Imh0dHBzOi8vd3d3Lmthbmdhcm9vYmFieWNhci5jb20iLCJzdWIiOiIxMzQ3NzkwNzYzOSIsImlhdCI6MTU2MjgwNzQwMX0.
 	iBLZ4IOECb286VWOmhOhn8UZDUUNn0vyWJmy6pYzCZo"}
 	
 049
-	Ç°ºó¶ËÎÄµµ ·ÖÀë	
-	²éÑ¯ÒÑ¶ÁÎ´¶ÁÏûÏ¢	-ºóÌ¨
-	Í³¼ÆÒÑ¶ÁÎ´¶ÁÏûÏ¢	-ºóÌ¨
-	ÅúÁ¿ÒÑ¶Á			-ºóÌ¨
-	ÅúÁ¿É¾³ı			-Ç°ºóÌ¨
+	å‰åç«¯æ–‡æ¡£ åˆ†ç¦»	
+	æŸ¥è¯¢å·²è¯»æœªè¯»æ¶ˆæ¯	-åå°
+	ç»Ÿè®¡å·²è¯»æœªè¯»æ¶ˆæ¯	-åå°
+	æ‰¹é‡å·²è¯»			-åå°
+	æ‰¹é‡åˆ é™¤			-å‰åå°
 	
-	sys_userµç»°¹ØÁªÃÅµê»òÇşµÀµÄÁªÏµÈËµç»° 
+	sys_userç”µè¯å…³è”é—¨åº—æˆ–æ¸ é“çš„è”ç³»äººç”µè¯ 
 	
 048	
 	//        String messageTypeCN = DictionUtil.getValue(DictConstant.MESSAGE_TYPE, messageType);
@@ -1269,7 +1272,7 @@ public class toExcel {
 			String tel = tbReturnBill.getContactTel();
             Integer reveicerId = tbReturnBill.getCustomerId();
             String messageType = DictConstant.MESSAGE_TYPE_INDENT;
-            //È¡µÃÒ»Ìõ¿Í·şÊı¾İ
+            //å–å¾—ä¸€æ¡å®¢æœæ•°æ®
             String phone = serviceConfigMapper.getList().getPhone();
             String title = MessageConstant.DEAL_AFTERSALE_NOTICE;
             String content =MessageConstant.MESSAGE_DEAL_AFTERSALE;
@@ -1277,112 +1280,112 @@ public class toExcel {
             SysMessageUtils.saveAndSend(tel,reveicerId,messageType,"",content,strArr,true);
 		
 047	 
-	Ô¤¼Æ¹¤ÆÚ£º1.5Ìì
-	1£¬ÏûÏ¢ÀàĞÍ£ºÏµÍ³ÏûÏ¢£¬¶©µ¥ÏûÏ¢
-	2£¬ÍÆËÍ·½Ê½£ºÏûÏ¢¼Ó¶ÌĞÅ
-	3£¬·¢ËÍÎ»ÖÃ£º
+	é¢„è®¡å·¥æœŸï¼š1.5å¤©
+	1ï¼Œæ¶ˆæ¯ç±»å‹ï¼šç³»ç»Ÿæ¶ˆæ¯ï¼Œè®¢å•æ¶ˆæ¯
+	2ï¼Œæ¨é€æ–¹å¼ï¼šæ¶ˆæ¯åŠ çŸ­ä¿¡
+	3ï¼Œå‘é€ä½ç½®ï¼š
 
-	A£¬Ô¤Ô¼°²×°ÏûÏ¢£¬ÃÅµêÈ·ÈÏ°²×°Ê±¼ä²¢ÍÆËÍÏûÏ¢¸øÂò¼Ò ÏûÏ¢¼Ó¶ÌĞÅ
+	Aï¼Œé¢„çº¦å®‰è£…æ¶ˆæ¯ï¼Œé—¨åº—ç¡®è®¤å®‰è£…æ—¶é—´å¹¶æ¨é€æ¶ˆæ¯ç»™ä¹°å®¶ æ¶ˆæ¯åŠ çŸ­ä¿¡
 
-		Ô¤Ô¼°²×°£º	ÄúµÄ¶©µ¥%sÒÑ°²ÅÅ¹¤ÈËÉÏÃÅ°²×°£¬°²×°Ê±¼äÎª£º%s£¬ÇëÏ¤Öª£»ÈçÓĞÒÉÎÊ£¬ÇëÁªÏµ%s¡£				message_appointment_install	
+		é¢„çº¦å®‰è£…ï¼š	æ‚¨çš„è®¢å•%så·²å®‰æ’å·¥äººä¸Šé—¨å®‰è£…ï¼Œå®‰è£…æ—¶é—´ä¸ºï¼š%sï¼Œè¯·æ‚‰çŸ¥ï¼›å¦‚æœ‰ç–‘é—®ï¼Œè¯·è”ç³»%sã€‚				message_appointment_install	
 																		
-																		±êÌâ£ºÔ¤Ô¼°²×°Í¨Öª					message_appointment_notice
+																		æ ‡é¢˜ï¼šé¢„çº¦å®‰è£…é€šçŸ¥					message_appointment_notice
 		
 
-	B£¬ÏÂµ¥ÍÆËÍ¶ÔÓ¦µÄÏûÏ¢¸øÇşµÀ£¬·ÖÅäµ½¶ÔÓ¦ÃÅµêºóÍÆËÍÏûÏ¢¸øÃÅµê  ÏûÏ¢¼Ó¶ÌĞÅ
+	Bï¼Œä¸‹å•æ¨é€å¯¹åº”çš„æ¶ˆæ¯ç»™æ¸ é“ï¼Œåˆ†é…åˆ°å¯¹åº”é—¨åº—åæ¨é€æ¶ˆæ¯ç»™é—¨åº—  æ¶ˆæ¯åŠ çŸ­ä¿¡
 
-		ÏÂµ¥ÍÆËÍ£º	»áÔ±%s¹ºÂò²¢Ö§¸¶ÁË%sÉÌÆ·£¬Çë¼°Ê±´¦Àí£¨ÓĞ·ÖÅäÃÅµêÏûÏ¢ÍÆËÍ¸øÃÅµê£¬Ã»·ÖÅäÍÆËÍ¸øÇşµÀ£©		message_order_send	
+		ä¸‹å•æ¨é€ï¼š	ä¼šå‘˜%sè´­ä¹°å¹¶æ”¯ä»˜äº†%så•†å“ï¼Œè¯·åŠæ—¶å¤„ç†ï¼ˆæœ‰åˆ†é…é—¨åº—æ¶ˆæ¯æ¨é€ç»™é—¨åº—ï¼Œæ²¡åˆ†é…æ¨é€ç»™æ¸ é“ï¼‰		message_order_send	
 
-																		±êÌâ£ºÏÂµ¥ÌáĞÑÍ¨Öª					order_send_notice
+																		æ ‡é¢˜ï¼šä¸‹å•æé†’é€šçŸ¥					order_send_notice
 		
-	C£¬ÍÅ¹ºÏûÏ¢
+	Cï¼Œå›¢è´­æ¶ˆæ¯
 
-		ÍÅ¹ºÏÂµ¥£º	Äú²ÎÓëÍÅ¹ºµÄÉÌÆ·%sÏÂµ¥³É¹¦  ÏûÏ¢														message_group_order
+		å›¢è´­ä¸‹å•ï¼š	æ‚¨å‚ä¸å›¢è´­çš„å•†å“%sä¸‹å•æˆåŠŸ  æ¶ˆæ¯														message_group_order
 
-																		±êÌâ£ºÆ´ÍÅÏÂµ¥Í¨Öª					group_order_notice
+																		æ ‡é¢˜ï¼šæ‹¼å›¢ä¸‹å•é€šçŸ¥					group_order_notice
 
-		ÍÅ¹º³É¹¦£º	Äú²ÎÓëµÄÍÅ¹ºÉÌÆ·%sÒÑÉúĞ§£¬Âô¼ÒÕıÔÚ°²ÅÅ°²×°£¬ÇëÄÍĞÄµÈ´ı²¢±£³Öµç»°³©Í¨  ÏûÏ¢				message_group_success
+		å›¢è´­æˆåŠŸï¼š	æ‚¨å‚ä¸çš„å›¢è´­å•†å“%så·²ç”Ÿæ•ˆï¼Œå–å®¶æ­£åœ¨å®‰æ’å®‰è£…ï¼Œè¯·è€å¿ƒç­‰å¾…å¹¶ä¿æŒç”µè¯ç•…é€š  æ¶ˆæ¯				message_group_success
 		
-																		Æ´ÍÅ³É¹¦Í¨Öª						group_success_notice
+																		æ‹¼å›¢æˆåŠŸé€šçŸ¥						group_success_notice
 
-		ÍÅ¹ºÊ§°Ü£º	ÓÉÓÚ²ÎÓëÈËÊı²»¹»£¬Äú²ÎÓëµÄÍÅ¹ºÉÌÆ·%sÒÑ¹ıÆÚ ÏûÏ¢											message_group_fail
+		å›¢è´­å¤±è´¥ï¼š	ç”±äºå‚ä¸äººæ•°ä¸å¤Ÿï¼Œæ‚¨å‚ä¸çš„å›¢è´­å•†å“%så·²è¿‡æœŸ æ¶ˆæ¯											message_group_fail
 
-																		Æ´ÍÅÊ§°ÜÍ¨Öª						group_fail_notice
-	D£¬ÖÚ³ïÏûÏ¢
+																		æ‹¼å›¢å¤±è´¥é€šçŸ¥						group_fail_notice
+	Dï¼Œä¼—ç­¹æ¶ˆæ¯
 		
-		ÖÚ³ïÏÂµ¥£º	Äú²ÎÓëÖÚ³ïµÄÉÌÆ·%sÏÂµ¥³É¹¦   ÏûÏ¢														message_crowd_order 
+		ä¼—ç­¹ä¸‹å•ï¼š	æ‚¨å‚ä¸ä¼—ç­¹çš„å•†å“%sä¸‹å•æˆåŠŸ   æ¶ˆæ¯														message_crowd_order 
 
-																		±êÌâ£ºÖÚ³ïÏÂµ¥Í¨Öª					crowd_order_notice
+																		æ ‡é¢˜ï¼šä¼—ç­¹ä¸‹å•é€šçŸ¥					crowd_order_notice
 
-		ÖÚ³ï³É¹¦£º	Äú²ÎÓëµÄÖÚ³ïÉÌÆ·%sÒÑÉúĞ§£¬Âô¼ÒÕıÔÚ°²ÅÅ°²×°£¬ÇëÄÍĞÄµÈ´ı²¢±£³Öµç»°³©Í¨  ÏûÏ¢				message_crowd_success
+		ä¼—ç­¹æˆåŠŸï¼š	æ‚¨å‚ä¸çš„ä¼—ç­¹å•†å“%så·²ç”Ÿæ•ˆï¼Œå–å®¶æ­£åœ¨å®‰æ’å®‰è£…ï¼Œè¯·è€å¿ƒç­‰å¾…å¹¶ä¿æŒç”µè¯ç•…é€š  æ¶ˆæ¯				message_crowd_success
 
-																		±êÌâ£ºÖÚ³ï³É¹¦Í¨Öª					crowd_success_notice
+																		æ ‡é¢˜ï¼šä¼—ç­¹æˆåŠŸé€šçŸ¥					crowd_success_notice
 						
-		ÖÚ³ïÊ§°Ü£º	ÓÉÓÚ²ÎÓëÈËÊı²»¹»£¬Äú²ÎÓëµÄÖÚ³ïÉÌÆ·%sÒÑ¹ıÆÚ  ÏûÏ¢										message_crowd_fail
+		ä¼—ç­¹å¤±è´¥ï¼š	ç”±äºå‚ä¸äººæ•°ä¸å¤Ÿï¼Œæ‚¨å‚ä¸çš„ä¼—ç­¹å•†å“%så·²è¿‡æœŸ  æ¶ˆæ¯										message_crowd_fail
 
-																		ÏûÏ¢±êÌâ£ºÖÚ³ïÊ§°ÜÍ¨Öª				crowd_fail_notice
+																		æ¶ˆæ¯æ ‡é¢˜ï¼šä¼—ç­¹å¤±è´¥é€šçŸ¥				crowd_fail_notice
 
-	E£¬ÃëÉ±ÏûÏ¢
+	Eï¼Œç§’æ€æ¶ˆæ¯
 		
-		ÃëÉ±ÏÂµ¥£º	ÄúÒÑ³É¹¦ÇÀ¹ºµ½ÉÌÆ·%s   ÏûÏ¢																message_seckill_order
+		ç§’æ€ä¸‹å•ï¼š	æ‚¨å·²æˆåŠŸæŠ¢è´­åˆ°å•†å“%s   æ¶ˆæ¯																message_seckill_order
 
-																		ÇÀ¹º³É¹¦Í¨Öª						seckill_order_notice
-	F£¬¿³¼ÛÉÌÆ·
+																		æŠ¢è´­æˆåŠŸé€šçŸ¥						seckill_order_notice
+	Fï¼Œç ä»·å•†å“
 
-		·¢Æğ¿³¼Û£º	Äú·¢ÆğÁË%sÉÌÆ·µÄ¿³¼Û£¬Å¬Á¦¼ÓÓÍÅ¶   ÏûÏ¢													message_start_cutprice
+		å‘èµ·ç ä»·ï¼š	æ‚¨å‘èµ·äº†%så•†å“çš„ç ä»·ï¼ŒåŠªåŠ›åŠ æ²¹å“¦   æ¶ˆæ¯													message_start_cutprice
 			
-																		·¢Æğ¿³¼ÛÍ¨Öª						start_cutprice_notice
+																		å‘èµ·ç ä»·é€šçŸ¥						start_cutprice_notice
 
-		¿³¼Û³É¹¦£º	¹§Ï²ÄúÒÑ³É¹¦¿³µ½ÁËÉÌÆ·%s   ÏûÏ¢															message_cutprice_success
+		ç ä»·æˆåŠŸï¼š	æ­å–œæ‚¨å·²æˆåŠŸç åˆ°äº†å•†å“%s   æ¶ˆæ¯															message_cutprice_success
 
-																		¿³¼ÛÏûÏ¢							cutprice_success_notice
-	G£¬ÊÛºóÏûÏ¢
+																		ç ä»·æ¶ˆæ¯							cutprice_success_notice
+	Gï¼Œå”®åæ¶ˆæ¯
 	
-		·¢ÆğÊÛºó£º	»áÔ±ÕÅÈı·¢ÆğÁËÉêÇëÊÛºó£¬Çë¼°Ê±´¦Àí  ÏûÏ¢¼Ó¶ÌĞÅ											message_start_aftersale
+		å‘èµ·å”®åï¼š	ä¼šå‘˜å¼ ä¸‰å‘èµ·äº†ç”³è¯·å”®åï¼Œè¯·åŠæ—¶å¤„ç†  æ¶ˆæ¯åŠ çŸ­ä¿¡											message_start_aftersale
 					
-																		ÊÛºó´ı´¦ÀíÍ¨Öª						start_aftersale_notice
+																		å”®åå¾…å¤„ç†é€šçŸ¥						start_aftersale_notice
 		
-		´¦ÀíÊÛºó£º	ÄúµÄÊÛºóµ¥%sÒÑ´¦Àí£¬ÈçÓĞÎÊÌâÇëÁªÏµ%s  ÏûÏ¢¼Ó¶ÌĞÅ										message_deal_aftersale 
+		å¤„ç†å”®åï¼š	æ‚¨çš„å”®åå•%så·²å¤„ç†ï¼Œå¦‚æœ‰é—®é¢˜è¯·è”ç³»%s  æ¶ˆæ¯åŠ çŸ­ä¿¡										message_deal_aftersale 
 
-																		ÊÛºó·´À¡Í¨Öª						deal_aftersale_notice
+																		å”®ååé¦ˆé€šçŸ¥						deal_aftersale_notice
 
-046 Ëã·¨¹¤³ÌÊ¦
-	1¡¢»ùÓÚ»úÆ÷Ñ§Ï°,²¢½áºÏÏÖÓĞµÄ×ÔÈ»ÓïÑÔ´¦Àí¼¼Êõ£¬ÑĞ·¢ÊµÌåÊ¶±ğ¡¢¹Ø¼ü´ÊÌáÈ¡¡¢¶ÌÎÄ±¾½üËÆ¡¢ĞÅÏ¢³éÈ¡¡¢¹ØÏµÍÆ¶Ï¡¢ÖªÊ¶Í¼Æ×¡¢ÖÇÄÜÁÄÌì»úÆ÷ÈËµÈµÄ½â¾ö·½°¸;
-	2¡¢»ùÓÚ»úÆ÷Ñ§Ï°¡¢Êı¾İ·ÖÎö¡¢Êı¾İÍÚ¾òºÍÊı¾İ¿ÉÊÓ»¯µÈÊµÏÖµçÉÌÆ½Ì¨Êı¾İµÄÊı¾İÇåÏ´¡¢Êı¾İÍÚ¾òµÈ;
-	3¡¢»ùÓÚ´óÊı¾İºÍ»úÆ÷Ñ§Ï°×öµçÉÌÆ½Ì¨µÄ·ç¿Ø¡£
+046 ç®—æ³•å·¥ç¨‹å¸ˆ
+	1ã€åŸºäºæœºå™¨å­¦ä¹ ,å¹¶ç»“åˆç°æœ‰çš„è‡ªç„¶è¯­è¨€å¤„ç†æŠ€æœ¯ï¼Œç ”å‘å®ä½“è¯†åˆ«ã€å…³é”®è¯æå–ã€çŸ­æ–‡æœ¬è¿‘ä¼¼ã€ä¿¡æ¯æŠ½å–ã€å…³ç³»æ¨æ–­ã€çŸ¥è¯†å›¾è°±ã€æ™ºèƒ½èŠå¤©æœºå™¨äººç­‰çš„è§£å†³æ–¹æ¡ˆ;
+	2ã€åŸºäºæœºå™¨å­¦ä¹ ã€æ•°æ®åˆ†æã€æ•°æ®æŒ–æ˜å’Œæ•°æ®å¯è§†åŒ–ç­‰å®ç°ç”µå•†å¹³å°æ•°æ®çš„æ•°æ®æ¸…æ´—ã€æ•°æ®æŒ–æ˜ç­‰;
+	3ã€åŸºäºå¤§æ•°æ®å’Œæœºå™¨å­¦ä¹ åšç”µå•†å¹³å°çš„é£æ§ã€‚
 	
-	1¡¢±¾¿Æ¼°ÒÔÉÏÑ§Àú£¬ÊìÏ¤×ÔÈ»ÓïÑÔ´¦Àí¡¢»úÆ÷Ñ§Ï°¡¢Êı¾İ·ÖÎöºÍÍÚ¾òµÈ³£ÓÃËã·¨£¬ÊìÏ¤NLPÁìÓòµ±Ç°ÈÈµãºÍÇ°ÑØ¼¼Êõ£¬¶ÔNLPÓĞÍêÕûµÄ¡¢ÏµÍ³µÄÈÏÊ¶£»
-	2¡¢ÊìÁ·ÕÆÎÕJava±à³ÌÓïÑÔ£¬ÊìÁ·Ê¹ÓÃPython£¬ShellµÈ½Å±¾ÓïÑÔ,ÁË½âscala±à³ÌÓïÑÔ,ÓĞÒ»¶¨µÄsparkÊ¹ÓÃ¾­ÑéÕß¸ü¼Ñ£»
-	3¡¢ÓĞÏà¹ØÏîÄ¿¾­Àú£¬°üº¬µ«²»½öÏŞÓÚÒÔÏÂ·½Ïò£ºÖĞÎÄ·Ö´Ê¡¢ÊµÌåÊ¶±ğ¡¢Çé¸Ğ·ÖÎö¡¢ĞÅÏ¢³éÈ¡¡¢ÖªÊ¶Í¼Æ×¡¢»úÆ÷Ñ§Ï°¡¢×Ô¶¯ÕªÒª¡¢ÁÄÌì»úÆ÷ÈËºÍ½ğÈÚ»òµçÉÌÁìÓò·ç¿ØµÈ,
-		ÓĞ´óÊı¾İºÍÉî¶ÈÑ§Ï°±³¾°¸ü¼Ñ£»
-	4¡¢ÓÅĞãµÄ·ÖÎöºÍ½â¾öÎÊÌâµÄÄÜÁ¦£¬ÄÜ¹»´Óº£Á¿Êı¾İÖĞ·¢ÏÖÓĞ¼ÛÖµµÄ¹æÂÉ;
-	5¡¢ÓĞtensorflow/caffe/PyTorch¡¢scikit-learn¡¢gensim¡¢word2vecµÈÈí¼ş°üÊ¹ÓÃ¼ìÑéÕß¸ü¼Ñ£»
-	6¡¢Á¼ºÃµÄÍÅ¶ÓºÏ×÷ºÍ¹µÍ¨ÄÜÁ¦£¬¿ìËÙ×¼È·µÄÀí½âÄÜÁ¦£¬¼«Ç¿µÄ×ÔÎÒÇı¶¯Á¦£¬ÓĞÒ»¶¨µÄ¿¹Ñ¹ÄÜÁ¦£¬ÓĞÔğÈÎĞÄ£¬¶Ô½â¾öÎÊÌâ³äÂúÈÈÇé¡£
-	7¡¢¶ÔĞÂ¼¼ÊõÓĞºÃÆæĞÄºÍ×êÑĞ¾«Éñ¡£
+	1ã€æœ¬ç§‘åŠä»¥ä¸Šå­¦å†ï¼Œç†Ÿæ‚‰è‡ªç„¶è¯­è¨€å¤„ç†ã€æœºå™¨å­¦ä¹ ã€æ•°æ®åˆ†æå’ŒæŒ–æ˜ç­‰å¸¸ç”¨ç®—æ³•ï¼Œç†Ÿæ‚‰NLPé¢†åŸŸå½“å‰çƒ­ç‚¹å’Œå‰æ²¿æŠ€æœ¯ï¼Œå¯¹NLPæœ‰å®Œæ•´çš„ã€ç³»ç»Ÿçš„è®¤è¯†ï¼›
+	2ã€ç†Ÿç»ƒæŒæ¡Javaç¼–ç¨‹è¯­è¨€ï¼Œç†Ÿç»ƒä½¿ç”¨Pythonï¼ŒShellç­‰è„šæœ¬è¯­è¨€,äº†è§£scalaç¼–ç¨‹è¯­è¨€,æœ‰ä¸€å®šçš„sparkä½¿ç”¨ç»éªŒè€…æ›´ä½³ï¼›
+	3ã€æœ‰ç›¸å…³é¡¹ç›®ç»å†ï¼ŒåŒ…å«ä½†ä¸ä»…é™äºä»¥ä¸‹æ–¹å‘ï¼šä¸­æ–‡åˆ†è¯ã€å®ä½“è¯†åˆ«ã€æƒ…æ„Ÿåˆ†æã€ä¿¡æ¯æŠ½å–ã€çŸ¥è¯†å›¾è°±ã€æœºå™¨å­¦ä¹ ã€è‡ªåŠ¨æ‘˜è¦ã€èŠå¤©æœºå™¨äººå’Œé‡‘èæˆ–ç”µå•†é¢†åŸŸé£æ§ç­‰,
+		æœ‰å¤§æ•°æ®å’Œæ·±åº¦å­¦ä¹ èƒŒæ™¯æ›´ä½³ï¼›
+	4ã€ä¼˜ç§€çš„åˆ†æå’Œè§£å†³é—®é¢˜çš„èƒ½åŠ›ï¼Œèƒ½å¤Ÿä»æµ·é‡æ•°æ®ä¸­å‘ç°æœ‰ä»·å€¼çš„è§„å¾‹;
+	5ã€æœ‰tensorflow/caffe/PyTorchã€scikit-learnã€gensimã€word2vecç­‰è½¯ä»¶åŒ…ä½¿ç”¨æ£€éªŒè€…æ›´ä½³ï¼›
+	6ã€è‰¯å¥½çš„å›¢é˜Ÿåˆä½œå’Œæ²Ÿé€šèƒ½åŠ›ï¼Œå¿«é€Ÿå‡†ç¡®çš„ç†è§£èƒ½åŠ›ï¼Œæå¼ºçš„è‡ªæˆ‘é©±åŠ¨åŠ›ï¼Œæœ‰ä¸€å®šçš„æŠ—å‹èƒ½åŠ›ï¼Œæœ‰è´£ä»»å¿ƒï¼Œå¯¹è§£å†³é—®é¢˜å……æ»¡çƒ­æƒ…ã€‚
+	7ã€å¯¹æ–°æŠ€æœ¯æœ‰å¥½å¥‡å¿ƒå’Œé’»ç ”ç²¾ç¥ã€‚
 	
 
-	Ö°ÔğÃèÊö£º 
-	1. ¸ºÔğÍê³É¹«Ë¾´óÊı¾İÏà¹Ø²úÆ·µÄËã·¨¹¦ÄÜÊµÏÖ¡£
-	2. »ùÓÚjavaPythonºÍÏà¹Ø¹¤¾ß½Å±¾ÓïÑÔ£¬½«¹«Ë¾ÑĞ¾¿³É¹û½øĞĞËã·¨×ª»¯£¬ÒµÎñ»¯ÊµÏÖ¡£
-	3. Êı¾İ²úÆ·ÆäËü¹¦ÄÜµÄ¼¼ÊõÊµÏÖ¡£ 
-	ÈÎÖ°ÒªÇó£º 
-	1. ¼ÆËã»úÏà¹Ø×¨Òµ£¬±¾¿Æ¼°ÆäÒÔÉÏµÄÑ§Àú£¬ÔúÊµµÄÊıÑ§ºÍ»ù±¾Ëã·¨ÖªÊ¶£»
-	2. 3ÄêÒÔÉÏIT»¥ÁªÍøĞĞÒµ»òÈí¼şĞĞÒµºó¶Ë¿ª·¢¹¤×÷¾­Ñé£»
-	3. ÊìÏ¤´óÊı¾İ¼¼ÊõÕ»£¬ÊìÏ¤hadoopsparkÉúÌ¬È¦£»
-	4. Á¼ºÃµÄJava¿ª·¢»ù±¾¹¦£¬¶ÔJVM¡¢Java¶àÏß³Ì²¢·¢ÒÔ¼°ÍøÂçÍ¨ĞÅ¿ª·¢ÓĞÁ¼ºÃµÄ¾­Ñé£» 
-	5. ÊìÁ·ÕÆÎÕJava¿ª·¢Ö÷Á÷¿ò¼Ü£¬ÈçSpringSpringBoot£¬MyBatisµÈ£» 
-	6. ÊìÁ·ÕÆÎÕMySQL¡¢Redis¡¢HBaseµÈ¹ØÏµĞÍ·Ç¹ØÏµĞÍÊı¾İ¿âµÄÊ¹ÓÃºÍ¿ª·¢£» 
-	7. Á¼ºÃµÄÓ¢ÓïÔÄ¶ÁÄÜÁ¦£¬»ù±¾ÄÜÔÄ¶Á¹úÍâ×¨ÒµÊé¿¯¡£
+	èŒè´£æè¿°ï¼š 
+	1. è´Ÿè´£å®Œæˆå…¬å¸å¤§æ•°æ®ç›¸å…³äº§å“çš„ç®—æ³•åŠŸèƒ½å®ç°ã€‚
+	2. åŸºäºjavaPythonå’Œç›¸å…³å·¥å…·è„šæœ¬è¯­è¨€ï¼Œå°†å…¬å¸ç ”ç©¶æˆæœè¿›è¡Œç®—æ³•è½¬åŒ–ï¼Œä¸šåŠ¡åŒ–å®ç°ã€‚
+	3. æ•°æ®äº§å“å…¶å®ƒåŠŸèƒ½çš„æŠ€æœ¯å®ç°ã€‚ 
+	ä»»èŒè¦æ±‚ï¼š 
+	1. è®¡ç®—æœºç›¸å…³ä¸“ä¸šï¼Œæœ¬ç§‘åŠå…¶ä»¥ä¸Šçš„å­¦å†ï¼Œæ‰å®çš„æ•°å­¦å’ŒåŸºæœ¬ç®—æ³•çŸ¥è¯†ï¼›
+	2. 3å¹´ä»¥ä¸ŠITäº’è”ç½‘è¡Œä¸šæˆ–è½¯ä»¶è¡Œä¸šåç«¯å¼€å‘å·¥ä½œç»éªŒï¼›
+	3. ç†Ÿæ‚‰å¤§æ•°æ®æŠ€æœ¯æ ˆï¼Œç†Ÿæ‚‰hadoopsparkç”Ÿæ€åœˆï¼›
+	4. è‰¯å¥½çš„Javaå¼€å‘åŸºæœ¬åŠŸï¼Œå¯¹JVMã€Javaå¤šçº¿ç¨‹å¹¶å‘ä»¥åŠç½‘ç»œé€šä¿¡å¼€å‘æœ‰è‰¯å¥½çš„ç»éªŒï¼› 
+	5. ç†Ÿç»ƒæŒæ¡Javaå¼€å‘ä¸»æµæ¡†æ¶ï¼Œå¦‚SpringSpringBootï¼ŒMyBatisç­‰ï¼› 
+	6. ç†Ÿç»ƒæŒæ¡MySQLã€Redisã€HBaseç­‰å…³ç³»å‹éå…³ç³»å‹æ•°æ®åº“çš„ä½¿ç”¨å’Œå¼€å‘ï¼› 
+	7. è‰¯å¥½çš„è‹±è¯­é˜…è¯»èƒ½åŠ›ï¼ŒåŸºæœ¬èƒ½é˜…è¯»å›½å¤–ä¸“ä¸šä¹¦åˆŠã€‚
 	
 045
 	--spring.profiles.active=my
 
 044 
-	ÊÛºóÏûÏ¢´¦Àí
+	å”®åæ¶ˆæ¯å¤„ç†
 	 private void messageStartAftersale(TbIndent tbIndent) {
 
         if(!tbIndent.getShopId().equals(Constant.DEFAULE_VALUE_SHOP_ID)){
-            //·ÖÅäÃÅµêÍÆ¸øÃÅµê
+            //åˆ†é…é—¨åº—æ¨ç»™é—¨åº—
             SysCustomer sysCustomer = RequestUtil.getCurrentUser(SysCustomer.class);
             String userName = sysCustomer.getUserName();
 
@@ -1396,8 +1399,8 @@ public class toExcel {
             SysMessageUtils.saveAndSend(contactTel,id,titleKey,contentKey,true);
             
         }else{
-            //ÎŞÃÅµêÍÆËÍ¸øÇşµÀ
-            //È¡µÃÏûÏ¢½ÓÊÕÈËÊÖ»úºÅÓëid
+            //æ— é—¨åº—æ¨é€ç»™æ¸ é“
+            //å–å¾—æ¶ˆæ¯æ¥æ”¶äººæ‰‹æœºå·ä¸id
             SysCustomer sysCustomer = RequestUtil.getCurrentUser(SysCustomer.class);
             String userName = sysCustomer.getUserName();
 
@@ -1412,7 +1415,7 @@ public class toExcel {
         }
     }
 
-	 //ÍÅ¹º³É¹¦ÍÆËÍÏûÏ¢
+	 //å›¢è´­æˆåŠŸæ¨é€æ¶ˆæ¯
                 SysCustomer sysCustomer = RequestUtil.getCurrentUser(SysCustomer.class);
                 String tel = sysCustomer.getTel();
                 Integer reveicerId = sysCustomer.getId();
@@ -1422,62 +1425,62 @@ public class toExcel {
 				
 043	
 	
-	str=String.format("Hi,%s %s %s", "Ğ¡³¬","ÊÇ¸ö","´óË§¸ç");            
+	str=String.format("Hi,%s %s %s", "å°è¶…","æ˜¯ä¸ª","å¤§å¸…å“¥");            
     System.out.println(str);  
 
 
 041	
 	13.
-		ÕËºÅ£º791588228@qq.com
-		ÃÜÂë£ºKds123456
-		 AppKey £ºa0e86aa0aaf42dedcdfbabcb
-		 Secret£º 4d23f2612182a47e5c395084
+		è´¦å·ï¼š791588228@qq.com
+		å¯†ç ï¼šKds123456
+		 AppKey ï¼ša0e86aa0aaf42dedcdfbabcb
+		 Secretï¼š 4d23f2612182a47e5c395084
 				OfenLocation ofenLocation= BeanUtil.copy(ofenLocationDto,OfenLocation.class);
 			
 			<if test="ofenLocation.name != null and ofenLocation.name != ''">
                 and name like concat('%',#{ofenLocation.name},'%')
             </if>
 		
-	12 ²éÑ¯Æ½Ì¨µÄ¿Í·ş
+	12 æŸ¥è¯¢å¹³å°çš„å®¢æœ
 		PageInfo<OfenLocation> addressPage(@Param("ofenLocation") OfenLocation ofenLocation, Page page);
 		
 		select * from sys_user su,sys_user_role sur,sys_role sr where user_type = 'user_admin' 
-		and su.id = sur.user_id and sur.role_id = sr.id and sr.role_name = '¿Í·ş'
+		and su.id = sur.user_id and sur.role_id = sr.id and sr.role_name = 'å®¢æœ'
 		and su.name like '%dante%'
 		
 
 		select * from sys_user su,sys_user_role sur,sys_role sr where user_type = 'user_admin' 
-		and su.id = sur.user_id and sur.role_id = sr.id and sr.role_name = '¿Í·ş' and su.user_status = 1
+		and su.id = sur.user_id and sur.role_id = sr.id and sr.role_name = 'å®¢æœ' and su.user_status = 1
 		
 
-		²éÑ¯Æ½Ì¨ËùÓĞ¾ßÓĞÊı¾İ·ÖÎöÈ¨ÏŞ¹¦ÄÜµÄ¿Í·ş(ÎªÊ²Ã´Ã»ÓĞ×îÏÂÃæÒ»ĞĞ»áÓĞÈç´Ë¶àµÄÖØ¸´Êı¾İ)
+		æŸ¥è¯¢å¹³å°æ‰€æœ‰å…·æœ‰æ•°æ®åˆ†ææƒé™åŠŸèƒ½çš„å®¢æœ(ä¸ºä»€ä¹ˆæ²¡æœ‰æœ€ä¸‹é¢ä¸€è¡Œä¼šæœ‰å¦‚æ­¤å¤šçš„é‡å¤æ•°æ®)
 		select su.* from sys_user su,sys_user_role sur,sys_role sr,sys_role_permission srp,sys_permission sp  where su.user_type = 'user_admin' 
-		and su.id = sur.user_id and sur.role_id = sr.id and sr.role_name = '¿Í·ş' and su.user_status = 1
+		and su.id = sur.user_id and sur.role_id = sr.id and sr.role_name = 'å®¢æœ' and su.user_status = 1
 		and sr.id = srp.role_id and srp.permission_id = sp.id 
-		and sp.permission_name='ÓÃ»§·ÖÎö'
+		and sp.permission_name='ç”¨æˆ·åˆ†æ'
 		
 		
 		
 
 
-	11 ¶©µ¥×´Ì¬
+	11 è®¢å•çŠ¶æ€
 	between #{startDate} and #{endDate}
 
 		IndentStaVo indent_status_wait_comment
 		
-	   ¶©µ¥×´Ì¬ indent_status			
+	   è®¢å•çŠ¶æ€ indent_status			
 					
-					indent_status_completed		ÒÑÍê³É
+					indent_status_completed		å·²å®Œæˆ
 
-					indent_status_wait_comment	´ıÆÀ¼Û
+					indent_status_wait_comment	å¾…è¯„ä»·
 					
-					indent_status_wait_install	´ı°²×°
+					indent_status_wait_install	å¾…å®‰è£…
 
-					³É½»±ÈÀı	ÒÑÍê³É+ÒÑÍê³É/³É½»×ÜÁ¿
+					æˆäº¤æ¯”ä¾‹	å·²å®Œæˆ+å·²å®Œæˆ/æˆäº¤æ€»é‡
 					
 					indent_status_wait_pay
 					
-	10 °´ÇşµÀÍ³¼ÆÏúÊÛ¶î ³É½»¶î ´øÉÏÇşµÀÃû³Æ
+	10 æŒ‰æ¸ é“ç»Ÿè®¡é”€å”®é¢ æˆäº¤é¢ å¸¦ä¸Šæ¸ é“åç§°
 		select
 			sum(real_pay) saleTotal,ti.agent_id as agentId,ta.`name` as agentName
 			from tb_indent ti,tb_agent ta
@@ -1494,7 +1497,7 @@ public class toExcel {
 			group by ti.agent_id
 		
 
-	09	°´ÔÂÍ³¼Æ
+	09	æŒ‰æœˆç»Ÿè®¡
 		select 
 		sum(real_pay) saleTotal,
 		month(create_date) month
@@ -1504,7 +1507,7 @@ public class toExcel {
 		group by month(create_date)
 		
 
-	08	°´ÖÜÍ³¼Æ
+	08	æŒ‰å‘¨ç»Ÿè®¡
 		
 		select 
 		sum(real_pay) saleTotal,
@@ -1517,18 +1520,18 @@ public class toExcel {
 		ORDER BY create_date desc
 		
 	07 
-		//°´ÄêÔÂÈÕÍ³¼Æ	(ºÃÏñ¸ú°´ÈÕÍ³¼ÆÊÇÒ»¸öĞ§¹û)
-		select year(create_date) Äê£¬
-		month(create_date) ÔÂ,
-		day(create_date) ÈÕ£¬
-		sum(real_pay) ÏúÊÛºÏ¼Æ
+		//æŒ‰å¹´æœˆæ—¥ç»Ÿè®¡	(å¥½åƒè·ŸæŒ‰æ—¥ç»Ÿè®¡æ˜¯ä¸€ä¸ªæ•ˆæœ)
+		select year(create_date) å¹´ï¼Œ
+		month(create_date) æœˆ,
+		day(create_date) æ—¥ï¼Œ
+		sum(real_pay) é”€å”®åˆè®¡
 		from tb_indent
-		group by year(create_date)£¬
+		group by year(create_date)ï¼Œ
 		month(create_date),
 		day(create_date)
 		
 
-	06 °´ÈÕÍ³¼ÆÏúÊÛ×Ü¶î
+	06 æŒ‰æ—¥ç»Ÿè®¡é”€å”®æ€»é¢
 		//yes
 	
 		SELECT 
@@ -1554,31 +1557,31 @@ public class toExcel {
 		ORDER BY create_date desc
 
 		
-	05 ¶©µ¥³É½»±ÊÊı  param:agent_id or shop_id or ²»´«,¿ªÊ¼Ê±¼ä,½áÊøÊ±¼ä
+	05 è®¢å•æˆäº¤ç¬”æ•°  param:agent_id or shop_id or ä¸ä¼ ,å¼€å§‹æ—¶é—´,ç»“æŸæ—¶é—´
 		select count(id) from tb_indent 
 		where date_format(create_date,'%Y-%m-%d') between '2018-07-30' and '2019-07-31' and agent_id = 82 
 		and indent_status in ('indent_status_wait_comment','indent_status_completed')
 		
 		
-	04 ÏúÊÛ×ÜÁ¿	 param:agent_id or shop_id or ²»´«,¿ªÊ¼Ê±¼ä,½áÊøÊ±¼ä
+	04 é”€å”®æ€»é‡	 param:agent_id or shop_id or ä¸ä¼ ,å¼€å§‹æ—¶é—´,ç»“æŸæ—¶é—´
 		select count(id) from tb_indent where date_format(create_date,'%Y-%m-%d') between '2018-07-30' and '2019-07-31' and agent_id = 82 ;
 		
-	03 ĞÂÔö»áÔ± param:agent_id ²»´«,¿ªÊ¼Ê±¼ä,½áÊøÊ±¼ä	¶ÔÃÅµê¿Í»§Òş²Ø	active_timeÎª¿ÕµÄÇé¿öĞèÒª´¦Àí
+	03 æ–°å¢ä¼šå‘˜ param:agent_id ä¸ä¼ ,å¼€å§‹æ—¶é—´,ç»“æŸæ—¶é—´	å¯¹é—¨åº—å®¢æˆ·éšè—	active_timeä¸ºç©ºçš„æƒ…å†µéœ€è¦å¤„ç†
 	select count(id) from customer_extend where date_format(active_time,'%Y-%m-%d') between '2018-07-30' and '2019-07-31'
 	and agent_id = 82  
 		
-		Ë«±í¹ØÁª
+		åŒè¡¨å…³è”
 		select count(ce.id) from customer_extend ce,sys_customer sc where date_format(sc.create_date,'%Y-%m-%d') between '2018-07-30' and '2019-07-31'
 	and ce.agent_id = 82  and ce.id = sc.id
 	
 		
-	02 ´ı´¦Àí¶©µ¥: param:agent_id or shop_id or ²»´«,¿ªÊ¼Ê±¼ä,½áÊøÊ±¼ä
+	02 å¾…å¤„ç†è®¢å•: param:agent_id or shop_id or ä¸ä¼ ,å¼€å§‹æ—¶é—´,ç»“æŸæ—¶é—´
 	//yes 
 	select count(id) from tb_indent 
 	where date_format(create_date,'%Y-%m-%d') between '2018-07-30' and '2019-07-31' and agent_id = 82 
 	and indent_status in ('indent_status_wait_install');
 	
-	01 Í³¼ÆÒ»¶ÎÊ±¼äÄÚµÄÏúÊÛ×Ü¶î param:agent_id or shop_id or ²»´«,¿ªÊ¼Ê±¼ä,½áÊøÊ±¼ä
+	01 ç»Ÿè®¡ä¸€æ®µæ—¶é—´å†…çš„é”€å”®æ€»é¢ param:agent_id or shop_id or ä¸ä¼ ,å¼€å§‹æ—¶é—´,ç»“æŸæ—¶é—´
 	select count(real_pay) from tb_indent 
 
 	select sum(real_pay) from tb_indent where create_date  < now()
@@ -1588,16 +1591,16 @@ public class toExcel {
 	
 
 
-	¶©µ¥:
+	è®¢å•:
 	tb_indent			real_pay
-	ÇşµÀ:
+	æ¸ é“:
 	tb_agent
-	ÃÅµê:
+	é—¨åº—:
 	tb_shop
-	¿Í»§:
+	å®¢æˆ·:
 	customer_extend
 	
-	ĞÂÔö»áÔ±¶ÔÃÅµêµÇÂ¼Òş²Ø
+	æ–°å¢ä¼šå‘˜å¯¹é—¨åº—ç™»å½•éšè—
 
 
 040 
@@ -1617,11 +1620,11 @@ public class toExcel {
 	update customer_extend set user_service_id = 23 where id in (910,912)
 	
 039
-	½Ó¿Ú£ºÁĞ±í½Ó¿Ú£¬
-		  ÉèÖÃ¿Í·ş½Ó¿Ú£¨¿ÉÅúÁ¿ÉèÖÃ£©£¬
-		  ¿Í·şÁĞ±í 
-		  ÉèÖÃ±êÇ©£¬
-		  ±êÇ©±ä¸ü¼ÇÂ¼ (ĞÂÔö label_record)
+	æ¥å£ï¼šåˆ—è¡¨æ¥å£ï¼Œ
+		  è®¾ç½®å®¢æœæ¥å£ï¼ˆå¯æ‰¹é‡è®¾ç½®ï¼‰ï¼Œ
+		  å®¢æœåˆ—è¡¨ 
+		  è®¾ç½®æ ‡ç­¾ï¼Œ
+		  æ ‡ç­¾å˜æ›´è®°å½• (æ–°å¢ label_record)
 	
 038
 	share_qty,view_qty,label,user_service_id
@@ -1646,26 +1649,26 @@ public class toExcel {
 	label
 	user_service_id
 	
-	Èë¿ÚÒ³Ãæ: ¼ÇÂ¼²É¼¯js½Å±¾µÄÒ³Ãæ
+	å…¥å£é¡µé¢: è®°å½•é‡‡é›†jsè„šæœ¬çš„é¡µé¢
 
 036 
-	·ÖÏíÏêÇé±í
-	×ÊÑ¶	Ìû×Ó	»î¶¯	(3¸ötabÒ³)
+	åˆ†äº«è¯¦æƒ…è¡¨
+	èµ„è®¯	å¸–å­	æ´»åŠ¨	(3ä¸ªtabé¡µ)
 	
 
 	customer_extend
-	Ìí¼Ó×Ö¶Î£ºshare_qty,view_qty,label,user_service_id
-	½Ó¿Ú£ºÁĞ±í½Ó¿Ú£¬
-		  ÉèÖÃ¿Í·ş½Ó¿Ú£¨¿ÉÅúÁ¿ÉèÖÃ£©£¬
-		  ¿Í·şÁĞ±í 
-		  ÉèÖÃ±êÇ©£¬
-		  ±êÇ©±ä¸ü¼ÇÂ¼ (ĞÂÔö label_record)
+	æ·»åŠ å­—æ®µï¼šshare_qty,view_qty,label,user_service_id
+	æ¥å£ï¼šåˆ—è¡¨æ¥å£ï¼Œ
+		  è®¾ç½®å®¢æœæ¥å£ï¼ˆå¯æ‰¹é‡è®¾ç½®ï¼‰ï¼Œ
+		  å®¢æœåˆ—è¡¨ 
+		  è®¾ç½®æ ‡ç­¾ï¼Œ
+		  æ ‡ç­¾å˜æ›´è®°å½• (æ–°å¢ label_record)
 	
-	Ñ§ÔÆ
+	å­¦äº‘
 
 	label_record
-	6·ÖÖÓÇ°
-	Ñ§ÔÆ
+	6åˆ†é’Ÿå‰
+	å­¦äº‘
 	sys_user
 	sys_user_role
 	sys_role
@@ -1679,7 +1682,7 @@ public class toExcel {
 035 /api/cargoMatter/add
 	
 
-034 ³µÁ¾Ä£¿é
+034 è½¦è¾†æ¨¡å—
 	
 	carLength
 	"carLength":"three"
@@ -1689,22 +1692,22 @@ public class toExcel {
 	/api/car/updateCheck
 	
 
-033 ÃÜÂë
+033 å¯†ç 
 	
 
-032	ÏûÏ¢Ä£¿é
-	ÎŞ·¨²¶»ñ¸ÃÒì³£
+032	æ¶ˆæ¯æ¨¡å—
+	æ— æ³•æ•è·è¯¥å¼‚å¸¸
 	try {
             MessageReadDto params = requestParams.getParams();
         }catch (Exception e){
-            throw new BusinessException(112, "¼¯ºÏ²ÎÊıĞÎÊ½´íÎó");
+            throw new BusinessException(112, "é›†åˆå‚æ•°å½¢å¼é”™è¯¯");
         }
 
 	@RequestBody RequestParams<HotPlacePageDto> requestParams, BindingResult result
 
-	×¢ÒâmybatisºÍjpaÖĞ´«µİ²ÎÊı¸ñÊ½µÄÇø±ğ
+	æ³¨æ„mybatiså’Œjpaä¸­ä¼ é€’å‚æ•°æ ¼å¼çš„åŒºåˆ«
 	
-	ÅúÁ¿ÒÑ¶Á
+	æ‰¹é‡å·²è¯»
 	update sys_message set 	mark_read = 1 where  reveicer_id = ?id and id in (15,16)
 	
 	update sys_message set 	mark_read = 1 where  reveicer_id = 12 and id in (15,16)
@@ -1760,26 +1763,26 @@ public class toExcel {
 	
 
 
-	//  Í³¼ÆËùÓĞÎ´¶ÁÏûÏ¢
+	//  ç»Ÿè®¡æ‰€æœ‰æœªè¯»æ¶ˆæ¯
     private Integer allNotRead;
 
-//  Í³¼ÆÃ¿¸ö·ÖÀàÏÂµÄÎ´¶ÁÏûÏ¢
+//  ç»Ÿè®¡æ¯ä¸ªåˆ†ç±»ä¸‹çš„æœªè¯»æ¶ˆæ¯
 
-    //ÉóºË·ÖÀàÏÂÎ´¶Á
+    //å®¡æ ¸åˆ†ç±»ä¸‹æœªè¯»
     private Integer approvingNotRead;
-    //¾º¼Û·ÖÀàÏÂÎ´¶Á
+    //ç«ä»·åˆ†ç±»ä¸‹æœªè¯»
     private Integer biddingNotRead;
-    //ÔËµ¥·ÖÀàÏÂÎ´¶Á
+    //è¿å•åˆ†ç±»ä¸‹æœªè¯»
     private Integer waybillNotRead;
 
 	select count(id) from sys_message where mark_read = 0 and reveicer_id = ?id
 	
 
-	//    ÉóºËÏûÏ¢(ÏµÍ³ÏûÏ¢)
+	//    å®¡æ ¸æ¶ˆæ¯(ç³»ç»Ÿæ¶ˆæ¯)
     public static final String MSG_TYPE_APPROVING = "approving_message";
-    //    ¾º¼ÛÏûÏ¢
+    //    ç«ä»·æ¶ˆæ¯
     public static final String MSG_TYPE_BIDDING = "bidding_message";
-    //    ÔËµ¥ÏûÏ¢
+    //    è¿å•æ¶ˆæ¯
     public static final String MSG_TYPE_WAYBILL = "waybill_message";
 
 	SysMessageConstants
@@ -1788,30 +1791,30 @@ public class toExcel {
 	
 	public class CustomerConstants {
 	
-		/** ¿Í»§ÀàĞÍ  */
+		/** å®¢æˆ·ç±»å‹  */
 		public static final String TYPE = "customer_type";
-		/** ¿Í»§ÀàĞÍ£ºË¾»ú  */
+		/** å®¢æˆ·ç±»å‹ï¼šå¸æœº  */
 		public static final String TYPE_DRIVER = "driver";
-		/** ¿Í»§ÀàĞÍ£º³µÖ÷  */
+		/** å®¢æˆ·ç±»å‹ï¼šè½¦ä¸»  */
 		public static final String TYPE_CAR_OWNER = "car_owner";
-		/** ¿Í»§ÀàĞÍ£º»õÖ÷  */
+		/** å®¢æˆ·ç±»å‹ï¼šè´§ä¸»  */
 		public static final String TYPE_CARGO_OWNER = "cargo_owner";
 		
 		
 	}
 
-031 androidÏà¹Ø
+031 androidç›¸å…³
 		adb install renren_android_1.5.apk
 		adb install suibiji.apk
 		adb install wnj.apk
 		adb devices 
-		±¨´íÒª¹Ø±Õ360ÊÖ»úÖúÊÖ
+		æŠ¥é”™è¦å…³é—­360æ‰‹æœºåŠ©æ‰‹
 
 		D:\002_software\android-sdk-windows\tools
 		d/002_software/android-sdk-windows/platform-tools
 		
 030			
-		ÒÔÏÂÆ¬¶ÏÀ´×ÔÏîÄ¿´úÂëÀïµÄÎÄ¼ş£ºexample / cn.jpush.api.examples.PushExample
+		ä»¥ä¸‹ç‰‡æ–­æ¥è‡ªé¡¹ç›®ä»£ç é‡Œçš„æ–‡ä»¶ï¼šexample / cn.jpush.api.examples.PushExample
 
 		JPushClient jpushClient = new JPushClient(MASTER_SECRET, APP_KEY, null, ClientConfig.getInstance());
 
@@ -1835,7 +1838,7 @@ public class toExcel {
 		}
 	
 		
-		¹¹½¨ÍÆËÍ¶ÔÏó£ºËùÓĞÆ½Ì¨£¬ÍÆËÍÄ¿±êÊÇ±ğÃûÎª "alias1"£¬Í¨ÖªÄÚÈİÎª ALERT¡£
+		æ„å»ºæ¨é€å¯¹è±¡ï¼šæ‰€æœ‰å¹³å°ï¼Œæ¨é€ç›®æ ‡æ˜¯åˆ«åä¸º "alias1"ï¼Œé€šçŸ¥å†…å®¹ä¸º ALERTã€‚
 		public static PushPayload buildPushObject_all_alias_alert() {
 			return PushPayload.newBuilder()
 					.setPlatform(Platform.all())
@@ -1847,7 +1850,7 @@ public class toExcel {
 029		eureka-client		
 
 
-028     µ±Ç°Ê¹ÓÃÕËºÅ
+028     å½“å‰ä½¿ç”¨è´¦å·
 		huo1   w123456.		13809255975
 		
 		che1   w123456.		
@@ -1855,7 +1858,7 @@ public class toExcel {
 027 
 		medium
 
-											µ¥Î»
+											å•ä½
 		waybillId	waybill.name	qty		weight_unit
 		
 
@@ -1874,7 +1877,7 @@ public class toExcel {
 
 026 
 
-	Ô­À´:
+	åŸæ¥:
 	SmsSeriveImpl
 		
 	VerifCodeUtil 
@@ -1890,8 +1893,8 @@ public class toExcel {
         return sb.toString();
     }
 
-025 ÔËµ¥Ïî´úÂëÕûÀí
-		²éÑ¯ÔËµ¥Ïî¶ÔÓ¦µÄ³µÁ¾ ³µÅÆ Ë¾»ú Ñ¹»õÈË
+025 è¿å•é¡¹ä»£ç æ•´ç†
+		æŸ¥è¯¢è¿å•é¡¹å¯¹åº”çš„è½¦è¾† è½¦ç‰Œ å¸æœº å‹è´§äºº
 		ok
 		select wbd.id,c.car_no as carNo,cp.name as driverName,cp.id_card as driverIdCard,
 		cp2.name as supercargoName,cp2.id_card as supercargoIdCard 
@@ -1925,34 +1928,34 @@ public class toExcel {
 		
 		Statistics 
 		
-		 //¶¨Î»ÖĞĞÄµÄÊıÁ¿
+		 //å®šä½ä¸­å¿ƒçš„æ•°é‡
 		private Integer locCarCount;
-		//ÍÆ¼ö»õÔ´µÄÊıÁ¿
+		//æ¨èè´§æºçš„æ•°é‡
 		private Integer recCargoCount;
-		//¹Ø×¢»õÖ÷µÄÊıÁ¿
+		//å…³æ³¨è´§ä¸»çš„æ•°é‡
 		private Integer followCargoOwnerCount;
 
 		select count(*) from my_focus_person where focuser_id = 1 and focus_type = 1
 
-		//¹Ø×¢³µÖ÷µÄÊıÁ¿
+		//å…³æ³¨è½¦ä¸»çš„æ•°é‡
 		private Integer followCarOwnerCount;
 
-		//Êì³µµÄÊıÁ¿
+		//ç†Ÿè½¦çš„æ•°é‡
 		private Integer fimiliarCarCount;
 		
 
 		select count(*) from familiar_car where cargo_ownner_id = 1 
 
 023	
-		³µÖ÷»õÖ÷Éí·İ
+		è½¦ä¸»è´§ä¸»èº«ä»½
 		Customer customer = RequestUtil.getCurrentUser(Customer.class);
 		ServerResponse response = null;
 		if(customer.getCustomerType().equalsIgnoreCase("car_owner")){
 			Integer carId = customer.getCarOwner().getId();
-			//³µÖ÷
+			//è½¦ä¸»
 			response =  service.getCarWbdList(pageNum,pageSize,carId);
 		}else if(customer.getCustomerType().equalsIgnoreCase("cargo_owner")){
-			//»õÖ÷
+			//è´§ä¸»
 			Integer cargoId = customer.getCarOwner().getId();
 			response =  service.getCargoWbdList(pageNum,pageSize,cargoId);
 		}
@@ -1992,7 +1995,7 @@ public class toExcel {
 	and  wb.car_ownner_id = 15
 
 
-	--ÍêÕû°æ  ok
+	--å®Œæ•´ç‰ˆ  ok
 	select wbd.*,cp.* from waybill wb,waybill_detail wbd,car c,car_person cp  where wb.status='waybill_status_in_transit' and wbd.waybill_id = wb.id  and wbd.car_id = c.id
 	
 	and wbd.driver_id = cp.id and  wbd.supercargo_id = cp.id
@@ -2000,7 +2003,7 @@ public class toExcel {
 	and  wb.car_ownner_id = 13
 
 
-	select wbd.*,cp.* from waybill wb,waybill_detail wbd,car c,car_person cp  where wbd.flow_name='ÔËÊäÖĞ' and wbd.waybill_id = wb.id  and wbd.car_id = c.id
+	select wbd.*,cp.* from waybill wb,waybill_detail wbd,car c,car_person cp  where wbd.flow_name='è¿è¾“ä¸­' and wbd.waybill_id = wb.id  and wbd.car_id = c.id
 	
 	and wb.driver_id = cp.id and  wb.supercargo_id = cp.id
 	
@@ -2008,20 +2011,20 @@ public class toExcel {
 
 	---
 
-	select wbd.* cp.* from waybill wb,waybill_detail wbd,car c,car_person cp  where wbd.flow_name='ÔËÊäÖĞ' and wbd.waybill_id = wb.id  and wbd.car_id = c.id
+	select wbd.* cp.* from waybill wb,waybill_detail wbd,car c,car_person cp  where wbd.flow_name='è¿è¾“ä¸­' and wbd.waybill_id = wb.id  and wbd.car_id = c.id
 	
 	and car.driver_id = car_person.id and  car.supercargo_id = car_person.id
 	
 
-	¿ÉÔİÊ±ÈÏÎªÔËµ¥×´Ì¬ÊÇ´ıÊÕ»õ
+	å¯æš‚æ—¶è®¤ä¸ºè¿å•çŠ¶æ€æ˜¯å¾…æ”¶è´§
 	
 	car_owner	cargo_owner
 	
 	
-020 ³£ÓÃÂ·Ïß·ÖÒ³Ïà¹Ø
+020 å¸¸ç”¨è·¯çº¿åˆ†é¡µç›¸å…³
 	/admin/usedAddress
 	
-	·ÖÒ³Ïà¹Ø
+	åˆ†é¡µç›¸å…³
 	if (requestParams.getParams() == null) {
 		throw new BusinessException(new CommonResult(ResultEnum.OBJECT_ERROR));
 	}
@@ -2040,7 +2043,7 @@ public class toExcel {
 		}
 	
 		Customer cur_customer = RequestUtil.getCurrentUser(Customer.class);
-		//È¡µÃ³µÖ÷id
+		//å–å¾—è½¦ä¸»id
 		Integer id = cur_customer.getCarOwner().getId();
 		com.github.pagehelper.Page<Object> page = PageHelper.startPage(pageNum, pageSize);
 		
@@ -2052,7 +2055,7 @@ public class toExcel {
 
 	@Valid
     @PostMapping("/page")
-    @ApiOperation(value = "³£ÓÃµØÖ··ÖÒ³ÁĞ±íĞÅÏ¢")
+    @ApiOperation(value = "å¸¸ç”¨åœ°å€åˆ†é¡µåˆ—è¡¨ä¿¡æ¯")
     public ServerResponse addressPage(@RequestBody RequestParams<OfenLocationDto> requestParams,BindingResult result) {
         if (requestParams.getParams() == null) {
             throw new BusinessException(new CommonResult(ResultEnum.OBJECT_ERROR));
@@ -2061,11 +2064,11 @@ public class toExcel {
     }
 	
 
-	»õÔ´²éÑ¯Ê±Èç¹ûÊÇÇÀ±ê·½Ê½µÄ»õÔ´Ö»Õ¹Ê¾µ±Ç°Ê±¼ä>´´½¨Ê±¼ä 1Ìì(ÅäÖÃ)µÄ»õÔ´
+	è´§æºæŸ¥è¯¢æ—¶å¦‚æœæ˜¯æŠ¢æ ‡æ–¹å¼çš„è´§æºåªå±•ç¤ºå½“å‰æ—¶é—´>åˆ›å»ºæ—¶é—´ 1å¤©(é…ç½®)çš„è´§æº
 	
 	
 
-	//´óÓÚºÅºóÃæ¶¼ÊÇ»ñÈ¡timesÊ®Îå·ÖÖÓºóµÄÊ±¼ä
+	//å¤§äºå·åé¢éƒ½æ˜¯è·å–timesåäº”åˆ†é’Ÿåçš„æ—¶é—´
 	//ok
 	select	* from cargo where now() >= SUBDATE(create_date,interval -11 day)		
 	
@@ -2076,11 +2079,11 @@ public class toExcel {
 	select*from table where now() >ADDDATE(times,interval 15 minute);
 	
 	
-019 »õÔ´ÇÀ±ê¹«¿ªÊ±¼ä
+019 è´§æºæŠ¢æ ‡å…¬å¼€æ—¶é—´
 
-	ÔÚ»õÔ´±í(cargo)ÖĞĞÂÔöÒ»¸öÊÇ·ñ¹«¿ªÕ¹Ê¾×Ö¶Îis_open_show,·¢²¼»õÔ´Ê±Èç¹ûÊÇÇÀ±ê½«¸Ã×Ö¶ÎÉèÖÃÎªfalse,
-	²éÑ¯ËùÓĞÈË¿É¼ûµÄ»õÔ´ÁĞ±íÊ±Ö»Õ¹Ê¾¸Ã×Ö¶ÎÎªtrueµÄ¼ÇÂ¼,Ê¹ÓÃÈÎÎñµ÷¶È¿ò¼ÜquatzÃ¿¸ô10·ÖÖÓ²éÕÒ»õÔ´±íÖĞ·¢²¼ÖĞ×´Ì¬ÇÒ¸Ã×Ö¶ÎÎªfalse
-	,Èç¹ûµ±Ç°Ê±¼ä³¬¹ı±íÖĞ´´½¨Ê±¼ä1Ğ¡Ê±(ÅäÖÃ),Ôò½«¸Ã×Ö¶Î¸ÄÎªtrue
+	åœ¨è´§æºè¡¨(cargo)ä¸­æ–°å¢ä¸€ä¸ªæ˜¯å¦å…¬å¼€å±•ç¤ºå­—æ®µis_open_show,å‘å¸ƒè´§æºæ—¶å¦‚æœæ˜¯æŠ¢æ ‡å°†è¯¥å­—æ®µè®¾ç½®ä¸ºfalse,
+	æŸ¥è¯¢æ‰€æœ‰äººå¯è§çš„è´§æºåˆ—è¡¨æ—¶åªå±•ç¤ºè¯¥å­—æ®µä¸ºtrueçš„è®°å½•,ä½¿ç”¨ä»»åŠ¡è°ƒåº¦æ¡†æ¶quatzæ¯éš”10åˆ†é’ŸæŸ¥æ‰¾è´§æºè¡¨ä¸­å‘å¸ƒä¸­çŠ¶æ€ä¸”è¯¥å­—æ®µä¸ºfalse
+	,å¦‚æœå½“å‰æ—¶é—´è¶…è¿‡è¡¨ä¸­åˆ›å»ºæ—¶é—´1å°æ—¶(é…ç½®),åˆ™å°†è¯¥å­—æ®µæ”¹ä¸ºtrue
 	
 		
 @Repository
@@ -2094,8 +2097,8 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 
 }
 
-¿Æ±È´«ÈË 2019/6/11 0:07:18
-//²éÑ¯»õÔ´×´Ì¬Îª·¢²¼ÖĞÇÒ²»¹«¿ªÕ¹Ê¾µÄ»õÔ´
+ç§‘æ¯”ä¼ äºº 2019/6/11 0:07:18
+//æŸ¥è¯¢è´§æºçŠ¶æ€ä¸ºå‘å¸ƒä¸­ä¸”ä¸å…¬å¼€å±•ç¤ºçš„è´§æº
     @Test
     public void test2(){
         List<Cargo> list = cargoExtRepository.findByStatusAndIsOpenShow();
@@ -2106,52 +2109,52 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 
 
 
-018 ÉóºË·¢ËÍÏûÏ¢Ä£¿é
+018 å®¡æ ¸å‘é€æ¶ˆæ¯æ¨¡å—
 	if(ApproveConstants.RESULT_AGREE.equalsIgnoreCase(dto.getResult())){
-			SysMessage sysMessage = new SysMessage("ÏµÍ³ÏûÏ¢",1,"ÏµÍ³",new Date(),
-					"ÄúµÄÈÏÖ¤×ÊÁÏÒÑÉóºËÍ¨¹ı,ÇëĞëÖª",cargoOwner.getId(),"»õÖ÷",0,null);
+			SysMessage sysMessage = new SysMessage("ç³»ç»Ÿæ¶ˆæ¯",1,"ç³»ç»Ÿ",new Date(),
+					"æ‚¨çš„è®¤è¯èµ„æ–™å·²å®¡æ ¸é€šè¿‡,è¯·é¡»çŸ¥",cargoOwner.getId(),"è´§ä¸»",0,null);
 			sysMessageRepository.saveAndFlush(sysMessage);
 		}else{
-			SysMessage sysMessage = new SysMessage("ÏµÍ³ÏûÏ¢",1,"ÏµÍ³",new Date(),
-					"ÄúµÄÈÏÖ¤×ÊÁÏÉóºË²»Í¨¹ı£¬Ô­ÒòÈçÏÂ:"+dto.getContent(),cargoOwner.getId(),"»õÖ÷",0,null);
+			SysMessage sysMessage = new SysMessage("ç³»ç»Ÿæ¶ˆæ¯",1,"ç³»ç»Ÿ",new Date(),
+					"æ‚¨çš„è®¤è¯èµ„æ–™å®¡æ ¸ä¸é€šè¿‡ï¼ŒåŸå› å¦‚ä¸‹:"+dto.getContent(),cargoOwner.getId(),"è´§ä¸»",0,null);
 			sysMessageRepository.saveAndFlush(sysMessage);
 		}
 		
 	
-	//ÉóºËÍ¨¹ıÍÆËÍÏûÏ¢
-	SysMessage sysMessage = new SysMessage("ÏµÍ³ÏûÏ¢",1,"ÏµÍ³",new Date(),
-					"ÉóÅúÊ§°Ü£º»õÖ÷ÔİÎ´ÌîĞ´ÈÏÖ¤ĞÅÏ¢",cargoOwner.getId(),"»õÖ÷",0,null);
-			throw new BusinessException(112, "ÉóÅúÊ§°Ü£º»õÖ÷ÔİÎ´ÌîĞ´ÈÏÖ¤ĞÅÏ¢");
+	//å®¡æ ¸é€šè¿‡æ¨é€æ¶ˆæ¯
+	SysMessage sysMessage = new SysMessage("ç³»ç»Ÿæ¶ˆæ¯",1,"ç³»ç»Ÿ",new Date(),
+					"å®¡æ‰¹å¤±è´¥ï¼šè´§ä¸»æš‚æœªå¡«å†™è®¤è¯ä¿¡æ¯",cargoOwner.getId(),"è´§ä¸»",0,null);
+			throw new BusinessException(112, "å®¡æ‰¹å¤±è´¥ï¼šè´§ä¸»æš‚æœªå¡«å†™è®¤è¯ä¿¡æ¯");
 
-	SysMessage sysMessage = new SysMessage("ÏµÍ³ÏûÏ¢",1,"ÏµÍ³",new Date(),
-			"ÄúµÄÈÏÖ¤×ÊÁÏÒÑÉóºËÍ¨¹ı,ÇëĞëÖª",carOwner.getId(),"³µÖ÷",0,null);
+	SysMessage sysMessage = new SysMessage("ç³»ç»Ÿæ¶ˆæ¯",1,"ç³»ç»Ÿ",new Date(),
+			"æ‚¨çš„è®¤è¯èµ„æ–™å·²å®¡æ ¸é€šè¿‡,è¯·é¡»çŸ¥",carOwner.getId(),"è½¦ä¸»",0,null);
 	sysMessageRepository.saveAndFlush(sysMessage);
 
 	CarCargoOwnerServiceImpl
 
-	ÏûÏ¢ÀàĞÍ£ºÏµÍ³ÏûÏ¢
-	Í¨¹ıÏûÏ¢ÄÚÈİ£ºÄúµÄÈÏÖ¤×ÊÁÏÒÑÉóºËÍ¨¹ı£¬ÇëĞëÖª
-	²»Í¨¹ıÏûÏ¢ÄÚÈİ£ºÄúµÄÈÏÖ¤×ÊÁÏÉóºË²»Í¨¹ı£¬Ô­ÒòÈçÏÂ£º£¨ÉóºËÊ±ÌîĞ´µÄÔ­Òò£©
+	æ¶ˆæ¯ç±»å‹ï¼šç³»ç»Ÿæ¶ˆæ¯
+	é€šè¿‡æ¶ˆæ¯å†…å®¹ï¼šæ‚¨çš„è®¤è¯èµ„æ–™å·²å®¡æ ¸é€šè¿‡ï¼Œè¯·é¡»çŸ¥
+	ä¸é€šè¿‡æ¶ˆæ¯å†…å®¹ï¼šæ‚¨çš„è®¤è¯èµ„æ–™å®¡æ ¸ä¸é€šè¿‡ï¼ŒåŸå› å¦‚ä¸‹ï¼šï¼ˆå®¡æ ¸æ—¶å¡«å†™çš„åŸå› ï¼‰
 	
-	String msgType,		ÏµÍ³ÏûÏ¢
+	String msgType,		ç³»ç»Ÿæ¶ˆæ¯
 	String senderId,	1	
-	String senderType,	ÏµÍ³
+	String senderType,	ç³»ç»Ÿ
 	Date senderDate,	new Date()
-	String content,		ÄúµÄÈÏÖ¤×ÊÁÏÒÑÉóºËÍ¨¹ı,ÇëĞëÖª
-	Integer reveicerId, ±»ÉóºËÈËid
-	String reveicerType, ³µÖ÷
+	String content,		æ‚¨çš„è®¤è¯èµ„æ–™å·²å®¡æ ¸é€šè¿‡,è¯·é¡»çŸ¥
+	Integer reveicerId, è¢«å®¡æ ¸äººid
+	String reveicerType, è½¦ä¸»
 	Integer markRead,		0
 	Date readDate		null
 	
-	SysMessage sysMessage = new SysMessage("ÏµÍ³ÏûÏ¢",1,"ÏµÍ³",new Date(),
-				"ÄúµÄÈÏÖ¤×ÊÁÏÒÑÉóºËÍ¨¹ı,ÇëĞëÖª",carOwner.getId(),"³µÖ÷",0,null);
+	SysMessage sysMessage = new SysMessage("ç³»ç»Ÿæ¶ˆæ¯",1,"ç³»ç»Ÿ",new Date(),
+				"æ‚¨çš„è®¤è¯èµ„æ–™å·²å®¡æ ¸é€šè¿‡,è¯·é¡»çŸ¥",carOwner.getId(),"è½¦ä¸»",0,null);
 	
 017 cur1
-	Ô­ÃÜÂëĞ£Ñé
+	åŸå¯†ç æ ¡éªŒ
 	//        CheckFieldUtils.checkObjecField(passwordDto.getNewPassword());
 	//        String newPasswordEnc = PasswordUtil.encryptPassword(passwordDto.getNewPassword());
 	
-	ÉèÖÃÃÜÂë
+	è®¾ç½®å¯†ç 
 	cargoCustomer.setPwd(PasswordUtils.encryptStringPassword(cargoCustomerDto.getPwd(), cargoCustomer.getLoginCounter()));
 
 	 "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyMjIiLCJpc3MiOiJodHRwczovL3d3dy5rYW5nYXJvb2JhYnljYXIuY29tIiwic3ViIjoiMTM0MTIzNDEyMzQiLCJyb2xlcyI6ImNhck93bmVyIiwiaWF0IjoxNTYwMTQxMjE3fQ.ZUV37GPdoqzyjiHPBY70u3gtXW58wbM_4d29msIOvak"
@@ -2162,21 +2165,21 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	czxmqy
 	A123456.		ea4c12f3857f88e1fc08add09a698119
 	A123456#		8faf4cb442779c3a024e091bfae51654
-	## 1.ĞÂÔöË¾»ú»òÑ¹»õÈË ##
+	## 1.æ–°å¢å¸æœºæˆ–å‹è´§äºº ##
 
-	**±¸×¢**
+	**å¤‡æ³¨**
 	**URL**
 	>/api/carPerson/create 
 	
 
-	Ë¾»úÑ¹»õÈËÊµÏÖ
+	å¸æœºå‹è´§äººå®ç°
 	CarPersonServiceImpl
 	
-	ÃÜÂëÕıÔò
+	å¯†ç æ­£åˆ™
 	public static final String PASSWORD = "^.*(?=.{6,16})(?=.*\\d)(?=.*[A-Za-z])(?=.*[\\p{Punct}]).*|()$";
-	public static final String PASSWORDERR_MSG = "ÃÜÂë¸ñÊ½´íÎó£ºÃÜÂë±ØĞëÍ¬Ê±°üº¬×ÖÄ¸¡¢Êı×Ö¡¢ÌØÊâ·ûºÅ£¬³¤¶È£¨6-16£©";
+	public static final String PASSWORDERR_MSG = "å¯†ç æ ¼å¼é”™è¯¯ï¼šå¯†ç å¿…é¡»åŒæ—¶åŒ…å«å­—æ¯ã€æ•°å­—ã€ç‰¹æ®Šç¬¦å·ï¼Œé•¿åº¦ï¼ˆ6-16ï¼‰";
 	
-	ÃÜÂë¹¤¾ßÀà
+	å¯†ç å·¥å…·ç±»
 	PasswordUtil
 	
 
@@ -2184,7 +2187,7 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	/*
 	 Navicat Premium Data Transfer
 
-	 Source Server         : 192.168.0.142-ÎïÁ÷pc
+	 Source Server         : 192.168.0.142-ç‰©æµpc
 	 Source Server Type    : MySQL
 	 Source Server Version : 50642
 	 Source Host           : 192.168.0.142:3306
@@ -2205,18 +2208,18 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	-- ----------------------------
 	DROP TABLE IF EXISTS `hot_place`;
 	CREATE TABLE `hot_place`  (
-	  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Ö÷¼ü',
-	  `province` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'Ê¡·İ',
-	  `city` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT '³ÇÊĞ',
-	  `county` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'ÏØ',
-	  `create_date` datetime(0) NULL DEFAULT NULL COMMENT '´´½¨ÈÕÆÚ',
+	  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ä¸»é”®',
+	  `province` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'çœä»½',
+	  `city` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'åŸå¸‚',
+	  `county` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'å¿',
+	  `create_date` datetime(0) NULL DEFAULT NULL COMMENT 'åˆ›å»ºæ—¥æœŸ',
 	  PRIMARY KEY (`id`) USING BTREE
 	) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 	-- ----------------------------
 	-- Records of hot_place
 	-- ----------------------------
-	INSERT INTO `hot_place` VALUES (1, 'ºş±±', 'Îäºº', 'ºéÉ½Çø', '2019-06-05 10:24:40');
+	INSERT INTO `hot_place` VALUES (1, 'æ¹–åŒ—', 'æ­¦æ±‰', 'æ´ªå±±åŒº', '2019-06-05 10:24:40');
 	
 	SET FOREIGN_KEY_CHECKS = 1;
 	
@@ -2227,13 +2230,13 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	`car_source_car` csc WHERE cs.id = crp.car_source_id and cs.id=csc.car_source_id and and `status` = ?
 	order by cs.`create_date` desc
 	
-	³µÔ´°´ÕÕÆğÖ¹µØ,³µÁ¾ÀàĞÍÄ£ºıËÑË÷,
-	°´ÕÕ³µÁ¾ÔËÊäÁ¿ÅÅĞò,´´½¨ÈÕÆÚÅÅĞò,
+	è½¦æºæŒ‰ç…§èµ·æ­¢åœ°,è½¦è¾†ç±»å‹æ¨¡ç³Šæœç´¢,
+	æŒ‰ç…§è½¦è¾†è¿è¾“é‡æ’åº,åˆ›å»ºæ—¥æœŸæ’åº,
 	
 
-	Ä¿Ç°¶¼ÊÇÒ»¶ÔÒ»¹ØÁª
+	ç›®å‰éƒ½æ˜¯ä¸€å¯¹ä¸€å…³è”
 
-	sqlÊéĞ´
+	sqlä¹¦å†™
 
 	//ok
 	select cs.* from car_source cs,car_record_place crp ,car_source_car csc where cs.id = crp.car_source_id
@@ -2247,32 +2250,32 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
  
 	
 013	
-	ºóÌ¨ÎÊÌâ£º
-	1£¬ĞÂÎÅÏà¹Ø½Ó¿Ú
-	2£¬³µÔ´´óÌü£¬ÎÒµÄ³µÔ´
-	3£¬»õÔ´ÉóºËÍ¨¹ıºóÍÆËÍÏûÏ¢¸ø³µÖ÷£¬ÏÈËæ»úÍÆËÍ¸ø5¸ö³µÖ÷
-	4£¬ÈÈÃÅ»õÔ´
-	5£¬ÍÆ¼ö»õÔ´½Ó¿Ú
+	åå°é—®é¢˜ï¼š
+	1ï¼Œæ–°é—»ç›¸å…³æ¥å£
+	2ï¼Œè½¦æºå¤§å…ï¼Œæˆ‘çš„è½¦æº
+	3ï¼Œè´§æºå®¡æ ¸é€šè¿‡åæ¨é€æ¶ˆæ¯ç»™è½¦ä¸»ï¼Œå…ˆéšæœºæ¨é€ç»™5ä¸ªè½¦ä¸»
+	4ï¼Œçƒ­é—¨è´§æº
+	5ï¼Œæ¨èè´§æºæ¥å£
 
-012		//¸ù¾İÓÃ»§id»ñÈ¡ÓÃ»§logo
+012		//æ ¹æ®ç”¨æˆ·idè·å–ç”¨æˆ·logo
 		Integer customerId = cargoOwner.getCustomerId();
 		Customer customer = logisticsCustomerRepository.findOne(customerId);
 		cargo.setLogo(customer.getLogo());
 	
-011	ÎïÁ÷ÏîÄ¿×î³õÆô¶¯ĞèÒªÒ»ÕÅÈ¨ÏŞ±í
+011	ç‰©æµé¡¹ç›®æœ€åˆå¯åŠ¨éœ€è¦ä¸€å¼ æƒé™è¡¨
 	
 			
-010	mysqlÏà¹Ø
+010	mysqlç›¸å…³
 	mysqld --console --mysql_upgrade
 	mysql_upgrade
 	
-	my.iniÅäÖÃ¿ÉÄÜÓĞ´íÎó
+	my.inié…ç½®å¯èƒ½æœ‰é”™è¯¯
 	d:
 	cd D:\002_software\mysql-5.7.15-winx64
 	
-	3.ÒÔ¹ÜÀíÔ±Éí·İÔËĞĞcmd²¢½øÈëµ½mysqlµÄbinÄ¿Â¼£¬ÊäÈëmysqld installÃüÁî½øĞĞ°²×°£¬
-	°²×°³É¹¦ºóÊäÈëÃüÁîmysqld --initialize-insecure½øĞĞ³õÊ¼»¯£¬ÓÉÓÚËüÊÇ×Ô¶¯¶ÁÈ¡my.iniÅäÖÃ£¬
-	ËùÒÔÔËĞĞÃüÁîºó»áÔÚ¸ùÄ¿Â¼ÏÂ×Ô¶¯Éú³ÉdataÄ¿Â¼£¬×îºóÊäÈëÃüÁînet start mysqlÆô¶¯mysql·şÎñ
+	3.ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œcmdå¹¶è¿›å…¥åˆ°mysqlçš„binç›®å½•ï¼Œè¾“å…¥mysqld installå‘½ä»¤è¿›è¡Œå®‰è£…ï¼Œ
+	å®‰è£…æˆåŠŸåè¾“å…¥å‘½ä»¤mysqld --initialize-insecureè¿›è¡Œåˆå§‹åŒ–ï¼Œç”±äºå®ƒæ˜¯è‡ªåŠ¨è¯»å–my.inié…ç½®ï¼Œ
+	æ‰€ä»¥è¿è¡Œå‘½ä»¤åä¼šåœ¨æ ¹ç›®å½•ä¸‹è‡ªåŠ¨ç”Ÿæˆdataç›®å½•ï¼Œæœ€åè¾“å…¥å‘½ä»¤net start mysqlå¯åŠ¨mysqlæœåŠ¡
 
 009 
 	params: {name: "", tel: "", legalerName: "", status: "approval_pending", customerType: "organize"}
@@ -2281,8 +2284,8 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	
 	
 	Resolved value: "^(approval_pending)|(be_approved)|(not_approved)|()$"
-008 ÏêÇé
-	Ä¿Ç°·µ»Ø
+008 è¯¦æƒ…
+	ç›®å‰è¿”å›
 	{
     "code": 1,
     "msg": "success",
@@ -2303,13 +2306,13 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
             "realPrice": null,
 
             "marketPrice": 1,
-            "startProvince": "ºş±±",
-            "startCity": "Îäºº",
-            "startCountry": "½­ÏÄ",
-            "endProvince": "ºş±±",
+            "startProvince": "æ¹–åŒ—",
+            "startCity": "æ­¦æ±‰",
+            "startCountry": "æ±Ÿå¤",
+            "endProvince": "æ¹–åŒ—",
 
-            "endCity": "Îäºº",
-            "endCountry": "½­ÏÄ",
+            "endCity": "æ­¦æ±‰",
+            "endCountry": "æ±Ÿå¤",
             "line": null,
             "canShare": false,
             "arrivalDate": "2019-05-21 11:00:00",
@@ -2328,20 +2331,20 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 
             "carType": "car_tractor",
             "status": "cargo_source_status_release",
-            "statusCN": "·¢²¼ÖĞ",
-            "weightUnitCN": "¶Ö",
-            "carTypeCN": "Ç£Òı³µ",
+            "statusCN": "å‘å¸ƒä¸­",
+            "weightUnitCN": "å¨",
+            "carTypeCN": "ç‰µå¼•è½¦",
 		
-            "priceUnitCN": "ÈËÃñ±Ò",
-            "tenderWayCN": "ÕĞ±ê",
+            "priceUnitCN": "äººæ°‘å¸",
+            "tenderWayCN": "æ‹›æ ‡",
             "payTypeCN": null,
             "priceTypeCN": ""
         },
         "createBy": 68,
         "carOwnnerId": 3,
-        "carOwnerName": "ÎäººXX¹«Ë¾",
+        "carOwnerName": "æ­¦æ±‰XXå…¬å¸",
 
-        "cargoOwnerName": "ÎäººXX¹«Ë¾",
+        "cargoOwnerName": "æ­¦æ±‰XXå…¬å¸",
         "matterPrice": 10.32,
         "status": "cargo_matter_status_release",
         "loadDate": null,
@@ -2352,16 +2355,16 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 }
 
 
-	ĞèÒª·µ»Ø
+	éœ€è¦è¿”å›
 	 {
         "code": 1,
         "msg": "success",
         "data": {
             "id": 9,
             "cargoId": 1,
-            "cargo": {                                  ¡¾»õÔ´¡¿
+            "cargo": {                                  ã€è´§æºã€‘
                 "id": 1,		
-                "name": "ÌìÈ»Æø",
+                "name": "å¤©ç„¶æ°”",
                 "logo": "1",
                 "qty": 1,
                 "weightUnit": "1",		  //o
@@ -2414,17 +2417,17 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 
             "matterPrice": 10.01,
             "status": "pending",
-            "statusCN": "´ı´¦Àí",
+            "statusCN": "å¾…å¤„ç†",
             "loadDate": null,
             "createDate": "2019-03-01 16:57:04",
 
-            "cargoOwnerName": "»õÖ÷ÆóÒµÃû³Æ"
+            "cargoOwnerName": "è´§ä¸»ä¼ä¸šåç§°"
         }
     }
 
 
-007 ·ÖÒ³·µ»Ø¶Ô±È   @JsonIgnore 
-	ÒÔÇ°
+007 åˆ†é¡µè¿”å›å¯¹æ¯”   @JsonIgnore 
+	ä»¥å‰
 	{
 	    "code": 1,
 	    "msg": "success",
@@ -2439,8 +2442,8 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 			"carOwnnerId": 3,
 			
 			"cargoOwnerId": 4,   //todelete
-			"carOwnerName": "ÎäººXX¹«Ë¾",
-			"cargoOwnerName": "ÎäººXX¹«Ë¾",
+			"carOwnerName": "æ­¦æ±‰XXå…¬å¸",
+			"cargoOwnerName": "æ­¦æ±‰XXå…¬å¸",
 			"matterPrice": 10.32,
 			"status": "cargo_matter_status_release",   
 			
@@ -2458,7 +2461,7 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	    }
 	}
 	
-	ĞèÒª·µ»Ø
+	éœ€è¦è¿”å›
 
 	{
         "code": 1,
@@ -2476,11 +2479,11 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
                     "carOwnerName": null,
                     "matterPrice": 10.01,
                     "status": "pending",
-                    "statusCN": "´ı´¦Àí",
+                    "statusCN": "å¾…å¤„ç†",
                     "loadDate": null,
 
                     "createDate": "2019-03-01 16:57:04",
-                    "cargoOwnerName": "»õÖ÷ÆóÒµÃû³Æ"
+                    "cargoOwnerName": "è´§ä¸»ä¼ä¸šåç§°"
                 }
             ],
             "pageNo": 1,
@@ -2488,7 +2491,7 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
         }
     }
    
-   Ä¿Ç°·µ»Ø
+   ç›®å‰è¿”å›
     {
     "code": 1,
     "msg": "success",
@@ -2502,8 +2505,8 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
                 "createBy": 68,
                 "carOwnnerId": 3,
 
-                "carOwnerName": "ÎäººXX¹«Ë¾",
-                "cargoOwnerName": "ÎäººXX¹«Ë¾",
+                "carOwnerName": "æ­¦æ±‰XXå…¬å¸",
+                "cargoOwnerName": "æ­¦æ±‰XXå…¬å¸",
                 "matterPrice": 10.32,
                 "status": "cargo_matter_status_release",
                 "loadDate": null,
@@ -2523,7 +2526,7 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 006 
 	{"carLoad":100,"carType":"car_tractor","carUnit":"ton","mulStore":false,"storeQty":1}
 	
-005 Ìí¼Ó¹Ø×¢ 
+005 æ·»åŠ å…³æ³¨ 
 	//ok
 	{
 	  "params":{
@@ -2533,26 +2536,26 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	  
 	  "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2OSIsImlzcyI6Imh0dHBzOi8vd3d3Lmthbmdhcm9vYmFieWNhci5jb20iLCJzdWIiOiIxMzYxMTExMTExMiIsInJvbGVzIjoiY2FyZ29Pd25lciIsImlhdCI6MTU1ODQxNzc0Nn0.sKe5_CF2OT28OxQPqyVxv4Nk-S7kxvS4RCvsd-53lHY"
 	}
-004 ÊÖ»úºÅÕıÔò
-	@Pattern(regexp = RegExConstants.CHINA_PHONE_NUMBER, message = "ÁªÏµµç»°¸ñÊ½ÓĞÎó")
+004 æ‰‹æœºå·æ­£åˆ™
+	@Pattern(regexp = RegExConstants.CHINA_PHONE_NUMBER, message = "è”ç³»ç”µè¯æ ¼å¼æœ‰è¯¯")
 	
 	
-003 »õÖ÷µÇÂ¼
+003 è´§ä¸»ç™»å½•
 	**URL**
 
 	>/api/customer/cargoOwner/login
 
-	**ÇëÇó²ÎÊı**
+	**è¯·æ±‚å‚æ•°**
 
 	    {
 		"params": {
-		    "userAccount": "lisi",          // £¨±ØÌî£©£¨str£©ÓÃ»§Ãû
-		    "password": "A123456."          // £¨±ØÌî£©£¨str£©ÃÜÂë
+		    "userAccount": "lisi",          // ï¼ˆå¿…å¡«ï¼‰ï¼ˆstrï¼‰ç”¨æˆ·å
+		    "password": "A123456."          // ï¼ˆå¿…å¡«ï¼‰ï¼ˆstrï¼‰å¯†ç 
 		}
 	    }
 
 
-002 ·ÖÒ³²ÎÊı
+002 åˆ†é¡µå‚æ•°
 	{
 	  "params":{} ,
 	  "page":{
@@ -2562,7 +2565,7 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	  "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2OSIsImlzcyI6Imh0dHBzOi8vd3d3Lmthbmdhcm9vYmFieWNhci5jb20iLCJzdWIiOiIxMzYxMTExMTExMiIsInJvbGVzIjoiY2FyZ29Pd25lciIsImlhdCI6MTU1ODQxMDk4OX0.2dsCwmsBQfjXf5Dsoa1f4AdoYt4LW6jTpOMPFvHwRPw"
 	}
 
-001 ÇëÇó²ÎÊı
+001 è¯·æ±‚å‚æ•°
       {
     	"params": {
             
@@ -2575,12 +2578,12 @@ public interface CargoExtRepository extends CarCargoOwnnerRepository{
 	}
 
 
-/** ³µÁ¾ÀàĞÍ */
-	@NotBlank(message = "³µÁ¾ÀàĞÍ²»ÄÜÎª¿Õ")
+/** è½¦è¾†ç±»å‹ */
+	@NotBlank(message = "è½¦è¾†ç±»å‹ä¸èƒ½ä¸ºç©º")
 	@Pattern(regexp = CarConstants.REG_EX_CAR_TYPE, message = CarConstants.REG_EX_CAR_TYPE_ERR_MSG)
 	private String carType;
 
-	/** ÔËÊäÁ¿ */
-	@NotNull(message = "ÔËÊäÁ¿²»ÄÜÎª¿Õ")
-	@Range(min = 1, message = "ÔËÊäÁ¿²»ÄÜĞ¡ÓÚ1")
+	/** è¿è¾“é‡ */
+	@NotNull(message = "è¿è¾“é‡ä¸èƒ½ä¸ºç©º")
+	@Range(min = 1, message = "è¿è¾“é‡ä¸èƒ½å°äº1")
 	private Integer qty;
