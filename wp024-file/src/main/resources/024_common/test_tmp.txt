@@ -1,5 +1,12 @@
 ﻿0999 current
 2019年10月8日
+113 
+	查询第一个装货地
+	select * from cargo_location where type = 'loading_type' and cargo_id = 1 order by create_date asc limit 1
+	
+	查询最后一个卸货地
+	select * from cargo_location where type = 'unloading_type' and cargo_id = 1 order by create_date desc limit 1
+	
 112 
 	02 
 	01 发布一个独立的服务 

@@ -1,4 +1,45 @@
-﻿2019年9月29日
+﻿2019年10月8日
+136 现在的自己当完成手头的任务,马上又有挑战新任务的憧憬,这样的状态应该说是相当积极的,人的成长应该说就是
+	心智的成熟,想一想以前的自己的状态,当时心里想的是一辈子搞增删盖查就满足了,而现在的你想要去接受更高难度的
+	任务,你需要做的事情还是很多,比如过去总结的关于讲话的停顿,拖延,享受你并不能总是做到,关于如何创业赚钱你还是
+	缺乏实践,你的想法现在都只能是停留在脑子里,万一哪一天你真的创业了,你会不会连起床这关都过不了
+	
+
+135	极光消息安卓和ios版本不一致也可以推,极光的代码调试策略相当科学,先创建一个没有问题的
+	服务端,服务端能够打通手机表明手机集成无问题,这种无错误中间层模式非常值得借鉴,可以有效地
+	的规避责任人不明的问题
+	
+134 一想到创业就兴奋,平常的生活实在是太缺乏激情
+	
+133 36部署
+	cd /home/logistics
+		
+132 今早起床,本来还想窝在被窝里做个好梦,却被闹钟不情愿的吵醒了,心想现实还是太过平庸,
+	我有时也想舒舒服服的躲在被窝里,抵御这寒冷的时光,人是多么容易消极的生物,你能勇敢的起床,
+	就已经迈出了勇敢的一步,人生可能就是一个不断战胜自己消极的过程,可及时这一步做了又能怎样,
+	今天你又能未来的人生做点什么,未来还有这么多难题需要破解
+	
+131 
+	06 网络协议的传输与应用
+
+	05 项目部署每一过程文件的相应变化
+
+	04 如何检验一个配置文件是否正确
+
+	03 如何测试配置文件的读取能否成功
+
+	02 物流项目配置文件
+		01 
+			mybatis:
+			  mapper-locations: classpath*:mapper/*.xml
+			  #  开启驼峰命名转换 userName - user_name
+			  configuration:
+				  map-underscore-to-camel-case: true
+	01 研究tomcat启动和配置文件读取的问题
+	
+	
+
+2019年9月29日
 130 数独程序的arr从1开始会不会更人性化
 	
 129 记录错误步骤分步调试法
@@ -534,14 +575,15 @@
 	COLLATE utf8_general_ci LIKE '%three%'
 	
 045 项目部署
-	cd /home/app/logistics
+	cd /home/app/logistics		cd /home/logistics
 	mv zrytech-framework-app-1.0-SNAPSHOT.jar bak/
 	rz 
-		D:\001_work\007_mypro\HazardousLogistics_dev\zrytech-framework-app\target\zrytech-framework-app-1.0-SNAPSHOT.jar 
+		D:\001_work\020_gitcode\HazardousLogistics_dev\zrytech-framework-app\target\zrytech-framework-app-1.0-SNAPSHOT.jar
 	netstat -ntlp|grep 8392	
 	
 	kill -9 
-	./start.sh
+	./start.sh			nohup java -jar zrytech-framework-app-1.0-SNAPSHOT.jar --spring.profiles.active=36 &
+						nohup java -jar zrytech-framework-app-1.0-SNAPSHOT.jar --spring.profiles.active=245 &
 	tail -f nohup.out
 		
 	
