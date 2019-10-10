@@ -1,3 +1,24 @@
+03 Error:java: 无效的源发行版: 1.8
+			   无效的目标发行版: 1.8
+	a01 maven编译插件的问题,
+		如果项目pom文件没有定义插件版本,可以显示的配置
+			 <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+
+	04 clean项目好像也无效
+
+	03 重启idea好像无效
+
+	02 好像也不是tomcat引起
+
+	01 修改module编译环境好像无效
+
 02 must not contain source root
 	选择modules，选择根模块，删除add content root 下面不直接属于根模块的目录即可
 	

@@ -2,15 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>wp-parent</artifactId>
-        <groupId>cn.dante</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+    <!--<parent>-->
+        <!--<artifactId>wp-parent</artifactId>-->
+        <!--<groupId>cn.dante</groupId>-->
+        <!--<version>1.0-SNAPSHOT</version>-->
+    <!--</parent>-->
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.dante.jk</groupId>
     <artifactId>wp026-springmvc</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
     <properties>
         <org.springframework.version>3.2.6.RELEASE</org.springframework.version>
     </properties>
@@ -55,11 +58,11 @@
         </dependency>
 
         <!--数据库驱动 -->
-        <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>11.1.0.7.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.oracle</groupId>-->
+            <!--<artifactId>ojdbc6</artifactId>-->
+            <!--<version>11.1.0.7.0</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -146,7 +149,7 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.9.4</version>
+            <version>1.8.6</version>
         </dependency>
 
         <!-- 防止和tomcat中的jar冲突 -->
@@ -189,6 +192,14 @@
                     <path>/jk</path>
                     <uriEncoding>UTF-8</uriEncoding>
                     <server>tomcat7</server>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
         </plugins>

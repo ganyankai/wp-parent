@@ -1,3 +1,6 @@
+07	
+	specified	指定；详细说明
+	
 06 
 	nohup	后台
 	

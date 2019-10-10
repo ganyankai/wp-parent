@@ -1,0 +1,16 @@
+02 e2
+	java.lang.UnsupportedClassVersionError: 
+	org/aspectj/weaver/tools/PointcutDesignatorHandler :
+	Unsupported major.minor version 52.0
+	(unable to load class org.aspectj.weaver.tools.PointcutDesignatorHandler)
+	
+	a1
+		将出问题的jar包换成一个较低的版本后问题解决
+		
+	guess 
+		难道改jar包的class文件是在更高版本的jdk下编译的
+
+01 error1
+	java.lang.ClassNotFoundException: org.springframework.web.context.ContextLoaderListener
+
+	01 删除war包,在添加war包后,在artifact中添加部署需要的jar包
