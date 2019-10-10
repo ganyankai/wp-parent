@@ -1,3 +1,6 @@
+02 must not contain source root
+	选择modules，选择根模块，删除add content root 下面不直接属于根模块的目录即可
+	
 01 java 在新建文件后，启动过程中发现java文件左上角出现小叉号
 
 	原因：具说是标识这个类不会在工程编译的时候进行编译

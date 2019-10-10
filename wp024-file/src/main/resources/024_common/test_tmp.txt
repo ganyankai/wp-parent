@@ -1,5 +1,43 @@
 ﻿0999 current
 2019年10月8日
+117	
+	司机 13612341234  W123456.
+
+116 司机个人信息添加
+	
+115 消息代码
+		log.info("即将开始消息推送:");
+		//存入消息表和消息推送
+		String content = "有货主发布了可能适合您的货源,请前往货源大厅查看";
+
+		Object[] propArr = new Object[]{SysMessageConstants.MSG_TYPE_APPROVING,1,SysMessageConstants.SEND_TYPE_SYSTEM,new Date(),
+				content,carOwner.getId(),CustomerConstants.TYPE_CAR_OWNER,0,null};
+		System.out.println("sysMessageUtil:"+sysMessageUtil);
+		sysMessageUtil.createMesFlag(propArr,carOwner.getTel(),"test");
+//					SysMessageUtil.createMesFlag(propArr,carOwner.getTel(),"carand");
+		log.info("消息推送完毕:");
+		
+114 
+	String content = "您的认证资料审核不通过，原因如下：车主状态不是待审批";
+
+			Object[] propArr = new Object[]{SysMessageConstants.MSG_TYPE_APPROVING,1,SysMessageConstants.SEND_TYPE_SYSTEM,new Date(),
+					content,carOwner.getId(),CustomerConstants.TYPE_CAR_OWNER,0,null};
+			SysMessageUtil.createMes(propArr,carOwner.getTel());
+	
+	
+	发布货源匹配推送
+	cargo_send_record	cargo_id car_ownner_id
+	
+	先查看货源出发城市和到达城市
+	
+	cargo 
+		start_city  end_city
+		
+	
+	查看车主常用录像中的出发城市和到达城市
+	
+	存
+	cargoOwner 货主
 113 
 	查询第一个装货地
 	select * from cargo_location where type = 'loading_type' and cargo_id = 1 order by create_date asc limit 1
