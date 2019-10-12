@@ -1,5 +1,5 @@
 
-package main.java.cn.dante.jk.controller;
+package cn.dante.jk.controller;
 
 
 public class HomeController
