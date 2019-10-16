@@ -1,0 +1,9 @@
+01 
+	org.springframework.http.converter.HttpMessageNotWritableException:
+	Could not write JSON document: Infinite recursion (StackOverflowError)
+
+	Expected ':' instead of 'c'
+	
+	a1 关联时将其中一对象中另一对象设为null
+
+	g1 java对象相互关联,你中有我,我中有你报错

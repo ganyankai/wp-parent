@@ -1,0 +1,19 @@
+
+
+01 e1
+	org.xml.sax.SAXParseException; lineNumber: 14; columnNumber: 66; 文档根元素 "beans" 必须匹配 DOCTYPE 根 "null"。
+	a1	
+		应该是写错了mybatis读取文件的目录,导致mybatis读取了自己不支持的配置文件
+		
+	step
+		03 该问题在修改了mybatis读取配置文件路径后的到解决,并且问题可以复现
+
+		02 删除所有的xml注释和空格,报错依然存在
+
+		01 删除所有配置问价内容,只保留根元素beans,启动不报错,说明根元素无问题
+		
+	guess
+		01 应该是元素里面内容有问题
+
+	
+
