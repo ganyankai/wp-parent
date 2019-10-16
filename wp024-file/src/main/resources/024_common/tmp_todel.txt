@@ -1,3 +1,379 @@
+
+
+067 
+	定位中心
+		02  
+		01	查看定位中心中的运单项
+
+	司机头像添加
+	消息报错处理
+	全部运单
+	
+066 运费修改内容
+	
+	04 查询规则列表
+		03 
+
+		02 文件 
+			
+			
+		01 接口 /freight/selectList
+				FreightController
+				
+	03 查询车辆列表
+		01 /freightCar/findByList
+				FreightCarController
+	
+	02 产品分类文件列表
+		
+		11 
+			ProductCategoryTree
+			KeyValue
+		10  
+			OperationService
+			OperationDao
+			OperationMapper
+			Status
+			StatusDto
+
+			PriceResult
+			ProductConstants
+			BusinessAssertUtils
+			TradeConstants
+			ResultEnum
+
+			KeyValue
+			ProductCategoryTree
+
+		09  ProductConstants
+			
+		08  ProductCategoryDto
+		
+		07  ProductCategory
+
+		06  ProductCategoryMapper.xml
+			
+		05  ProductCategoryMapper
+
+		04  ProductCategory
+			
+		03  ProductCategoryDao
+			
+		02	ProductCategoryServiceImpl
+	
+		01	ProductCategoryController 
+		
+
+	01 产品分类
+		07 产品参数添加
+			category/addProduct
+
+		06 产品参数修改
+			category/updateProduct
+
+		05 产品参数配置
+			category/page
+			getParentList 函数定义
+			
+
+		04 文档
+		
+
+		03 /category/update		介质修改
+			{
+				"token": "token_cbf84fbc-a3fc-4bc4-9f67-71784e66a6c9",
+				"device": "device_cp",
+				"params": {
+					"id": 60,
+					"parentId": 5,
+					"englishName": "",
+					"name": "仪表",
+					"logo": 1,
+					"unitId": "ton",
+					"unitIdCN": "吨",
+					"seqNo": 5,
+					"categoryType": "product_category",
+					"createBy": "1",
+					"createDate": "2018-08-22 16:28:06",
+					"updateBy": "1",
+					"updateDate": "2018-08-22 16:28:06"
+				}
+			}
+
+		02 /category/detail
+			{
+				"code": 1,
+				"msg": "success",
+				"data": {
+					"id": 1,
+					"parentId": 0,
+					"englishName": "",
+					"name": "原油",
+					"logo": 232,
+					"unitId": "ton",
+					"unitIdCN": "吨",
+					"seqNo": 1,
+					"categoryType": "product_category",
+					"createBy": 1,
+					"createDate": "2018-08-20 11:55:36",
+					"updateBy": 1,
+					"updateDate": "2018-11-09 17:25:08"
+				}
+			}
+
+		01 /category/tree
+		{
+		"code": 1,
+		"msg": "success",
+		"data": [
+			{
+				"id": 1,
+				"name": "原油",
+				"logo": 232,
+				"englishName": "",
+				"unitId": "ton",
+				"children": [
+					{
+						"id": 7,
+						"name": "国际贸易",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 6,
+						"name": "国内现货",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					}
+				],
+				"unitIdCN": "吨"
+			},
+			{
+				"id": 2,
+				"name": "成品油",
+				"logo": 234,
+				"englishName": "",
+				"unitId": "ton",
+				"children": [
+					{
+						"id": 8,
+						"name": "成品油",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [
+							{
+								"id": 12,
+								"name": "汽油",
+								"logo": 1,
+								"englishName": "",
+								"unitId": "ton",
+								"children": [
+									{
+										"id": 14,
+										"name": "国五",
+										"logo": 1,
+										"englishName": "guowu",
+										"unitId": "ton",
+										"children": [],
+										"unitIdCN": "吨"
+									},
+									{
+										"id": 15,
+										"name": "国六",
+										"logo": 1,
+										"englishName": "",
+										"unitId": "ton",
+										"children": [],
+										"unitIdCN": "吨"
+									},
+									{
+										"id": 602,
+										"name": "国七",
+										"logo": 1,
+										"englishName": "guoqi",
+										"unitId": "ton",
+										"children": [],
+										"unitIdCN": "吨"
+									},
+									{
+										"id": 16,
+										"name": "京标",
+										"logo": 1,
+										"englishName": "",
+										"unitId": "ton",
+										"children": [],
+										"unitIdCN": "吨"
+									}
+								],
+								"unitIdCN": "吨"
+							},
+							{
+								"id": 13,
+								"name": "柴油",
+								"logo": 1,
+								"englishName": "",
+								"unitId": "ton",
+								"children": [
+									{
+										"id": 17,
+										"name": "国五",
+										"logo": 1,
+										"englishName": "",
+										"unitId": "ton",
+										"children": [],
+										"unitIdCN": "吨"
+									},
+									{
+										"id": 18,
+										"name": "国六",
+										"logo": 1,
+										"englishName": "",
+										"unitId": "ton",
+										"children": [],
+										"unitIdCN": "吨"
+									}
+								],
+								"unitIdCN": "吨"
+							}
+						],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 9,
+						"name": "半成品油",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					}
+				],
+				"unitIdCN": "吨"
+			},
+			{
+				"id": 3,
+				"name": "化工品",
+				"logo": 236,
+				"englishName": "",
+				"unitId": "ton",
+				"children": [],
+				"unitIdCN": "吨"
+			},
+			{
+				"id": 4,
+				"name": "LNG",
+				"logo": 238,
+				"englishName": "",
+				"unitId": "ton",
+				"children": [],
+				"unitIdCN": "吨"
+			},
+			{
+				"id": 5,
+				"name": "物资设备",
+				"logo": 240,
+				"englishName": "",
+				"unitId": "ton",
+				"children": [
+					{
+						"id": 56,
+						"name": "原煤",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 57,
+						"name": "钢材",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 58,
+						"name": "设备备件",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 59,
+						"name": "化工辅料",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 60,
+						"name": "仪表",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 61,
+						"name": "化验仪器",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 70,
+						"name": "电器",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 71,
+						"name": "安全消防",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					},
+					{
+						"id": 72,
+						"name": "易耗品",
+						"logo": 1,
+						"englishName": "",
+						"unitId": "ton",
+						"children": [],
+						"unitIdCN": "吨"
+					}
+				],
+				"unitIdCN": "吨"
+			}
+		]
+	}
+
+065 
+	产品分类
+	产品名称配置
+	运费管理
+	
 064	
 	{"password":"123456a","account":"13477907639"}
 	request.putQueryParameter("TemplateParam", "{\"account\":\"13477907639\",\"password\":\"13477907639\"}");

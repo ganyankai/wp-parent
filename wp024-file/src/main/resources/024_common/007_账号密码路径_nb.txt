@@ -1,59 +1,65 @@
-2019Äê7ÔÂ26ÈÕ
-045 ±È¼ÛÍøÔË·Ñ¼ÆËã¹æÔò
+ï»¿2019å¹´10æœˆ14æ—¥
+047 
+
+046 36ç›®å‰å‰ç«¯åœ°å€
+	http://119.23.172.36:8080/wl-front
+	
+2019å¹´7æœˆ26æ—¥
+045 æ¯”ä»·ç½‘è¿è´¹è®¡ç®—è§„åˆ™
 	http://119.23.172.36:8080/price-back 
 	admin 123456
 	
-	Ä³Ò»½éÖÊÖ»ÄÜÓÉÖ¸¶¨³µĞÍÀ­ÔË,³µÁ¾¿ÉÔÚºóÌ¨ÅäÖÃºËÔØÁ¿
-	ÔË·Ñ¸ú½éÖÊ,³µĞÍ,¹«ÀïÊı,»õÎïÖØÁ¿ÓĞ¹Ø,ÔË·Ñµ¥Î»Îª	Ôª/¶Ö/¹«Àï
+	æŸä¸€ä»‹è´¨åªèƒ½ç”±æŒ‡å®šè½¦å‹æ‹‰è¿,è½¦è¾†å¯åœ¨åå°é…ç½®æ ¸è½½é‡
+	è¿è´¹è·Ÿä»‹è´¨,è½¦å‹,å…¬é‡Œæ•°,è´§ç‰©é‡é‡æœ‰å…³,è¿è´¹å•ä½ä¸º	å…ƒ/å¨/å…¬é‡Œ
 
-	±ÈÈç½éÖÊ²ñÓÍ,³µĞÍA,ÔË¾àÔÚ5¹«ÀïÒÔÀà¼Û¸ñÎª100ÔªÕû³µ
-					   ¾àÀëÎª5-10¹«ÀïÔË·ÑÎª20Ôª/¶Ö/¹«Àï	
+	æ¯”å¦‚ä»‹è´¨æŸ´æ²¹,è½¦å‹A,è¿è·åœ¨5å…¬é‡Œä»¥ç±»ä»·æ ¼ä¸º100å…ƒæ•´è½¦
+					   è·ç¦»ä¸º5-10å…¬é‡Œè¿è´¹ä¸º20å…ƒ/å¨/å…¬é‡Œ	
 
-	½éÖÊ,³µĞÍ,ÔË·ÑÓë¼Û¸ñ¾ù¿ÉÔÚºóÌ¨ÅäÖÃ
+	ä»‹è´¨,è½¦å‹,è¿è´¹ä¸ä»·æ ¼å‡å¯åœ¨åå°é…ç½®
 	
 044 
-	ÎïÁ÷36 
-		¶Ë¿Ú£º	50022	119.23.172.36
-        ÕËºÅ£º	root
-        ÃÜÂë£º	Zrytech@qwe#1
-        ÕËºÅ£º	zry
-        ÃÜÂë£º	Zry@321#
+	ç‰©æµ36 
+		ç«¯å£ï¼š	50022	119.23.172.36
+        è´¦å·ï¼š	root
+        å¯†ç ï¼š	Zrytech@qwe#1
+        è´¦å·ï¼š	zry
+        å¯†ç ï¼š	Zry@321#
 		
-043 ÎïÁ÷¼«¹âÍÆËÍÓ¦ÓÃ 
+043 ç‰©æµæå…‰æ¨é€åº”ç”¨ 
 	ailayoutms@163.com
 	Yousiling123
 	
 	 -- 17661301331
 	
-042 ÌÚÑ¶ÆóÒµÓÊÏä
+042 è…¾è®¯ä¼ä¸šé‚®ç®±
 	13477907639
 	
-041 À¶ºş
+041 è“æ¹–
 	609021076@qq.com
 	------1234
 	
-040 ÎïÁ÷¶ÌĞÅÆ½Ì¨:		
-	Ç©ÃûÃû³Æ£º°®À­ÓÍ
-	Ä£°æCODE£ºSMS_173690392
-	ÄÚÈİ£ºÄúµÄÑéÖ¤Âë£º${code}£¬ÄúÕı½øĞĞÉí·İÑéÖ¤£¬´òËÀ²»¸æËß±ğÈË£¡
-	accessKeyId£ºLTAIKHWPHQURffYs
-	accessKeySecret£ºscCqYknlfK8MJWCX60AmuRStKbmmfU				
+040 ç‰©æµçŸ­ä¿¡å¹³å°:		
+	ç­¾ååç§°ï¼šçˆ±æ‹‰æ²¹
+	æ¨¡ç‰ˆCODEï¼šSMS_173690392
+	å†…å®¹ï¼šæ‚¨çš„éªŒè¯ç ï¼š${code}ï¼Œæ‚¨æ­£è¿›è¡Œèº«ä»½éªŒè¯ï¼Œæ‰“æ­»ä¸å‘Šè¯‰åˆ«äººï¼
+	accessKeyIdï¼šLTAIKHWPHQURffYs
+	accessKeySecretï¼šscCqYknlfK8MJWCX60AmuRStKbmmfU				
 	
-039 ¼ÓÓÍÕ¾ÏßÉÏ¿â
+039 åŠ æ²¹ç«™çº¿ä¸Šåº“
 	47.104.232.195:3306 
 	root
 	!@#QAZxsw
 	
-038 ĞÂÁãÊÛºóÌ¨
+038 æ–°é›¶å”®åå°
 	https://test.zrytech.com/admin/index.html#/crowd
 	
-037 ËùÓĞgit´úÂë
+037 æ‰€æœ‰gitä»£ç 
 	http://120.25.212.63:10101/repositories
 		
-		gitµ¼Èë
+		gitå¯¼å…¥
 		http://ganyankai@120.25.212.63:10101/r/oilStation.git
 		
-036 16½øÖÆ×ªºº×Ö
+036 16è¿›åˆ¶è½¬æ±‰å­—
 	http://www.msxindl.com/tools/unicode16.asp
 	
 035 oracle
@@ -61,88 +67,88 @@
 	------1234Oracle
 	
 034
-	02 ±í´ïÊ½ http://cron.qqe2.com/
-		//        Ã¿ÌìÉÏÎç10µãÖ´ĞĞµÄÈÎÎñ±í´ïÊ½
+	02 è¡¨è¾¾å¼ http://cron.qqe2.com/
+		//        æ¯å¤©ä¸Šåˆ10ç‚¹æ‰§è¡Œçš„ä»»åŠ¡è¡¨è¾¾å¼
 		//        0 0 10 ? * ?
 
-	01 ÈÎÎñµ÷¶È:	
+	01 ä»»åŠ¡è°ƒåº¦:	
 	https://blog.csdn.net/noaman_wgs/article/details/80984873
 	
 	
 033 
 	https://element.eleme.cn/2.0/#/zh-CN/component/installation
 	
-2019Äê7ÔÂ1ÈÕ
-032 ÎÒµÄmaven jar°üÂ·¾¶:
+2019å¹´7æœˆ1æ—¥
+032 æˆ‘çš„maven jaråŒ…è·¯å¾„:
 		C:\Users\lenovo\.m2\repository
-	01 »ù´¡°ü
+	01 åŸºç¡€åŒ…
 		C:\Users\lenovo\.m2\repository\com\zrytech
 031	vue.js 
 	https://cn.vuejs.org/v2/guide/
 	
 	
-030 ¹ã¸æÏîÄ¿
+030 å¹¿å‘Šé¡¹ç›®
 	http://admin@120.25.212.63:10101/r/advert.git
 	
-	·şÎñÆ÷
+	æœåŠ¡å™¨
 	120.79.243.99 
 	root
 	Szboyi168
 	
-029 ÎÒµÄÎ¢ĞÅ¿ª·¢ÕßÕËºÅ
+029 æˆ‘çš„å¾®ä¿¡å¼€å‘è€…è´¦å·
 	609021076@qq.com
 	------waws4321
 	
-028	¹ã¸æÎ¢ĞÅ¿ª·¢ÕßÕËºÅ
+028	å¹¿å‘Šå¾®ä¿¡å¼€å‘è€…è´¦å·
 	dev@chinabofu.com
 	Szboyi168
 	
-027 ÎÒ±¾µØ»·¾³²âÊÔ
+027 æˆ‘æœ¬åœ°ç¯å¢ƒæµ‹è¯•
 	192.168.0.122:8080/sysMessage/getRead
 	
-026	Î¢ĞÅÊÚÈ¨½Ó¿Ú
+026	å¾®ä¿¡æˆæƒæ¥å£
 	https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419317853&token=&lang=zh_CN
 	
 	https://www.cnblogs.com/tinyj/p/9836607.html
 	
-025 ÌáÏÖ×ªÕË×¢Òâ
+025 æç°è½¬è´¦æ³¨æ„
 	https://note.youdao.com/ynoteshare1/index.html?id=4fb1fe2f50c60bbd67682335cfffd013&type=note
 
-024	 ĞÂÁãÊÛÊı¾İ¿â
-	¡¾Mysql¡¿
+024	 æ–°é›¶å”®æ•°æ®åº“
+	ã€Mysqlã€‘
 	port:  3306
 	name:  root
 	pwd:  Ba@sk123.y-
-	°æ±¾£º    5.7.26
-	ÅäÖÃÎÄ¼şÎ»ÖÃ£º  /etc/mysql/mysql.conf.d/mysqld.cnf
-	Çü·É
+	ç‰ˆæœ¬ï¼š    5.7.26
+	é…ç½®æ–‡ä»¶ä½ç½®ï¼š  /etc/mysql/mysql.conf.d/mysqld.cnf
+	å±ˆé£
 	10:56
 	47.112.199.172
 	
 
-023  ¹«Ë¾¼«¹âÕËºÅ:
-	 ÕËºÅ£º	791588228@qq.com
-	 ÃÜÂë£º	Kds123456
-	 // AppKey £º	a0e86aa0aaf42dedcdfbabcb
-	 // Secret£º	4d23f2612182a47e5c395084
+023  å…¬å¸æå…‰è´¦å·:
+	 è´¦å·ï¼š	791588228@qq.com
+	 å¯†ç ï¼š	Kds123456
+	 // AppKey ï¼š	a0e86aa0aaf42dedcdfbabcb
+	 // Secretï¼š	4d23f2612182a47e5c395084
 	 
 	 AppKey		f917ff0a382b306fc743e2cd				
-	 Secret£º	7d9f4fc34755829e89d59858 
+	 Secretï¼š	7d9f4fc34755829e89d59858 
 
-	 °²×¿°üÃû	com.yun.software.kaadas
-	 Æ»¹ûbundle id	com.yun.software.kaadas	
+	 å®‰å“åŒ…å	com.yun.software.kaadas
+	 è‹¹æœbundle id	com.yun.software.kaadas	
 	
-022 ĞÂÁãÊÛ36µØÖ·
+022 æ–°é›¶å”®36åœ°å€
 	https://test.zrytech.com/customerExtend/getLabelRecord
-	ºóÌ¨
+	åå°
 	https://test.zrytech.com/admin/index.html#/login
-	ºóÌ¨ÕıÊ½
+	åå°æ­£å¼
 	https://www.kaishuzhijia.com/admin/index.html#/login
 	
-021 ĞÂÁãÊÛgit
+021 æ–°é›¶å”®git
 	http://admin@120.25.212.63:10101/r/newshop.git
 	
-020 ÌÚÑ¶ÔÆÎÄµµ¶Ô½Ó
+020 è…¾è®¯äº‘æ–‡æ¡£å¯¹æ¥
 	https://mta.qq.com/h5/visitor/ctr_user_realtime?app_id=500688196
 	
 	https://mta.qq.com/docs/h5_access.html
@@ -163,23 +169,23 @@
 	H5 App id: 500688196
 	H5 App Secret key: 512ae468095f59b5aea6168d0cf83377
 
-019	¼«¹â
-	¹ÙÍø https://www.jiguang.cn/
+019	æå…‰
+	å®˜ç½‘ https://www.jiguang.cn/
 
-	µÇÂ¼:
+	ç™»å½•:
 	609020176@qq.com	(1ef149489ea2af2d)
 	Jpush1234
 	
-	¼«¹âÕËºÅ	1ef149489ea2af2d
+	æå…‰è´¦å·	1ef149489ea2af2d
 	
 	AppKey		:	e036a343b918462d2aec1873
 	Master Secret : 57c37bb533af0fc1808d3c8c
 	
 	
-018 mvn²Ö¿â
+018 mvnä»“åº“
 	https://mvnrepository.com/
 	
-017 ¿ò¼ÜÀà spring boot-cloud
+017 æ¡†æ¶ç±» spring boot-cloud
 	//no
 	https://blog.csdn.net/valada/article/details/80892573	
 	//yes
@@ -188,71 +194,71 @@
 	https://blog.csdn.net/forezp/article/details/69696915   
 	https://blog.csdn.net/forezp/article/details/69788938
 	
-016 ÔÚÏß×÷Í¼¹¤¾ß
+016 åœ¨çº¿ä½œå›¾å·¥å…·
 	https://www.draw.io/
 
-015	»õÔ´×´Ì¬Á÷³ÌÍ¼
+015	è´§æºçŠ¶æ€æµç¨‹å›¾
 	![](https://lonelycatgames.cn/img/0f2f0904a1e20ce62a9ffa513c146a8f903882b78c3a-jj9Ndh.png)
 
 014		
-	ÔËµ¥×´Ì¬Á÷³ÌÍ¼
+	è¿å•çŠ¶æ€æµç¨‹å›¾
 	![](https://lonelycatgames.cn/img/a0f7bbeccf80d37f22df3cba5c9df2c6d69463e59773-ZnRgJm.png)
 	
-013 ÏîÄ¿base jar°üÂ·¾¶
+013 é¡¹ç›®base jaråŒ…è·¯å¾„
 	C:\Users\lenovo\.m2\repository\com\zrytech\framework		
 	
-012 ÏßÉÏ»·¾³:
+012 çº¿ä¸Šç¯å¢ƒ:
 	47.94.173.245
 	22
 	root
 	bjw@2018
 	/home/app/logistics
 	
-011 À­»õ±¦
+011 æ‹‰è´§å®
 	http://www.lahuobao.net/home.html
 	https://cas.lahuobao.net/ssoserver/login?service=https%3A%2F%2Fwww.lahuobao.net%2Fuser%2Fcaslogin.html
 	pxy/123456
 	
-010 ±È¼ÛÍø 
+010 æ¯”ä»·ç½‘ 
 	http://www.51bijiawang.cn/pc/#/price
-	15207124170	ÆóÒµÂò¼Ò	
+	15207124170	ä¼ä¸šä¹°å®¶	
 	123456
 	
 	
-009	±¾µØÏÂÔØÂ·¾¶
+009	æœ¬åœ°ä¸‹è½½è·¯å¾„
 	C:\Users\lenovo\Downloads
 	
-008 ÏîÄ¿Ïà¹Ø
+008 é¡¹ç›®ç›¸å…³
 	
-	07 ÎïÁ÷ÏßÉÏ
+	07 ç‰©æµçº¿ä¸Š
 		http://www.51bijiawang.cn/logistics-front
 		http://www.51bijiawang.cn/logistics-back
-	06	ìøµÀ:
+	06	ç¦…é“:
 		http://120.25.212.63:8888/zentao/project-bug-17.html
 		ganyankai
 		ganyankai123
 		
-	05 ÎïÁ÷Ç°Ì¨	 http://192.168.0.142:8081/logistics-front/#/login
+	05 ç‰©æµå‰å°	 http://192.168.0.142:8081/logistics-front/#/login
 		
-	04 ÎïÁ÷ºóÌ¨¹ÜÀí http://192.168.0.142:8081/logistics-back/#/login
+	04 ç‰©æµåå°ç®¡ç† http://192.168.0.142:8081/logistics-back/#/login
 		
-	03 ÈÕÖ¾ÎÄ¼ş nohup.out ?
+	03 æ—¥å¿—æ–‡ä»¶ nohup.out ?
 		
-	02 ÏîÄ¿µØÖ·£º/home/app/logistics
+	02 é¡¹ç›®åœ°å€ï¼š/home/app/logistics
 
-	01 ·şÎñÆ÷µØÖ·£º192.168.0.142:22£¬	root£¬123456
+	01 æœåŠ¡å™¨åœ°å€ï¼š192.168.0.142:22ï¼Œ	rootï¼Œ123456
 	
 	
-007 ´úÂë¹æ·¶
+007 ä»£ç è§„èŒƒ
 	https://note.youdao.com/ynoteshare1/index.html?id=5d98fa7acae681c9adc733922b4d3317&type=note
 
-006 »õÖ÷µÇÂ¼
+006 è´§ä¸»ç™»å½•
 	
 	
-005 jsonÔÚÏß½âÎö
+005 jsonåœ¨çº¿è§£æ
 	http://www.bejson.com/
 	
-004 µÇÂ¼²âÊÔ
+004 ç™»å½•æµ‹è¯•
 	http://localhost:8392/customer/login
 
 	{
@@ -263,7 +269,7 @@
 	}
 	
 
-003 ½Ó¿Ú¾ÙÀı
+003 æ¥å£ä¸¾ä¾‹
  http://localhost:8392/shipper/page
  
  {
@@ -278,33 +284,33 @@
 002 token
 eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4NCIsImlzcyI6Imh0dHBzOi8vd3d3Lmthbmdhcm9vYmFieWNhci5jb20iLCJzdWIiOiIxMzYxMTExMTEyMyIsImlhdCI6MTU1ODMxODg2NX0.dm783BZftTJPa-YNu6N-OvJRHvbl6D5DLXTnSoJMiBU
 
-001 ¹«Ë¾git
-	ĞÂÎÅ×ÊÑ¶: 
-		ä¯ÀÀÆ÷	:	http://120.25.212.63:10101/repositories/
+001 å…¬å¸git
+	æ–°é—»èµ„è®¯: 
+		æµè§ˆå™¨	:	http://120.25.212.63:10101/repositories/
 		git		:	http://120.25.212.63:10101/r/priceCompare
 
 	ganyankai /yankai333
 	
-	gitµ¼Èë:
+	gitå¯¼å…¥:
 	http://120.25.212.63:10101/r/HazardousLogistics.git
 	
-	ä¯ÀÀÆ÷·ÃÎÊ:
+	æµè§ˆå™¨è®¿é—®:
 	http://120.25.212.63:10101/summary/HazardousLogistics.git
-	ÎïÁ÷½Ó¿ÚÎÄµµ:
+	ç‰©æµæ¥å£æ–‡æ¡£:
 	http://120.25.212.63:10101/tree/HazardousLogistics.git/master/zrytech-framework-app%2Fsrc%2Fmain%2Fresources%2F%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3
 
 	github
 	https://github.com/
 	
-	ÎÒµÄgithub
+	æˆ‘çš„github
 	ganyankai 
-	784979813@qq.com	(×Ô¼º´úÂë¿â)	
+	784979813@qq.com	(è‡ªå·±ä»£ç åº“)	
 	or 609021076@qq.com
 	-----1234
 	https://github.com/ganyankai/wp001stu
 
 	
-	ÏßÉÏÊı¾İ¿â
+	çº¿ä¸Šæ•°æ®åº“
 	47.94.173.245
 	3306
 	root

@@ -1,11 +1,67 @@
 ﻿2019年10月8日
-152 为什么今天的状态不是很好,有时候我常想,
+161 
+	org.springframework.web.util.NestedServletException: 
+	Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError:
+	org/apache/ibatis/ognl/ASTOr
+
+160 
+	数据库
+	
+159	
+	FUNCTION logistics.getChildList does not exist
+
+158 post竟然可以通过 crtl + 来调节所有窗体大小
+	
+157	
+	
+	SELECT COUNT(DISTINCT(`car_id`)) FROM `waybill_detail` WHERE `waybill_id` IN 
+	( SELECT `id` FROM `waybill` WHERE `car_ownner_id` = 12 AND `status` = 'waybill_status_in_transit')
+	
+156 
+	02 实体是取不到 @Transient中 的属性的
+		
+	01 
+		像这样的sql如果二选一的话传入的参数如果是运单对象将更加通用
+		select * from waybill where car_ownner_id = 12 or cargo_ownner_id = 37 
+
+155 数据库函数
+	04 
+		
+	03 http://119.23.172.36:8392/api/carCargoOwner/getCustomer	
+
+	02 调用
+		<select id="getChildCategory" resultType="string">
+			select getChildList(#{id})
+		</select>
+
+	01 定义
+		CREATE DEFINER=`root`@`%` FUNCTION `getChildList`(`v_pid` int) RETURNS varchar(1000) CHARSET utf8
+		BEGIN
+			 DECLARE sTemp VARCHAR(1000);
+		   DECLARE sTempChd VARCHAR(1000);
+		   SET sTemp = '$';
+		   SET sTempChd = cast(v_pid as CHAR);
+		   WHILE sTempChd is not null DO
+		   SET sTemp = concat(sTemp,',',sTempChd);
+		   SELECT group_concat(id) INTO sTempChd FROM product_category where FIND_IN_SET(parent_id,sTempChd)>0;
+		   END WHILE;
+		RETURN substring(sTemp,3);
+		END
+
+154 todo
+	
+	02 定位中心
+	01 司机全部运单接口
+
+153 处理这些突发问题有时真的是没精力,其实这很多问题都是可以提前做好的
+
+152 为什么今天的状态不是很好,有时候我常想,人的状态变化能不能控制呢?
 	
 151 数学模型推演法
 	
 150 业务问题
 	
-
+	
 	02 
 		司机跟他对应的车辆是一一对应的,现在车辆是控制了状态的,同一个运单添加运单项不能添加相对于当前
 		运单繁忙的车辆,不同的运单如果添加了其他运单的司机,则必须也添加当前运单项中对应的车辆
@@ -20,7 +76,6 @@
 		一个运单项的只可能属于一个运单,
 		而运单项里面的司机却可能处于两个运单
 	                                          
-
 149 
 	/**
 	 * 中文时间
