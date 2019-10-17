@@ -1,4 +1,10 @@
 010 杰信商贸
+	26 主页企业中常用设计
+		1) 帧框架 frameset table
+			frameset 帧集合,不能连接具体的页面
+			frame 帧,可以连接一个jsp/action
+		2) div+css+iframe
+
 	25 代码开发规范
 		
 		09 webapp/js/common.js 它是整个项目通用的js
