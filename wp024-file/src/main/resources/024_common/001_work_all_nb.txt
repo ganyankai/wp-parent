@@ -1,11 +1,35 @@
 ﻿2019年10月18日
+168 
+	<![CDATA[ ]]
+
+	<![CDATA[AND (DATE_FORMAT(plan_end_time, '%Y-%m-%d') < DATE_FORMAT(CURDATE(), '%Y-%m-%d'))]]>
+
+	
+	INSERT INTO `ad`(`title`, `content`, `url`, `pc_img_url`, `app_img_url`, `start_time`, `end_time`, `seq`) VALUES (1, '2', '3', '4', '5', '6', '2019-10-18 18:52:23', '2019-10-17 18:52:25', '2019-10-18 18:52:28', 1);
+
+	
+	<mapper namespace="com.yunqing.mybatis.dao.UserMapper">
+    <select id="getUserById" resultType="com.yunqing.mybatis.bean.User">
+        select * from t_user where id = #{id}
+    </select>
+    <insert id="insertUser" parameterType="com.yunqing.mybatis.bean.User" useGeneratedKeys="true">
+        INSERT INTO t_user(name,gender,email) VALUES (#{name},#{gender},#{email})
+    </insert>
+    <update id="updateUser" parameterType="com.yunqing.mybatis.bean.User">
+        UPDATE t_user SET name=#{name},gender=#{gender},email=#{email} where id=#{id}
+    </update>
+    <delete id="deleteUserById">
+        DELETE from t_user where id=#{id}
+    </delete>
+</mapper>
+
 167 每次被人叫去谈话都觉得心里很不自在,你好像并不喜欢这样的方式,真正对你而言重要的事情是什么,
 	真正有效率的挣钱方式是什么,这可能是你终身都需要思考的问题,找工作这样的方式也许永远跟不上自己
 	的节奏,怎样取得关于挣钱立竿见影的效果,未来在哪里生活,如何结婚,如何度过每一天,这些问题你好像
 	很难去找到答案
 	
 166 竞标逻辑修改
-
+	
 165 每天的时间都是一晃而过,你不能在犹豫中度过
 
 164 有时候我在想,我究竟能看的起谁,我们是不是应该以博弈的形式来证明自己的能力及薪资
@@ -108,7 +132,7 @@
 	这种情况跟没有目标的人生是一样的,忙忙碌碌,反反复复,其实这种问题无非就是一个数据的组合问题
 	和一与多的问题,现在的设计又不懂数据模型,原型总是有问题,大多数问题都搞得模糊不清的,
 	这种模糊难道是生活中的常态吗?
-
+		
 147 idea中部署日志 Deploying web application directory D:\002_software\apache-tomcat-7.0.42-jk\webapps\manager
 	到底是什么意思呢?
 	

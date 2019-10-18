@@ -1,3 +1,8 @@
+075 ad表前台不分页,查询时根据当前时间过滤 
+	
+	后台分页,增删改产
+
+
 074	货源分页问题
 	//ok  use
 	select * from cargo where logo = 'logo' and pay_type = 'wechat' and (tender_way != 'bid_mark' or  now() > date_add(create_date,interval + 1 day))	
@@ -86,7 +91,7 @@
 			
 		08  ProductCategoryDto
 		
-		07  ProductCategory
+		
 
 		06  ProductCategoryMapper.xml
 			
@@ -99,7 +104,9 @@
 		02	ProductCategoryServiceImpl
 	
 		01	ProductCategoryController 
-		
+			
+		07  ProductCategory
+
 
 	01 产品分类
 		07 产品参数添加
