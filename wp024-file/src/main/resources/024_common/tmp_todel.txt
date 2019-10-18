@@ -1,10 +1,48 @@
+074	货源分页问题
+	//ok  use
+	select * from cargo where logo = 'logo' and pay_type = 'wechat' and (tender_way != 'bid_mark' or  now() > date_add(create_date,interval + 1 day))	
+	
+	//		倒过来遍历list,处理抢标的情况
+	//		if(list!=null && list.size()>0){
+	//			for(int i=list.size()-1;i>=0;i--){
+	//				Cargo cargoIn = list.get(i);
+	//				//投标方式为抢标且当前时间 - 创建时间 < 配置时间 , 不展示该结果
+	//				if (cargoIn.getTenderWay().equals(CargoConstant.BID_MARK)
+	//						&&(new Date().getTime() - cargoIn.getCreateDate().getTime()< Long.valueOf(bidWaitTime)*3600*1000) ){
+	//					list.remove(i);
+	//					page.setTotal(page.getTotal()-1);
+	//				}
+	//			}
+	//		}
 
+073 and (tender_way != 'bid_mark' or  now() > date_add(create_date,interval + 1 day))
 
+072	根据车牌号和运单号查询唯一的运单项
+	select * from waybill_detail where car_id = 1 and waybill_id = 1024 
+
+071	反射与注解代码
+		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
+		Class[] parameterTypes = signature.getParameterTypes();
+		String targetMethodName = joinPoint.getSignature().getName();
+		Method targetMethod = joinPoint.getTarget().getClass().getMethod(targetMethodName, parameterTypes);
+		if (targetMethod.isAnnotationPresent(IgnoreToken.class)) {
+			return;
+		} 
+	
+070 
+	查询最后一级(介质名称)
+	
+069 
+	customer_service
+	
+068	
+	http://ganyankai@120.25.212.63:10101/r/priceCompare.git
+	
 067 
 	定位中心
 		02  
 		01	查看定位中心中的运单项
-
+		
 	司机头像添加
 	消息报错处理
 	全部运单
@@ -15,8 +53,7 @@
 		03 
 
 		02 文件 
-			
-			
+						
 		01 接口 /freight/selectList
 				FreightController
 				

@@ -1,3 +1,5 @@
+04 错误: 找不到或无法加载主类 com.zrytech.framework.App
+	
 03 Error:java: 无效的源发行版: 1.8
 			   无效的目标发行版: 1.8
 	a01 maven编译插件的问题,
