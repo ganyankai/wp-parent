@@ -1,4 +1,14 @@
-﻿0011 为什么有时候nat模式可以远程连接,而桥接却不可以
+﻿2019年10月20日
+013 这样的配置中/WEB-INF/pages的前缀究竟是什么,是部署前决定还是部署后决定的
+	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages"/>
+		<property name="suffix" value=""/>
+	</bean>
+
+012 为什么idea项目中的tomcat没有读取web.xml文件
+
+2019年8月20日
+0011 为什么有时候nat模式可以远程连接,而桥接却不可以
 	
 0010.目前可以做的项目,手机app点餐项目,订房项目,网站流量统计项目,聊天软件开发,在线支付项目
 	

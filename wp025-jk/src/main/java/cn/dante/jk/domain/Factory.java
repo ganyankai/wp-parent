@@ -13,7 +13,7 @@ public class Factory {
 	private String id;
 	private String fullName;
 	private String factoryName;
-	private String contractor;
+	private String contacts;
 	private String phone;
 
 
@@ -93,12 +93,12 @@ public class Factory {
 		this.factoryName = factoryName;
 	}
 
-	public String getContractor() {
-		return contractor;
+	public String getContacts() {
+		return contacts;
 	}
 
-	public void setContractor(String contractor) {
-		this.contractor = contractor;
+	public void setContacts(String contractor) {
+		this.contacts = contacts;
 	}
 
 	public String getPhone() {
