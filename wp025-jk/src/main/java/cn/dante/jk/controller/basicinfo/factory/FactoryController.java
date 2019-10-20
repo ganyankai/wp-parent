@@ -65,4 +65,13 @@ public class FactoryController extends BaseController {
         factoryService.delete(ids);
         return "redirect:/basicinfo/factory/list.action";
     }
+
+    //查看
+    @RequestMapping("/basicinfo/factory/get.action")
+    public String toview(String id,Model model){
+
+        Factory obj = factoryService.get(id);
+        model.addAttribute("obj",obj);
+        return "/basicinfo/factory/jFactoryView.jsp";
+    }
 }
