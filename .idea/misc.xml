@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/wp002codemachine/pom.xml" />
+        <option value="$PROJECT_DIR$/wp003book/pom.xml" />
+        <option value="$PROJECT_DIR$/wp005eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/wp006eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/wp007service-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/wp008-num-single/pom.xml" />
+        <option value="$PROJECT_DIR$/wp009-design-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/wp010-procedure/pom.xml" />
+        <option value="$PROJECT_DIR$/wp011-web-vue/pom.xml" />
+        <option value="$PROJECT_DIR$/wp012-test-unit/pom.xml" />
+        <option value="$PROJECT_DIR$/wp024-file/pom.xml" />
+        <option value="$PROJECT_DIR$/wp025-jk/pom.xml" />
+        <option value="$PROJECT_DIR$/wp004jpush/pom.xml" />
+        <option value="$PROJECT_DIR$/wp0026-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/wp026-springmvc/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

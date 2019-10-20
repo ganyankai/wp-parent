@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tu01_test_java" />
+        <module name="wp001stu" />
+        <module name="wp002codemachine" />
+        <module name="wp003book" />
+        <module name="wp004jpush" />
+        <module name="wp005eureka-server" />
+        <module name="wp006eureka-client" />
+        <module name="wp007service-ribbon" />
+        <module name="wp008-num-single" />
+        <module name="wp009-design-pattern" />
+        <module name="wp010-procedure" />
+        <module name="wp011-web-vue" />
+        <module name="wp024-file" />
+        <module name="wp025-jk" />
+        <module name="wp026-springmvc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wp0026-springmvc" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
