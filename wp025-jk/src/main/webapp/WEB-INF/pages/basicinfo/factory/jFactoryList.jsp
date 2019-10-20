@@ -15,7 +15,9 @@
 
 
 <li id="view"><a href="#" onclick="formSubmit('toview.action','_self');this.blur();">查看</a></li>
- 
+<li id="new"><a href="#" onclick="formSubmit('tocreate.action','_self');this.blur();">新增</a></li>
+<li id="toupdate"><a href="#" onclick="formSubmit('toupdate.action','_self');this.blur();">修改</a></li>
+
 </ul>
   </div>
 </div>
@@ -69,7 +71,7 @@
 		<%--<td>${status.index+1}</td>--%>
 		<td><a href="toview.action?id=${o.id}">${o.fullName}</a></td>
 		<td>${o.factoryName}</td>
-		<td>${o.contractor}</td>
+		<td>${o.contacts}</td>
 		<td>${o.phone}</td>
 
 		<td>${o.mobile}</td>

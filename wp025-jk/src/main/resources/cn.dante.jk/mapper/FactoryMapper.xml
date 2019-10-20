@@ -31,6 +31,12 @@
 		where 1=1
 	</select>
 
+	<!-- 查询一个 parameterType为string时 #{id} 可以写为#{pid}-->
+	<select id="get" parameterType="string" resultMap="factoryRM">
+		select * from factory_c
+		where factory_id = #{id}
+	</select>
+
     <!-- 新增  oracle jdbc驱动 当这个值为null时，必须告诉它当前字段默认值的类型jdbcType=VARCHAR （mybatis定义）,
 			无效的列类型: 1111; nested exception is java.sql.SQLException
 	 		mysql不用写  -->
@@ -54,5 +60,24 @@
 			#{createTime, jdbcType=TIMESTAMP}
 		)
 	</insert>
+
+	<!-- 修改 动态SQL语句 -->
+	<update id="update" parameterType="cn.itcast.jk.domain.Factory">
+		update factory_c
+		<set>
+			<if test="fullName != null">FULL_NAME=#{fullName, jdbcType=VARCHAR},</if>
+			<if test="factoryName != null">FACTORY_NAME=#{factoryName, jdbcType=VARCHAR},</if>
+			<if test="contacts != null">CONTACTS=#{contacts, jdbcType=VARCHAR},</if>
+			<if test="phone != null">PHONE=#{phone, jdbcType=VARCHAR},</if>
+			<if test="mobile != null">MOBILE=#{mobile, jdbcType=VARCHAR},</if>
+
+			<if test="fax != null">FAX=#{fax, jdbcType=VARCHAR},</if>
+			<if test="cnote != null">CNOTE=#{cnote, jdbcType=VARCHAR},</if>
+			<if test="inspector != null">INSPECTOR=#{inspector, jdbcType=VARCHAR},</if>
+			<if test="orderNo != null">ORDER_NO=#{orderNo, jdbcType=INTEGER},</if>
+			<if test="state != null">STATE=#{state, jdbcType=VARCHAR},</if>
+		</set>
+		where FACTORY_ID=#{id}
+	</update>
 
 </mapper>

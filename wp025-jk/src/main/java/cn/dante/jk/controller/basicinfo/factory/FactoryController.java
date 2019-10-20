@@ -34,4 +34,20 @@ public class FactoryController extends BaseController {
         factoryService.insert(factory);
         return "redirect:/basicinfo/factory/list.action";
     }
+
+    //转向修改页面
+    @RequestMapping("/basicinfo/factory/toupdate.action")
+    public String toupdate(String id,Model model){
+        //Serializable可以通用整形和字符串
+        Factory obj = factoryService.get(id);
+        model.addAttribute(obj);
+        return "/basicinfo/factory/jFactoryUpdate.jsp";
+    }
+
+    //修改保存
+    @RequestMapping("/basicinfo/factory/update.action")
+    public String update(Factory factory){
+        factoryService.update(factory);
+        return "redirect:/basicinfo/factory/list.action";
+    }
 }

@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td class="columnTitle_mustbe">联系人：</td>
-            <td class="tableContent"><input type="text" name="contractor" value="" dataType="非空字符串" dispName="联系人"/></td>
+            <td class="tableContent"><input type="text" name="contacts" value="" dataType="非空字符串" dispName="联系人"/></td>
             <td class="columnTitle_mustbe">电话：</td>
             <td class="tableContent"><input type="text" name="phone" value="" dataType="非空电话" dispName="电话"/></td>
         </tr>
