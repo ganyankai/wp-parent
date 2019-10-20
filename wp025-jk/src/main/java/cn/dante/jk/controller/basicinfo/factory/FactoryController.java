@@ -6,6 +6,7 @@ import cn.dante.jk.service.FactoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -48,6 +49,20 @@ public class FactoryController extends BaseController {
     @RequestMapping("/basicinfo/factory/update.action")
     public String update(Factory factory){
         factoryService.update(factory);
+        return "redirect:/basicinfo/factory/list.action";
+    }
+
+    //删除一个
+    @RequestMapping("/basicinfo/factory/deleteById.action")
+    public String deleteById(String id){
+        factoryService.deleteById(id);
+        return "redirect:/basicinfo/factory/list.action";
+    }
+
+    //删除多条
+    @RequestMapping("/basicinfo/factory/delete.action")
+    public String delete(@RequestParam("id") String[] ids){
+        factoryService.delete(ids);
         return "redirect:/basicinfo/factory/list.action";
     }
 }

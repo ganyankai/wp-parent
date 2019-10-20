@@ -80,4 +80,18 @@
 		where FACTORY_ID=#{id}
 	</update>
 
+    <!--删除一条 -->
+    <delete id="deleteById" parameterType="string">
+      delete from factory_c
+      where factory_id =#{id}
+    </delete>
+
+    <!--删除多条(一维数组),虽是数组,但parameterType还是数组中元素类型string-->
+    <delete id="delete" parameterType="string">
+      delete from factory_c
+      where factory_id in
+      <foreach collection="array" item="id" open="(" close=")" separator=",">
+        #{id}
+      </foreach>
+    </delete>
 </mapper>

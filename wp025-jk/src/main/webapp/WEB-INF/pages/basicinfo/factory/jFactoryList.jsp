@@ -17,6 +17,8 @@
 <li id="view"><a href="#" onclick="formSubmit('toview.action','_self');this.blur();">查看</a></li>
 <li id="new"><a href="#" onclick="formSubmit('tocreate.action','_self');this.blur();">新增</a></li>
 <li id="toupdate"><a href="#" onclick="formSubmit('toupdate.action','_self');this.blur();">修改</a></li>
+<li id="deleteById"><a href="#" onclick="formSubmit('deleteById.action','_self');this.blur();">删除</a></li>
+<li id="delete"><a href="#" onclick="formSubmit('delete.action','_self');this.blur();">删除N</a></li>
 
 </ul>
   </div>
