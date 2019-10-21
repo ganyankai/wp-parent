@@ -27,4 +27,12 @@ public class BookRental { //该类描述出租记录
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
+
+    @Override
+    public String toString() {
+        return "BookRental{" +
+                "id='" + id + '\'' +
+                ", customerName='" + customerName + '\'' +
+                '}';
+    }
 }

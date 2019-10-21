@@ -1,3 +1,6 @@
+076 
+	WLAssert.isNotBlank(requestParams.getParams().getDrivingId(),"驾驶证编号不能为空");
+
 075 ad表前台不分页,查询时根据当前时间过滤 
 	
 	后台分页,增删改产
