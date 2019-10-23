@@ -1,3 +1,12 @@
+12 
+	inventory	存货,详细目录
+	
+11	
+	retain	保留;保存
+
+10	
+	annotations		释文
+		
 09 
 	Morning hours is the best time of the day to work .
 	An hour in the morning is worth two in the evening .

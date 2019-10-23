@@ -1,0 +1,28 @@
+01 代码异味
+
+	第一种异味：代码用了类别代码 ：代码用了类别代码（type code）。
+	 class Shape { 
+	 final int TYPELINE = 0; 
+	 final int TYPERECTANGLE = 1; 
+	 final int TYPECIRCLE = 2; 
+	 int shapeType; 
+	 ... 
+	 } 
+	这样的异味，是一种严肃的警告：我们的代码可能有许多问题。
+	第二种异味：Shape 这个类有很多属性有时候是不用的。例如，radius 这个属性只有在这个 Shape 是个圆的
+	时候才用到：
+	 class Shape { 
+	 ... 
+	 Point p1; 
+	 Point p2; 
+	 int radius; //有时候不用
+	 } 
+	第三种异味：我们想给 ：我们想给 p1,p2 取个好一点的变量名都做不到，因为不同的情况下 ，因为不同的情况下，它们有不同的含义 ，它们有不同的含义：
+	 class Shape { 
+	 ... 
+	 Point p1; //要取作“起始点”，“左下点”，还是“圆心”？
+	 Point p2; 
+	 } 
+	第四种异味：drawShapes 这个方法里面，有个 switch表达式。当我们用到 。当我们用到 switch（或者一大串的 （或者一大串的 if-then-else-if）
+	时，小心了。switch 表达式经常是跟类别代码（type code）同时出现的。
+

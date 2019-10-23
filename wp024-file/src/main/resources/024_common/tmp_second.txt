@@ -7,7 +7,7 @@
 	
 	后台分页,增删改产
 
-
+	
 074	货源分页问题
 	//ok  use
 	select * from cargo where logo = 'logo' and pay_type = 'wechat' and (tender_way != 'bid_mark' or  now() > date_add(create_date,interval + 1 day))	
