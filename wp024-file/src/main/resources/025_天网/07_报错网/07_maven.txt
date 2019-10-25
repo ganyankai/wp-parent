@@ -1,0 +1,16 @@
+01 maven公司私服jar无法引入
+	
+	a1:pom文件配置jar包路径
+		 <repositories>
+			<repository>
+				<id>public</id>
+				<name>zrytech-repository</name>
+				<url>http://120.25.212.63:9999/nexus/content/groups/public/</url>
+				<releases>
+					<enabled>true</enabled>
+				</releases>
+				<snapshots>
+					<enabled>true</enabled>
+				</snapshots>
+			</repository>
+		</repositories>
