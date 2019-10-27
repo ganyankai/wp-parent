@@ -19,8 +19,8 @@ public class FactoryDaoImpl extends BaseDaoImpl<Factory> implements FactoryDao {
 		this.setNs("cn.itcast.jk.mapper.FactoryMapper.");			//设置命名空间
 	}
 
-	public void changeState(Map<String, Object> map) {
-//		this.getSqlSession().update(this.getNs() + "changeState", map);
+	public void updateState(Map<String, Object> map) {
+		this.getSqlSession().update(this.getNs() + "updateState", map);
 	}
 
 }

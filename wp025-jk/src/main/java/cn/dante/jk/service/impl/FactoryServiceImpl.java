@@ -1,6 +1,7 @@
 package cn.dante.jk.service.impl;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -33,6 +34,7 @@ public class FactoryServiceImpl implements FactoryService {
 
 	public void insert(Factory factory) {
 		factory.setId(UUID.randomUUID().toString());
+		factory.setState("1");		//默认启动
 		factoryDao.insert(factory);
 	}
 
@@ -49,7 +51,24 @@ public class FactoryServiceImpl implements FactoryService {
 	}
 
 	public void changeState(Map<String, Object> map) {
-		factoryDao.changeState(map);
+//		factoryDao.changeState(map);
 	}
+
+	public void start(Serializable[] ids) {
+		Map map = new HashMap();
+		map.put("state","1");	//启用
+		map.put("ids",ids);
+
+		factoryDao.updateState(map);
+	}
+
+	public void stop(Serializable[] ids) {
+		Map map = new HashMap();
+		map.put("state","0");	//启用
+		map.put("ids",ids);
+
+		factoryDao.updateState(map);
+	}
+
 
 }

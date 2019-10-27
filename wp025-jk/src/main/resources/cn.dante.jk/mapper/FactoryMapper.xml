@@ -94,4 +94,13 @@
         #{id}
       </foreach>
     </delete>
+
+	<!-- 修改状态 -->
+	<update id="updateState" parameterType="map">
+		update factory_c set state=#{state}
+		where FACTORY_ID in
+		<foreach collection="ids" item="id" open="(" close=")" separator=",">
+			#{id}
+		</foreach>
+	</update>
 </mapper>

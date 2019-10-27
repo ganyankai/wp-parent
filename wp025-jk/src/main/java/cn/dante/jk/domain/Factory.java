@@ -30,6 +30,8 @@ public class Factory {
 
 	private String inspector;
 	private Integer orderNo;
+	private String state;
+
 	private String createBy;
 	private String createDept;
 	private Date createTime;
@@ -134,12 +136,12 @@ public class Factory {
 		this.orderNo = orderNo;
 	}
 
-//	public Integer getState() {
-//		return state;
-//	}
-//
-//	public void setState(Integer state) {
-//		this.state = state;
-//	}
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String status) {
+		this.state = state;
+	}
 
 }

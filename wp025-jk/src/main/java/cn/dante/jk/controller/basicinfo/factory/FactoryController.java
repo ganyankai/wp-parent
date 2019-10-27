@@ -74,4 +74,20 @@ public class FactoryController extends BaseController {
         model.addAttribute("obj",obj);
         return "/basicinfo/factory/jFactoryView.jsp";
     }
+
+    //批量进行启用
+    @RequestMapping("/basicinfo/factory/start.action")
+    public String start(@RequestParam("id") String[] ids){
+//        this.changeState(1, id.split(","));						//对多个ID进行解串
+        factoryService.start(ids);
+        return "redirect:/basicinfo/factory/list.action";
+    }
+
+    //批量进行停用
+    @RequestMapping("/basicinfo/factory/stop.action")
+    public String stop(@RequestParam("id") String[] ids){
+//        this.changeState(0, id.split(","));
+        factoryService.stop(ids);
+        return "redirect:/basicinfo/factory/list.action";
+    }
 }
