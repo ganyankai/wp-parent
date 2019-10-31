@@ -1,3 +1,166 @@
+2019年10月29日
+80 部署步骤
+	03 war包放到tomcat	webapps目录下
+		
+	02 上传更改的jar包
+		cd /usr/local/service
+		conf
+		lib
+		jar
+
+
+	01 打包改动的文件
+		发布文件安装
+		module		common-module
+		parent		framework-parent	
+		business	project-oil-business
+		common		project-oil-common
+	
+79 昨天一个排序的问题没有定位到地方竟然花了这么多时间
+
+78 油站部署步骤
+	
+
+77 @DataSource(name = DataSource.slave1)
+	这个注解放在类上竟然无效,默认连接主库,放在方法上连接从库
+	
+76 
+	select I_SALE_AMOUNT as daySaleAmount from t_settlement_station_day t  where 1=1  AND t.i_day >= 20191029  AND t.i_day <= 20191029
+	注意是连得主表还是从表
+	如何输出当前连接的数据库吗?
+	
+75 油品加油升数明细
+	
+
+74 珍贵的返回结果
+	{
+		"saleAmount": 10
+	}
+	
+73 加油站修改配置文件后也可能需要重新安装
+
+72 ${service.stat.rmi.url} 配置有service stat之分
+	<property name="serviceUrl" value="${service.stat.rmi.url}/appOilStaServiceImpl"/>
+
+71 新增controller后要把相关service重新install
+
+70 
+	[Request processing failed; nested exception is java.lang.IllegalStateException: 
+	getWriter() has already been called] with root cause
+	
+69	连接词
+	<com.alibaba.druid.version>1.1.11</com.alibaba.druid.version>
+
+68 定义服务
+	applicationContext-bis-rmi.xml
+
+67 dao层代码参考
+	
+	 @Override
+    public Page<Map> lockPriceList(LockPriceForm lockPriceForm, Pageable pageable) {
+        StringBuilder sql = new StringBuilder();
+        sql.append(getQuerySql());
+        sql.append(" where 1=1 ");
+
+        if(lockPriceForm.getProductKind()!=null){
+            sql.append(" and a.product_kind = '"+lockPriceForm.getProductKind()+"' ");
+        }
+        if(StringUtils.isNotBlank(lockPriceForm.getGroupId())){
+            sql.append(" and a.group_id = '"+lockPriceForm.getGroupId()+"' ");
+        }
+        if(lockPriceForm.getStatus()!=null){
+            sql.append(" and a.status = '"+lockPriceForm.getStatus()+"' ");
+        }
+        //根据锁价id和集团id查询所有的加油站
+        Map params = new HashMap<>();
+
+        Page page = this.findPageBySql(sql.toString(), params, pageable, Map.class);
+
+        List list = page.getContent();
+        if(list!=null && list.size()>0){
+            for (Object obj:
+                    list) {
+                Map map = (Map) obj;
+                String  id =    (String) map.get("id");
+                String  groupId =    (String) map.get("groupId");
+                List stationList = findOilStationList(id);
+                map.put("stationList",stationList);
+                map.put("stationListStr",listToStr(stationList));
+            }
+        }
+
+        return page;
+    }
+	
+	 @Override
+    public Page<Map> cusLockOrderBackList(LockPriceOrderForm lockPriceOrderForm, Pageable pageable) {
+        StringBuffer sql = new StringBuffer();
+        Map map =   new HashMap<>();
+
+        sql.append("SELECT tco.S_ID as id, tco.ORDER_NO as orderNo,tco.PRODUCT_KIND as productKind," +
+                "tco.LOCK_TYPE as lockType, " +
+                "tco.FLOAT_RANGE as floatRange,tco.LOCK_PRICE as lockPrice,tco.REMAIN_PRICE as remainPrice," +
+                "tco.D_CREATE_DATE as createDate, " +
+                "tci.S_ACCOUNT as tel,tci.S_NAME as name from t_cus_lock_order tco,t_cus_info tci");
+        sql.append(" where tco.CUS_ID = tci.I_ID and tci.I_DEL_FLAG=2 ");
+
+        if (lockPriceOrderForm.getOrderNo()!=null){
+            sql.append(" and tco.ORDER_NO like :orderNo ");
+            map.put("orderNo", "%" + lockPriceOrderForm.getOrderNo() + "%");
+        }
+        if (lockPriceOrderForm.getTel()!=null){
+            sql.append(" and tci.S_ACCOUNT like :tel ");
+            map.put("tel", "%" + lockPriceOrderForm.getTel() + "%");
+        }
+        if (lockPriceOrderForm.getName()!=null){
+            sql.append(" and tci.S_NAME like :name ");
+            map.put("name", "%" + lockPriceOrderForm.getName() + "%");
+        }
+        sql.append(" ORDER BY tco.D_CREATE_DATE desc ");
+        return this.findPageBySql(sql.toString(), map, pageable, Map.class);
+    }
+	
+
+66 这种维度的表格改如何理解
+	时间	0#柴油	90#汽油	92#汽油	93#汽油	95#汽油	97#汽油	98#汽油	-10#柴油	-20#柴油	-35#柴油	总升数(L)
+	2019-10-17	0	0.0	0	0	0	0	0	0	0	0	0.0
+	2019-10-14	0.01	0	0	0	0	0	0	0	0	0	0.01
+	2019-10-09	0	0	0	0	2.0	0	0	0	0	0	2.0
+	2019-09-08	1.43	0	0	0	0	0	0	0	0	0	1.43
+
+65 代码分离维度不够将导致代码极难复用,你不理解别人的思维也会导致代码
+	难以复用
+
+64 原来统计连接的是stat服务
+		服务统计
+			project-oil-service-impl		8888
+			project-oil-stat-service-impl	8898
+			
+
+63 修改pom中druid的版本后,没有执行install好像也能启动不报错成功
+	解决这个报错
+		Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+		2019-10-29 10:29:37.536 [main] WARN  com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker -[] [] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+		java.lang.NullPointerException: null
+			at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:48) ~[druid-1.0.13.jar:1.0.13]
+			at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:892) 
+
+62 maven - clean 好像也会清除安装好的war包
+	
+61 只有当你遇到重重困难的时候,你才知道自己的价值,有时候真的应该详细自己的能力
+
+60	project-oil-settlement-service-impl的pom也有启动环境配置
+
+59	执行maven install还是出现dirver警告
+	改配置以后不执行maven install 依然出现dirver警告
+
+58 --可能不准确
+	先启动服务,再启动tomcat,停止服务后再启动服务,此时tomcat无需重启也是可以连接服务,
+	而先启动tomncat,后启动服务tomcat也是需要重启的
+
+57 启动新服务后好像tomcat也要重新编译再启动才能连接新的服务,
+	在没有修改代码的情况下停止服务后重启tomcat依然可以连上
+
 56 question
 	03 
 
@@ -1275,7 +1438,7 @@
 		Server  -  project-oil-service-impl	 8888
 		
 	08 项目之间可能有很多重载的方法,注意依赖关系,
-		代码最好统一放在project-oil-service-impl
+		代码最好统一放在project--common-oil-service-impl
 		
 	07 原型
 		https://run.mockplus.cn/anbo1zz2SwaCtAl5/index.html

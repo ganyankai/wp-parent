@@ -1,4 +1,130 @@
-﻿2019年10月23日
+﻿2019年10月31日
+215 油站发布
+	http://47.104.232.195:8080/
+	
+	netstat -nltp
+
+	http://47.104.232.195:8080/MrOilMgr/admin/index.html
+
+	cd /usr/local/service
+	cd /usr/local/service/8888-project-oil-service-impl
+	
+
+
+		//nohup java -DoilServerImpl -jar project-oil-service-impl.jar >/dev/null 2>out.log &
+
+	nohup java -Dfile.encoding=utf-8 -jar project-oil-service-impl.jar &
+	
+
+
+2019年10月28日
+214 事务模式,有则取,无则不晓得
+	就好像sql与参数绑定
+
+213 今天想到一个转化问题,你得有能力去把你得想法转化成大众认可的事务,
+	不然可能永远只能是想法
+	你得有把道德,知识,思想转化为金钱的能力
+	就好比这种万物通用额语言有可能被发明出来吗?
+
+212 行分离可维护程度高于空格分离高于列分离
+
+211 按照原型理解数据结构法,因为数据结构本身可理解为生动的图
+	
+
+210 先写出完整的,再提取公用方法,代码都是一步步公用抽取的,不要指望一步全部抽取
+	完成
+	
+
+209 封装变化修改法
+	比如
+		String columnName =  "I_RECEIVE_AMOUNT";
+        String columnNameAlias =  "monthReceiveAmount";
+        String tableName = "t_settlement_station_month";
+        String dateDimension = "month";
+		
+        Map params =   new HashMap<>();
+        params.put("columnName",columnName);
+        params.put("columnNameAlias",columnNameAlias);
+        params.put("tableName",tableName);
+        params.put("dateDimension",dateDimension);
+		
+        Map map = getStaMap(date, stationId, params);
+		
+		//获取单个字段通用查询
+		public Map getStaMap(Date date, String stationId, Map params) {
+			StringBuffer sql = new StringBuffer();
+			sql.append("select "+params.get("columnName")+" as "+params.get("columnNameAlias") +" from "+params.get("tableName") +" t ");
+			sql.append(" where 1=1 ");
+			if (date!=null){
+				if (((String)params.get("dateDimension")).equalsIgnoreCase("month")){
+					sql.append(" AND t.i_month >= :startCreateDate ");
+					sql.append(" AND t.i_month <= :endCreateDate ");
+					params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMM")));
+					params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMM")));
+				}
+				if (((String)params.get("dateDimension")).equalsIgnoreCase("day")){
+					sql.append(" AND t.i_day >= :startCreateDate ");
+					sql.append(" AND t.i_day <= :endCreateDate ");
+					params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMMdd")));
+					params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMMdd")));
+				}
+			}
+			if (StringUtil.isNotBlank(stationId)){
+				sql.append(" AND t.s_station_id IN (:oilstationIds) ");
+				params.put("oilstationIds", stationId);
+			}
+			System.out.println("sql:"+sql.toString());
+			List list = this.findListBySql(sql.toString(), params);
+			if (list!=null && list.size()>0){
+				return (Map)list.get(0);
+			}
+			return null;
+		}
+
+	
+	这时候你才知道使用通用字段的作用
+	
+
+208	@Cacheable用法
+	@Cacheable(value = "statistic", key = "#stationId + #startDate.toString() + #endDate.toString() + #dateDimension.toString() + 'findStationRefuelRecordDay'")
+
+208 idea tocmat部署设置
+	02 
+		Deployment
+			exploded 
+	01	
+		server
+			on update action	Redeploy
+			on frame deactivation	Update classes and resources
+		
+207 加油站部署配置
+	web resoucre dir																									
+	D:\001_work\020_gitcode\oilStation\project-oil-business\project-oil-web-admin\src\main\webapp
+
+	path /
+
+	Path
+	D:\001_work\020_gitcode\oilStation\project-oil-business\project-oil-web-admin\src\main\webapp\WEB-INF\web.xml
+
+206 多参数情况代码分离术
+
+205 睡眠的问题该如何解决,这么多年都没找到治本的方案,给我一个这样的睡眠条件
+	创造力将大大降低,你要一直这样下去吗?该怎么解决现在面临的问题
+
+204 idea项目点击类名不跳 .java文件跳jar包的方法
+	处理	maven管理的项目中有灰色,重启idea
+
+203 maven管理的项目中有灰色   造成这个的原因是忽略了maven模块，此时需要将忽略的文件ignored files进行恢复
+	Settings-maven-Ignored Files，将灰色项目如上图中的对勾去掉。
+
+202 保存一份完整的idea项目配置文件其实非常必要,尤其是项目非常大的时候,
+	可帮你节省很多时间
+
+201 idea不识别java文件,除了配置jdk外,还可能需要手动把source设置为根目录
+
+200 有些jar包问题需要重新安装
+	
+2019年10月23日
 199 jpa中实体不配置映射表名,且实体不是默认表名时会报找不到实体
 	
 198 这个是给jpa用的

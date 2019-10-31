@@ -27,7 +27,6 @@
       <module name="tu01_test_java" target="1.8" />
       <module name="wp-parent" target="1.8" />
       <module name="wp001stu" target="1.8" />
-      <module name="wp0026-springmvc" target="1.5" />
       <module name="wp002codemachine" target="1.8" />
       <module name="wp003book" target="1.8" />
       <module name="wp004jpush" target="1.8" />
