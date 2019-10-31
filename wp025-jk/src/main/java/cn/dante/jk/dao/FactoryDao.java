@@ -11,5 +11,5 @@ import cn.dante.jk.domain.Factory;
  * @CreateDate:	2014-3-12
  */
 public interface FactoryDao extends BaseDao<Factory> {
-	public void changeState(Map<String,Object> map);
+	public void updateState(Map<String,Object> map);
 }

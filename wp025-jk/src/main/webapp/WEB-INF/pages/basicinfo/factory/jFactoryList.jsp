@@ -19,6 +19,8 @@
 <li id="toupdate"><a href="#" onclick="formSubmit('toupdate.action','_self');this.blur();">修改</a></li>
 <li id="deleteById"><a href="#" onclick="formSubmit('deleteById.action','_self');this.blur();">删除</a></li>
 <li id="delete"><a href="#" onclick="formSubmit('delete.action','_self');this.blur();">删除N</a></li>
+<li id="start"><a href="#" onclick="formSubmit('start.action','_self');this.blur();">启用</a></li>
+<li id="stop"><a href="#" onclick="formSubmit('stop.action','_self');this.blur();">停用</a></li>
 
 </ul>
   </div>
@@ -61,6 +63,7 @@
 		<td class="tableHeader">手机</td>
 		<td class="tableHeader">传真</td>
 		<td class="tableHeader">验货员</td>
+		<td class="tableHeader">状态</td>
 
 
 	</tr>
@@ -79,6 +82,15 @@
 		<td>${o.mobile}</td>
 		<td>${o.fax}</td>
 		<td>${o.inspector}</td>
+
+		<td>
+			<c:if test="${o.state == 1}">
+				<a href="start.action?id=${o.id}"><font color="green">启用</font></a>
+			</c:if>
+			<c:if test="${o.state == 0}">
+				<a href="start.action?id=${o.id}"> 停用</a>
+			</c:if>
+		</td>
 	</tr>
 	</c:forEach>
 	

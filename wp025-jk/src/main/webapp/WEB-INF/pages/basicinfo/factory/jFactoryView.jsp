@@ -33,30 +33,30 @@
 	<div>
 		<table class="commonTable" cellspacing="1">
 			<tr>
-				<td class="columnTitle_mustbe">厂家名称：</td>
+				<td class="columnTitle">厂家名称：</td>
 				<td class="tableContent">${obj.fullName}</td>
-				<td class="columnTitle_mustbe">简称：</td>
+				<td class="columnTitle">简称：</td>
 				<td class="tableContent">${obj.factoryName}</td>
 			</tr>
 			<tr>
-				<td class="columnTitle_mustbe">联系人：</td>
+				<td class="columnTitle">联系人：</td>
 				<td class="tableContent">${obj.contacts}</td>
-				<td class="columnTitle_mustbe">电话：</td>
+				<td class="columnTitle">电话：</td>
 				<td class="tableContent">${obj.phone}</td>
 			</tr>
 			<tr>
-				<td class="columnTitle_mustbe">手机：</td>
+				<td class="columnTitle">手机：</td>
 				<td class="tableContent">${obj.mobile}</td>
-				<td class="columnTitle_mustbe">传真：</td>
+				<td class="columnTitle">传真：</td>
 				<td class="tableContent">${obj.fax}</td>
 			</tr>
 			<tr>
-				<td class="columnTitle_mustbe">备注：</td>
+				<td class="columnTitle">备注：</td>
 				<td class="tableContent" colspan="3"><pre>${obj.cnote}</pre></td>
 			</tr>
 			<tr>
-				<td class="columnTitle_mustbe">排序号：</td>
-				<td class="tableContent" colspan="3">${obj.orderNo}</td>
+				<td class="columnTitle">排序号：</td>
+				<td class="tableContent" colspan="3"><pre>${obj.orderNo}</pre></td>
 			</tr>
 		</table>
 	</div>
