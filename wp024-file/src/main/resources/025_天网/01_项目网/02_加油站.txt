@@ -7,8 +7,8 @@
 		conf
 		lib
 		jar
-
-
+		
+		
 	01 打包改动的文件
 		发布文件安装
 		module		common-module

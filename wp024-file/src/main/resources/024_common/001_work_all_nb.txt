@@ -1,4 +1,13 @@
 ﻿2019年10月31日
+216 注意saveAndFlush的id
+		carLocation.setWaybillId(waybill.getId());
+		CarLocation storeCarLocation =new CarLocation();
+
+		BeanUtils.copyProperties(carLocation,storeCarLocation);
+		storeCarLocation.setId(null);
+
+		carLocationRepository.saveAndFlush(storeCarLocation);
+		
 215 油站发布
 	http://47.104.232.195:8080/
 	
@@ -9,7 +18,7 @@
 	cd /usr/local/service
 	cd /usr/local/service/8888-project-oil-service-impl
 	
-
+	
 
 		//nohup java -DoilServerImpl -jar project-oil-service-impl.jar >/dev/null 2>out.log &
 
