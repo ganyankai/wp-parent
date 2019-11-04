@@ -1,13 +1,22 @@
 2019年10月29日
 80 部署步骤
-	03 war包放到tomcat	webapps目录下
+	05 重启tomcat
+		cd /usr/local/tomcat
 		
-	02 上传更改的jar包
+
+	04 war包放到tomcat	webapps目录下
+		
+	03 重启service
 		cd /usr/local/service
+
+		netstat -nltp
+		tail -f nohup.out
+
+	02 上传更改的jar包
+		
 		conf
 		lib
 		jar
-		
 		
 	01 打包改动的文件
 		发布文件安装
@@ -17,7 +26,7 @@
 		common		project-oil-common
 	
 79 昨天一个排序的问题没有定位到地方竟然花了这么多时间
-
+	
 78 油站部署步骤
 	
 

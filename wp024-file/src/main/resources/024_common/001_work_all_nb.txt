@@ -1,4 +1,47 @@
-﻿2019年10月31日
+﻿2019年11月4日
+221 竟然可以通过debug的方式,如果idea debug的左侧有x,说明代码没编译成功
+	
+220 关于登录以后自动处理一下参数的问题你好像并未搞得很清楚
+	Cookie:JSESSIONID=9DCC50F37609CEB9E3BD853A73D1A04B; token=9f90e88e-6b78-44eb-9498-01f0f661082d; UM_distinctid=16e1f9bbf5071a-00ef2ac207ec33-3d644509-1fa400-16e1f9bbf517db; CNZZDATA1258795774=18006719-1572484721-%7C1572484721
+	token:9f90e88e-6b78-44eb-9498-01f0f661082d
+	X-Requested-With:XMLHttpRequest
+	Content-Type:application/x-www-form-urlencoded
+	
+219 为什么在本地获取时password为空
+	原来这框架要在session中取一个privateKey
+	
+2019年10月31日
+218 关于新框架的登录功能,
+	如何跳过拦截器的拦截
+	applicationContext-shiro.xml
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/admin/login.html"/>
+        <property name="successUrl" value="/admin/index.html"/>
+        <property name="unauthorizedUrl" value="/admin/login.html"/>
+        <property name="filterChainDefinitions">
+            <value>
+                <!--/pub/** = anon-->
+                <!--/druid/** = authc-->
+                <!--/admin/logout = logout-->
+                <!--/resources/** = anon-->
+
+                /admin/login.html = guest
+                /admin/toLogin = guest
+				/admin/appLogin = guest
+                /admin/logout = logout
+                /admin/** = user
+            </value>
+        </property>
+
+	String password = rsaService.decryptParameter("password");	
+	
+
+217 今天的体会是最为经典的外观模式
+	比如可以通过对象封装的方式将对象层层嵌套
+	改代码不影响数据库,两者互不影响导致测试非常方便
+	
+
 216 注意saveAndFlush的id
 		carLocation.setWaybillId(waybill.getId());
 		CarLocation storeCarLocation =new CarLocation();

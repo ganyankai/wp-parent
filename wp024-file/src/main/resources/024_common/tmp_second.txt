@@ -1,3 +1,34 @@
+085	
+	
+
+084 
+	 {
+                "dayData": [
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "97#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "95#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0517,
+                        "dayReceiveAmount": 0.003,
+                        "prodName": "92#汽油",
+                        "daySaleAmount": 0.003,
+                        "day": 20160329
+                    }
+                ],
+                "day": 20160329
+            },
+
 083 
 	return ServerResponse.successWithData(mapPage);
 
