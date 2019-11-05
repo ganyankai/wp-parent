@@ -17,10 +17,13 @@ public class DataTypeNew {
 
     int typeCode;
     String typeStr;
-    public DataTypeNew(int typeCode,String typeStr){
+    Boolean hidden;
+    public DataTypeNew(int typeCode,String typeStr,Boolean hidden){
         this.typeCode = typeCode;
         this.typeStr=typeStr;
+        this.hidden = hidden;
     }
+
 
 //    static DataTypeNew raw = new DataTypeNew(0);
 //    static DataTypeNew cleanedUp = new DataTypeNew(1);
