@@ -1,7 +1,63 @@
+
+
+04 这样的重复代码可以通过循环来去重
+	PreparedStatement st = conn.prepareStatement("select "+ 
+	 "sum(case when foodType=0 then qty else 0 end) as totalQty0,"+ 
+	 "sum(case when foodType=1 then qty else 0 end) as totalQty1,"+ 
+	 "sum(case when foodType=2 then qty else 0 end) as totalQty2,"+ 
+	 "sum(case when foodType=3 then qty else 0 end) as totalQty3 "+ 
+	 "from foodSalesTable group by foodType");
+	
+	
+	import java.sql.Connection;
+	import java.sql.PreparedStatement;
+	import java.sql.ResultSet;	
+	
+	class FoodSalesReport {		
+		int qtyRiceSold;
+		int qtyNoodleSold;
+		int qtyDrinkSold;
+		int qtyDessertSold;
+		
+		void LoadData(Connection conn) {
+			String sqlExprList = "";
+			for (int i = 0; i <= 3; i++) {
+				String separator = (i == 0) ? "" : ",";
+				sqlExprList = sqlExprList +
+						separator +
+						getSQLForSoldQtyForFoodType(i);
+			}
+			PreparedStatement st = conn.prepareStatement("select " +
+					sqlExprList +
+					"from foodSalesTable group by foodType");
+			try {
+				ResultSet rs = st.executeQuery();
+				try {
+					rs.next();
+					qtyRiceSold = rs.getInt("totalQty0");
+					qtyNoodleSold = rs.getInt("totalQty1");
+					qtyDrinkSold = rs.getInt("totalQty2");
+					qtyDessertSold = rs.getInt("totalQty3");
+				} finally {
+
+					rs.close();
+				}
+			} finally {
+				st.close();
+			}
+		}
+		
+		String getSQLForSoldQtyForFoodType(int foodType) {
+			return "sum(case when foodType=" + foodType +
+					" then qty else 0 end) as totalQty" + foodType;
+		}
+	}
+	
+
 03	要移动一些类别代码和 switch 表达式，有两种方法：
 	 1.用基于同一父类的不同子类来代替不同的类别。
 	 2.用一个类的不同对象来代替不同的类别。
-
+		
 02 用一个对象代替一种类别
 
 01 代码异味

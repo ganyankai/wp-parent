@@ -1,4 +1,84 @@
-﻿2019年11月4日
+﻿2019年11月5日
+228 
+
+227	观书有感
+
+	作者：朱熹
+
+	半亩方塘一鉴开，天光云影共徘徊。
+	问渠那得清如许？为有源头活水来。
+
+	Drainage asked Hsu what so clear, as to the source of flowing water
+
+226 昨天改造这段代码遇到了哪些问题?能不能整理出来?
+	看别人的总是简单,自己做起来发现总是卡住,看来
+	纸上得来终觉浅，绝知此事要躬行
+	Paper will sleep shallow, never know the matter want to practice.
+	
+	package cn.dante.removesmell.rs02;
+	
+	class SurveyDataNew {
+		String path; //将数据存到这个路径的文件
+		boolean hidden; //这个文件是否要隐藏
+		static String prefix="c:/application/data/";
+		static String suffix=".dat";
+
+		//根据 t 的类型，设置存放数据的文件的路径和隐藏属性
+		void setSavePath(int t) {
+			if (t == 0) { //raw data.
+				path = prefix+"raw"+suffix;
+				hidden = true;
+			} else if (t == 1) { //清空数据
+				path = "c:/application/data/cleanedUp.dat";
+				hidden = true;
+			} else if (t == 2) { //处理数据
+				path = "c:/application/data/processed.dat";
+				hidden = true;
+			} else if (t == 3) { //数据可以公布
+				path = "c:/application/data/publication.dat";
+				hidden = false;
+			}
+		}
+	}
+
+225 关于食品如何包装,如何延长保质期的问题也值得你去思考?此问题应该不难?
+	难就难在亲在行动与测试?
+	
+224 最佳的做事方式是什么?
+	01	同类事情一起做?
+	02	让今天做的事情对明天有用?
+	03	明确分工?
+	04	自动化?
+	05	一步一确认?
+		
+	06	步骤分解?
+	07	图形化理解?
+	08	指定可执行计划?
+	09	不要被困难冲昏了头?
+	10	亲自行动感受?
+		
+	11	总是向目标前进?
+	12	参考过去的方案?
+	13	数字化定位,提高效率?
+	14	分离与组合
+	15  保持正能量,趣味性
+	
+	16  保持良好状态
+	17  量力而行 
+	18  诗意,创造力,重定义能力
+	19  持续,如创业计划
+	20  积累
+	
+	21 拒绝慌乱,永远冷静应对
+
+
+2019年11月4日
+223 永远以好奇,喜悦,发现的心态去做事情,畏畏缩缩,犹犹豫豫,哀怨自怜永远成不了气候,
+	你的人生永远保持一个良好的心态
+
+222 原来post本身保存了很多cookie,通过这些cookie同一个父窗口的不同子窗口可以通信,
+	可以手动清除cookie,点击右上角的设置,杰豪说这个cookie的写入是shiro实现的
+
 221 竟然可以通过debug的方式,如果idea debug的左侧有x,说明代码没编译成功
 	
 220 关于登录以后自动处理一下参数的问题你好像并未搞得很清楚
