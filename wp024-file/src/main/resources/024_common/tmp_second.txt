@@ -1,5 +1,375 @@
+085	
+	
+
+	01	图片例子
+		http://119.23.172.36:8392/view/
+	
+084 
+	 {
+                "dayData": [
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "97#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "95#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0517,
+                        "dayReceiveAmount": 0.003,
+                        "prodName": "92#汽油",
+                        "daySaleAmount": 0.003,
+                        "day": 20160329
+                    }
+                ],
+                "day": 20160329
+            },
+
+083 
+	return ServerResponse.successWithData(mapPage);
+
+082 
+	为什么这个sql会为null
+	select SUM(I_LITER_AMOUNT) as dayOilLitre from t_station_prod_day t 
+	where 1=1  AND t.i_day >= 20191030  AND t.i_day <= 20191030
+	
+	startCreateDate=20191030, endCreateDate=20191030
+	
+081 
+	http://47.104.232.195:8080/
+
+	 JSESSIONID=9DCC50F37609CEB9E3BD853A73D1A04B; token=9f90e88e-6b78-44eb-9498-01f0f661082d; UM_distinctid=16e1f9bbf5071a-00ef2ac207ec33-3d644509-1fa400-16e1f9bbf517db; CNZZDATA1258795774=18006719-1572484721-%7C1572484721
+	 9f90e88e-6b78-44eb-9498-01f0f661082d
+	 
+080  
+	
+	select ROUND(I_SALE_AMOUNT/10000, 4) from t_settlement_station_day
+
+	select ROUND(I_SALE_AMOUNT/10000, 4)
+	
+	select convert(decimal(18,4),dj) from table
+
+	 total = NumberUtil.round((total/10000.0), 4);  钱
+	 total = NumberUtil.round((total/1000.0), 4);  KL
+	
+079 昨天提交代码改动文件
+		发布文件安装
+		module		common-module
+		parent		framework-parent	
+		business	project-oil-business
+		common		project-oil-common
+			
+	06 stat-service-impl
+
+	05 settlement-service-impl	
+
+	04 settlement 
+	
+	03 serice
+
+	02 common-service-impl
+	
+	01 business		o
+		07 web-admin	o
 
 
+
+078 散代码
+	params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(startCreateDate, "yyyyMM")));
+    params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(endCreateDate, "yyyyMM")));
+
+	
+	D://001_work//020_gitcode//oilStation
+	
+	No class com.zrycloud.demo.entity.Permission entity with id 4 exists!
+
+	{
+		"code": 1,
+		"msg": "success",
+		"data": [
+			{
+				"id": 1,
+				"permissionParentId": 0,
+				"permissionName": "3",
+				"permissionCode": "4",
+				"permissionDesc": "5",
+				"permissionUri": "6",
+				"classIcon": "7",
+				"menuBtn": 8,
+				"underControl": 9,
+				"userType": "10",
+				"seqNo": 11,
+				"createTime": "2019-10-25 22:27:18",
+				"childrenList": null,
+				"roleIds": null
+			}
+		]
+	}
+
+
+	<result column="user_type" jdbcType="TINYINT" property="userType"/>
+
+	throw new BusinessException(112, "系统繁忙，请稍后再试");
+
+	com.zrycloud.demo.entity.Role
+
+	throw  new BusinessException(112,"后台异常");
+
+077 加油站数据统计
+	06 油站列表
+		
+
+	05 油品加油金额明细	(按油品分类)
+		04 数据格式参考
+			{
+			"content": [
+				{
+					"20190523": [
+						{
+							"dayLiterAmount": 0.0328,
+							"dayReceiveAmount": 0.207,
+							"prodName": "93#汽油",
+							"daySaleAmount": 0.23,
+							"day": 20190523
+						},
+						{
+							"dayLiterAmount": 0.0942,
+							"dayReceiveAmount": 0.3333,
+							"prodName": "90#汽油",
+							"daySaleAmount": 0.66,
+							"day": 20190523
+						},
+						{
+							"dayLiterAmount": 0.0916,
+							"dayReceiveAmount": 0.44,
+							"prodName": "0#柴油",
+							"daySaleAmount": 0.55,
+							"day": 20190523
+						}
+					],
+					"day": 20190523
+				},
+				{
+					"20190924": [
+						{
+							"dayLiterAmount": 0.0014,
+							"dayReceiveAmount": 0.01,
+							"prodName": "92#汽油",
+							"daySaleAmount": 0.01,
+							"day": 20190924
+						},
+						{
+							"dayLiterAmount": 5.3334,
+							"dayReceiveAmount": 10,
+							"prodName": "90#汽油",
+							"daySaleAmount": 32,
+							"day": 20190924
+						}
+					],
+					"day": 20190924
+				},
+
+		03 统计参考
+			I_SALE_AMOUNT			daySaleAmount	
+			I_RECEIVE_AMOUNT		dayReceiveAmount	
+			I_LITER_AMOUNT			dayLiterAmount
+
+			SELECT I_SALE_AMOUNT as	daySaleAmount,I_RECEIVE_AMOUNT	as dayReceiveAmount,I_LITER_AMOUNT as	dayLiterAmount ,S_PROD_NAME as prodName
+			
+			from t_station_prod_day group by S_PROD_NAME
+			
+			
+
+		02 代码参考
+			{	
+				"content": [
+					{
+						"dayReceiveAmount": 0.21,
+						"day": 20190928
+					},
+					{
+						"dayReceiveAmount": 990,
+						"day": 20190927
+					},
+					{
+						"dayReceiveAmount": 12.2,
+						"day": 20190926
+					},
+			
+		01 
+			SELECT I_DAY as day from t_station_prod_day where S_STATION_ID = 1  ORDER BY I_DAY desc
+			
+
+	04 油品销售明细	(待确认)
+
+	03 加油升数明细
+		02 参考代码
+			select SUM(I_LITER_AMOUNT) as dayOilLitre from t_station_prod_day t  where 1=1 and t.i_day >= 20191028  AND t.i_day <= 20191028
+
+					@Override
+					@DataSource(name = DataSource.slave1)
+					public List<Map> oilStationLitreDetail(Date startCreateDate, Date endCreateDate, List<String> oilstationIds) {
+						Map params = new HashMap<>();
+						params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(startCreateDate, "yyyyMM")));
+						params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(endCreateDate, "yyyyMM")));
+
+						StringBuilder sb = new StringBuilder();
+						sb.append("SELECT new map( ");
+						sb.append("t.month AS time, "); // 统计日期
+						sb.append("sum(t.literAmount) AS literAmount "); // 销售量（升）
+						sb.append(") FROM StationProdMonth t ");
+						sb.append("WHERE 1=1 ");
+						sb.append("AND t.month >= :startCreateDate ");
+						sb.append("AND t.month <= :endCreateDate ");
+						if (CollectionUtil.isNotEmpty(oilstationIds)) {
+							sb.append("AND t.stationId IN (:oilstationIds) ");
+							params.put("oilstationIds", oilstationIds);
+						}
+						sb.append("GROUP BY t.month ");
+						sb.append("ORDER BY t.month ASC");
+
+						return this.findListByJql(sb.toString(), params, Map.class);
+					}
+		
+			
+		01 参考
+			http://mgr.yousiling.net/admin/dataStatistics/oilTotalLitre/getGroupTotalSumList
+
+	02 累计应收明细
+		02 表
+			T_STATION_PROD_DAY
+
+			sb.append("t.I_SALE_AMOUNT  AS saleAmount, "); // 日销售金额
+            sb.append("t.I_RECEIVE_AMOUNT  AS receiveAmount "); // 油站应收金额
+			
+		01 参考
+			http://mgr.yousiling.net/admin/statisti/findStationRefuelRecord	
+			
+	01 加油金额
+		 04 加油金额明细	t_settlement_station_day	I_SALE_AMOUNT	I_DAY where stationId
+			
+			select I_SALE_AMOUNT as daySaleAmount,I_day as day  from t_settlement_station_day t
+			where 1=1 and S_STATION_ID = 1 group by  day order by day desc
+			
+
+		 03 相关表格
+				总计表	T_SETTLEMENT_STATION_TOTAL	?
+					
+				
+				日
+				T_SETTLEMENT_STATION_DAY
+					时间字段	i_day	格式	20161119
+					
+					sb.append("DATE_FORMAT(t.day, '%Y-%m-%d') AS time, "); // 统计日期		//2016-11-19
+					sb.append("sum(t.saleAmount) AS saleAmount, "); // 销售总额
+					
+		
+					
+
+					日维度:
+					@DataSource(name = DataSource.slave1)
+					public List<Map> oilstationMoneyDetailStatisti(Date startCreateDate, Date endCreateDate, List<String> oilstationIds) {
+						Map params = new HashMap<>();
+						params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(startCreateDate, "yyyyMMdd")));
+						params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(endCreateDate, "yyyyMMdd")));
+
+						StringBuilder sb = new StringBuilder();
+						sb.append("SELECT new map( ");
+						sb.append("DATE_FORMAT(t.day, '%Y-%m-%d') AS time, "); // 统计日期
+						sb.append("sum(t.saleAmount) AS saleAmount, "); // 销售总额
+						sb.append("sum(t.orderAmount) AS orderAmount, "); // 平台销售额（*平台折扣）
+						sb.append("sum(t.alreadyReceivedAmount) AS alreadyReceivedAmount, "); // 油站已收金额（已结算）
+						sb.append("sum(t.notreceivedAmount) AS notreceivedAmount "); // 油站未收金额（未结算）
+						sb.append(") FROM SettlementStationDay t ");
+						sb.append("WHERE 1=1 ");
+						sb.append("AND t.day >= :startCreateDate ");
+						sb.append("AND t.day <= :endCreateDate ");
+						if (CollectionUtil.isNotEmpty(oilstationIds)) {
+							sb.append("AND t.stationId IN (:oilstationIds) ");
+							params.put("oilstationIds", oilstationIds);
+						}
+						sb.append("GROUP BY t.day ");
+						sb.append("ORDER BY t.day ASC");
+
+						return this.findListByJql(sb.toString(), params, Map.class);
+					}
+					
+					月维度
+					@DataSource(name = DataSource.slave1)
+					public List<Map> oilstationMoneyDetailStatisti(Date startCreateDate, Date endCreateDate, List<String> oilstationIds) {
+						Map params = new HashMap<>();
+						params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(startCreateDate, "yyyyMM")));
+						params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(endCreateDate, "yyyyMM")));
+
+						StringBuilder sb = new StringBuilder();
+						sb.append("SELECT new map( ");
+				//        sb.append("DATE_FORMAT(t.month, '%Y-%m') AS time, "); // 统计日期
+						sb.append("t.month AS time, "); // 统计日期
+						sb.append("sum(t.saleAmount) AS saleAmount, "); // 销售总额
+						sb.append("sum(t.orderAmount) AS orderAmount, "); // 平台销售额（*平台折扣）
+						sb.append("sum(t.alreadyReceivedAmount) AS alreadyReceivedAmount, "); // 油站已收金额（已结算）
+						sb.append("sum(t.notreceivedAmount) AS notreceivedAmount "); // 油站未收金额（未结算）
+						sb.append(") FROM SettlementStationMonth t ");
+						sb.append("WHERE 1=1 ");
+						sb.append("AND t.month >= :startCreateDate ");
+						sb.append("AND t.month <= :endCreateDate ");
+						if (CollectionUtil.isNotEmpty(oilstationIds)) {
+							sb.append("AND t.stationId IN (:oilstationIds) ");
+							params.put("oilstationIds", oilstationIds);
+						}
+						sb.append("GROUP BY t.month ");
+						sb.append("ORDER BY t.month ASC");
+
+						return this.findListByJql(sb.toString(), params, Map.class);
+					}
+
+
+		02 参考
+			02 详细数据
+				admin/dataStatistics/oilTotalMoney/getGroupEachProList
+				
+
+			01 累计数据
+				http://mgr.yousiling.net/admin/dataStatistics/oilTotalMoney/getGroupTotalSumList
+				[ {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-21"
+				}, {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-22"
+				}, {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-23"
+				}, {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-24"
+				}, {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-25"
+				}, {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-26"
+				}, {
+				  "saleAmount" : "0",
+				  "time" : "2019-10-27"
+				} ]
+		
+		01 概览
+
+		昨日	当月	累计	
+
+			请求	当前时间	油站id(不传查全部)
+			groupId=&createDate=2019-10-28&nearDay=7&dateDimension=DAY
+			
+		
+			
 076 
 	WLAssert.isNotBlank(requestParams.getParams().getDrivingId(),"驾驶证编号不能为空");
 

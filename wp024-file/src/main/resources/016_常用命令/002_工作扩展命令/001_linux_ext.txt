@@ -2,8 +2,10 @@
 
 004 tomcat
 	07 查看tomcat日志
+		tail -f /usr/local/tomcat/apache-tomcat-7.0.96/logs/catalina.out
+		tail -f logs/catalina.out
 		tail -f ../logs/catalina.out
-
+		
 	05 tomcat启动时读取的变量是	CATALINA_HOME
 		
 	04 查看是否启动成功	

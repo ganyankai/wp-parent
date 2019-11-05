@@ -1,4 +1,278 @@
-﻿2019年10月23日
+﻿2019年11月5日
+
+232 印象分
+	01			2019年11月5日前		2019年11月5日后		total
+	csc-y@@@w		1					1					1
+	csc-p@xy		5				
+
+231 今天看到的这么多问题是因为很少能够有人能够全面的处理问题,
+	咋一看到处都是问题
+	
+
+230 nginx竟然可以配置域名转发到8080端口
+	
+	
+229 对象链式编程写法会非常优雅
+
+228 
+	2147483647
+
+227	观书有感
+
+	作者：朱熹
+	
+	半亩方塘一鉴开，天光云影共徘徊。
+	问渠那得清如许？为有源头活水来。
+
+	Drainage asked Hsu what so clear, as to the source of flowing water
+
+226 昨天改造这段代码遇到了哪些问题?能不能整理出来?
+	看别人的总是简单,自己做起来发现总是卡住,看来
+	纸上得来终觉浅，绝知此事要躬行
+	Paper will sleep shallow, never know the matter want to practice.
+	
+	package cn.dante.removesmell.rs02;
+	
+	class SurveyDataNew {
+		String path; //将数据存到这个路径的文件
+		boolean hidden; //这个文件是否要隐藏
+		static String prefix="c:/application/data/";
+		static String suffix=".dat";
+
+		//根据 t 的类型，设置存放数据的文件的路径和隐藏属性
+		void setSavePath(int t) {
+			if (t == 0) { //raw data.
+				path = prefix+"raw"+suffix;
+				hidden = true;
+			} else if (t == 1) { //清空数据
+				path = "c:/application/data/cleanedUp.dat";
+				hidden = true;
+			} else if (t == 2) { //处理数据
+				path = "c:/application/data/processed.dat";
+				hidden = true;
+			} else if (t == 3) { //数据可以公布
+				path = "c:/application/data/publication.dat";
+				hidden = false;
+			}
+		}
+	}
+
+225 关于食品如何包装,如何延长保质期的问题也值得你去思考?此问题应该不难?
+	难就难在亲在行动与测试?
+	
+224 最佳的做事方式是什么?
+	01	同类事情一起做?
+	02	让今天做的事情对明天有用?
+	03	明确分工?
+	04	自动化?
+	05	一步一确认?
+		
+	06	步骤分解?
+	07	图形化理解?
+	08	指定可执行计划?
+	09	不要被困难冲昏了头?
+	10	亲自行动感受?
+		
+	11	总是向目标前进?
+	12	参考过去的方案?
+	13	数字化定位,提高效率?
+	14	分离与组合
+	15  保持正能量,趣味性
+	
+	16  保持良好状态
+	17  量力而行 
+	18  诗意,创造力,重定义能力
+	19  持续,如创业计划
+	20  积累
+	
+	21 拒绝慌乱,永远冷静应对
+
+
+2019年11月4日
+223 永远以好奇,喜悦,发现的心态去做事情,畏畏缩缩,犹犹豫豫,哀怨自怜永远成不了气候,
+	你的人生永远保持一个良好的心态
+
+222 原来post本身保存了很多cookie,通过这些cookie同一个父窗口的不同子窗口可以通信,
+	可以手动清除cookie,点击右上角的设置,杰豪说这个cookie的写入是shiro实现的
+
+221 竟然可以通过debug的方式,如果idea debug的左侧有x,说明代码没编译成功
+	
+220 关于登录以后自动处理一下参数的问题你好像并未搞得很清楚
+	Cookie:JSESSIONID=9DCC50F37609CEB9E3BD853A73D1A04B; token=9f90e88e-6b78-44eb-9498-01f0f661082d; UM_distinctid=16e1f9bbf5071a-00ef2ac207ec33-3d644509-1fa400-16e1f9bbf517db; CNZZDATA1258795774=18006719-1572484721-%7C1572484721
+	token:9f90e88e-6b78-44eb-9498-01f0f661082d
+	X-Requested-With:XMLHttpRequest
+	Content-Type:application/x-www-form-urlencoded
+	
+219 为什么在本地获取时password为空
+	原来这框架要在session中取一个privateKey
+	
+2019年10月31日
+218 关于新框架的登录功能,
+	如何跳过拦截器的拦截
+	applicationContext-shiro.xml
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/admin/login.html"/>
+        <property name="successUrl" value="/admin/index.html"/>
+        <property name="unauthorizedUrl" value="/admin/login.html"/>
+        <property name="filterChainDefinitions">
+            <value>
+                <!--/pub/** = anon-->
+                <!--/druid/** = authc-->
+                <!--/admin/logout = logout-->
+                <!--/resources/** = anon-->
+
+                /admin/login.html = guest
+                /admin/toLogin = guest
+				/admin/appLogin = guest
+                /admin/logout = logout
+                /admin/** = user
+            </value>
+        </property>
+
+	String password = rsaService.decryptParameter("password");	
+	
+
+217 今天的体会是最为经典的外观模式
+	比如可以通过对象封装的方式将对象层层嵌套
+	改代码不影响数据库,两者互不影响导致测试非常方便
+	
+
+216 注意saveAndFlush的id
+		carLocation.setWaybillId(waybill.getId());
+		CarLocation storeCarLocation =new CarLocation();
+
+		BeanUtils.copyProperties(carLocation,storeCarLocation);
+		storeCarLocation.setId(null);
+
+		carLocationRepository.saveAndFlush(storeCarLocation);
+		
+215 油站发布
+	http://47.104.232.195:8080/
+	
+	netstat -nltp
+
+	http://47.104.232.195:8080/MrOilMgr/admin/index.html
+
+	cd /usr/local/service
+	cd /usr/local/service/8888-project-oil-service-impl
+	
+	
+
+		//nohup java -DoilServerImpl -jar project-oil-service-impl.jar >/dev/null 2>out.log &
+
+	nohup java -Dfile.encoding=utf-8 -jar project-oil-service-impl.jar &
+	
+
+
+2019年10月28日
+214 事务模式,有则取,无则不晓得
+	就好像sql与参数绑定
+
+213 今天想到一个转化问题,你得有能力去把你得想法转化成大众认可的事务,
+	不然可能永远只能是想法
+	你得有把道德,知识,思想转化为金钱的能力
+	就好比这种万物通用额语言有可能被发明出来吗?
+
+212 行分离可维护程度高于空格分离高于列分离
+
+211 按照原型理解数据结构法,因为数据结构本身可理解为生动的图
+	
+
+210 先写出完整的,再提取公用方法,代码都是一步步公用抽取的,不要指望一步全部抽取
+	完成
+	
+
+209 封装变化修改法
+	比如
+		String columnName =  "I_RECEIVE_AMOUNT";
+        String columnNameAlias =  "monthReceiveAmount";
+        String tableName = "t_settlement_station_month";
+        String dateDimension = "month";
+		
+        Map params =   new HashMap<>();
+        params.put("columnName",columnName);
+        params.put("columnNameAlias",columnNameAlias);
+        params.put("tableName",tableName);
+        params.put("dateDimension",dateDimension);
+		
+        Map map = getStaMap(date, stationId, params);
+		
+		//获取单个字段通用查询
+		public Map getStaMap(Date date, String stationId, Map params) {
+			StringBuffer sql = new StringBuffer();
+			sql.append("select "+params.get("columnName")+" as "+params.get("columnNameAlias") +" from "+params.get("tableName") +" t ");
+			sql.append(" where 1=1 ");
+			if (date!=null){
+				if (((String)params.get("dateDimension")).equalsIgnoreCase("month")){
+					sql.append(" AND t.i_month >= :startCreateDate ");
+					sql.append(" AND t.i_month <= :endCreateDate ");
+					params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMM")));
+					params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMM")));
+				}
+				if (((String)params.get("dateDimension")).equalsIgnoreCase("day")){
+					sql.append(" AND t.i_day >= :startCreateDate ");
+					sql.append(" AND t.i_day <= :endCreateDate ");
+					params.put("startCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMMdd")));
+					params.put("endCreateDate", NumberUtil.toInt(DateUtil.format(date, "yyyyMMdd")));
+				}
+			}
+			if (StringUtil.isNotBlank(stationId)){
+				sql.append(" AND t.s_station_id IN (:oilstationIds) ");
+				params.put("oilstationIds", stationId);
+			}
+			System.out.println("sql:"+sql.toString());
+			List list = this.findListBySql(sql.toString(), params);
+			if (list!=null && list.size()>0){
+				return (Map)list.get(0);
+			}
+			return null;
+		}
+
+	
+	这时候你才知道使用通用字段的作用
+	
+
+208	@Cacheable用法
+	@Cacheable(value = "statistic", key = "#stationId + #startDate.toString() + #endDate.toString() + #dateDimension.toString() + 'findStationRefuelRecordDay'")
+
+208 idea tocmat部署设置
+	02 
+		Deployment
+			exploded 
+	01	
+		server
+			on update action	Redeploy
+			on frame deactivation	Update classes and resources
+		
+207 加油站部署配置
+	web resoucre dir																									
+	D:\001_work\020_gitcode\oilStation\project-oil-business\project-oil-web-admin\src\main\webapp
+
+	path /
+
+	Path
+	D:\001_work\020_gitcode\oilStation\project-oil-business\project-oil-web-admin\src\main\webapp\WEB-INF\web.xml
+
+206 多参数情况代码分离术
+
+205 睡眠的问题该如何解决,这么多年都没找到治本的方案,给我一个这样的睡眠条件
+	创造力将大大降低,你要一直这样下去吗?该怎么解决现在面临的问题
+
+204 idea项目点击类名不跳 .java文件跳jar包的方法
+	处理	maven管理的项目中有灰色,重启idea
+
+203 maven管理的项目中有灰色   造成这个的原因是忽略了maven模块，此时需要将忽略的文件ignored files进行恢复
+	Settings-maven-Ignored Files，将灰色项目如上图中的对勾去掉。
+
+202 保存一份完整的idea项目配置文件其实非常必要,尤其是项目非常大的时候,
+	可帮你节省很多时间
+
+201 idea不识别java文件,除了配置jdk外,还可能需要手动把source设置为根目录
+
+200 有些jar包问题需要重新安装
+	
+2019年10月23日
 199 jpa中实体不配置映射表名,且实体不是默认表名时会报找不到实体
 	
 198 这个是给jpa用的
