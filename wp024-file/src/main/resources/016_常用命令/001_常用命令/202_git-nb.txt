@@ -1,4 +1,6 @@
 007 从版本库移除文件 
+	03 可用ll命令查看git管理的文件
+		
 	02 一步删除
 		git rm -r -f target;git commit -m target
 
