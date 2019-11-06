@@ -1,5 +1,26 @@
-2019年11月6日
+﻿2019年11月6日
 
+
+235 这个代码里面的	@Cacheable	有点费解
+	好像是根据时间为key做缓存,
+	缓存有则没有方法
+
+	 /**
+     * 统计累计登录数
+     *
+     * @return
+     */
+    @Override
+    @Cacheable(value = "staffStatisti", key = "#date.toString() + 'totalSigninByCusInfo'")
+    public long totalSigninByCusInfo(Date date) {
+        Map params = new HashMap<>();
+        params.put("sysId", LoginLog.SysId.mobile.getValue()); // 系统标识
+        params.put("endCreateDate", DateUtil.clearTime(new Date()));
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT t.S_ACCOUNT FROM t_log_login t WHERE t.I_SYS_ID = :sysId AND t.D_CREATE_DATE < :endCreateDate GROUP BY t.S_ACCOUNT, DATE_FORMAT(t.D_CREATE_DATE, '%Y-%m-%d')");
+        return logLoginDao.countBySql(sb.toString(), params);
+    }
 
 234 有时候看到如此愚昧的人心里真是由衷的bs,
 	社会是这样,也许无能的人注定只能是这种命运

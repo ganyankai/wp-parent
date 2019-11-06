@@ -1,7 +1,87 @@
+086 油站问题
+	
+
+	11 加油金额统计	金额已处理	还差油站处理
+		/getGroupTotalSumList
+		saleAmount
+		时间格式处理
+			ROUND(I_SALE_AMOUNT/10000, 4)
+
+			sb.append("ROUND(sum(t.saleAmount)/10000,4) AS saleAmount, "); // 
+	10 不改
+
+	09 jiehao 
+		
+	08 jiehao
+
+	07 活跃车主查询	按人头	好像是按多人算的,已去重
+		admin/customerMgr/statisti/signin
+		
+	06 油金豆使用记录 页面日期可以清空	o
+		02 订单查询
+			/admin/oilStationMgr/fuelRecordQuery/index
+		01 使用记录
+			/admin/oilGoldMgr/oilGoldRecord/getUsageRecordByPage	
+		
+	05 
+		T_COMMUTE_RECORD	
+
+	04 o
+
+	03 统计 o
+		03 
+			resources/admin/js/oilStationMgr/statisti/index.js
+
+			/MrOilMgr/admin/oilStationMgr/statisti/oilstationMoneyDetailStatisti	条形图
+		02 
+			/MrOilMgr/admin/oilStationMgr/statisti/oilstationMoneyStatisti	方形图
+
+		01 q
+		油站管理-收入统计  年限时间可不可以自动根据年限来改变，下边的加油金额统计中的“已结算和未结算去掉”   “已结算和未结算去掉”万元需不需要改成元
+		万元先不改，已结算和未结算去掉 甘艳凯处理预计0.5小时
+		
+	02 o
+		油站查询-双击点开查看详情-  查看结算订单  去掉已结算和未结算金额
+		02 resources/admin/js/oilStationMgr/account/deatil.js
+		01 请求
+			http://localhost:8080/MrOilMgr/admin/oilStationMgr/oilAccount/getSettleRecordByList
+			
+	01 评论		o
+		01	页面
+			WEB-INF\jsp\admin\customerMgr\evaluation
+			
+		趣飞加油站
+		I_DISPLAY 
+
+		表
+			T_OILSTATION_COMMENT
+		
+
+		pageNo: 1
+		pageSize: 15
+		score: 
+		stationName: ä¸­è¯ç³åï¼å®é³ï¼
+		startTime: 
+		endTime: 
+		display: 
+		
+		admin/customerMgr/comment/getCommentByList
+	
+
+		
+	13 注册日期改为充值日期
+	
+	00 总结
+		新增评论时评论是隐藏的吗	
+
+		admin/oilStationMgr/oilAccount/toView	
 085	
-	
-	
-	01	图片例子
+	02 
+		注册日期改为充值日期
+		
+
+	01	
+		图片例子
 		http://119.23.172.36:8392/view/
 	
 084 
