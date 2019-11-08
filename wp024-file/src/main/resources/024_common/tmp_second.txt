@@ -1,7 +1,222 @@
-086 油站问题
+090 我们一般不理解sql,是因为我们不知道如何来操作每次查询的结果
+	I_SALE_AMOUNT	销售	ROUND(I_SALE_AMOUNT/10000, 4)
+	
+	I_LITER_AMOUNT	加油
+		
+	I_RECEIVE_AMOUNT	累计应收	改为	I_ACT_PAY_MONEY
 	
 
-	11 加油金额统计	金额已处理	还差油站处理
+089 总计一般与分页无关,至于查询条件有关
+	
+088 sql能不能这样玩
+	
+
+	需要用到：STUFF函数。
+	02 
+
+	01 查询语句如下：
+		
+		02 mysql
+			SELECT GROUP_CONCAT(`Name` SEPARATOR ',') NAMES FROM `stu` ;
+			
+			1,2,3
+			SELECT Id,GROUP_CONCAT(`Name` SEPARATOR ',') NAMES FROM `stu` GROUP BY Id ;
+			
+		01:
+			 sql server:
+
+			 select FoodRoom,
+					stuff((select ','+name from  MO_Cook  
+						where c.FoodRoom=FoodRoom 
+						for xml path('')),1,1,'') as CookNames   
+			 from MO_Cook c   
+			 group by c.FoodRoom 
+
+
+087 设计问题千万不要去改动
+	
+	
+086  
+	
+	21 表里加字段 直接获取		o
+		resources/admin/js/pointMgr/cusPointRecord/index.js
+		
+		/admin/tonglianMgr/tonglianAccount/accountAsset.html?pageType=PLATFORM 
+		
+		油站的问题
+		
+	20 	
+		T_CUS_POINT_RECORD			t_oilstation_info
+		
+		
+	19 能够获取到订单的油站			根绝关联查询所有油站,隔开
+		UPDATE t_oilstation_info set I_DEL_FLAG = 2
+
+		 //根据锁价id查询所有的油站
+		public List findOilStationList(String id){
+			StringBuilder sql = new StringBuilder();
+			sql.append("select s_id as id,s_name as name from t_oilstation_info where I_DEL_FLAG = 2 and s_id in   \n" +
+					"\t\t(\n" +
+					"\t\t\t select STATION_ID from t_lock_oilstation where  LOCK_PRICE_ID = '"+ id +"'  \n" +
+					"\t\t )");
+			List<OilstationInfo> list = this.findListBySql(sql.toString(), null, OilstationInfo.class);
+			return list;
+		}
+		
+
+		参考代码
+			 List list = page.getContent();
+				if(list!=null && list.size()>0){
+					for (Object obj:
+							list) {
+						Map map = (Map) obj;
+						String  id =    (String) map.get("id");
+						String  groupId =    (String) map.get("groupId");
+						List stationList = findOilStationList(id);
+						map.put("stationList",stationList);
+						map.put("stationListStr",listToStr(stationList));
+					}
+				}
+		
+		数据
+		{
+		  "content" : [ {
+			"orderNo" : "SJDD-20190919204157379549",
+			"lockPrice" : 2000.00,
+			"floatRange" : 1.50,
+			"productKindName" : "90#汽油",
+			"lockType" : 1,
+			"productKind" : 2,
+			"lockTypeName" : "价格锁死",
+			"name" : "NC2250",
+			"tel" : "13290302250",
+			"id" : "40131c757b6a4082aa0741879864dfcb",
+			"remainPrice" : 2000.00,
+			"createDate" : "2019-09-19 20:41:57"
+		  }, {
+			"orderNo" : "SJDD-20190919094957952179",
+			"lockPrice" : 2000.00,
+			"floatRange" : 0.50,
+			"productKindName" : "90#汽油",
+			"lockType" : 2,
+			"productKind" : 2,
+			"lockTypeName" : "跟跌不跟涨",
+			"name" : "NC1203",
+			"tel" : "15588761203",
+			"id" : "3a1b7ace9270473c8e81be60dee8d689",
+			"remainPrice" : 1500.00,
+			"createDate" : "2019-09-19 09:50:15"
+		  } ],
+		  "total" : 2,
+		  "pageSize" : 15,
+		  "pageNo" : 1,
+		  "totalPages" : 1
+		}
+		
+		参考
+		LockPriceDaoImpl
+
+		t_cus_lock_order 可能对应多个
+				t_cus_lock_station
+		
+		if(list!=null && list.size()>0){
+            for (Object obj:
+                    list) {
+                Map map = (Map) obj;
+                String  id =    (String) map.get("id");
+                String  groupId =    (String) map.get("groupId");
+                List stationList = findOilStationList(id);
+                map.put("stationList",stationList);
+                map.put("stationListStr",listToStr(stationList));
+            }
+        }
+		
+	18 
+		jiehao 
+		
+		
+	17 o 
+		05 代码
+			<script type="text/javascript">
+            $(function () {
+                if ($("#couponType option:selected").val() == "1") {
+
+                    $("#couponValueSpan").html("面值");
+                    $("#couponValueUnit").html("元");
+                }
+                if ($("#couponType option:selected").val() == "2") {
+
+                    $("#couponValueSpan").html("折扣");
+                    $("#couponValueUnit").html("折");
+                };
+
+
+                $("#couponType").change(function(){
+                    if ($("#couponType option:selected").val() == "1") {
+                        // $("#couponValueShow").show();
+                        // $("#couponValueDisShow").hide();
+						$("#couponValueSpan").html("面值:");
+                        $("#couponValueUnit").html("元");
+                    }
+                    if ($("#couponType option:selected").val() == "2") {
+                        // $("#couponValueDisShow").show();
+                        // $("#couponValueShow").hide();
+                        $("#couponValueSpan").html("折扣:");
+                        $("#couponValueUnit").html("折");
+                    }
+                });
+
+            })
+
+		04
+		$(function () {} 最好覆盖所有方法
+		隐藏样式
+			style="display: none"
+		03
+		jquery切换
+		$("#label_id").change(function(){
+			 var label_id=($(this).val());
+			 //股权融资
+			 if(label_id==35){
+				 $(".three_new_board").hide();
+				 $(".equity").show();
+				 //定向增发
+		  }else{
+				 $(".three_new_board").show();
+				 $(".equity").hide();
+		  }
+		   });
+
+		 $("#id option:selected").val();
+		01
+		js /resources/admin/js/coupon/add.js
+	
+	16 消费规则设置 todo
+		01 新增js
+			http://localhost:8080/MrOilMgr/resources/admin/js/groupOilCard/discountRule/addEdit.js
+
+		resources/admin/js/groupOilCard/discountRule/index.js
+	
+	15 充值还款记录	o
+		01	js
+		resources/admin/js/groupCardMgr/rechargeRepayRecord/index.js
+
+	14 jie
+		
+	13 o
+		 云卡
+
+		01 页面
+		WEB-INF/jsp/admin/cloudCardMgr/recharge/index.jsp
+		
+		02 js
+		resources/admin/js/cloudCardMgr/recharge/index.js
+
+		/admin/cloudMgr/recharge/pageList
+		
+	12 todo
+
+	11 加油金额统计	金额已处理	还差油站处理	区域/集团 加 全部
 		/getGroupTotalSumList
 		saleAmount
 		时间格式处理

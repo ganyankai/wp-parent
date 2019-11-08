@@ -1,5 +1,110 @@
-﻿2019年11月6日
+﻿2019年11月8日
+240 给字段设置别名的好处是,
+	数据字段改了别名可以不需要更改
+	
+239 通用的sql需要考虑哪些问题?
+	
+	07 表之间关联的字段可能不一样
 
+	06 还得考虑是否分页的情况
+
+	05 排序条件可能有多个
+
+	04 分组条件多个
+	
+	03 查询的过滤条件可能有多个
+
+	02 查询的表可能不一样,还可能有多表的情况
+
+	01 查询的字段可能很多
+
+2019年11月6日
+238	代码通用性原则my
+	07 数据库字段,类型尽可能通用
+
+	06 统一处理请求和返回字段校验
+
+	05 如果太过于抽象,可以先写个不通用的改为通用
+
+	04 每一个方法查询维度尽可能小,比如只查询单个字段或一个列表
+
+	03 代码方法中的参数要做到通用
+
+	02 数据类型要通用,通用代码中不要出现类型转换代码,一些奇怪的格式最好是转化成通用格式
+
+	01 用两个日期代替一个日期
+	
+	
+
+237 对接第三方支付的问题确实比较麻烦,必须要熟练文档
+	
+
+236 下面这样的数据如何去重呢  
+	从代码里如何去重呢?
+	从根源去重可能要比后来去重要好
+
+	SELECT DISTINCT(I_DAY) as day from t_station_prod_day
+	
+
+	没有问题
+	SELECT ROUND(I_SALE_AMOUNT/10000, 4) as daySaleAmount,
+	ROUND(I_SALE_AMOUNT/10000, 4) as dayReceiveAmount,ROUND(I_LITER_AMOUNT/1000, 4)
+	as dayLiterAmount ,S_PROD_NAME as prodName,I_DAY as day  from t_station_prod_day
+	t where 1=1  AND t.i_day >= 20160329  AND t.i_day <= 20160329
+	GROUP BY S_PROD_NAME  ORDER BY I_DAY desc 
+
+	 {
+                "dayData": [
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "95#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0517,
+                        "dayReceiveAmount": 0.003,
+                        "prodName": "92#汽油",
+                        "daySaleAmount": 0.003,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "97#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    }
+                ],
+                "day": 20160329
+            },
+            {
+                "dayData": [
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "95#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0517,
+                        "dayReceiveAmount": 0.003,
+                        "prodName": "92#汽油",
+                        "daySaleAmount": 0.003,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "97#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    }
+                ],
+                "day": 20160329
+            }
 
 235 这个代码里面的	@Cacheable	有点费解
 	好像是根据时间为key做缓存,
@@ -115,7 +220,7 @@
 	20  积累
 	
 	21 拒绝慌乱,永远冷静应对
-
+	22 一次做好要优于反复改稿
 
 2019年11月4日
 223 永远以好奇,喜悦,发现的心态去做事情,畏畏缩缩,犹犹豫豫,哀怨自怜永远成不了气候,
