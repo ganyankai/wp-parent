@@ -1,4 +1,70 @@
 2019年11月11日
+096 分组函数去除空值情况
+	03 ifnull函数使用技巧
+		SELECT any_value(case name when '' then 0 ELSE ifnull(name,'hhh') end) name,age  from stu group by age
+
+	02 //目前使用
+	SELECT any_value(case name when '' then 0 ELSE name end) name,age  from stu group by age
+	
+	//01 好像无效
+	SET GLOBAL sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+
+	这个sql在195的服务器可以执行
+	SELECT name,age  from stu group by age
+	
+	但在设置了
+	only_full_group_by 中会报错
+	
+	可以这么玩
+	SELECT any_value(name),age  from stu group by age
+	
+
+	select count(id) total,
+      case name when '' 
+        then 'other' 
+        else ifnull(name ,'other') 
+      end name 
+   from stu group by name 
+	
+
+
+095 
+		3     4     5    11     13       17     21
+		o				 o		o		jiehao	jiehao
+
+094 mysql可以定义函数和事件
+	CALL Auto_Update_Coupon_Procedure()
+	
+	CREATE DEFINER=`root`@`%` PROCEDURE `Auto_Update_Coupon_Procedure`()
+	BEGIN
+		UPDATE user_coupon uc
+		SET uc.status=3
+		WHERE uc.expiration_date<=now()
+		AND uc.status=1;
+		
+		UPDATE tb_coupon c
+		SET c.state='coupon_status_no_use'
+		WHERE c.expiration_date<=now() and c.state='coupon_status_used';
+	END
+
+093	
+	params:{couponType=null, couponCondition=null,
+	publishQty=null, id=33, state=coupon_status_used, 
+	couponValue=null, startDate=null, expirationDate=null}
+	
+	
+	这次由于定位错误表导致出现了极大的混乱
+	
+	Unknown column 'tbcoupon0_.D_CREATE_DATE' in 'field list'
+	
+
+	select tbcoupon0_.ID as ID1_180_0_, tbcoupon0_.COUPON_CONDITION as COUPON_C2_180_0_, tbcoupon0_.COUPON_SOURCE as COUPON_S3_180_0_, tbcoupon0_.COUPON_TYPE as COUPON_T4_180_0_, tbcoupon0_.COUPON_VALUE as COUPON_V5_180_0_
+	, tbcoupon0_.CREATE_BY as CREATE_B6_180_0_, tbcoupon0_.D_CREATE_DATE as D_CREATE7_180_0_, tbcoupon0_.EXPIRATION_DATE as EXPIRATI8_180_0_, tbcoupon0_.NAME as NAME9_180_0_, tbcoupon0_.PUBLISH_QTY as PUBLISH10_180_0_
+	, tbcoupon0_.REMAIN_QTY as REMAIN_11_180_0_, tbcoupon0_.REMARK as REMARK12_180_0_, tbcoupon0_.START_DATE as START_D13_180_0_, tbcoupon0_.STATE as STATE14_180_0_, tbcoupon0_.STATION_ID as STATION15_180_0_
+	, tbcoupon0_.USE_QTY as USE_QTY16_180_0_
+	from tb_coupon tbcoupon0_
+	where tbcoupon0_.ID = 33
+
 092 todo
 	
 
