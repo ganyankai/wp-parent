@@ -1,3 +1,21 @@
+2019年11月11日
+092 todo
+	
+
+	02 缓存代码书写与测试
+	
+	01 结算代码阅读
+
+2019年11月11日
+091 正式库账号
+	filter.jdbc.url=jdbc:mysql://47.104.88.29/mroil?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true
+		#\u7EDF\u8BA1\u5E93JDBC\u8FDE\u63A5
+	filter.jdbc.stat.url=jdbc:mysql://47.104.88.29:3306/mroilstat?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true
+	filter.jdbc.username=root
+	filter.jdbc.password=!@#QAZxsw2019
+	filter.jdbc.driver=com.mysql.jdbc.Driver
+	
+
 090 我们一般不理解sql,是因为我们不知道如何来操作每次查询的结果
 	I_SALE_AMOUNT	销售	ROUND(I_SALE_AMOUNT/10000, 4)
 	
@@ -5,7 +23,7 @@
 		
 	I_RECEIVE_AMOUNT	累计应收	改为	I_ACT_PAY_MONEY
 	
-
+	
 089 总计一般与分页无关,至于查询条件有关
 	
 088 sql能不能这样玩
