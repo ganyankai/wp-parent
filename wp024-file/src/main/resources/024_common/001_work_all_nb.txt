@@ -1,4 +1,161 @@
-﻿2019年11月5日
+﻿2019年11月11日
+245 今天发现杰豪改代码也会改出很多问题,代码的维护真的这么困难吗?
+
+244 捕捉浏览器跳转页面是的请求
+	
+	解决办法：
+
+	F12调试的时候记得勾选preservelog
+	用优惠券列表来测试好像无效
+	也不一定,查询油站接口并不是页面请求,所以记录不到
+	
+243 加油金额记录和统计记录不一致的问题是因为我本地没有启动结算服务吗?
+	好像还真是
+	
+	结算的代码是否需要仔细看下?
+	
+242 一定要确认好你代码运行的当前环境,比如数据库,缓存的环境
+
+241 今天的问题主要都是业务问题,
+	时刻有危机意思, 你可能不会在公司待太久
+	公司的项目,业务这一块可能和你的气质不匹配
+	你得时刻有为自己创业的准备
+
+2019年11月8日
+
+240 给字段设置别名的好处是,
+	数据字段改了别名可以不需要更改
+	
+239 通用的sql需要考虑哪些问题?
+	
+	07 表之间关联的字段可能不一样
+
+	06 还得考虑是否分页的情况
+
+	05 排序条件可能有多个
+
+	04 分组条件多个
+	
+	03 查询的过滤条件可能有多个
+
+	02 查询的表可能不一样,还可能有多表的情况
+
+	01 查询的字段可能很多
+
+2019年11月6日
+238	代码通用性原则my
+	07 数据库字段,类型尽可能通用
+
+	06 统一处理请求和返回字段校验
+
+	05 如果太过于抽象,可以先写个不通用的改为通用
+
+	04 每一个方法查询维度尽可能小,比如只查询单个字段或一个列表
+
+	03 代码方法中的参数要做到通用
+
+	02 数据类型要通用,通用代码中不要出现类型转换代码,一些奇怪的格式最好是转化成通用格式
+
+	01 用两个日期代替一个日期
+	
+	
+
+237 对接第三方支付的问题确实比较麻烦,必须要熟练文档
+	
+
+236 下面这样的数据如何去重呢  
+	从代码里如何去重呢?
+	从根源去重可能要比后来去重要好
+
+	SELECT DISTINCT(I_DAY) as day from t_station_prod_day
+	
+
+	没有问题
+	SELECT ROUND(I_SALE_AMOUNT/10000, 4) as daySaleAmount,
+	ROUND(I_SALE_AMOUNT/10000, 4) as dayReceiveAmount,ROUND(I_LITER_AMOUNT/1000, 4)
+	as dayLiterAmount ,S_PROD_NAME as prodName,I_DAY as day  from t_station_prod_day
+	t where 1=1  AND t.i_day >= 20160329  AND t.i_day <= 20160329
+	GROUP BY S_PROD_NAME  ORDER BY I_DAY desc 
+
+	 {
+                "dayData": [
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "95#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0517,
+                        "dayReceiveAmount": 0.003,
+                        "prodName": "92#汽油",
+                        "daySaleAmount": 0.003,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "97#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    }
+                ],
+                "day": 20160329
+            },
+            {
+                "dayData": [
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "95#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0517,
+                        "dayReceiveAmount": 0.003,
+                        "prodName": "92#汽油",
+                        "daySaleAmount": 0.003,
+                        "day": 20160329
+                    },
+                    {
+                        "dayLiterAmount": 0.0011,
+                        "dayReceiveAmount": 0.001,
+                        "prodName": "97#汽油",
+                        "daySaleAmount": 0.001,
+                        "day": 20160329
+                    }
+                ],
+                "day": 20160329
+            }
+
+235 这个代码里面的	@Cacheable	有点费解
+	好像是根据时间为key做缓存,
+	缓存有则没有方法
+
+	 /**
+     * 统计累计登录数
+     *
+     * @return
+     */
+    @Override
+    @Cacheable(value = "staffStatisti", key = "#date.toString() + 'totalSigninByCusInfo'")
+    public long totalSigninByCusInfo(Date date) {
+        Map params = new HashMap<>();
+        params.put("sysId", LoginLog.SysId.mobile.getValue()); // 系统标识
+        params.put("endCreateDate", DateUtil.clearTime(new Date()));
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT t.S_ACCOUNT FROM t_log_login t WHERE t.I_SYS_ID = :sysId AND t.D_CREATE_DATE < :endCreateDate GROUP BY t.S_ACCOUNT, DATE_FORMAT(t.D_CREATE_DATE, '%Y-%m-%d')");
+        return logLoginDao.countBySql(sb.toString(), params);
+    }
+
+234 有时候看到如此愚昧的人心里真是由衷的bs,
+	社会是这样,也许无能的人注定只能是这种命运
+	希望你也能从这样的人身上找到自信
+
+2019年11月5日
 233 你得做出一些已经做好的成品,用起来直接就用,这样可以极大的提高效率
 
 232 印象分
@@ -87,7 +244,7 @@
 	20  积累
 	
 	21 拒绝慌乱,永远冷静应对
-
+	22 一次做好要优于反复改稿
 
 2019年11月4日
 223 永远以好奇,喜悦,发现的心态去做事情,畏畏缩缩,犹犹豫豫,哀怨自怜永远成不了气候,
