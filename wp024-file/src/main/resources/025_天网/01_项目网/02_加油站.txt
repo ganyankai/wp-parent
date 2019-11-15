@@ -1,9 +1,148 @@
+2019年11月13日
+85 安装后的target system.properties中的配置也是写死的,有时候死数据对人理解代码极为关键
+	
+
+84 改过的代码可以在service 下的conf
+	下看到改动的环境配置 system.properties
+
+83 代码需要考虑的细节是在是太多了
+	改了连接数据库的配置文件以后重启项目配置内容是有效的
+	
 2019年10月29日
+82 交接班
+	05 导出代码是这样写的
+		 /**
+     * 导出excel
+     *
+     * @return
+     */
+    @RequestMapping(value = "/exportOutData", method = RequestMethod.GET)
+    public ModelAndView exportOutData(FuelRecordForm fuelRecordForm, ModelMap model) {
+
+        List<String> dateMap =  commuteInfoService.getCommuteRecord(fuelRecordForm.getStartTime(),
+                fuelRecordForm.getStationId(), fuelRecordForm.getStaffId());
+
+        if(CollectionUtil.isEmpty(dateMap)){
+            return null;
+        }
+
+        fuelRecordForm.setStaffId(null);
+        fuelRecordForm.setStartTime(null);
+        fuelRecordForm.setDateMap(dateMap);
+
+        List<Map> list = cusOrderService.getFuelRecordList(fuelRecordForm, null);
+
+        checkListOver(list);
+        String time = DateUtil.format(new Date(), "yyyyMMdd");
+        String fileName = fuelRecordForm.getStationName()+"_"+fuelRecordForm.getStaffName()+"_"+ time + "加油订单"+ ".xls";
+        
+        String[] heads = {"消费编号", "用户昵称", "消费时间", "消费油站", "油品标号", "油枪编号", "加油金额（元）", "实付金额（元）", "油金豆金额（元）", "油金豆（个）", "锁价差额", "优惠券金额", "支付方式", "交易状态"};
+        String[] columns = {"orderCode", "nickName", "createDate", "stationName", "prodName", "gunCode", "orderPrice", "actualPayment", "jindouMoney", "jindouNum", "lockPay", "couponPay", "rechargeTypeName", "paymentStatus"};
+        
+        //设置底部统计行
+        Map lastRowMap = new HashMap();
+        
+        Map map = cusOrderService.getFuelRecordByCount(fuelRecordForm, null);
+        lastRowMap.put("orderCode", "合计");
+        lastRowMap.put("orderPrice", map.get("totalMoney"));
+        lastRowMap.put("actualPayment", map.get("totalActualPayment"));
+        lastRowMap.put("jindouMoney", map.get("jindouMoney"));
+        lastRowMap.put("jindouNum", map.get("jindouNum"));
+        lastRowMap.put("lockPay", map.get("lockPay"));
+        lastRowMap.put("couponPay", map.get("couponPay"));
+        list.add(lastRowMap);
+        
+        buildExcelView(fileName, list, heads, columns, model);
+        return new ModelAndView(new com.catt.common.web.spring.view.ExcelView(), model);
+    }
+
+	04 好像不太实用
+		<script>
+		$(function(){
+			alert($("#fuelRecordList tr").length);
+			if($("#fuelRecordList tr").length ==0){
+				$("#btnExport").hide();
+			}else {
+				$("#btnExport").show();
+			}
+			
+			$("#searchBtn").click(function(){
+				alert(123);
+				if($("#fuelRecordList tr").length ==0){
+					$("#btnExport").hide();
+				}
+				else {
+					$("#btnExport").show();
+				}
+			});
+		});
+	</script>
+
+	03 alert($("#tb tr").length);
+		
+	02 日期不能清空的问题	
+	<input class="timeInput" style="width:165px;" id="startDate" name="startDate"
+                               readonly="readonly"
+                               onclick="WdatePicker({onclearing:function(){return true;}, dateFmt:'yyyy-MM-dd'})"/>
+	
+	让 onclearing return false
+	
+	/admin/commuteMgr/getOrders
+	
+
+	01 时间格式处理 
+		sql.append(" AND  DATE_FORMAT(a.D_START_DATE, '%Y-%m-%d') = :startTime  ");
+			params.put("startTime", DateUtil.format(startTime, "yyyy-MM-dd"));
+
+81 定时改价
+	
+
+	01 动静结合的代码6 
+		<c:forEach items="${productInfoList}" var="proInfo">
+			$("#dataList").find('#searchInputTextnarrow_${proInfo.kind}').val("${proInfo.retailPrice}");
+		</c:forEach>
+	
+	为什么会这样
+	修改时存的是	t_oilstation_price_info
+	查询列表页面	t_oilstation_price_info
+									
+
+	列表页面-点击修改时二级页面回显		t_oilstation_product
+			//获取当前油站所有油品价格
+			if(StringUtils.isNotBlank(stationId)) {
+				List<Map> productInfoList = oilstationProductBaseService.findByStationId2Map(stationId);
+				model.addAttribute("productInfoList", productInfoList);
+			}
+
+			数据:
+			productInfoList:
+			[{outDiscount=0.0, kind=3, kindTypeName=92#汽油, statusName=可售, 
+			id=b679246a41384f9fa786cebc74ca0a3a, retailPrice=5.0, 
+			stationId=730d61e6e5b6462db69f44140ad781e1, status=2, inDiscount=0.0},
+			
+			{outDiscount=0.0, kind=5, kindTypeName=95#汽油, statusName=可售, 
+			id=59e70e93841d4ef08e8a556ea7017ef0, retailPrice=2.0,
+			stationId=730d61e6e5b6462db69f44140ad781e1, status=2, inDiscount=0.0}]
+	
+	hql
+	SELECT new map( o.id AS id, o.stationId AS stationId,
+	o.kind AS kind, o.status AS status, o.retailPrice AS retailPrice,
+	o.inDiscount AS inDiscount, o.outDiscount AS outDiscount )
+	FROM OilstationProduct o WHERE o.stationId = :stationId
+	AND o.delFlag = 2 ORDER BY o.kind ASC
+	
+	sql:		730d61e6e5b6462db69f44140ad781e1
+	SELECT new map( o.id AS id, o.stationId AS stationId,
+	o.kind AS kind, o.status AS status, o.retailPrice AS retailPrice,
+	o.inDiscount AS inDiscount, o.outDiscount AS outDiscount )
+	FROM T_OILSTATION_PRODUCT o WHERE o.stationId = '730d61e6e5b6462db69f44140ad781e1'
+	AND o.delFlag = 2 ORDER BY o.kind ASC
+	
+
 80 部署步骤
 	05 重启tomcat
 		cd /usr/local/tomcat
 		
-
 	04 war包放到tomcat	webapps目录下
 		
 	03 重启service
@@ -11,7 +150,7 @@
 
 		netstat -nltp
 		tail -f nohup.out
-
+		
 	02 上传更改的jar包
 		
 		conf
