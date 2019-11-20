@@ -1,4 +1,50 @@
 2019年11月15日
+107 
+	
+
+106 拉新车主数
+	"content" : [ {
+		"shareCode" : "MEAGOACD",
+		"deptName" : "山东石化48站",
+		"sharePrice" : 0,
+		"phone" : "111222333",
+		"name" : "小灰灰啊",
+		"laxinCount" : 0,
+		"id" : "886896546728116224",
+		"shortName" : "bd803f5eda984117bca368ac8af54d61",
+		"createDate" : "2019-11-08 17:45:56"
+	  }, {
+		"shareCode" : "MEAROGVY",
+		"deptName" : "山东石化48站",
+		"sharePrice" : 4,
+		"phone" : "15915830297",
+		"name" : "小灰",
+		"laxinCount" : 1,
+		"id" : "885709773897465856",
+		"shortName" : "bd803f5eda984117bca368ac8af54d61",
+		"createDate" : "2019-11-05 11:10:08"
+	  },
+	
+105 @DataSource(name = DataSource.slave1) 好像放在下面的方法里有效,而放在Object qyMoney = getStaTotalObj(startDate,endDate,stationId,params) 似乎无效
+
+	@Override
+    @DataSource(name = DataSource.slave1)
+    public Object cyLiter(String stationId, Integer startDate, Integer endDate) {
+        String columnName =  "case SUM(I_LITER_AMOUNT) when '' then 0 ELSE IFNULL(ROUND(SUM(I_LITER_AMOUNT), 2),0) end";
+        String columnNameAlias =  "cyLiter";
+        String tableName = "t_station_prod_day";
+
+        Map params =   new HashMap<>();
+        params.put("columnName",columnName);
+        params.put("columnNameAlias",columnNameAlias);
+        params.put("tableName",tableName);
+        params.put("cy",1);
+
+        Object qyMoney = getStaTotalObj(startDate,endDate,stationId,params);
+
+        return qyMoney;
+    }
+
 104 
 		
 	04  		
@@ -33,6 +79,7 @@
 	04 
 	03 代码测试
 	02 物流测试
+		
 	01 结算代码调试 
 		
 2019年11月11日

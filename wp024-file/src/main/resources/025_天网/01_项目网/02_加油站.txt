@@ -1,3 +1,74 @@
+2019年11月18日
+92 会员统计
+						
+	05 总充值金额	t_card_recharge_detail
+		
+	04 公司数	
+
+	03 注册会员数
+		
+	02 消费余额可以先不考虑时间,就是求t_cloud_card的总余额 I_CARD_TYPE为1的
+		SELECT round(sum(I_BALANCE),2) cloudCardTotal from t_cloud_card WHERE 1 = 1 and I_CARD_TYPE = '1'
+
+	01 新增会员数
+		
+
+91 加油员统计
+	02 统计一段时间内所有车主充值的总金额
+		--n  Operand should contain 1 column(s)
+		select sum(I_RECHARGE_AMOUNT) from t_card_recharge_detail where 1=1 and I_CUS_ID in (
+			select DISTINCT(I_CUS_ID),I_REL_ID from t_share_price_record where 1=1 and I_REL_ID = '758933101362544640' 
+			and D_CREATE_DATE >='2016-01-01 00:00:00' and D_CREATE_DATE<= '2030-01-01 00:00:00'
+		)
+		
+		如果没有值返回空
+		-- ok 
+		select sum(I_RECHARGE_AMOUNT) as rechargeAmount from t_card_recharge_detail where 1=1 and I_CUS_ID in
+		(select DISTINCT(I_CUS_ID) from t_share_price_record where 1=1 and I_REL_ID = '758933101362544640' 
+		and D_CREATE_DATE >='2016-01-01 00:00:00' and D_CREATE_DATE<= '2030-01-01 00:00:00')
+
+		and D_CREATE_DATE >='2016-01-01 00:00:00' and D_CREATE_DATE<= '2030-01-01 00:00:00'
+		
+		 
+	01 统计一段时间某一个加油员拉新的车主数
+	--ok 
+	select DISTINCT(I_CUS_ID),I_REL_ID from t_share_price_record where 1=1 and I_REL_ID = '758933101362544640' 
+		and D_CREATE_DATE >='2016-01-01 00:00:00' and D_CREATE_DATE<= '2030-01-01 00:00:00'
+	
+	t_share_price_record
+	
+
+	--ok 
+	select DISTINCT(I_CUS_ID) from t_share_price_record where 1=1 and I_REL_ID = '758933101362544640' 
+		and D_CREATE_DATE >='2016-01-01 00:00:00' and D_CREATE_DATE<= '2030-01-01 00:00:00'
+	
+
+90 杰豪时间格式的处理
+	c层直接接受date格式的日期
+	数据库直接比较格式
+	
+89  t_cus_order_pay 表示消费表 I_PAY_MONEY表示金额	I_RECHARE_TYPE为4表示云卡
+	t_cus_info改如何区别到底是一般的用户还是企业用户呢?  就是车主表
+	t_company_info 表示公司表
+	t_company_card_account	表示公司下面的员工数目
+	
+88 会员统计
+	云卡和公司卡只能二选一	t_cus_info
+	
+
+87 加油员统计
+		
+		t_Hr_Staff	加油员拉新： t_share_price_record		云卡充值： t_card_recharge_detail
+			拉新人数	拉新奖	充值金额(拉新会员充值云卡的金额)	销售额?
+			
+							
+		
+86 汽油金额,汽油升数
+   
+   柴油金额,柴油升数
+	
+	1 是柴油 ,其他是汽油
+
 2019年11月13日
 85 安装后的target system.properties中的配置也是写死的,有时候死数据对人理解代码极为关键
 	
