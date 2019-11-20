@@ -1,4 +1,19 @@
 ﻿2019年11月18日
+
+
+266 这种找不到符号编译又不报错的原因究竟是什么
+	一定是先安装service,再安装impl吗
+	Error:(416, 49) java: 找不到符号
+	  符号:   方法 payOrderByCloudCard(java.lang.Long,java.lang.String,<nulltype>,<nulltype>,<nulltype>)
+	  位置: 类型为com.catt.oil.service.orderMgr.PayRecordService的变量 payRecordConsumerService
+
+	  project-oil-web-merchant 报错
+		
+		module		common-module
+		parent		framework-parent	
+
+265 当接受请求参数在抽取方法时,idea竟然会自动识别成内部类
+
 264 springmvc竟然可以报20190909这样的格式通过Date类型接受
 	
 263 今天每个加油员的充值金额统计你感觉到真是相当复杂,这种数据模型的设计,数据的拆分真是

@@ -1,6 +1,47 @@
 2019年11月18日
-92 会员统计
-						
+
+
+92 统计	-_-
+		
+	07 油品统计
+		t_station_prod_day	
+			v3 
+			SELECT ifnull(ROUND(sum(I_SALE_AMOUNT),0),0) as saleAmountTotal,ifnull(ROUND(sum(I_ACT_PAY_MONEY) ,0),0) as actPayMoneyTotal,ifnull(ROUND(sum(I_LITER_AMOUNT),0),0) as literAmountTotal,
+			ifnull(ROUND(sum(I_JINDOU_MONEY),0),0) as jindouMoneyTotal,
+			ifnull(ROUND(sum(COUPON_PAY),0),0) as couponPayTotal,
+			ifnull(ROUND(sum(I_PLATFORM_DISCOUNT_AMOUNT+I_MEMBER_DISCOUNT_AMOUNT),0),0) as discountTotal
+			from t_station_prod_day  
+
+			GROUP BY S_PROD_NAME
+			
+			v2
+			SELECT ifnull(ROUND(sum(I_SALE_AMOUNT),0),0) as saleAmountTotal,ifnull(ROUND(sum(I_ACT_PAY_MONEY) ,0),0) as actPayMoneyTotal,ifnull(ROUND(sum(I_LITER_AMOUNT),0),0) as literAmountTotal,
+			ifnull(ROUND(sum(I_JINDOU_MONEY),0),0) as jindouMoneyTotal,
+			ifnull(ROUND(sum(COUPON_PAY),0),0) as couponPayTotal,
+			ifnull(ROUND(sum(I_PLATFORM_DISCOUNT_AMOUNT+I_MEMBER_DISCOUNT_AMOUNT),0),0) as discountTotal
+			from t_station_prod_day  
+			GROUP BY S_PROD_NAME
+			
+			v1 
+			SELECT sum(I_SALE_AMOUNT) as saleAmountTotal,sum(I_ACT_PAY_MONEY) actPayMoneyTotal,sum(I_LITER_AMOUNT) literAmountTotal,sum(I_JINDOU_MONEY) jindouMoneyTotal,sum(I_PLATFORM_DISCOUNT_AMOUNT+I_MEMBER_DISCOUNT_AMOUNT) as discountTotal from t_station_prod_day  
+			
+
+		I_SALE_AMOUNT		销售额
+		I_ACT_PAY_MONEY		实付金额
+		I_LITER_AMOUNT		升数
+		I_JINDOU_MONEY		油金豆金额
+		I_PLATFORM_DISCOUNT_AMOUNT	平台折扣
+		I_MEMBER_DISCOUNT_AMOUNT	会员折扣
+		
+	06 t_cus_order 
+		销售金额			I_STATUS为2		S_COMMUTE_RECORD_ID	为加油员id	 过滤时间为	D_PAY_DATE
+		I_ORDER_PRICE		
+		
+		v1
+			SELECT ifnull(ROUND(sum(I_ORDER_PRICE),0),0) as saleAmount from t_cus_order	t 
+			where 1=1 and I_STATUS = 2 
+									
+			
 	05 总充值金额	t_card_recharge_detail
 		
 	04 公司数	
