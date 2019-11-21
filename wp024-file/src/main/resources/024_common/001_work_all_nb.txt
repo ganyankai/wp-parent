@@ -27,9 +27,8 @@
 	SELECT name,age from stu where age=1 
 	union 
 	SELECT name,age from stu where age=3
-
-
-
+	
+	
 261 也许只有做你熟悉的业务你才能加快速度
 	现在可以将sql中查询结果的一条记录为一个map,多条记录理解为一个map集合
 
