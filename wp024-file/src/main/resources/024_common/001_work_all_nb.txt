@@ -1,5 +1,13 @@
 ﻿2019年11月18日
+269 idea的部署默认是没有问题的
 
+268 这次的jk项目报错竟然只读取了web.xml文件,好像并未读取beans.xml文件，故意改错beans文件以后发现idea启动报错了,
+	原来还是读取了
+	
+	这次的报错我一直以为是我不懂idea的部署,没想到是应为controller没有加注解,真的是坑人啊
+	每一样使用过的技术都要玩的特别6,要懂所有部署的原理
+
+267 idea中的artifacts一般是指打包后输出到tomcat的目录
 
 266 这种找不到符号编译又不报错的原因究竟是什么
 	一定是先安装service,再安装impl吗
@@ -490,7 +498,7 @@
 208	@Cacheable用法
 	@Cacheable(value = "statistic", key = "#stationId + #startDate.toString() + #endDate.toString() + #dateDimension.toString() + 'findStationRefuelRecordDay'")
 
-208 idea tocmat部署设置
+208 idea tomcat部署设置
 	02 
 		Deployment
 			exploded 
