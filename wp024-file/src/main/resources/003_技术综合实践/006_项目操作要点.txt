@@ -1,4 +1,10 @@
+011 springcloud
+	01 eurake server会进行一个服务注册表信息的同步,客户端对服务注册表有缓存,即使所有的eurake server都挂了,
+		也不影响客户端的对服务的调用
+
 010 杰信商贸
+	46 
+
 	45 hibernate是纯面向对象,mybatis是面向结果集
 		po与vo 
 

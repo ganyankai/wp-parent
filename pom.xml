@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>wp001stu</module>
+        <module>wp024-file</module>
+        <module>wp025-jk</module>
+        <!--<module>wp031-microservice-simple-provider-user</module>-->
+        <module>wp030-microservice-spring-cloud</module>
         <!--<module>wp028-wartest</module>-->
     </modules>
 

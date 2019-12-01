@@ -1,4 +1,24 @@
-﻿2019年11月18日
+﻿2019年11月28日
+271 yml文件缩进是相当严格的?
+	
+270 这个代码在怎样的情况下不需要加版本号呢?
+	难道父类中要注释这个,也不是,这个问题重启电脑,重启idea也不行
+	
+	貌似这个dependencyManagement只声明了依赖,并未实现引入,父工程的依赖是可以被子工程引入的
+	为什么今天遇到的情况父工程可以引入,子工程却无法引入呢?(可以通过项目中的.iml文件模仿其他项目引入jar包,这种方式重新编译后失效了,不稳定)
+	
+	父工程新建的module可以引入,而直接把子工程拖入父工程,并修改pom文件的方式可能导致jar包引入不到,
+	父工程加dependencyManagement ,子工程加依赖不加版本号,为什么还是引入不到jar包
+	
+
+	<!--<dependencyManagement>-->
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+	
+2019年11月18日
 269 idea的部署默认是没有问题的
 
 268 这次的jk项目报错竟然只读取了web.xml文件,好像并未读取beans.xml文件，故意改错beans文件以后发现idea启动报错了,

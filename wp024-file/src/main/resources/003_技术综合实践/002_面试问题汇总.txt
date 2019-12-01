@@ -1,3 +1,122 @@
+131	对象实例化的顺序
+	父类静态成员变量和静态代码块按代码的先后顺序执行
+	子类静态成员变量和静态代码块按代码的先后顺序执行
+	
+	父类的实例成员和实例初始化块
+	父类构造器
+	子类的实例成员和实例初始块
+	子类构造器 
+	
+	由上可以得出运行顺序：
+
+	1． 父类静态成员和静态初始化块 ，按在代码中出现的顺序依次执行
+	2． 子类静态成员和静态初始化块 ，按在代码中出现的顺序依次执行
+	3． 父类实例成员和实例初始化块 ，按在代码中出现的顺序依次执行
+	4． 父类构造方法
+	5． 子类实例成员和实例初始化块 ，按在代码中出现的顺序依次执行
+	6． 子类构造方法
+
+130	
+	03  这个好像也不行 (没有id如何区别重复记录呢)
+		SELECT * from stu                                                                                                                                                                                                                                                                                                                                                                                                                                       SELECT * from stu 
+
+		where name  in 
+			(
+			SELECT t1.name from 
+				(
+				(SELECT DISTINCT(name) from stu GROUP BY name,age ) t1
+				) 
+			)
+
+		and age  in 
+			(
+			SELECT age from 
+				(
+				(SELECT DISTINCT(age) from stu GROUP BY name,age ) t2
+				) 
+			)
+
+
+	02 没有id该如何去重呢(这个问题搞了近一个小时都没有想出方法)
+		
+		select name,age from stu GROUP BY name,age
+
+		我写的好像又不对,原来两个列确实比一个列难很多,可以先查询出不重复的记录,删除原表所有内容,再将刚才重复的记录插入
+		SELECT * from stu 
+
+		where name  in 
+			(
+			SELECT name from 
+				(
+				(SELECT DISTINCT(name) from stu GROUP BY name,age) t1
+				) 
+			)
+		and age  in 
+			(
+			SELECT age from 
+				(
+				(SELECT DISTINCT(age) from stu GROUP BY name,age) t2
+				) 
+			)
+
+
+	01  // 为什么in语句要多一层id呢 
+	DELETE from stu where id not in 
+	select id from (
+		(
+		SELECT DISTINCT(id) from stu GROUP BY name,age 
+		)
+	)
+	
+	select * from stu 
+	(
+		select id from (
+			(
+			SELECT DISTINCT(id) from stu GROUP BY name,age 
+			) t
+		)
+	)
+	
+	
+	今天面试有个去冗余问题sql怎么写 
+	我的sql:好像错了 
+	DELETE from stu where id not in 
+	(
+	SELECT DISTINCT(id) from stu GROUP BY name,age 
+	)
+	
+
+129     消息队列安全机制
+	03 消费端弄丢了数据
+		关闭mq的自动ack,自己编码来完成ack,代码里确保处理玩的时候,才去ack
+		没有ack mq就认为你没有处理完,
+	
+	02 rabbimq自己弄丢了数据,这个必须开启mq的持久化,消息写入之后会持久化到磁盘,自己挂了,恢复之后会自动读取
+		之前存储数据,一般数据不会丢,mq还没持久化,自己就挂了,可能导致少量数据丢失
+
+		持久化可以跟生产者那边的confirm机制配合起来,只有消息被持久化到磁盘之后,才会通知生产者ack了
+
+	01 生产者弄丢了数据
+		rabbimq提供的事务功能
+		生产者发送数据之前开启RabbitMQ事务channel.txSelect,然后发送消息,
+		如果消息没有成功被RabbitMQ接收到,那么生产者会收到异常报错,
+		此时就可以回滚事务;如果收到消息,那么可以提交事务
+		channnel.txCommit
+	
+		问题是,事务机制太消耗性能,吞吐量会下来
+		
+		一般来说,RabbitMQ消息别丢,可以开启confirm模式,你每次写的消息都会分配一个唯一的id,
+		如果写入了RabbitMQ，RabbitMQ会给你回传一个ack消息,告诉你这个消息OK了,如果mq没能处理这个
+		消息,会回调你的一个nack接口,告诉你这个消息接收失败,你可以重试.
+		而且你可以结合这个机制自己在内存里维护每个消息id的状态,
+		如果超过一定时间还没接收到这个消息的回调,那么你可以重发.
+		
+		事务与confirm机制最大的不同在于,事务的机制是同步的,confirm机制是异步的,一般用confirm机制
+		
+
+
+
+
 128	阻塞和非阻塞：
 	阻塞和非阻塞是进程在访问数据的时候，数据是否准备就绪的一种处理方式。
 	当数据没有准备好的时候，
