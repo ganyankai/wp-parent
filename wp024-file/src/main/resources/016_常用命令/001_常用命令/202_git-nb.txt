@@ -3,7 +3,10 @@
 	03 可用ll命令查看git管理的文件
 		
 	02 一步删除
+		
+		
 		git rm -r -f target;git commit -m target
+		
 
 	01 两步删除
 		git rm -r --cached .idea	--//本地需要该文件

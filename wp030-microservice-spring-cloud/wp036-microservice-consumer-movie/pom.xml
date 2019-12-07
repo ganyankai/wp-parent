@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.itmuch.cloud</groupId>
-    <artifactId>wp035-microservice-provider-user</artifactId>
+    <artifactId>wp036-microservice-consumer-movie</artifactId>
 
     <dependencies>
         <dependency>
@@ -20,13 +20,13 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
-            <version>1.4.4.RELEASE</version>
+            <!--<version>1.4.4.RELEASE</version>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>1.5.3.RELEASE</version>
+            <!--<version>1.5.3.RELEASE</version>-->
         </dependency>
     </dependencies>
-    
+
 </project>

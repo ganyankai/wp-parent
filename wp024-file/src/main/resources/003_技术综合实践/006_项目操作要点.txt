@@ -1,10 +1,31 @@
+
 011 springcloud
+	
+	02 上次eurake的安全认证配置失败了,难道是因为版本不匹配的原因
+		把版本改低以后身份认证依然是好的,估计应该是spring-boot-starter-security本身的jar包没有引全，
+		有些报错在修改在修改版本号后在还原竟然可以消除
+
 	01 eurake server会进行一个服务注册表信息的同步,客户端对服务注册表有缓存,即使所有的eurake server都挂了,
 		也不影响客户端的对服务的调用
 
 010 杰信商贸
-	46 
+	46 生产厂家下拉框
+			<script>
+				function setFactoryName(val){
+					var ele = document.getElementById("factoryName");
+					ele.value = val;
+				}
+			</script>
 
+			<select name="factoryId" onchange="setFactoryName(this.options[this.selectedIndex].text);">
+	            		<option value="">--请选择--</option>
+	            		<c:forEach items="${factoryList}" var="f">
+	            			<option value="${f.id}">${f.factoryName}</option>
+	            		</c:forEach>
+	            	</select>
+			
+
+			
 	45 hibernate是纯面向对象,mybatis是面向结果集
 		po与vo 
 

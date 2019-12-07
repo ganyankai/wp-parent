@@ -13,6 +13,7 @@ class A {
         System.out.println("A的代码块");
     }
     public static String prtString(String str) {
+//        System.out.println(" in static String prtString");
         System.out.println(str);
         return null;
     }

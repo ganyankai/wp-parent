@@ -21,8 +21,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+            <!--<version>1.4.4.RELEASE</version>-->
             <version>1.4.4.RELEASE</version>
         </dependency>
+
+
     </dependencies>
 
 
