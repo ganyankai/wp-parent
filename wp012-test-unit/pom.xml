@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>tu01_test_java</module>
+        <module>tu02_kafka</module>
     </modules>
 
 

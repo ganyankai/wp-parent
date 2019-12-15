@@ -1,3 +1,31 @@
+2019年12月9日
+v2.0
+07 kafka有经典的数据分段策略,可以根据大小(1G)来自动分段,
+	文件存储分为索引存储和数据存储,
+	
+	ls -lrth
+
+06 删除topic
+	sh bin/kafka-topics.sh --delete --zookeeper 192.168.1.181:2181 --topic xm512
+
+05 通过shell消费消息
+	sh bin/kafka-console-consumer.sh --zookeeper 192.168.1.181:2181 --from-beginning --topic dante129
+	
+04 通过shell命令发送消息
+	bin/kafka-console-producer.sh --broker-list 192.168.1.181:9092 --topic dante129
+	
+03 创建topic
+	bin/kafka-topics.sh --create --zookeeper 192.168.1.181:2181 --replication-factor 3 --partitions 3 --topic dante129
+	
+02 查看当前服务器中的所有topic
+	cd /usr/local/kafka/
+	bin/kafka-topics.sh --list --zookeeper  192.168.1.181:2181
+	
+01 启动集群
+	cd /usr/local/kafka/
+	bin/kafka-server-start.sh  config/server.properties
+
+v1 
 5、Kafka集群部署
 5.1集群部署的基本流程
 下载安装包、解压安装包、修改配置文件、分发安装包、启动集群
