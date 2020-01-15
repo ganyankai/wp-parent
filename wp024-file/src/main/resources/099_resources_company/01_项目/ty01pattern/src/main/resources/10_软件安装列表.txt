@@ -1,0 +1,43 @@
+02 advanced
+    05 性能测试工具 a
+    04 并发工具 a
+    03 常用工具类    a
+    02 常用经典jar包 a	o
+    01 elaticSearch  a
+
+01 basic
+    23 postman
+    22 360 
+    21 everything o
+	
+    20 git o	   
+    19 jsonview a  o	
+    18 pd o
+    17 google a
+    16 有道词典 a	o
+	
+    15 beyondCompare    a	
+    14 secureCRT a	
+    13 vmvare a			
+    12 SearchandReplace a	o
+    11 redis a
+        02 客户端
+        01 服务器
+
+    10 centos虚拟机  a	
+        01 快照备份
+    09 editplus s	o
+    08 idea s		o
+    07 maven s		o
+    06 wintop a		o
+	
+    05 orcale a		
+        02 客户端	o
+        01 服务器	o
+    04 mysql s		
+        02 客户端	o 
+        01 服务器	o
+    03 tomcat   s	o
+    02 eclipse  s	o
+	myeclipse	o
+    01 jdk  s		o

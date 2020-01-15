@@ -1,4 +1,112 @@
+012 电力项目
+	
 
+	14 使用断点的方式也可以看到某个js代码执行的具体效果
+		
+	13 
+		/**添加10分钟后自动刷新页面，站点和设备运行的实时性*/
+		window.onload=function(){
+			setTimeout('refresh10()',1000*60*10) ;
+		}
+		function refresh10(){
+			window.location.reload();
+		}
+
+	12 切屏效果实现
+		<script language="javascript">
+			function  shiftwindow()
+			{   
+				if(parent.document.getElementById("main").cols=="153,1%,*")
+				
+				{
+					parent.document.getElementById("main").cols='0,1%,99%';
+					
+					document.all.image.src="${pageContext.request.contextPath }/images/you.gif";
+				}
+				else if(parent.document.getElementById("main").cols=="0,1%,99%")
+				{
+					parent.document.getElementById("main").cols='153,1%,*';
+						
+					document.all.image.src="${pageContext.request.contextPath }/images/zuo.gif";
+				}
+				
+			}
+			</script>
+		</HEAD>
+		<BODY MS_POSITIONING="GridLayout">
+		<table width=1 style="cursor: hand" height="100%" background="" cellspacing="0" cellpadding="0" >
+			<tr><td onclick="shiftwindow()" title="全屏/半屏" background="" width="20">
+				 
+		    <p align="center">
+				<img id="image" src="${pageContext.request.contextPath }/images/zuo.gif" width="9" height="79" >       
+		    </p>
+				 
+			</td></tr>
+			</table>
+		</body>
+		</html>
+		
+	11 <A href="logout.do"   target="_top"> <font color="#FFFFFF"><b>重新登录</b></font></A>
+		target="_top"表示真个ie浏览器都会找这个do
+		
+	10 mvc结构
+		m：model层,用来传递和接收表单参数 
+		v:view视图,表现层
+		c:控制层
+
+	09 访问页面
+		http://localhost:8080/ep03_itcast1115elec_new/system/textAdd.jsp
+		
+	08 webapp
+		WEB-INF
+		参考 
+			D:\002_studyPro\p1002xyshop\xy-cart-web\src\main\webapp
+		
+	07 jbpm
+		jbpm4_deployment 部署对象表
+		jbpm4_deployprop 流程定义表	
+		jbpm4_lob	 资源文件表 
+		jbpm4_property	 指定下一个主键id 
+		
+		
+	06 异地登录
+		在数据库中定义一个字段logonstate,每次登录如果正确的话讲logonState的值+1,
+		并且存到数据库和session中
+		在过滤器访问url的时候,判断session中的logonstate和数据库中的logonstate是否相同,
+		*如果相同,放行
+		*不相同:给出提示,在错误页面显示 (异地登录连接的数据库不一样)
+
+	05 异常处理和日志备份
+		统一在struts的拦截器上,进行try catch
+		* 无异常,通过return访问对应的页面
+		* 如果Dao,Service,Action类抛出异常,在拦截器中统一捕获异常,在catch模块中先使用log4j
+			日志处理记录抛出的异常,打印到日志文件中,统一将错误使用error.jsp进行输出
+
+	04 细粒度权限控制
+		目的: 对应地址上输入url连接,但是当前登录名没有访问该url的权限,不能访问
+			1.先定义注解 (mid 和 pid,表示权限的唯一标识)
+			2.将两个注解定义访问每个url对应的Action的方法上,Action类的方法对应的
+				2个值(mid和pid),此时表示唯一的方法
+			3.使用struts2自定义一个拦截器(目的:在访问每一个Action类的方法之前,先进行拦截),
+				在拦截的方法中,先获取每个Action类的方法,在获取每个方法上定义注解,
+				再获取注解上对应的2个唯一标识(mid和pid),使用当前登录人角色和mid和pid的值查询
+				角色权限表,判断当前用户是否具有权限访问Action类
+				* 如果查询获取到结果,通过拦截器访问目标对象的Action方法
+				* 如果没有查询到对应的结果,此时就跳转到错误页面
+			
+				
+	03 粗粒度权限控制
+		判断session是否存在,没有session说明没有登录
+
+	02 验证码和记住我功能 
+		01 验证码:	通过image.jsp生成验证码显示到页面上,登录页面提交填写
+		的验证码,进行验证码的校验,目的防止恶意提交
+		02 记住我:  当用选择记住我的复选框,勾选后,将登录名和密码保存到Cookie中,
+		目的是方便用户再次登录 
+
+	01 day07 开始讲工作流 
+		
+		
 011 springcloud
 	
 	02 上次eurake的安全认证配置失败了,难道是因为版本不匹配的原因
@@ -9,6 +117,56 @@
 		也不影响客户端的对服务的调用
 
 010 杰信商贸
+	49 
+		级联删除
+			在两层一对多结构中
+			字表数据不设置外键关联时,就成为僵尸数据
+		hibernate 多层关联最简单;配置关联关系时,只关心上下级对象.
+		Mybatis   多层关联关系时,级联删除必须一级一级的删除.多级时要专门
+			写mapper的方法
+		
+			
+	48 经典的数据字典表结构 
+		破坏性创造 
+		
+		-- Create table
+		create table
+		(
+		  SYS_CODE_ID  VARCHAR2(40) not null,
+		  NAME         VARCHAR2(100),
+		  PARENT_ID    VARCHAR2(40),
+		  PARENT_NAME  VARCHAR2(100),
+		  LAYER_NUM    INTEGER,
+		  IS_LEAF      INTEGER,
+		  QUOTE_NUM    INTEGER,
+		  CNOTE        VARCHAR2(100),
+		  ICO          VARCHAR2(20),
+		  ORDER_NO     INTEGER,
+		  STATE        CHAR(1),
+		  CREATED_BY   VARCHAR2(40),
+		  CREATED_TIME TIMESTAMP(6),
+		  UPDATED_BY   VARCHAR2(40),
+		  UPDATED_TIME TIMESTAMP(6)
+		)
+		
+		select order_no,name from sys_code_b t where parent_id = '0104' 
+
+	47 数据字典
+		一般它有编号+名称构成
+		性别: 0101男,0102 女
+		包装单位: 0201 只pcs, 0202 SETS 
+		区县:	02091 西安市  02902 宝鸡市
+		通用的数据字典,它可以存放多个分类,数据字典表示用户可以动态扩充内容的,它的分类用户不能改,
+		分类是系统上线时,开发人员进行初始化.(分类是代码中写死的,分类下的内容,用户可以动态扩充)
+		
+		
+		结构必须是ID+NAME,
+		TYPE + ID + NAME
+		
+		数据字典都在哪里使用?
+		单选的组合;下拉框
+		 
+
 	46 生产厂家下拉框
 			<script>
 				function setFactoryName(val){

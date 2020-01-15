@@ -1,0 +1,15 @@
+01 springcloud如何部署项目?
+	切换到每个服务的项目下启动该jar包
+	
+	
+	普通的javaweb项目要发布的话，一般就三种方法：
+
+	1.把项目直接放在tomcat的webApps下启动tomcat即可。
+
+	2.把项目打包成war包放在webApps下，启动tomcat，自动解压war包。
+
+	3.采用显示定义上下文的方法（上面两种都是隐式定义上下文），也就是改配置文件的方法，要么在Tomcat的conf/Catalina/localhost目录下创建一个XML文件；要么在Tomcat的conf/server.xml文件中添加一个Context元素。
+	
+
+
+

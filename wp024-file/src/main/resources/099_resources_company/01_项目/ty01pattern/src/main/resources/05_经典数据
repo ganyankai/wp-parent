@@ -1,0 +1,24 @@
+主键 唯一编码 名称 是否是叶子节点 父节点
+1 CEO 总经理 否
+2
+developDep
+研发部经理 否 CEO
+3
+salesDep
+销售部经理 否 CEO
+4
+financeDep
+财务部经理 否 CEO
+5
+k
+总经理秘书 是 CEO
+您的设计模式
+第  169  页
+6
+a
+员工 A 是
+developed
+7
+b
+员工 B 是
+Developed

@@ -1,0 +1,14 @@
+01 eclipse与myeclipse区别
+
+	项目开发可以在myeclipse中开发，也可以在eclipse开发
+	不同之处：
+	1：Myeclipse收费，Eclipse不收费
+	2：Myeclipse是Eclipse的一个插件，也就是说Eclipse没有任何插件，需要人工导入
+	3：使用Myeclipse发布项目，是发布到外部的tomcat下的webapp的目录中
+	   Eclipse是将Tomcat服务器整合到Eclipse开发
+	4：myeclipse是将class文件放置到
+	D:\workspaceProject\itcast1115elec\WebRoot\WEB-INF\classes
+	Eclipse是将class文件放置到
+	D:\workspaceEclipse\itcast1115ElecEclipse\build\classes
+	5：myeclipse放置jsp文件的文件夹默认叫做：WebRoot
+	Eclipse放置jsp文件的文件夹默认叫做：WebContent

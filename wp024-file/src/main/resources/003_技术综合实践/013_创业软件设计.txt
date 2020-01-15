@@ -1,0 +1,63 @@
+2019年12月5日
+02 建表sql
+	drop table if exists customer_c;
+
+	/*==============================================================*/
+	/* Table: customer_c                                            */
+	/*==============================================================*/
+	create table customer_c
+	(
+	   id                   int not null,
+	   name                 varchar(40),
+	   sex                  varchar(1) comment '0 女 1 男 ',
+	   birthday             int,
+	   sponsor_money        double,
+	   shop_money           double,
+	   shop_type            int,
+	   score                int,
+	   black_white          int comment '0 黑名单     1 普通	2  白名单',
+	   vip_level            int,
+	   grade                int,
+	   create_time          datetime,
+	   create_by            int,
+	   create_dept          varchar(40),
+	   order_no             int,
+	   primary key (id)
+	);
+	
+	
+	INSERT INTO `lifedata`.`customer_c` (`id`, `name`, `sex`, `birthday`, `sponsor_money`, `shop_money`, `shop_type`, `score`, 
+	`black_white`, `vip_level`, `grade`, `create_time`, `create_by`, `create_dept`, `order_no`) VALUES
+	('1', 'xm', '1', '19900714', '0', '0', '0', '0', '0', '0', '0', '2019-12-07 16:16:39', '1', '0', '0');
+
+
+
+01 客户黑白名单系统数据库设计	
+	表名: customer_c
+	字段: 
+		id		  int    
+		name		  str		40	姓名
+		sex		  str		1	性别	0 女 1 男 
+		birthday	  int		16	生日
+		sponsor_money	  double		赞助金额
+
+		shop_money	  double		购物金额
+		shop_type	  int 			消费类型	可能有多种
+		score		  int			积分			
+		black_white	  int			黑白名单	0 黑名单     1 普通	2  白名单
+		vip_level	  int			vip等级		0-9	
+		
+		grade		  int 			综合评价
+		create_time	  date			创建时间	
+		create_by	  int		40	创建人
+		create_dept	  str		40	创建部门
+		order_no	  int			排序号
+
+		question	01 是否要给积分设置过期时间,如果要,如何实现
+				
+		
+
+00 你的软件系统应该考虑的问题,
+	S 权限问题必须考虑,数据录入问题,框架集成,技术选型,数据存储备份,整体架构,
+	A 
+
