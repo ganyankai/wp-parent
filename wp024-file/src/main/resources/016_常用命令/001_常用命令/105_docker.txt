@@ -1,6 +1,96 @@
+016	mysql部署
+	02 docker run -di --name=test_mysql -p 33306:3306 -e MYSQL_ROOT_PASSWORD=root centos/mysql-57-centos7
+	01 docker pull centos/mysql-57-centos7
+
+015	移除容器 
+	docker rm 
+
+014	查看ip 
+	docker inspect mycentos3 
+	01 过滤ip	
+		docker inspect --format ='{{.NetworkSettings.IPAddress}}' mycentos3
+ 
+013	目录挂载
+	docker run -di --name=mycentos3 -v  /usr/local/myhtml:/usr/local/myhtml centos:7
+	
+012	文件
+	02 从容器拷贝文件到本机 
+		docker cp  mycentos2:/usr/local/anaconda-ks.cfg anaconda-ks2.cfg
+		
+	01 拷贝文件进入容器 (容器停止也可以拷贝)
+		docker cp anaconda-ks.cfg  mycentos2:/usr/local
+	
+
+011	容器
+	07 启动停止的容器 
+		docker start mycentos
+		docker stop mycentos
+
+	06 进入守护容器
+		docker exec -it mycentos2  /bin/bash
+		退出后容器依然是运行状态 
+
+	05 示例(守互)
+		docker run -di --name=mycentos2 centos:7 
+
+	04 退出
+		exit 
+
+	03 示例(交互)
+		docker run -it --name=mycentos centos:7 /bin/bash
+		
+	02 查看容器
+		docker ps  
+		-a  查看所有容器
+		-l 查询最后一次运行的容器 
+
+	01 创建容器
+		docker run 
+		-i
+		-t 
+
+010	删除镜像
+	02 删除所有镜像
+		docker rmi `docker images -q`
+	01 根据id删除镜像
+		docker rmi 镜像id
+
+009	拉取镜像
+	docker pull tutum/centos
+
+008	搜索镜像
+	docker search centos
+	
+
+007	查看镜像
+	docker images 
+
+006	查看帮助文档
+	docker --help
+
+005	查看概要信息
+	docker info 
 
 
-002 
+004	启动docker
+	systemctl start docker
+	
+	查看状态
+	systemctl status docker
+	
+	停止
+	systemctl stop docker
+
+	重启
+	systemctl restart docker
+	
+	开机启动
+	systemctl enable docker
+	
+003	查看版本
+	docker -v
+	
+002    
 	docker ps
 	docker run
 

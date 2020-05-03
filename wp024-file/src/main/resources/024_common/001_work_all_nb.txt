@@ -1,4 +1,8 @@
-﻿2020年1月12日
+﻿2020年1月17日
+276 发现eclipse tomcat发布路径
+	D:\001_work\01_ep_project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ep03_itcast1115elec_new
+
+2020年1月12日
 275 oracle连不上的问题竟然在输错一次用户名密码之后自己好了
 
 2019年12月13日

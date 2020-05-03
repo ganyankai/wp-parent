@@ -1,5 +1,102 @@
+014 十次方项目 
+	099 操作步骤
+		01下载 微服务后台资料>微服务资料>镜像 tensquare.zip 
+	022 经常遇到修改pom文件后无法引入jar包的问题,今天的redis无法引到的问题,
+		尝试删除对应jar包下的unknown文件夹,或者整个删除重新引
+
+	021 启动redis 
+		docker run -di --name=tensquare_redis -p 6379:6379 redis
+		
+	020 代码生成路径
+		E:\003_javaext\021_itcast10square\04_code
+		
+	019 tomcat部署
+		docker run -di --name=mytomcat -p 9000:8080 -v /usr/local/webapps:/usr/local/tomcat/webapps tomcat:7-jre7
+		今天部署的cas.war tomcat居然没重启
+
+	018 为什么recruit的.iml文件里没有任何jar包引入配置,依然可以用父工程的注解呢?
+		重启idea后发现里面又增加了jar包的配置
+
+	017 子工程颜色异常可能是父工程没有加module 
+
+	016 启动mysql
+		systemctl start docker;docker start tensquare_mysql
+
+	015 查看数据库编码
+		show variables like 'character_set_database';
+		
+	014 idea中能否引入注解是在 .iml配置中决定的
+		竟然可以手动在里面配置jar包,需要改两个地方
+
+
+	013 centos7 ip配置
+		cd   /etc/sysconfig/network-scripts(
+		vi  ifcfg-ens33
+		#修改
+		BOOTPROTO=static #这里讲dhcp换成ststic
+		ONBOOT=yes #将no换成yes
+		#新增
+		IPADDR=192.168.1.132 #静态IP
+		GATEWAY=192.168.1.2 #默认网关
+		NETMASK=255.255.255.0 #子网掩码
+		
+		service network restart
+	012 分布式id生成器 - 雪花算法
+		一秒钟可存26万条id ,超过26万只能进入队列或者缓存中
+
+	011 idea中生成getset 
+		alt + ins 
+
+	10 maven中工程跟module的唯一区别就是工程可以直接创建,父工程可以提供子工程依赖的jar包
+		
+	09 idea maven中runner的配置 
+		-DarchetypeCatalog=internal
+		
+	08 启动mysql镜像 
+		docker run -di --name=tensquare_mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root centos/mysql-57-centos7
+		
+	07 vmware里的网关配置要写对,不然上不了网
+		dns可以通过dos命令,找能上网的dns 
+		
+
+	
+		
+	05 http的方法
+		04 delete 
+			不安全且冥等
+		
+		03 put 修改
+			不安全且冥等
+		
+		02 post 
+			不安全且不冥等
+				可能会执行2次保存操作
+		01 get
+			安全且冥等
+		 
+	04 前端api  启动nginx后访问
+		http://localhost:801/
+
+	03 dist
+	
+	02 uml 统一建模语言
+		建模语言一般都是产品经理跟投资方谈的
+
+	01 现在大家所说的微服务就是容器的集合
+	
+
+013 docker学习
+	01 虚拟机密码 root itcast
+		ip addr  192.168.1.131
+		老师给的centos资源无需安装,解压就用
+		启动文件 CentOS7.vmx
+
+		
 012 电力项目
 	
+	16 有个莫名奇妙的eofexception 竟然在tomcat clean tomcat work directory后消失了
+
+	15 有个类找不到异常竟然在tomcat clean tomcat work directory后消失了
 
 	14 使用断点的方式也可以看到某个js代码执行的具体效果
 		

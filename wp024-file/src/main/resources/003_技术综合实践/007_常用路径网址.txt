@@ -4,6 +4,12 @@
 	
 
 001技术学习
+	
+	24.docker注册中心: 
+		http://hub.docker.com
+	23.2020年4月28日购买
+		获取教程方法：手机百度网盘-> 消息-> 右上角加号-> 加好友/裙-> 搜索裙号：
+		5338840726，进裙后点右上查看共享文件即可保存！
 	22.vue.js https://cn.vuejs.org/v2/guide/installation.html
 	21.spring cloud 中文官网 
 		https://www.springcloud.cc/

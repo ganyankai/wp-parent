@@ -1,0 +1,84 @@
+
+
+01 选中父子都选中
+	02 html
+		  <table cellspacing="0" align="center" width="100%" cellpadding="1" rules="all" bordercolor="gray" border="1" 
+									style="BORDER-RIGHT:gray 1px solid; BORDER-TOP:gray 1px solid; BORDER-LEFT:gray 1px solid; WORD-BREAK:break-all; BORDER-BOTTOM:gray 1px solid; BORDER-COLLAPSE:collapse; BACKGROUND-COLOR:#f5fafe; WORD-WRAP:break-word">
+											<s:if test="#request.popedomList!=null && #request.popedomList.size()>0">
+												<!-- flag = '1'表示第一便利子节点 -->
+												<s:set value="%{'1'}" var="flag" scope="request"></s:set>
+												<s:iterator value="#request.popedomList" var="popedom">
+													<!-- 父节点 -->
+													<s:if test="#popedom.isParent">
+														<s:if test="#request.flag=='2'">
+															</td>
+																</tr>
+															<s:set value="%{'1'}" var="flag" scope="request"></s:set>
+														</s:if>
+														<tr onmouseover="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = '#F5FAFE';">
+														<td class="ta_01"  align="left" width="18%" height="22" background="../images/tablehead.jpg" >
+															<input type="checkbox"  name="selectoper" id="<s:property value="#popedom.mid"/>_<s:property value="#popedom.mid"/>" value="aa" onClick='goSelect(this.id)' >
+															<s:property value="#popedom.name"/>：
+													</s:if>
+													<!-- 子节点 -->
+													<s:else>
+														<s:if test="#request.flag=='1'">
+															<td class="ta_01"  align="left" width="82%" height="22">
+															<s:set value="%{'2'}" var="flag" scope="request"></s:set>
+														</s:if>
+														<div>
+															<input type="checkbox"  name="selectoper" id="<s:property value="#popedom.pid"/>_<s:property value="#popedom.mid"/>" value="ab" onClick='goSelect(this.id)' >
+															<s:property value="#popedom.name"/>
+														</div>
+													</s:else>
+												</s:iterator>
+												
+											</s:if>
+															
+						     	</table> 
+
+	01 js
+		//选中复选框，触发事件
+		function goSelect(id){
+			//按照_符号分隔
+			var array = id.split("_");
+			if(array[0] == array[1]){//此时说明操作的（父）节点
+				//选中父
+				if($("#"+id)[0].checked){
+					//子都选中
+					$("input[type='checkbox'][name='selectoper'][id^='"+array[0]+"']").attr("checked",true);
+				}
+				//取消父
+				else{
+					//子都取消
+					$("input[type='checkbox'][name='selectoper'][id^='"+array[0]+"']").attr("checked",false);
+				}
+			}
+			else{//说明此时操作的子设置中的一个(子)
+				//当选中子设置中的一个，则父一定被选中
+				if($("#"+id)[0].checked){
+					$("input[type='checkbox'][name='selectoper'][id^='"+array[0]+"'][id$='"+array[0]+"']").attr("checked",true);
+				}
+				//当取消子设置中的一个
+				else{
+					//先查找子设置的对象
+					var $check = $("input[type='checkbox'][name='selectoper'][id^='"+array[0]+"']:not([id$='"+array[0]+"'])");
+					//遍历子设置的对象
+					/**
+					 * flag:用于判断当前子设置的对象是否有被选中
+					 *   * flag=false，子对象都没有被选中，此时父要被取消
+					 *   * flag=true，子对象中至少有一个被选中，此时不做任何操作
+					 */
+					var flag = false;
+					$check.each(function(index,domEle){
+						if(domEle.checked){
+							flag = true;
+							return false;
+						}
+					})
+					if(!flag){
+						$("input[type='checkbox'][name='selectoper'][id^='"+array[0]+"'][id$='"+array[0]+"']").attr("checked",false);
+					}
+				}
+			}
+		}
