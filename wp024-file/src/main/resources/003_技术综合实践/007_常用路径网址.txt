@@ -2,9 +2,17 @@
 	002.外卖小哥返乡 http://tv.cctv.com/2019/03/01/VIDE3hoH4nxMqKBNaXsDtPx6190301.shtml?spm=C52448022284.PcWqxSD7WlSZ.0.0
 	001.农业创业项目 http://baike.sm.cn/item/3b5fc55af59cc660c814fedd66c25ce2.html?from=smsc&uc_param_str=dnntnwvepffrgibijbpr
 	
-
-001技术学习
 	
+001技术学习
+	28 中国码云
+		https://gitee.com/
+		13477907639  ------1234
+		
+	27 https://github.com/ 码云
+	26 我的git库
+		https://github.com/ganyankai/wp-parent.git
+		
+	25.阿里云 www.alidayu.com
 	24.docker注册中心: 
 		http://hub.docker.com
 	23.2020年4月28日购买

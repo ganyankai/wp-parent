@@ -1,6 +1,188 @@
+015 vue
+	01 
+	http://localhost:8080/tu04_vue/demo1.html
+
 014 十次方项目 
 	099 操作步骤
-		01下载 微服务后台资料>微服务资料>镜像 tensquare.zip 
+				
+		01下载 微服务后台资料>微服务资料>镜像 tensquare.zip
+
+	048 mysql可以将127.0.0.1 改成 192.168.1.1
+		grant all privileges on *.*  to  'root'@'%'  identified by '123';
+		flush privileges;
+	
+	047 gogs
+		docker run -d --name=gogs -p 10022:22 -p 3000:3000 -v /var/gogsdata:/data gogs/gogs
+		
+		http://192.168.1.132:3000
+
+		itcast
+		itcast
+	046 测试config
+		为什么我的config部署完后启动无法访问
+
+		http://127.0.0.1:12000/base-dev.yml
+		http://192.168.1.132:12000/base-dev.yml
+
+		端口映射时出了毛病
+		可启动成功后又遇到这个毛病
+		Cannot clone or checkout repository: https://gitee.com/ganyankai/tensquare_dev.git
+		这是目前虚拟机不能联网导致的 
+
+
+	045 mq遇到一个
+		  rabbitmq:
+		    host: 192.168.43.80
+		启动报错连不上mq
+
+		而将host换成127.0.0.1不报错
+		
+		修改mq的权限配置后该问题竟然得到解决
+
+		[
+		 {rabbit,
+		  [%%
+		   %% Network Connectivity
+		   %% ====================
+		   %%
+		   %% By default, RabbitMQ will listen on all interfaces, using
+		   %% the standard (reserved) AMQP port.
+		   %%
+		   {tcp_listeners, [5672]},
+		   {loopback_users, ["gan"]}
+		  ]}
+		].
+		可为什么新增用户gan可以登录,而原来的guest却登录不了呢
+
+	044 构建
+	    mvn clean package docker:build -DpushImage	
+		
+	    docker run -d --name=tensquare_config -p 12000:12000 192.168.1.132:5000/tensquare_config:1.0-SNAPSHOT
+		
+	043 快捷测试某个端口 需要开启telnet功能
+		telnet 127.0.0.1 80 
+		telnet 192.168.1.1 5672 
+	042 标记
+		docker tag jdk1.8 192.168.1.132:5000/jdk1.8
+
+	041 私有仓库
+		docker run -di --name=registry -p 5000:5000 registry
+		http://192.168.1.132:5000/v2/_catalog 
+		谷歌访问
+
+	040 当前可访问mq的ip jks
+		
+		http://192.168.1.1:15672/
+		http://127.0.0.1:15672/
+		http://192.168.43.80:15672/  断开了无线网这个依然能访问
+		
+	039 直接从pdf中复制的文本文件可能不能直接执行
+		pdf中的空格和记事本中的空格有差异
+		docker run -di --name=tensquare_jdk8 jdk1.8 /bin/bash
+		用bc比较,记事本中的空格是一个.字符
+
+	038  http://127.0.0.1:12000/actuator/bus-refresh
+		spring-cloud-bus联调失败
+		期待改配置文件后不重启项目,可目前还是要重启
+		问题来了,如何查看当前运行的项目读取的是哪个配置文件
+		这个应该是对的,不过好像不支持该端口
+	
+	037 Can not issue data manipulation statements with executeQuery().
+		执行修改代码却用了查询的方法
+
+	036 问题记录
+		最近在实践Spring Boot 2+Spring Cloud(Finchley.M9),在用到Feign的时候发现@EnableFeignClients注解开不了,独立使用Feign是可以的,但就是开启不了Spring对Feign的支持.经过一番摸索终于把问题解决了,在这里分享一下解决方案和思路.解决思路写得较繁琐,可以选择性阅读,结论和解决方案写在前面
+
+		Spring Cloud对Feign的支持由org.springframework.cloud:spring-cloud-netflix-core移到org.springframework.cloud:spring-cloud-openfeign-core下,而Finchley.M9版本下的spring-cloud-starter-openfeign:2.0.0.M2的pom依赖文件中导入的是spring-cloud-netflix-core而非spring-cloud-openfeign-core,需要我们在pom文件中添加对应依赖管理使spring-cloud-starter-openfeign版本更新到2.0.0.RC1,如下图
+		
+		<dependencyManagement>
+		    <dependencies>
+			<dependency>
+			    <groupId>org.springframework.cloud</groupId>
+			    <artifactId>spring-cloud-openfeign</artifactId>
+			    <version>2.0.0.RC1</version>
+			    <type>pom</type>
+			    <scope>import</scope>
+			</dependency>
+		    </dependencies>
+		</dependencyManagement>
+
+	035 token一般放在请求头里面,放在请求体里面不安全
+		
+	034 token的好处
+		01 支持跨域访问
+		02 无状态
+		03 更适用CDN
+		04 去偶
+		05 更适合于移动应用
+		06 csrf依赖cookie,预防csrf
+		07 性能更好
+		
+	033 sping mvc中的web.xml可以说是程序的入口,你想使用纯注解的方式代替将非常的复杂,
+	    可springboot帮我们做了
+		入口是这个
+		org.springframework.web.SpringServletContainerInitializer
+
+	032 为什么article中findById需要缓存,而findAll不需要缓存呢,如果需要为findAll方法加缓存,
+	    应该怎样来做呢?
+		
+	031 rabbitmq自带负载均衡的特性
+		开启多个消费者工程，测试运行消息生产者工程，会发现只有一个消费者工程可以接收
+		到消息。
+		
+	030 springboot整合junit
+		@RunWith(SpringRunner.class)
+		@SpringBootTest(classes=Application.class)
+		public class MqTest {
+			@Autowired
+			private RabbitTemplate rabbitTemplate;
+			@Test
+			public void testSend(){
+			rabbitTemplate.convertAndSend("itcast","我要红包");
+			}
+		}
+		
+	029 搜索分类
+		搜索引擎
+		站内搜索
+
+	028 数据库优化知识 
+		设计优化
+			01 索引会大幅度增加查询效率,但是会大幅度影响增删改的效率
+				
+		sql优化
+	
+	027 一定要注意spring mongodb中配置文件的层级关系
+
+	026 遇到spring-boot-starter-data-mongodb 包下一直是unknown问题 ,原来是倒错了项目
+		
+
+	025 vmvare修改虚拟机网络配置中的 vmnet8
+		03 
+			虚拟机网络配置中的ip 为 192.168.0.0 
+			虚拟机ip为 192.168.1.132
+			可远程连接虚拟机
+			
+			但修改一次后连不上了
+		02 
+		虚拟机网络配置中的ip 为 192.168.1.0 
+		虚拟机ip为 192.168.43.128
+		虚拟机可上网,但无法远程连接虚拟机
+
+		01 
+		虚拟机ip配置文件中 
+		BOOTPROTO=dhcp 
+		可以上网
+
+	024 我的无线网ip
+		 连接特定的 DNS 后缀 . . . . . . . :
+		   本地链接 IPv6 地址. . . . . . . . : fe80::24c4:2cd:e837:9ea0%18
+		   IPv4 地址 . . . . . . . . . . . . : 192.168.43.80
+		   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+		   默认网关. . . . . . . . . . . . . : 192.168.43.1
+			
+	023 大数据才需要MongoDB 
+	
 	022 经常遇到修改pom文件后无法引入jar包的问题,今天的redis无法引到的问题,
 		尝试删除对应jar包下的unknown文件夹,或者整个删除重新引
 
@@ -16,30 +198,37 @@
 
 	018 为什么recruit的.iml文件里没有任何jar包引入配置,依然可以用父工程的注解呢?
 		重启idea后发现里面又增加了jar包的配置
-
+		
 	017 子工程颜色异常可能是父工程没有加module 
 
 	016 启动mysql
-		systemctl start docker;docker start tensquare_mysql
+		systemctl start docker;docker start tensquare_mysql;docker start tensquare_redis
 
 	015 查看数据库编码
 		show variables like 'character_set_database';
 		
 	014 idea中能否引入注解是在 .iml配置中决定的
 		竟然可以手动在里面配置jar包,需要改两个地方
-
+		
 
 	013 centos7 ip配置
-		cd   /etc/sysconfig/network-scripts(
+		cd   /etc/sysconfig/network-scripts
 		vi  ifcfg-ens33
+
+		cd   /etc/sysconfig/network-scripts;vi  ifcfg-ens33
+
+
 		#修改
-		BOOTPROTO=static #这里讲dhcp换成ststic
+		BOOTPROTO=static #这里讲dhcp换成static
 		ONBOOT=yes #将no换成yes
 		#新增
 		IPADDR=192.168.1.132 #静态IP
 		GATEWAY=192.168.1.2 #默认网关
 		NETMASK=255.255.255.0 #子网掩码
 		
+		DNS1=8.8.8.8
+		DNS2=114.114.114.114
+
 		service network restart
 	012 分布式id生成器 - 雪花算法
 		一秒钟可存26万条id ,超过26万只能进入队列或者缓存中

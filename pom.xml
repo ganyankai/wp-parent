@@ -15,6 +15,7 @@
         <!--<module>wp031-microservice-simple-provider-user</module>-->
         <module>wp030-microservice-spring-cloud</module>
         <module>wp064-mp-parent</module>
+        <module>wp065_tensquare_parent</module>
         <!--<module>wp028-wartest</module>-->
     </modules>
 

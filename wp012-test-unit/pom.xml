@@ -14,6 +14,8 @@
     <modules>
         <module>tu01_test_java</module>
         <module>tu02_kafka</module>
+        <module>tu03_mongodb</module>
+        <module>tu04_vue</module>
     </modules>
 
 

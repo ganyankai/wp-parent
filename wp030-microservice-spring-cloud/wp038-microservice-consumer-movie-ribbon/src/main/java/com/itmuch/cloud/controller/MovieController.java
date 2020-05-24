@@ -30,7 +30,7 @@ public class MovieController {
     ServiceInstance serviceInstance = this.loadBalancerClient.choose("microservice-provider-user");
     System.out.println("111" + ":" + serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":" + serviceInstance.getPort());
 
-    ServiceInstance serviceInstance2 = this.loadBalancerClient.choose("microservice-provider-user2");
+    ServiceInstance serviceInstance2 = this.loadBalancerClient.choose("microservice-provider-user222");
     System.out.println("222" + ":" + serviceInstance2.getServiceId() + ":" + serviceInstance2.getHost() + ":" + serviceInstance2.getPort());
 
     return "1";
