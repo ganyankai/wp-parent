@@ -1,0 +1,54 @@
+10	证书
+	https配置:
+	
+09	点击员工列表时部门列表的请求是如何发出的,
+	不能纵观全局,很容易遭受这种挫败感
+	import employeesAdd from './../components/add' 导入这种组件后,该注解加载时的初始化方法也会执行
+	
+08      前端目前请求地址
+	http://localhost:8080/api/role
+
+07	浏览器不识别高版本的js语法如何处理?
+
+06	common里面是不需要yml配置文件的
+	
+05	
+	02 
+	文件上传	文件服务器
+	在线支付
+	无人机飞行状态控制
+	
+
+
+	01
+	注册登录
+	阿里云账号
+	直播推流平台选择
+	权限设计
+	代码结构
+	
+	
+
+	命名
+	uas	puc	
+	
+04	权限表可以设计为无外键关联	
+	
+	通过编码的方式来取代外键
+	
+03 
+	CREATE TABLE `table1` (
+	    `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+	    `field1` text COLLATE utf8_unicode_ci NOT NULL COMMENT '字段1',
+	    `field2` varchar(128) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT '字段2',
+	    PRIMARY KEY (`id`)
+	) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+	
+02 
+    gyk@patrontest.com
+    gyk123456
+
+01 
+	SVN：https://192.168.0.71/svn/patron/source/server/IOTModual
+	User：ganyankai
+	PWD:gyk123456

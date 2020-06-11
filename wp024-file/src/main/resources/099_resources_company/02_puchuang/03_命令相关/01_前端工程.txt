@@ -1,0 +1,62 @@
+
+
+08	
+	https://element.eleme.cn/#/zh-CN/component/installation
+	
+07	
+	console.log('res1.data.data.roleIds:');
+        console.log(res1.data.data.roleIds);
+
+06	
+	this.$store.dispatch(‘Login’, this.loginForm)来调取store里的user.js的login方法，从而要更新。
+
+05	
+	vue中引入js文件
+	function realconsole(){  
+	    alert("hello.thanks use me");  
+	  
+	}  
+	
+	    export {  
+		realconsole  
+	    }  
+	
+	
+	调用方:
+	<template>  
+	    <div class="teslist">  
+		<button @click="methods1">显示console</button>  
+	    </div>  
+	</template>  
+	<script src="../../lib/myconsole.js"></script>  
+	<script>  
+	    import { realconsole } from '../../lib/myconsole.js'  
+	    export default {  
+		methods:{
+	　         methods1:function(){  
+		      realconsole();  
+		   }  
+	    }}  
+	</script>  
+	<style>  
+	    .teslist {  
+	    }  
+	</style>  
+	
+04	
+	D:\01_work\08_studio_code\project-puc-uas-vue-master\config\index.js  配置所有请求的前缀
+	D:\01_work\08_studio_code\project-puc-uas-vue-master\config\index.js  配置的后台代理	
+
+03 新增角色列表
+	itheima moduleAdd role
+
+02 启动工程
+	02 启动
+		npm run dev
+	01 关闭语法检查
+		cd D:\01_work\08_studio_code\project-puc-uas-vue-master
+
+		打开 config/index.js 将useEslint的值改为false。
+		
+01 下载依赖
+	cnpm install 

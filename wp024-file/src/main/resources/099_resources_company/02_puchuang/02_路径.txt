@@ -1,0 +1,27 @@
+07	前端el网址
+	https://element.eleme.cn/#/zh-CN/component/installation
+
+06	maven settings文件
+	D:\01_work\01_software\apache-maven-3.5.4\conf\settings.xml
+	
+05	192.168.0.71
+	ptsoft
+	
+
+04	前端
+	http://localhost:8080/
+
+03      七牛云
+	13477907639
+	-----qny
+
+02	mq
+	http://localhost:8161
+	
+01 
+	SVN：https://192.168.0.71/svn/patron/source/server/IOTModual
+	     
+	     https://192.168.0.1/svn/patron/source/server/IOTModual
+
+	User： ganyankai
+	PWD:   gyk123456
