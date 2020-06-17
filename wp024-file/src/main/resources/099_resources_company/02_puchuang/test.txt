@@ -1,0 +1,21 @@
+07`	
+	ZdDaoImpl
+		queryDeviceInfoWarningListByModuleSn
+
+
+06
+	left join ecp_xt_mj m on  t.device_group=CONCAT(m.FZDM,'.',m.MJDM)
+
+05  
+	192.168.0.102		
+	
+04  查看设备信息列表
+	List<LabelDataDec> llds = zdDao.queryUptime(moduleSn,"08",stratTime,endTime);  耗时太多
+
+03  这个项目为何改一点html都要重启服务器
+
+02 
+	baoyanglist.js 
+
+01 
+ http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.ZdDeviceInfoService.findAllZdDeviceRepairInfoInPage(paramMap)

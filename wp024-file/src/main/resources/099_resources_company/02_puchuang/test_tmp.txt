@@ -1,0 +1,302 @@
+27	今日操作 
+	意见反馈表加创建时间
+	
+26	预警信息参考配置
+		
+		SELECT * from open_api where gid = '2019081713595700019'
+
+		select * from open_api_request where op_api_id='2019081713595700019'
+		
+		StringBuffer querySql = new StringBuffer("select t.gid, ");
+    		querySql.append( "t.api_name as serviceName,");
+    		querySql.append( "r.api_direction as serviceType,");
+    		querySql.append( "t.ali_nam as serviceAlias,");
+    		querySql.append( "t.api_ver as serviceVersion,");
+    		querySql.append( "r.url as beanId,");
+    		querySql.append( "r.con_num as rateLimit ");
+    		querySql.append( "from open_api t right join open_api_request r ");
+    		querySql.append( " on r.op_api_id=t.gid ");
+		
+
+25	DataPacket initBeanDataInfo = initBeanData(beanId, request, requestContext);
+
+24	warning_list
+	
+23	
+	2020-06-17 11:03:42.666  WARN 21404 --- [bboBeanLoader-8] c.a.dubbo.config.model.ApplicationModel  :  [DUBBO] Already register the same consumer:iot.puc.zdservice.api.ZdService:0.0.1, dubbo version: 2.6.0, current host: 192.168.0.102
+	---22222-----#####------zdblImpl------queryEarlyWarningInfo--------
+	服务执行完成，执行总耗时（从请求进入到完成结果返回） : 0.086 秒 
+	剩余数组：40
+	剩余数组：32
+	剩余数组：24
+	剩余数组：16
+	剩余数组：8
+	剩余数组：40
+	剩余数组：32
+	剩余数组：24
+	剩余数组：16
+	剩余数组：8
+	
+22	
+	select * from puc_zd_deviceinfowarning where gid = '2020051914314501703'
+
+	puc_zd_deviceinfowarning
+	
+21	页面有这样的标志
+	
+	<body code="/aus/ausmes.js">
+	
+		
+20	格式化时间
+	{
+	    field: 'createTime',
+	    title: '提交时间',
+	    width: 140,
+	    formatter:"date",
+	    formatoptions: {srcformat:'Y-m-d H:i:s',newformat:'Y-m-d H:i:s'},
+	    sortable : true
+	}
+	t.create_time as createTime
+
+19	
+	消息
+	http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.ZdService.queryAdvise(RequestParameterMap)
+
+18	dante2020-06-15 10:51
+	申请直播云服务需要已经备案的域名 目前我们提供的 ipotestcloud.com 域名已经备案过, 但官网显示域名没有备案,请查实
+
+	七牛云工程师2020-06-15 11:12
+	你好，直播域名必须拥有工信部和公安部双重备案才可以，请知悉
+	
+17	pili-vod.test.qiniucdn.com
+	
+16	sina.com.pubv4.pilidns.com
+
+15	后台的传智文字竟然在这个文件里
+	通过 crtl + shift + f 搜索找到的
+	D:\01_work\08_studio_code\project-puc-uas-vue-master\src\components\Breadcrumb\index.vue
+
+14	
+	我的github
+	ganyankai 
+	784979813@qq.com	(自己代码库)	
+	or 609021076@qq.com
+	-----1234
+	https://github.com/ganyankai/wp001stu
+
+13
+	  七牛云测试域名是用户在创建云存储空间时系统自动生成的七牛域名，
+	  以 clouddn.com / qiniucdn.com / qiniudn.com / qnssl.com / qbox.me 等结尾，
+	  此类域名仅供用户测试和体验七牛产品功能，不能用于正式生产环境
+	  accessKey:
+	  _WXxRZz5XkCic3CjlEY1Ro9HxYKkNDglialqslEo
+	  
+	  secretKey:
+	  fZiHdyOckTqqr0DsYKKkYLoVjBnoHtdxde5Qe-2z
+	  
+12	
+	auditDetail({
+	    id: this.formData.id,
+	    remarks: this.formData.remarks,
+	    state: state
+	  }).then(() => {
+	    if (state === '1') {
+	     this.$message.success('恭喜你，审核成功！')
+	   }
+	    if (state === '2') {
+	     this.$message.success('已拒绝审核！')
+	   }
+	    this.$emit('getObjInfo', this.formData)
+	    })
+	
+11	
+	前缀
+	cn.puc.uas
+
+10	
+	tableName:PUC_D_1
+	upTime:187266
+	packageNumber:187266
+	packageTime:187266
+	bootDownTime:187266
+	tableName:PUC_D_2
+
+	upTime:159970
+	packageNumber:159970
+	packageTime:159970
+	bootDownTime:159970
+	tableName:PUC_D_5
+	upTime:1873
+	packageNumber:1873
+
+	packageTime:1873
+	bootDownTime:1873
+	tableName:PUC_D_3
+	upTime:14517
+	packageNumber:14517
+
+	packageTime:14517
+	bootDownTime:14517
+	tableName:PUC_D_4
+	upTime:29742
+	packageNumber:29742
+	packageTime:29742
+
+	bootDownTime:29742
+	tableName:PUC_D_6
+	upTime:2980
+	packageNumber:2980
+	packageTime:2980
+	bootDownTime:2980
+
+
+09	
+	//						userList.stream().mapToInt(User::getAge).sum();
+	//						totoleUt = llds.stream().mapToInt( Integer.valueOf(String.valueOf(LabelDataDec::getDataDec)));
+	//						totoleUt = llds.stream().flatMapToInt(LabelDataDec::getDataDec);
+
+	//            			zdDevice.setBootUpTime(String.valueOf(totoleUt));
+
+08	
+	修改前数据
+	
+	1
+	振动机床1
+	zd1001
+	A区1线1001台
+	2019-10-30 09:20:28
+	机床
+	9年
+	00:00
+	00:00
+	00:00
+	297
+	0.00%
+	查看数据报表参数设置查看设置
+
+	2
+	振动1002
+	zd1002
+	A区2号
+	2019-10-31 09:39:01
+	机床
+	8年
+	03:50:19
+	5825:26:49
+	01:45
+	36400
+	151759.20%
+	查看数据报表参数设置查看设置
+
+	3
+	zd1005
+	zd1005
+	A区5号
+	2019-11-01 15:45:40
+	机床
+	5年
+	00:00
+	60:43:04
+	52:50:51
+	1837
+	0.00%
+	查看数据报表参数设置查看设置
+
+	4
+	zd1003
+	zd1003
+	A区3号
+	2019-11-04 10:06:15
+	机床
+	6年
+	00:00
+	70:23:07
+	1073:36:54
+	873
+	0.00%
+	查看数据报表参数设置查看设置
+
+	5
+	zd1004
+	zd1004
+	A区4号
+	2019-11-04 10:07:33
+	机床
+	6年
+	07:08:39
+	20:56:25
+	32:09:15
+	1280
+	293.10%
+	查看数据报表参数设置查看设置
+
+	6
+	zd1006
+	zd1006
+	A区6号
+	2019-11-04 15:31:13
+	机床
+	6年
+	00:00
+	35:55:53
+	01:40:06
+	2948
+	0.00%
+
+07	指令	ZdDaoImpl
+	3e ff 02 00 23
+	70 74 00 05 00
+	00 00 01 00 00
+	00 00 00 00 00
+	06 07 17 07 18
+	07 19 07 20 07
+	21 07 29 05 07
+	
+05   
+	llds_list.size:187266
+	llds_list.size:159970
+	llds_list.size:1873
+	llds_list.size:14517
+	llds_list.size:29742
+	llds_list.size:2980
+	
+04	
+	npm install -g cnpm --registry=https://registry.npm.taobao.org
+	cnpm install 	
+03
+	select t.GID AS gid,t.LABGROUP AS labelGroup,t.SUBLAB AS sublab,t.DATE_DEC AS dataDec,t.RECEIVE_TIME AS receiveTime FROM PUC_D_1  t WHERE t.SUBLAB=22
+	
+	select count(t.DATE_DEC)  FROM PUC_D_1  t WHERE t.SUBLAB=22
+	大概2万条记录
+02 
+
+
+iot.activeMQ
+iot.front.compress
+iot.res
+iot.rest
+iot.file
+
+iot.service.jssite
+iot.service.gateway
+iot.x.common.service
+iot.x.common.service
+iot.x.opendev.web
+
+iot.x.desktop.web
+iot.api
+iot.x.dto
+iot.x.bo
+iot.basement.service
+
+iot.runtime
+
+
+01 
+iot.parent
+iot.common 
+iot.components
+iot.context
+iot.datasource
+
+
