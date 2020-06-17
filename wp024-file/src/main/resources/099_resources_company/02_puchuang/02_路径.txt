@@ -1,3 +1,14 @@
+10	震动项目
+	http://localhost/manager/index.html
+	admin admin123
+
+09	享学课堂公开课
+	链接：https://pan.baidu.com/s/19AhuXBjqHSrVQP5BQ_ndtw 
+	提取码：a68i
+
+08	公司官网
+	http://www.patrontest.com/
+
 07	前端el网址
 	https://element.eleme.cn/#/zh-CN/component/installation
 
@@ -14,14 +25,21 @@
 03      七牛云
 	13477907639
 	-----qny
-
+		
 02	mq
 	http://localhost:8161
+
 	
-01 
-	SVN：https://192.168.0.71/svn/patron/source/server/IOTModual
+01	
+	SVN：https://192.168.1.71/svn/patron/source/server/IOTModual
 	     
 	     https://192.168.0.1/svn/patron/source/server/IOTModual
 
+	     无人机
+	     https://192.168.1.71/!/#patron/view/head/source/server/DJiProject
+		
+             
+	     https://192.168.1.71/svn/patron/source/server/IOTModual/vibrateSensor
+	     
 	User： ganyankai
 	PWD:   gyk123456
