@@ -1,0 +1,26 @@
+#服务配置
+server:
+  port: 9002
+#spring配置
+spring:
+  #1.应用配置
+  application:
+    name: uas-system #指定服务名
+  #2.数据库连接池
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/uas?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  #3.JPA
+  jpa:
+    database: MySQL
+    show-sql: true
+    open-in-view: true
+  # spring.jpa.hibernate.ddl-auto=update
+  # hibernate:
+  #   ddl-auto: update
+jwt:
+  config:
+    key: puc-uas
+    ttl: 3600000
