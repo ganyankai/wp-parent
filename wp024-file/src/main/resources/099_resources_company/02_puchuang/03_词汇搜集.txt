@@ -1,36 +1,48 @@
+
+
+13	Miracles happen every day.
+	奇迹每天都在发生。
+
+12	realm
+	n. 领域，范围；王国
+
+11	pluggable 
+	adj. 插接式连接，[电] 可插的
+
+
 10	resolve
-	vt. �������ܽ⣻ʹ���ֽ⣻����Ҫ����
-	vi. ��������ģ��ֽ�
-	n. ���������Ҫ������
+	vt. 决定；溶解；使…分解；决心要做…
+	vi. 解决；决心；分解
+	n. 坚决；决定要做的事
 
 09	
-	vt. �뿪�����£�������ί��
-	vi. �뿪������������
-	n. ���ɣ�ͬ�⣻�ݼ�
+	vt. 离开；留下；遗忘；委托
+	vi. 离开，出发；留下
+	n. 许可，同意；休假
 
 08	navigation
-	n. ���У�����
+	n. 航行；航海
 
 07	hack
-	v. �������ߣ��Ƿ����ּ�������Ը���Ӧ���������������⳵����ͣ�ؿȣ�
+	v. 砍；猛踢；非法入侵计算机；对付，应付；骑马；开出租车；不停地咳；
 
 06	manually
-	adv. �ֶ��أ�����
+	adv. 手动地；用手
 	
 
 05	hook
-	n. �ҹ�������
-	vt. ��ס�����Ϲ�
+	n. 挂钩，吊钩
+	vt. 钩住；引上钩
 
 04	trigger
-	n. �������������Ӧ���£�������������װ��
-	v. ���������𣻿�����װ�ã�
+	n. 扳机；起因，引起反应的事；触发器，引爆装置
+	v. 触发，引起；开动（装置）
 
 03	
-	dashboard	n. �����ȵ��Ǳ��壻������ǰ���ĵ����
+	dashboard	n. 汽车等的仪表板；马车等前部的挡泥板
 
 02		
-	bar	n. ���������ưɣ��ϰ�����ͥ
+	bar	n. 条，棒；酒吧；障碍；法庭
 
 01
-	progress	��������չ��ǰ��
+	progress	进步，发展；前进

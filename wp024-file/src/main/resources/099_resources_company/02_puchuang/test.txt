@@ -1,21 +1,88 @@
-07`	
+
+
+15	Ö±ï¿½ï¿½ï¿½ï¿½ï¿½
+	AccessKeyï¿½ï¿½XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y
+	SecretKey : VLY2iYOL39oDiemliKXxL-fkF3LdDACRd_HSL9o3
+	patron-aircraft
+
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½
+	rtmp://pili-publish.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1?e=1592800893&token=XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y:gy3rdSV-JT0JFx1Dqo7m3QobOwA=
+
+	Ëµï¿½ï¿½ï¿½ï¿½
+	patron-aircraft-test1Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½æ²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½rtmp://pili-publish.aircraft.ipotestcloud.com/patron-aircraft/
+	ï¿½ï¿½Ô¿ï¿½ï¿½patron-aircraft-test1?e=1592800893&token=XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y:gy3rdSV-JT0JFx1Dqo7m3QobOwA=
+
+
+	ï¿½ï¿½ï¿½Åµï¿½Ö·ï¿½ï¿½
+	RTMPï¿½ï¿½
+	rtmp://pili-live-rtmp.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1
+	HLSï¿½ï¿½
+	http://pili-live-hls.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1.m3u8
+
+	FLVï¿½ï¿½
+	http://pili-live-hdl.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1.flv
+
+
+14	ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
+	zd1005
+	ï¿½ï¿½Ø²Ëµï¿½ï¿½ï¿½ï¿½
+	open_api
+
+	open_api_request
+
+13
+	ECP_MENU_INFO
+
+12
+	http://localhost/iot/service/gateway?callName=iot.x.api.common.service.sys.MenuInfoService.queryMenuByMenuModule(moduleGid)&id=11&moduleGid=11&isDelete=0
+
+11	maven install ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½Ã»ï¿½ï¿½jarï¿½ï¿½
+
+10
+	[WARNING] The POM for iot:iot.resserver:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.dataentry:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.auscultation:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.dataservice:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.x.opendev.service:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.mqtt:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.zdservice:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.x.desktop.service:jar:0.0.1 is missing, no dependency information available
+
+
+	[WARNING] The POM for iot:iot.puc.dataentry:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.auscultation:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.dataservice:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.x.opendev.service:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.puc.mqtt:jar:0.0.1 is missing, no dependency information available
+
+	[WARNING] The POM for iot:iot.puc.zdservice:jar:0.0.1 is missing, no dependency information available
+	[WARNING] The POM for iot:iot.x.desktop.service:jar:0.0.1 is missing, no dependency information available
+
+09
+	mvn install:install-file -DgroupId=org.springframework -DartifactId=spring-webmvc -Dversion=3.0.5.RELEASE -Dpackaging=jar -Dfile=D:/spring.jar
+
+08
+	puc_update_package
+
+07
 	ZdDaoImpl
 		queryDeviceInfoWarningListByModuleSn
-
+		queryDeviceInfoWarning
 
 06
 	left join ecp_xt_mj m on  t.device_group=CONCAT(m.FZDM,'.',m.MJDM)
 
-05  
-	192.168.0.102		
-	
-04  ²é¿´Éè±¸ÐÅÏ¢ÁÐ±í
-	List<LabelDataDec> llds = zdDao.queryUptime(moduleSn,"08",stratTime,endTime);  ºÄÊ±Ì«¶à
+05
+	192.168.0.102
 
-03  Õâ¸öÏîÄ¿ÎªºÎ¸ÄÒ»µãhtml¶¼ÒªÖØÆô·þÎñÆ÷
+04  ï¿½é¿´ï¿½è±¸ï¿½ï¿½Ï¢ï¿½Ð±ï¿½
+	List<LabelDataDec> llds = zdDao.queryUptime(moduleSn,"08",stratTime,endTime);  ï¿½ï¿½Ê±Ì«ï¿½ï¿½
 
-02 
-	baoyanglist.js 
+03  ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Îªï¿½Î¸ï¿½Ò»ï¿½ï¿½htmlï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-01 
+02
+	baoyanglist.js
+
+01
  http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.ZdDeviceInfoService.findAllZdDeviceRepairInfoInPage(paramMap)

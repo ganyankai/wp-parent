@@ -1,3 +1,417 @@
+
+
+59	
+	idea 打包的jar运行报 “XXX中没有主清单属性”
+	uas_system中增加
+	   <build>
+		<plugins>
+		    <plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		    </plugin>
+		</plugins>
+	    </build>
+	
+	maven在打包时需要设置打包方式
+
+58
+	()中的代码一般放的是对资源的申请，如果{}中的代码出项了异常，（）中的资源就会被关闭，这在inputstream和outputstream的使用中会很方便例如
+
+57	
+	在SpringBoot项目中，配置spring.http.multipart.maxFileSize用于限定最大文件上传大小。
+
+	但是，SpringBoot版本不同，关于这一块的配置也不相同。
+
+	 
+
+	1、Spring Boot 1.3 版本：
+
+	　　multipart.maxFileSize
+
+	 
+
+	2、Spring Boot 1.4 版本和 1.5 版本：
+
+	　　spring.http.multipart.maxFileSize
+
+	 
+
+	3、Spring Boot 2.0 版本：
+
+	　　spring.servlet.multipart.maxFileSize
+
+56	如何快速搭建一个前端服务器,使之能够快速实现文件上传
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>文件上传</title>
+	</head>
+	<body>
+	<form method="post" action="localhost:8088/log/upload" enctype="multipart/form-data">
+	    <input type="file" name="file">
+	    <br><br>
+	    <input type="submit" value="提交">
+	</form>
+	</body>
+	</html>
+	
+55	资源地址
+	image:
+		https://baikebcs.bdimg.com/adpic/270-150%E7%BB%93%E6%9E%84%E5%8C%96%E7%94%A8%E6%88%B7%E6%8B%9B%E5%8B%9F.png
+		
+	vedio:
+		https://vd3.bdstatic.com/mda-kfvfbi0x30k8gqwp/mda-kfvfbi0x30k8gqwp.mp4?playlist=%5B"hd"%2C"sc"%5D
+	
+
+54	朋友圈表  
+	id   图片地址   视频地址  资源类型	 资源id		标题  内容	点赞数   所属用户id	所属用户姓名  可见状态  创建时间
+	id   image_url 	video_url resource_type  resource_id	title content	likenum  uid		uname	      visible	create_time
+	
+	点赞需要表吗?  暂定不需要
+	
+	标签表
+	id	name	 创建时间
+	
+		
+	关注表	api_focus
+	id	关注人id	被关注人id	创建时间
+	id	focus_id	befocus_id	create_time 
+	
+	varchar
+	收藏表  api_favorite  
+	id	用户id	  朋友圈id	创建时间
+	id	uid	  fid		create_time
+	
+	用户表
+	id      image	 level
+	
+	
+	评论表
+	
+		
+
+53	查看数据报表
+	var thisIndex = parseInt($(this).parent().attr('data-index'));
+	var thisRow = data.rows[thisIndex];
+	
+52	老版代码
+	   /**
+	     * 开机时间.
+	     */
+	    private String bootUpTime;
+	    /**
+	     * 待机时间.
+	     */
+	    private String standbyTime;
+	    /**
+	     * 加工件数.
+	     */
+	    private String packageNumber;
+	    /**
+	     * 加工时间.
+	     */
+	    private String packageTime;
+	    /**
+	     * 停机时间.
+	     */
+	    private String bootDownTime;       			
+	
+		
+	  String tableName = "PUC_D_"+moduleSn;
+//                    StringBuffer sql = new StringBuffer("select count(DATE_DEC)  FROM " +tableName+ "  WHERE SUBLAB = ? and DATE_DEC!=0 ");
+                    StringBuffer sql = new StringBuffer("select count(DATE_DEC)  FROM " +tableName+ "  WHERE SUBLAB = ? ");
+                    if (StringUtils.isNotNull(startTime)) {
+                        sql.append(" AND t.RECEIVE_TIME >=  " + sdf.parse(startTime));
+                    }
+                    if (StringUtils.isNotNull(endTime)) {
+                        sql.append(" AND t.RECEIVE_TIME<=  "+sdf.parse(startTime));
+                    }
+
+                    Object [] params = {"08"};
+
+                    Object upTime = mysqlDao.countSqlWithNativeSql(sql.toString(), params);
+
+                    Integer uptimeInt = Integer.valueOf(String.valueOf(upTime));
+                    zdDevice.setBootUpTime( TimeDateUtils.secToTime(uptimeInt) );
+
+//                    List<LabelDataDec> llds = zdDao.queryUptime(moduleSn,"08",startTime,endTime);
+//					System.out.println("llds_list.size:"+llds.size());
+//					if(llds!=null) {
+//            			int totoleUt = 0;
+//            			for(LabelDataDec lld : llds) {
+//            				totoleUt += Integer.valueOf(String.valueOf(lld.getDataDec()));
+//            			}
+//
+//            			zdDevice.setBootUpTime(TimeDateUtils.secToTime(totoleUt));
+//            		}
+            		//待机时间
+
+            		//加工件数
+                    params = new Object[]{"22"};
+                    Object packageNumber = mysqlDao.countSqlWithNativeSql(sql.toString(), params);
+
+                    zdDevice.setPackageNumber(String.valueOf(packageNumber));
+
+//            		List<LabelDataDec> lld26s = zdDao.queryUptime(moduleSn,"22",stratTime,endTime);
+//            		if(lld26s!=null) {
+//            			int totolePn = 0;
+//            			for(LabelDataDec lld26 : lld26s) {
+//            				totolePn += Integer.valueOf(String.valueOf(lld26.getDataDec()));
+//            			}
+//            			zdDevice.setPackageNumber(String.valueOf(totolePn));
+//            		}
+
+            		//加工时间
+                    params = new Object[]{"09"};
+                    Object packageTime = mysqlDao.countSqlWithNativeSql(sql.toString(), params);
+
+                    Integer packageInt = Integer.valueOf(String.valueOf(packageTime));
+                    zdDevice.setPackageTime( TimeDateUtils.secToTime(packageInt) );
+
+
+//            		List<LabelDataDec> lld09s = zdDao.queryUptime(moduleSn,"09",stratTime,endTime);
+//            		if(lld09s!=null) {
+//            			int totolePn = 0;
+//            			for(LabelDataDec lld09 : lld09s) {
+//            				totolePn += Integer.valueOf(String.valueOf(lld09.getDataDec()));
+//            			}
+////            			zdDevice.setPackageTime(String.valueOf(totolePn));
+//            			zdDevice.setPackageTime(TimeDateUtils.secToTime(totolePn));
+//            		}
+
+            		//停机时间
+                    params = new Object[]{"0A"};
+                    Object bootDownTime = mysqlDao.countSqlWithNativeSql(sql.toString(),params);
+                    Integer bootDownTimeInt = Integer.valueOf(String.valueOf(bootDownTime));
+                    zdDevice.setBootDownTime( TimeDateUtils.secToTime(bootDownTimeInt) );
+
+//            		List<LabelDataDec> lld10s = zdDao.queryUptime(moduleSn,"0A",stratTime,endTime);
+//            		if(lld10s!=null) {
+//            			int totolePn = 0;
+//            			for(LabelDataDec lld10 : lld10s) {
+//            				totolePn += Integer.valueOf(String.valueOf(lld10.getDataDec()));
+//            			}
+////            			zdDevice.setBootDownTime(String.valueOf(totolePn));
+//            			zdDevice.setBootDownTime(TimeDateUtils.secToTime(totolePn));
+//            		}
+51
+	puc_zd_deviceinfo
+	有肯多信息
+	
+			
+
+50	
+	测试包:
+	3EFF01003F7074000500000001000000000000000404080004000000000409000400000000040A000400000000040C00040000000004220004000000007967
+
+49	
+	data:00 00 00 00
+	data:00 00 00 00
+	data:00 00 00 24
+	data:00 00 00 00
+	data:00 00 00 00
+	
+48	
+	程序每次都是解析原始数据puc_original_data(OriginalData),再根据相应的内容插入到puc_d_类似的表中吗
+	
+	PatronData_Vibration
+		
+	最初
+	SaticScheduleTask.configureTasks
+		DataPacket d = analysisDataBl.analysisDataPackage(ddd);
+	
+	初步判断是解析
+	DataPacket rtn = originalDataBl.disposePackage(od.getGid(), String.valueOf(od.getDataPackage()));
+
+	AnalysisDataDaoImpl.creatTableByDevice
+	AnalysisDataDaoImpl.insertData
+	
+47	统计这些字段的来源
+	开机时间	
+	加工时间	
+	停机时间	
+	加工件数	
+	净开动率
+	
+
+	关注 AnalysisDataDaoImpl
+	     insertData
+		
+	     UdpServerStartup  	
+		
+	AnalysisDataServiceImpl.analysisDataPackage 
+
+46	java -jar iot.puc.web-0.0.1.jar
+
+45	平台账号密码测试
+	admin admin123	全菜单
+	ipotest2	ipotest2
+	ipotest		ipotest
+	
+	权限不一样
+
+44	
+	http://localhost/manager/index.html
+	
+43	
+	spring security oauth2认证方式
+	
+42	
+	
+
+	<div class="GuideHead w">
+	<h1><a href="#"><img src="/manager/images/logo_puc.png"></a></h1>
+	    
+	    <div class="GuidePhone">
+		<p><img src="/manager/images/Phone_puc.png" width="211" height="27"></p>
+	    </div>
+	</div>
+	
+	<div>
+		<p>
+			武汉普创数据科技有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">鄂ICP备14013996号-1</a>
+		</p>
+	</div>
+
+	console.log("in index.js pucIndex1");
+        $("#pucIndex").unbind('click').click(function () {
+        	alert("123");
+            console.log("erp0000");
+            new UIFrame('/manager/html/index/pucIndex.html', $('#mainWrap')).show();
+            // 情况顶部按钮
+            $('#mainBtnBox').html('');
+        });
+	这段代码为什么放在js中以后为什么会无效了,而换了另一个位置则有效	
+	
+	select * from ecp_menu_module where module_name = '开放平台'
+	
+	select * from ECP_MENU_INFO where menu_name = '平台应用管理'
+	
+
+41	数据库str 转 int 的排序方式
+	select * from puc_update_package order by cast(package_version as UNSIGNED INTEGER) desc;
+		
+
+40	
+	fileSize 文件大小
+	SELECT t.gid AS gid,t.version_type as versionType,t.version_name as versionName,t.version_log as versionLog, t.binding_time AS bindingTime, t.package_path AS packagePath,t.MODEL As model, t.package_version AS packageVersion FROM puc_update_package t where 1=1 order by t.package_version DESC limit 1
+	
+
+	iot.puc.zdservice.api.UpdatePackageInfoService.findLastVersion
+		
+	手机菜单
+	2019081713595700038	puc.zd.updatepackageinfo	2019081713595700038	app版本升级	app版本升级			0.0.1	0	2020-06-19 09:40:42	2020-06-19 09:40:44
+
+39	pom问价中错误的配置可能会导致安装失败
+
+38	
+	is not a working copy
+	
+37	
+	hibernate策略update会自动添加原来没有的字段
+	
+
+36	
+	下载路径:
+	 /iot/puc/service/download/
+	 A610E3411549E1E1AD2E02765728733626B6B26BB41475B511A658637A46B482916BD4A
+	 9F1B99A435F23D4CB3D127C63FB1D4623278D7C6C8BD76964157779D03B72F8F5CC89C28D
+	 C88B215F98EE5DED4C9FA3ECB1ED8E9267A36DE5ADF745974E3413D819D59
+	 CF9F2ABBBE6C9F4885A9F1B185E97F5BEED9BF05AD00F309A6F5BECD40A404D6F0156FEEA09FD6945D3
+	
+	http://localhost/iot/puc/service/download/A610E3411549E1E12D5FB0977D3E9E612C1B5D9AD6DA281E91103F31DBAE0CFA916BD4A9F1B99A435F23D4CB3D127C63FB1D4623278D7C6C8BD76964157779D039965EE92464069D88EE17696C3C2C24EA5724A6EABBC9F304317B2C46DFF5B759D9990E41257584FE1DBEC109D5599CD4B01B853394DD0CA56CAE7EC438411FD190D9CCB8B539FF56FEEA09FD6945D3
+	
+35	
+	文件操作
+	运维支撑 - 系统单据 - 文件管理
+	
+	{field: 'filePath', 
+	title: '文件路径',
+	width: 100,
+	formatter: function(value, rows, index) {
+		  var sHtml = value + '<span class="btn btn_look jsEdit" data-gid="'+rows.gid+':'+rows.fileName+':'+rows.filePath+'">下载</span>';
+		  return sHtml;
+	  }
+	  },
+	
+	data-gid="2020061814135700001:222:/file/4c0eaa65d649fe8b66ec4e3fce0bf16c.apk"		
+	
+	filemanager.js
+
+34	
+	$.messager.confirm('确认','您确认想要'+ opts.msgText +'吗？',function(r) {   
+		$.ecp.remoteService.ajax4Bean({
+						beanId: opts.beanId,
+						data: dataObj,
+						success: function(resdata, textStatus, jqXHRult) {
+							if (resdata && resdata.suf == true) {
+								$.messager.show({
+									title: '我的消息',
+									msg: opts.msgText + '成功'
+								});
+								
+								// 成功回调
+								if (typeof opts.success === 'function') {
+									opts.success(resdata);
+								}
+							} else {
+								if (resdata.suf != true) {
+									$.messager.show({
+										title: '我的消息',
+										msg: resdata.returnMsg
+									});
+								} else {
+									$.messager.show({
+										title: '我的消息',
+										msg: opts.msgText + '失败'
+									});
+								}
+								
+								// 失败回调
+								if (typeof opts.error === 'function') {
+									opts.error(resdata);
+								}
+							}
+						}
+					});
+		}
+	
+33	升级包
+	上传
+	http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.UpdatePackageInfoService.addUpdatePackageInfo(reqMap)
+	列表
+	http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.UpdatePackageInfoService.findAllUpdatePackageInfoInPage(RequestParameterMap)
+	
+32	
+		//新增内容
+	@Column(name = "version_type", columnDefinition="varchar(40) COMMENT '升级类型'" )
+	private String versionType;
+
+	@Column(name = "version_log", columnDefinition="varchar(200) COMMENT '升级日志'" )
+	private String versionLog;
+	
+
+31	表名
+	PUC_UPDATE_PACKAGE
+	
+
+30	列表页面请求
+	http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.UpdatePackageInfoService.findAllUpdatePackageInfoInPage(RequestParameterMap)
+
+29	页面是根据菜单请求返回的页面
+	
+28	
+	/package/4d01f530d6520b16d12e86a4d3b05ddc.apk
+
+	/aus/ausuppackage.html
+	
+	zdupdatemanager.js
+	
+	packageForm.html
+	
+	目前升级包都走	packageForm.js
+	
 27	今日操作 
 	意见反馈表加创建时间
 	
@@ -6,6 +420,7 @@
 		SELECT * from open_api where gid = '2019081713595700019'
 
 		select * from open_api_request where op_api_id='2019081713595700019'
+
 		
 		StringBuffer querySql = new StringBuffer("select t.gid, ");
     		querySql.append( "t.api_name as serviceName,");

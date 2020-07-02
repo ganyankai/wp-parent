@@ -1,3 +1,11 @@
+12	局域网文件上传
+	http://192.168.0.101:55666/
+	
+	
+11	生产服务器账号密码
+	35545786
+	123456lmlm
+	
 10	震动项目
 	http://localhost/manager/index.html
 	admin admin123

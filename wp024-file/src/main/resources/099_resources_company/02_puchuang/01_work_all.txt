@@ -1,4 +1,81 @@
+17		
 
+16	idea里面的折叠功能真的很实用
+		
+
+15	idea中查看方法调用者的快捷键
+	alt + f7
+	
+	查看调用图表
+	crtl + alt + u 
+	
+	
+14	这次的开发思路
+	1.搞清楚数据来源(pud_)  
+		 	
+							
+	2.明白这个数据解析协议
+		
+		08	开机时间	
+		09	加工时间
+		0A	停机时间
+		22	加工件数
+
+		0C	故障类型
+		
+		
+	3.可能需要重新设计表结构
+		INSERT INTO `cloudtest`.`puc_device_time_day` (`gid`, `boot_time`, `create_time`, `day_time`, `device_sn`, `down_time`, `module_sn`, `process_num`, `process_time`) VALUES ('1', '2', '2020-06-23 18:05:52', '4', '5', '6', '7', '8', '9');
+		
+		INSERT INTO `cloudtest`.`puc_device_time_total` (`gid`, `boot_time_total`, `create_time`, `device_sn`, `down_time_total`, `module_sn`, `process_num_total`, `process_time_total`) VALUES ('1', '2', '2020-06-23 18:06:18', '4', '5', '6', '7', '8');
+
+		select * from PUC_DEVICE_TIME_DAY	
+
+		select * from PUC_DEVICE_TIME_TOTAL
+
+		puc_zd_deviceinfo
+		
+		
+		1	表结构(一种思路)	
+		id	设备序号	时间维度(天,周,月,年,总)	开机时间	加工时间	停机时间	加工件数	创建时间	
+		
+
+		2	use
+		如果新的记录进来(如果新的记录进来)
+		
+		t1	PUC_DEVICE_TIME_DAY
+
+		id	设备序号    moduleSn		开机时间 	   加工时间		停机时间	  加工件数	  天单位时间	 创建时间	
+		gid	deviceSn    moduleSn		bootTime	   processTime		downTime	  processNum	  dayTime	createTime
+		
+		
+		t2	PUC_DEVICE_TIME_TOTAL
+		id	设备序号    moduleSn		总开机时间	   总加工时间		总停机时间	  总加工件数	  创建时间	
+		gid	deviceSn    moduleSn		bootTimeTotal	   
+		
+	另一种思路,以天为单位统计时间
+		
+						
+	4.设计接口返回字段内容
+		低版本的mysql这段是不报错的 
+		select sum(boot_time) as bootTime ,device_sn as deviceSn,
+                 sum(down_time) as downTime, sum(process_num) as processNum, process_time as processTime 
+                from puc_device_time_day where 1 = 1 
+
+
+	5.调试前端页面和图表
+		/manager/html/zd/zddevicedata.html
+		
+		{"suf":true,"code":200,"result":{"所有时间段":1837},"token":null,"message":"查询成功"}
+
+	如果某一步出现了卡段,这个时候的处理思路是什么,有办法跳过前面的步骤,直接开始后面的步骤吗?	
+	这时候需要清除的是这些步骤间是并行还是串行
+	
+	我们常常需要看到变化才能定位代码
+
+13	今天尝试切换端口号启动,但是端口号太多,不便于维护
+	
+12	svn有个鉴权报错是被小明删除了项目目录下的.svn文件目录解决了
 
 11	1.返航功能是否有效
 	2如何开启自动定位校准功能
