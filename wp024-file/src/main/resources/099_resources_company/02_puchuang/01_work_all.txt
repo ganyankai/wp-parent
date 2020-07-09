@@ -1,5 +1,15 @@
-17		
+10	在vlc中打开的竟然是推流地址
+	rtmp://pili-publish.uas.ipotestcloud.com/dantelive5/stream1?e=1594183658&token=WFzeaLCOkcLsjUnaWiyU3kdwvehps9IeldM9HRrY:6mHXtI-OSWZ6DfE_-Va3MAVoicg=
 
+19	这个直播的竟然要配置4个cname
+	
+
+18	momo的回复并没有做层级展示,看起来只是简单的记录了父回复人的id和姓名,而没有记录父回复本身的
+	id
+	
+
+17	通过组合的方式可以极大的提高灵活性和扩展性	
+	
 16	idea里面的折叠功能真的很实用
 		
 

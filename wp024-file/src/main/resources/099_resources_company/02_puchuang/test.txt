@@ -1,32 +1,244 @@
 
 
-15	ֱ�����
+17	
+	有时候确实很难理解别人的思维,是因为你要理解需要经过自己的大脑思考,设计太长远可能过于复杂,在实际的开发过程中修改设计也是可行的,
+	设计最好是能快速精确到具体的实现
+	
+16	
+	一问一答模式
+
+	(1)需求分析
+
+	大部分APP采用简单的评论设计即可，即是一问一答模式，比如微信朋友圈的评论功能的设计。如：
+
+	A：今天天气真好！
+	
+	B @ A :今天天气确实不错！
+
+	这种设计简单、直接，也满足了用户评论、回复的基本要求，对于没有大量用户评论的APP需求足够。
+
+	（2）数据库设计 
+	这种场景下一般评论较少，评论不活跃，可以不区分评论和回复，统一看成评论。区别是，有些评论是直接评论主题，而有些是@其他用户，使用一张表就可以达到效果，评论表设计如下：
+
+	表字段
+
+	字段说明
+
+	id
+
+	主键
+
+	topic_id
+
+	主题id
+
+	topic_type
+
+	主题类型
+
+	content
+
+	评论内容
+
+	from_uid
+
+	评论用户id
+
+	to_uid
+
+	评论目标用户id
+
+	topic_type：为了能复用评论模块，我们引入这个字段来区分主题的类别。
+
+	from_uid：表示评论人的id，通过该id我们可以检索到评论人的相关信息。
+
+	to_uid 是评论目标人的id，如果没有目标人，则该字段为空
+
+
+	出于性能的考虑，往往我们会冗余评人的相关信息到评论表中，比如评论人的nick、头像，目标用户也是如此。 这样一来我们就只用查询单表就可以达到显示的效果
+
+	有时，目标用户有多个，那么可以将to_uid字段修改为to_uids，保存时用分隔符来分割用户id，而目标用户的信息再去查询缓存或者数据库。也可以简单的将多个目标用户的信息一起存成json格式，可以应付简单的展现需求。
+	
+	
+	评论为主模式
+	(1)需求分析
+
+	A：今天北京天气真好！
+
+	      B回复A：我们这里今天天气也不错！
+
+	                      A回复B：你是哪里的?
+				
+	                                      B回复A：安徽的。。。
+
+	      C回复A：我们这里今天天气也不错！
+
+	                      A回复B：你是哪里的?
+
+	                                      B回复A：安徽的。。。
+
+		这里将评论分为评论和回复，所有评论均挂在评论下面，类似于树状结构。
+
+		（2）数据库设计 
+		在以评论为主的树形显示情况下，数据库的设计十分灵活，可以使用单表，添加一个parent_id字段来指向父评论，需要嵌套查询。
+
+		同时也可以将评论拆分为评论表和回复表，评论挂在各种主题下面，而回复挂在评论下面。
+
+		评论表设计如下：
+
+		表字段
+
+		字段说明
+
+		id
+
+		主键
+
+		topic_id
+
+		主题id
+
+		topic_type
+
+		主题类型
+
+		content
+
+		评论内容
+
+		from_uid
+
+		评论用户id
+
+		回复表设计：
+
+		表字段
+
+		字段说明
+
+		id
+
+		主键
+
+		comment_id
+
+		评论id
+
+		reply_id
+
+		回复目标id
+
+		reply_type
+
+		回复类型
+
+		content
+
+		回复内容
+
+		from_uid
+
+		回复用户id
+
+		to_uid
+
+		目标用户id
+
+		由于我们拆分了评论和回复，那么评论表就不再需要目标用户字段了，因为评论均是用户对主题的评论，评论表的设计更佳简洁了。
+
+		回复表添加了一个comment_id字段来表示该回复挂在的根评论id，这样设计也是出于性能方面的考虑，我们可以直接通过评论id一次性的找出该评论下的所有回复，然后通过程序来编排回复的显示结构。 通过适当的冗余来提高性能也是常用的优化手段之一。
+
+		reply_type：表示回复的类型，因为回复可以是针对评论的回复(comment)，也可以是针对回复的回复(reply)， 通过这个字段来区分两种情景。
+
+		reply_id：表示回复目标的id，如果reply_type是comment的话，那么reply_id＝commit_id，如果reply_type是reply的话，这表示这条回复的父回复。
+
+		网易新闻盖楼模式
+		（1）需求分析
+
+		这种场景中评论和回复是同级显示的，回复不在显示结构上不用挂在一个评论下面。 双表的设计在这里就不太合适了，因为涉及到评论和回复的混排，使用双表则会导致查询的逻辑过于复杂。 所以建议还是采用单表的设计，不区分评论和回复会简化应用层的逻辑。 我们统一都看成评论，而有些评论是可以引用其他评论的。
+
+		（2）数据库设计
+
+		本人推荐采用闭包表的设计，例如：
+
+		comment表设计：
+
+		表字段
+
+		字段说明
+
+		id
+
+		主键
+
+		topic_id
+
+		主题id
+
+		topic_type
+
+		主题类型
+
+		content
+
+		评论内容
+
+		from_uid
+
+		评论用户id
+
+		parent_child表：
+
+		表字段
+
+		字段说明
+
+		id
+
+		主键
+
+		parent_id
+
+		父id
+
+		child_id
+
+		子id
+
+		comment表保存所有评论内容，而parent_children表则记录评论表中各个评论的父子关系。
+
+		查询时往往会按照时间排序，我们可以直接按id或者创建时间降序排列查询comment表即可。 如果用户想查询一条评论的完整引用，则可以通过parent_children来找到对应的路径。
+
+		闭包表在查询时非常方便，但是插入的性能稍差，因为除了插入评论表以外，还需要把该条评论所有的父子关系插入到父子关系表中。 插入性能会随着评论层级的加深而线性下降。
+
+
+15	ֱ
 	AccessKey��XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y
 	SecretKey : VLY2iYOL39oDiemliKXxL-fkF3LdDACRd_HSL9o3
 	patron-aircraft
 
-	������ַ��
+	
 	rtmp://pili-publish.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1?e=1592800893&token=XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y:gy3rdSV-JT0JFx1Dqo7m3QobOwA=
 
-	˵����
-	patron-aircraft-test1Ϊ���������ơ�
-	����������ǰ�沿��������ַ����rtmp://pili-publish.aircraft.ipotestcloud.com/patron-aircraft/
-	��Կ��patron-aircraft-test1?e=1592800893&token=XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y:gy3rdSV-JT0JFx1Dqo7m3QobOwA=
+	
+	patron-aircraft-test1
+	rtmp://pili-publish.aircraft.ipotestcloud.com/patron-aircraft/
+	patron-aircraft-test1?e=1592800893&token=XJlDZnktaxP5JSOZfID2mlZ5WdKeWW3kYucQ0g4Y:gy3rdSV-JT0JFx1Dqo7m3QobOwA=
 
 
-	���ŵ�ַ��
-	RTMP��
+	
+	RTMP
 	rtmp://pili-live-rtmp.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1
-	HLS��
+	HLS
 	http://pili-live-hls.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1.m3u8
 
-	FLV��
+	FLV
 	http://pili-live-hdl.aircraft.ipotestcloud.com/patron-aircraft/patron-aircraft-test1.flv
 
 
-14	�豸����
+14	
 	zd1005
-	��ز˵����
+	
 	open_api
 
 	open_api_request
@@ -37,7 +249,7 @@
 12
 	http://localhost/iot/service/gateway?callName=iot.x.api.common.service.sys.MenuInfoService.queryMenuByMenuModule(moduleGid)&id=11&moduleGid=11&isDelete=0
 
-11	maven install �����ԭ���Ǳ���û��jar��
+11	maven install 
 
 10
 	[WARNING] The POM for iot:iot.resserver:jar:0.0.1 is missing, no dependency information available
@@ -76,13 +288,13 @@
 05
 	192.168.0.102
 
-04  �鿴�豸��Ϣ�б�
-	List<LabelDataDec> llds = zdDao.queryUptime(moduleSn,"08",stratTime,endTime);  ��ʱ̫��
+04  
+	List<LabelDataDec> llds = zdDao.queryUptime(moduleSn,"08",stratTime,endTime); 
 
-03  �����ĿΪ�θ�һ��html��Ҫ����������
+03	
 
 02
 	baoyanglist.js
 
 01
- http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.ZdDeviceInfoService.findAllZdDeviceRepairInfoInPage(paramMap)
+	http://localhost/iot/service/gateway?callName=iot.puc.zdservice.api.ZdDeviceInfoService.findAllZdDeviceRepairInfoInPage(paramMap)

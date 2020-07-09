@@ -1,4 +1,15 @@
+10	配置部署后的路径
+	prod.env.js
+	'use strict'
+	module.exports = {
+	  NODE_ENV: '"production"',
+	  // BASE_API: '"https://mock.boxuegu.com/mock/29"'
+	  BASE_API: '"http://localhost:8088"'
+	}
+	
 
+09	打包
+	npm run build
 
 08	
 	https://element.eleme.cn/#/zh-CN/component/installation
