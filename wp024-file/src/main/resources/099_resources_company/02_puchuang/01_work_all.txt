@@ -1,4 +1,39 @@
-10	在vlc中打开的竟然是推流地址
+25	git
+	简易的命令行入门教程:
+	Git 全局设置:
+	
+	git config --global user.name "甘艳凯"
+	git config --global user.email "7596277+ganyankai@user.noreply.gitee.com"
+	创建 git 仓库:
+
+	mkdir project-puc-uas-vue-master
+	cd project-puc-uas-vue-master
+	git init
+	touch README.md
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://gitee.com/p01_puc/project-puc-uas-vue-master.git
+	git push -u origin master
+	已有仓库?
+
+	cd existing_git_repo
+	git remote add origin https://gitee.com/p01_puc/project-puc-uas-vue-master.git
+	git push -u origin master
+
+24	git pull origin master --allow-unrelated-histories
+	强行将远程分支与本地分支合并	
+	
+23	码云中好像是以项目名作为仓库的,好像不能在一个仓库下建多个项目
+	如果远程git仓库中含有文件,直接push会被拒绝,怎么办呢
+	
+22	
+	公司官网
+	http://www.patrontest.com
+	
+21	
+	idea的version controll中可切换项目的版本管理工具
+
+20	在vlc中打开的竟然是推流地址
 	rtmp://pili-publish.uas.ipotestcloud.com/dantelive5/stream1?e=1594183658&token=WFzeaLCOkcLsjUnaWiyU3kdwvehps9IeldM9HRrY:6mHXtI-OSWZ6DfE_-Va3MAVoicg=
 
 19	这个直播的竟然要配置4个cname
@@ -86,7 +121,7 @@
 13	今天尝试切换端口号启动,但是端口号太多,不便于维护
 	
 12	svn有个鉴权报错是被小明删除了项目目录下的.svn文件目录解决了
-
+	
 11	1.返航功能是否有效
 	2如何开启自动定位校准功能
 	3.自动返航校准过程中可否手动操控调整
@@ -99,6 +134,8 @@
 	2.对接硬件自动返航，换电重飞
 	3.视觉定位校准
 
+
+	
 
 10	证书
 	https配置:

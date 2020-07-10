@@ -1,0 +1,9 @@
+02 虚拟机用户名密码
+	root
+	itcast
+	
+
+01 环境配置
+	java -jar uas_system-1.0-SNAPSHOT.jar --spring.profiles.active=prod
+	
+	nohup java -jar uas_system-1.0-SNAPSHOT.jar --spring.profiles.active=test > /dev/null 2>&1 &

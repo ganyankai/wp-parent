@@ -1,3 +1,28 @@
+17     首页横幅
+	根据样式搜索:
+	src\module-dashboard\components\layoutNavbar.vue
+	
+16	动态构造权限列表
+	src/module-dashboard/store/permission.js
+	//动态构造权限列表
+        let accessedRouters = filterAsyncRouter(asyncRouterMap, roles)
+        commit('SET_ROUTERS', accessedRouters)
+		
+15	用户相关的js
+	/src/module-dashboard/store/user.js
+
+14	用户登录相关请求
+	/src/api/base/frame.js
+	
+13	定义本地请求路径
+	/config/index.js
+
+12	注册登录页面定义:
+	/src/module-dashboard
+	
+11	标题定义   /表示项目根路径
+	/index.html
+
 10	配置部署后的路径
 	prod.env.js
 	'use strict'
