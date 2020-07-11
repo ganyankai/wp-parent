@@ -16,6 +16,9 @@
         <module>tu02_kafka</module>
         <module>tu03_mongodb</module>
         <module>tu04_vue</module>
+        <module>tu05_websocket_work</module>
+        <module>tu06_websocketwork</module>
+
     </modules>
 
 

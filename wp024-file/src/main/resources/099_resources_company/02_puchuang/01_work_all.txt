@@ -1,3 +1,25 @@
+27	google的扩展程序界面可以支持搜索安装websocket插件
+	Simple WebSocket Client
+	右上角 三字形符号 - 扩展程序
+	
+26	创造奇迹策略
+	
+	13.对过去的做法要怀疑
+	12.建立工作进展情况的自动检查系统
+	11.对错误承担责任并改正
+
+	10.不要求完美
+	9.建立一个好的但是简单的文件系统
+	8.清理你的办公桌
+	7.放权
+	6.做出决策
+
+	5.建立一个系统来提醒自己和提醒别人
+	4.做今天能做的每件事
+	3.对于一天发生的事情做好准备
+	2.不要拖延
+	1.确定优先性。
+
 25	git
 	简易的命令行入门教程:
 	Git 全局设置:
@@ -15,7 +37,7 @@
 	git remote add origin https://gitee.com/p01_puc/project-puc-uas-vue-master.git
 	git push -u origin master
 	已有仓库?
-
+	
 	cd existing_git_repo
 	git remote add origin https://gitee.com/p01_puc/project-puc-uas-vue-master.git
 	git push -u origin master

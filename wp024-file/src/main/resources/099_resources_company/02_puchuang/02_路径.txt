@@ -1,4 +1,5 @@
-
+15	websocket
+	ws://localhost:8082/websocket/1
 
 14	码云
 	https://gitee.com/
