@@ -13,8 +13,9 @@ public static void main(String[] args) throws JMSException {
         connection.start();
         
         Session session=connection.createSession(Boolean.TRUE, Session.AUTO_ACKNOWLEDGE);
-        Destination topic=session.createTopic("uas_topic");
-        
+//        Destination topic=session.createTopic("uas_topic");
+        Destination topic=session.createTopic("uas_topic_springboot_1");
+
         MessageConsumer  consumer = session.createConsumer(topic);
         
         Message message=consumer.receive();

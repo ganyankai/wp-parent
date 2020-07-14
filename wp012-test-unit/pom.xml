@@ -18,6 +18,8 @@
         <module>tu04_vue</module>
         <module>tu06_websocket_work</module>
         <module>tu07_activemq_work</module>
+        <module>tu08_springboot_websocket_work</module>
+        <module>tu09_springboot_websocket_work</module>
 
     </modules>
 
