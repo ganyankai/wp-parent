@@ -1,3 +1,54 @@
+30	
+	为什么成功引入pom文件后,下面这几个jar包还是引入不到
+
+	import org.springframework.web.socket.CloseStatus;
+	import org.springframework.web.socket.TextMessage;
+	import org.springframework.web.socket.WebSocketSession;
+	import org.springframework.web.socket.handler.TextWebSocketHandler;
+	
+	我初步感觉是项目本身出了问题,因为需要重新标记源码目录了
+
+	很明显项目结构出了问题,表现在.iml文件中引入的jar包很少
+	
+	此时最靠谱的方式是重新建一个项目,把以前代码拷贝过去
+	
+	正常的项目导入junit后:
+	<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
+	.iml文件中会多一条记录
+	<orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
+
+	至于有问题的项目该怎么修复,可能需要查阅类似的资料了
+	目前有一个有问题的项目
+	tu08_springboot_websocket_work
+	
+29	
+	用户进入房间,监听主题uas_topic_1  1是房间号
+	用户退出房间,关闭mq连接会话
+	用户发送弹幕,服务端根据房间后创建主题 uas_topic_1,发送成功后,所有监听该主题的用户都能收到消息
+	
+		
+28	mq配置
+	# failover:(tcp://localhost:61616,tcp://localhost:61617)
+	# tcp://localhost:61616
+	spring.activemq.broker-url=tcp://localhost:61616
+	#true 表示使用内置的MQ，false则连接服务器
+	spring.activemq.in-memory=false
+	#true表示使用连接池；false时，每发送一条数据创建一个连接
+	spring.activemq.pool.enabled=true
+	#连接池最大连接数
+	spring.activemq.pool.max-connections=10
+	#空闲的连接过期时间，默认为30秒
+	spring.activemq.pool.idle-timeout=30000
+	#强制的连接过期时间，与idleTimeout的区别在于：idleTimeout是在连接空闲一段时间失效，而expiryTimeout不管当前连接的情况，只要达到指定时间就失效。默认为0，never
+	spring.activemq.pool.expiry-timeout=0
+	
+
 27	google的扩展程序界面可以支持搜索安装websocket插件
 	Simple WebSocket Client
 	右上角 三字形符号 - 扩展程序

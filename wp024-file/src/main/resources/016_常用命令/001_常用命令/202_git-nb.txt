@@ -4,19 +4,20 @@
 		
 	02 一步删除
 		
-		
 		git rm -r -f target;git commit -m target
 		
-
+		
 	01 两步删除
 		git rm -r --cached .idea	--//本地需要该文件
 		git commit -m ".idea"
 		-f 强制删除
 		
-		--//本地需要该文件
+		--//本地需要该文件 
 		git rm -r --cached .gitignore	
 		git commit -m ".gitignore"
-	
+		-r 递归删除子目录下的文件 
+		如 git rm -r *.iml 删除所有iml结尾的文件
+		
 006 
 	注意git环境的push与pull都是可以选择远程路径与分支的
 	
