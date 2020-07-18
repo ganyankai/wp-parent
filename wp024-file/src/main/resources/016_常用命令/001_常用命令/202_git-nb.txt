@@ -1,5 +1,7 @@
 007 从版本库移除文件 
-
+	04 git提交代码时可以把不想提交的文件添加到另外的集合中,
+		也可以在提交时直接删除
+		
 	03 可用ll命令查看git管理的文件
 		
 	02 一步删除
@@ -10,10 +12,10 @@
 	01 两步删除
 		git rm -r --cached .idea	--//本地需要该文件
 		git commit -m ".idea"
-		-f 强制删除
+		-f 强制删除  谨慎使用
 		
 		--//本地需要该文件 
-		git rm -r --cached .gitignore	
+		git rm -r --cached  .gitignore	
 		git commit -m ".gitignore"
 		-r 递归删除子目录下的文件 
 		如 git rm -r *.iml 删除所有iml结尾的文件

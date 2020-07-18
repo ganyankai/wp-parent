@@ -1,3 +1,112 @@
+
+79	配置换行  默认是true
+	git config core.autocrlf true
+	git config core.autocrlf false
+
+
+78	其实今天看到的单点极致理论也非常值得深思,能做到最无可代替的自己,本身就是成功
+	
+			
+77	我们这个系统大的角色设计
+	
+	1 总后台管理员  
+		
+
+	2 景区管理员	
+			
+
+	3 客户
+			
+	
+	4 运维人员
+	      		
+	
+76	
+	权限模块的问题你已经听过许多次,但对于具体问题你依然有很多的模糊性,
+	比如说景区工作人员登录系统应该看到怎样的菜单,你想明白了吗
+	
+	所以说为每一个景区设计一个独立的应用虽然看起来麻烦,但是实现逻辑却非常简单
+	
+	变化的数据总是有他的复杂度,是因为你很难精准到具体细节
+	
+	类似的技术你学过,却不能用于具体的工作,说明你学过的知识并没有真正落于实处,
+	这似乎是一个很棘手的问题,特别考验你的记忆力与随机应变能力还有技术的迁移能力,
+	这个问题你要引起足够的重视,因为面对具体景区菜单显示的问题你并不能做到胸有成竹,
+	你过去学习的时候你已经很努力去思考了,也许结合具体实践才是你变得灵活的唯一方式
+	
+	
+75	
+	景区接口 
+		查询所有景区
+		
+		查询一个景区下的所有机场
+
+
+	可以考虑新增景区与飞行点的设计
+	api_company  varchar(40)
+	id	name	mark	create_time	
+	
+	api_airport
+	id	name	company_id   company_name    create_time
+	
+	
+	无人机表机构设计(api_uav)  varchar(40)
+	id	sid	   name		status		company_id	 company_name	uid	 uname 		create_time			
+	id	设备id	   名称		状态						uid	 用户姓名	创建时间
+					ready,fly,fault
+	
+	接口
+	无人机注册	运维人员		o
+	
+	无人机列表	用户	准备状态	o
+	
+	选择无人机	用户			o
+	
+	无人机故障申报	运维人员		o
+	
+	无人机停飞				o
+	
+	修改无人机状态接口			o
+	
+	无人机连接管理				
+	
+	
+																		
+74	
+	word里面左上角的插入可以选择图片,
+
+73	
+	原来一个类在运行期间是可以动态的获取到其他类公开的成员变量的
+	
+		
+72	当代码中出现成员变量时,你对这个线程安全的处理依然模糊,为什么你还是模糊?
+	你曾经理解过一次,可能还需要再次理解	
+	做软件关键还是代码驾驭能力,说白了本质上是你的记忆提前能力,
+	你的创业能力究竟如何,你何时能自己创业,今天你究竟积累了多少自信
+	
+71	使用容器管理的对象依然难度相当大,比如用websocket主动向用户推送请求
+
+70	为什么我自己部署的war包无法访问index.html
+	
+69	
+	今天在websocket的环境准备上 和如何给保持连接的客户端主动推搡消息问题上遇到了难题,这样的难题该如何攻克
+			
+68	
+	java.lang.ClassCastException: ch.qos.logback.classic.servlet.LogbackServletContainerInitializer
+	cannot be cast to javax.servlet.ServletContainerInitializer
+	
+
+67	tomcat jar包冲突问题
+	这种方式好像不行
+	tomcat:run scope=provided ：正常启动
+	tomcat:run scope=compile ：启动失败
+	tomcat:run-war scope=provided ：正常启动
+	tomcat:run-war scope=compile ：正常启动
+	
+	//		
+	注释所有的代码,tomcat是可以启动成功的
+
+
 66	这个弹幕服务器
 	
 	1.以房间号为主题,用户进入直播间就表示用户订阅了这个主题,订阅的代码具体如何实现?
