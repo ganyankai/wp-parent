@@ -8,8 +8,8 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 //import javax.jms.TextMessage;
 import java.io.IOException;
-
-//@Component    这个注解可能导致重复bean的问题?
+//这个注解可能导致重复bean的问题?
+@Component
 public class MyHandler extends TextWebSocketHandler {
 
     @Override

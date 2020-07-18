@@ -2,7 +2,11 @@
 	https://www.cnblogs.com/henuLiGang/p/10281256.html
 	
 15	websocket
+	ws://localhost:9088/ws?uid=1
+
 	ws://localhost:8082/websocket/1
+	
+	ws://192.168.0.102:8082/websocket/1
 
 14	码云
 	https://gitee.com/

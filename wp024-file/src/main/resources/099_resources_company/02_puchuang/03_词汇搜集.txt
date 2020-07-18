@@ -1,5 +1,9 @@
-14  Smell the flowers. They don't bloom that often.
-    好好地享受当下，闻闻花香，毕竟鲜花难得开放一次。
+15	operation
+	n. 操作；经营；[外科] 手术；[数][计] 运算
+	复数 operations
+	
+14	Smell the flowers. They don't bloom that often.
+	好好地享受当下，闻闻花香，毕竟鲜花难得开放一次。
 
 13	Miracles happen every day.
 	奇迹每天都在发生。

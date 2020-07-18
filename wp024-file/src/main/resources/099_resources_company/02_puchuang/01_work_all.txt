@@ -1,3 +1,43 @@
+36
+	1 bit就是位，也叫比bai特位，是计算机表示数du据最小的单位
+	2 byte就是zhi字节
+	3.1byte=8bit
+	4.1byte就是1B
+	5.一个dao字符=2字节
+
+	6.1KB=1024B
+	1.字节就是Byte，也是B
+	2.位就是bit也是b
+	3.转换关系如下：
+			1)1KB=1024B
+			2) 1B= 8b
+
+35	原来springboot 本来就不是让tomcat跑的
+
+34	会话的知识设计到一个技术点,其实这个本质上就是保存在内存中的对象如何从main方法或者其他其他方法里获取
+	一个方法里活的集合数据怎么在其他方法里直接使用
+	
+	也就是说一个对象如何存储的问题
+	
+	
+33	
+	tomcat管理界面
+	http://localhost:8080/manager
+
+	websocket_test项目启动成功后是可以正常访问主页的
+	http://localhost:8080/index.html
+	
+	为什么该项目打成jar包放到tomcat后却无法访问首页
+
+32	
+	* compile，缺省值，适用于所有阶段，会随着项目一起发布。 
+	* provided，类似compile，期望JDK、容器或使用者会提供这个依赖。如servlet.jar。 
+	* runtime，只在运行时使用，如JDBC驱动，适用运行和测试阶段。 
+	* test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。 
+	* system，类似provided，需要显式提供包含依赖的jar，Maven不会在Repository中查找它。
+	
+31	mvn dependency:tree
+	
 30	
 	为什么成功引入pom文件后,下面这几个jar包还是引入不到
 

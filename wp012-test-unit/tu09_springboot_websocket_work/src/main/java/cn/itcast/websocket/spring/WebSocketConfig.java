@@ -12,23 +12,23 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
 
-//    @Autowired
-//    private MyHandler myHandler;
-//
-//    @Autowired
-//    private MyHandshakeInterceptor myHandshakeInterceptor;
+    @Autowired
+    private MyHandler myHandler;
+
+    @Autowired
+    private MyHandshakeInterceptor myHandshakeInterceptor;
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-//        registry.addHandler(this.myHandler, "/ws")
-//                .setAllowedOrigins("*")
-//                .addInterceptors(this.myHandshakeInterceptor);
+        registry.addHandler(this.myHandler, "/ws")
+                .setAllowedOrigins("*")
+                .addInterceptors(this.myHandshakeInterceptor);
 
-        registry.addHandler(myHandler(), "/ws").setAllowedOrigins("*");
+//        registry.addHandler(myHandler(), "/ws").setAllowedOrigins("*");
     }
 
-    @Bean
-    public WebSocketHandler myHandler() {
-        return new MyHandler();
-    }
+//    @Bean
+//    public WebSocketHandler myHandler() {
+//        return new MyHandler();
+//    }
 }

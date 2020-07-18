@@ -10,8 +10,11 @@ public class MyWebSocket {
     @OnOpen
     public void onOpen(Session session, @PathParam("uid") String uid) throws
             IOException {
+        System.out.println("设备已连接:"+session);
+        System.out.println("session.getBasicRemote():"+session.getBasicRemote());
         // 连接成功
         session.getBasicRemote().sendText(uid + "，你好，欢迎连接WebSocket！");
+
     }
 
     @OnClose
