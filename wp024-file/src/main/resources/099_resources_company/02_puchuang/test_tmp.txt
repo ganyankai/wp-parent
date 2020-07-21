@@ -1,3 +1,8 @@
+81	景区管理相关页面的权限配置,数据写活
+	
+
+80	为啥景区的index.vue中的数据一直不肯出现
+	是因为从pdf中拷贝了数据的关系吗
 
 79	配置换行  默认是true
 	git config core.autocrlf true

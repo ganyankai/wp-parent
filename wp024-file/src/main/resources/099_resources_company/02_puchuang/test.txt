@@ -1,4 +1,41 @@
+18	vue模板
+	<template>
+	 <div class="dashboard-container">
+	  <div class="app-container">
+	   <el-card shadow="never">
+	    <!--elementui的table组件
+	     data：数据模型
+	    -->
+	    123456
+	    <el-button type="primary" size="mini" icon="el-icon-plus">新增景区</el-button>
+	    <el-table :data="dataList"  border style="width: 100%">
+	      <!--el-table-column : 构造表格中的每一列
+	       prop： 数组中每个元素对象的属性名
+	      -->
+	      
+	      <el-table-column fixed type="index" label="序号" width="100"></el-table-column>
 
+	      <!-- <el-table-column fixed prop="id" label="id" width="100"></el-table-column>
+	      <el-table-column fixed prop="name" label="名称"  width="200"></el-table-column>
+	      <el-table-column fixed prop="createTime" label="时间"  width="200"></el-table-column> -->
+	      
+	      <el-table-column fixed type="index" label="序号" width="50"></el-table-column>
+	      <el-table-column fixed prop="name" label="企业名称"  width="200"></el-table-column>
+	      <el-table-column fixed prop="createTime" label="时间"  width="150"></el-table-column>
+
+	      <el-table-column fixed="right" label="操作" width="300">
+	       <template slot-scope="scope">
+	        <!--  <router-link :to="'/role/details/'+scope.row.id">查看</router-link> -->
+		    <el-button @click="handlerPerm(scope.row)" type="text" size="small">分配权限</el-button>
+		    <el-button @click="handleUpdate(scope.row)" type="text" size="small">修改</el-button>
+		    <el-button @click="handleDelete(scope.row)" type="text" size="small">删除</el-button>
+	       </template>
+	      </el-table-column>
+	     </el-table>
+	   </el-card>
+	  </div>
+	 </div>
+	</template>
 
 17	
 	有时候确实很难理解别人的思维,是因为你要理解需要经过自己的大脑思考,设计太长远可能过于复杂,在实际的开发过程中修改设计也是可行的,

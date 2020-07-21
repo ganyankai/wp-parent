@@ -1,3 +1,39 @@
+
+
+20	为什么 index.vue中的
+	<router-link :to="'/companys/details/'+scope.row.id">查看</router-link>可以跳转
+	而details.vue中的
+	<router-link :to="'/companys/details/'+scope.row.id">查看</router-link> 却无法跳转
+	vue中的路由一直是个难点
+
+19	有很多tab的组件参照员工表中的详情页面
+	
+18	新增菜单步骤
+	05 编写业务页面
+	   /src/module-saas-clients/pages/index.vue
+		
+	04 配置路由菜单
+	   /src/module-saas-clients/router/index.js		
+
+	03 注册模块
+	    编辑 src/main.js		
+	    	
+	02 构造模拟数据
+	   (1) 在 /src/mock 中添加模拟数据company.js	
+	  （2）/src/mock/index.js配置模拟API接口拦截规则
+	   	
+	01 新增模块
+	（1）手动创建
+	方式一：在src目录下创建文件夹，命名规则：module-模块名称（）
+	在文件夹下按照指定的结构配置assets，components，pages，router，store等文件
+
+	（2）使用命令自动创建
+	安装命令行工具
+	执行命令
+	npm install -g itheima-cli
+	itheima moduleAdd saas-clients
+	`saas-clients` 是新模块的名字
+
 17     首页横幅
 	根据样式搜索:
 	src\module-dashboard\components\layoutNavbar.vue
