@@ -1,4 +1,11 @@
 016 itcast_hrm
+	06 遇到这种工程导包不全的问题该如何解决呢?
+		可以考虑尝试在pom文件中 -> 右键 -> update maven indeces
+		
+	05 idea中可以直接将代码复制到对应目录,然后点击父工程上的 file - new - module from exiting sources -然后一直下一步
+
+	04 idea中的f7是进入方法,f8跳过当前方法
+
 	03 role-list.vue中 
 		<el-dialog :title="'为【'+formData.name+'】分配权限'" :visible.sync="permFormVisible" style="hight:100px;line-height:1px">
 		      <el-tree
@@ -13,6 +20,8 @@
 		      </el-tree>
 		其中 :check-strictly="true"
 		表示子菜单有一个不选中时父菜单依然勾选
+		
+		拿一个正确的例子来对比可能是你学习代码的唯一方式
 
 	02 permission.js中定义的动态构造权限列表
 	   
