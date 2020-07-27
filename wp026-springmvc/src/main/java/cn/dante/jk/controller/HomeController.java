@@ -2,8 +2,9 @@
 package cn.dante.jk.controller;
 
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+@Controller
 public class HomeController
 {
 
@@ -13,6 +14,7 @@ public class HomeController
 	@RequestMapping(value = {"/home.action"})
 	public String login()
 	{
+		System.out.println("abc");
 		return "/index.jsp";
 	}
 

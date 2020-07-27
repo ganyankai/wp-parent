@@ -23,16 +23,25 @@
 				 onKeyDown="javascript:if(event.keyCode==13){ submitFind(); }"
 				 title="请您输入密码"/></div>
 		  </div>
-			<div class="dl">
-				<input  class="loginImgOut" value="" type="button" onclick="formSubmit('${ctx}/fmain.action','_self');"
-				  onmouseover="this.className='loginImgOver'" 
-				  onmouseout="this.className='loginImgOut'"
-				/>
-				<input class="resetImgOut" value="" type="button"   
-				  onmouseover="this.className='resetImgOver'" 
-				  onmouseout="this.className='resetImgOut'"
-				/>
-			</div>
+
+			 <div class="dl">
+				 <input  class="" value="登录" type="button" onclick="formSubmit('${ctx}/fmain.action','_self');"
+
+				 />
+				 <input class="" value="" type="button"
+
+				 />
+			 </div>
+			<%--<div class="dl">--%>
+				<%--<input  class="loginImgOut" value="" type="button" onclick="formSubmit('${ctx}/fmain.action','_self');"--%>
+				  <%--onmouseover="this.className='loginImgOver'" --%>
+				  <%--onmouseout="this.className='loginImgOut'"--%>
+				<%--/>--%>
+				<%--<input class="resetImgOut" value="" type="button"   --%>
+				  <%--onmouseover="this.className='resetImgOver'" --%>
+				  <%--onmouseout="this.className='resetImgOut'"--%>
+				<%--/>--%>
+			<%--</div>--%>
 		</div>
 		<div class="bqxx" style="text-align:right;margin-top:0px;">
 		<a href="#">系统帮助</a> | <a href="#" onclick="bookmarkit();">加入收藏</a>

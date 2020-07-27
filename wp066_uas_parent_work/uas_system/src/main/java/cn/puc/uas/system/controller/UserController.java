@@ -7,7 +7,9 @@ import cn.puc.uas.common.entity.ResultCode;
 
 import cn.puc.uas.common.exception.CommonException;
 import cn.puc.uas.common.utils.JwtUtils;
+import cn.puc.uas.common.utils.PermissionConstants;
 import cn.puc.uas.domain.system.Permission;
+import cn.puc.uas.domain.system.Role;
 import cn.puc.uas.domain.system.response.ProfileResult;
 import cn.puc.uas.domain.system.User;
 import cn.puc.uas.domain.system.response.UserResult;
@@ -109,7 +111,7 @@ public class UserController extends BaseController {
     /**
      * 根据id删除
      */
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE,name = "API-USER-DELETE")
     public Result delete(@PathVariable(value = "id") String id) {
         userService.deleteById(id);
         return new Result(ResultCode.SUCCESS);
@@ -133,7 +135,18 @@ public class UserController extends BaseController {
             return new Result(ResultCode.MOBILEORPASSWORDERROR);
         }else {
         //登录成功
+            StringBuilder sb = new StringBuilder();
+            for (Role role:user.getRoles()){
+                for(Permission perm:role.getPermissions()){
+                    if(perm.getType() == PermissionConstants.PERMISSION_API){
+                        sb.append(perm.getCode()).append(",");
+                    }
+                }
+            }
+
             Map<String,Object> map = new HashMap<>();
+            map.put("apis",sb.toString());
+
             String token = jwtUtils.createJwt(user.getId(), user.getUsername(), map);
             return new Result(ResultCode.SUCCESS,token);
         }
@@ -149,7 +162,7 @@ public class UserController extends BaseController {
      */
     @RequestMapping(value="/profile",method = RequestMethod.POST)
     public Result profile(HttpServletRequest request) throws Exception {
-
+//        Claims claims = (Claims) request.getAttribute("user_claims");
         /**
          * 从请求头信息中获取token数据
          *   1.获取请求头信息：名称=Authorization
@@ -158,14 +171,6 @@ public class UserController extends BaseController {
          *   4.获取clamis
          */
         //1.获取请求头信息：名称=Authorization
-        String authorization = request.getHeader("Authorization");
-        if(StringUtils.isEmpty(authorization)) {
-            throw new CommonException(ResultCode.UNAUTHENTICATED);
-        }
-        //2.替换Bearer+空格
-        String token = authorization.replace("Bearer ","");
-        //3.解析token
-        Claims claims = jwtUtils.parseJwt(token);
         String userid = claims.getId();
         User user = userService.findById(userid);
 

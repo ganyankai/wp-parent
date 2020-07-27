@@ -20,6 +20,8 @@
         <module>tu07_activemq_work</module>
         <module>tu08_springboot_websocket_work</module>
         <module>tu09_springboot_websocket_work</module>
+        <module>tu10_websocket</module>
+        <module>tu11_shiro_test</module>
 
     </modules>
 

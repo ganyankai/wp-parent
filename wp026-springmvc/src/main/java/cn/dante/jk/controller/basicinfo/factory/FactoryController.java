@@ -4,11 +4,12 @@ import cn.dante.jk.controller.BaseController;
 import cn.dante.jk.domain.Factory;
 import cn.dante.jk.service.FactoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
-
+@Controller
 public class FactoryController extends BaseController {
     @Autowired
     private FactoryService factoryService;
