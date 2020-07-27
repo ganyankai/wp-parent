@@ -1,3 +1,6 @@
+42	@RequestParam(name="size",required=false,defaultValue="10") Integer size
+	用法举例
+	
 41	比如在vue中实现跳转页面的同时如何关闭当前页面?
 	这个写法竟然可行
 	this.$store.dispatch('delVisitedViews', this.$route);
@@ -159,7 +162,7 @@
 	23.最好的状态是永远充满希望的生活
 	22.尽可能的把工作生活当做游戏来玩
 	21.睡觉前记得缓慢均匀的享受呼吸
-
+	
 	20.永远去努力战胜自己的消极情绪
 	19.做计划,衡量自己的工作进度
 	18.战胜自己的灵魂枷锁,每天培养自己的勇气,不要陷入永远猥琐的死循环
