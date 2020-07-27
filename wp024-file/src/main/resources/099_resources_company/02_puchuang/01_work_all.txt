@@ -1,3 +1,55 @@
+41	比如在vue中实现跳转页面的同时如何关闭当前页面?
+	这个写法竟然可行
+	this.$store.dispatch('delVisitedViews', this.$route);
+	
+	下面这种对tab好像不可行
+	// window.opener = null;
+            // window.close;
+            // alert(123);
+
+40	你之所以并未理解这段代码,是因为你没有能够把里面的语法转换成你熟悉的内容
+		
+	actions: {
+	    // 用户名登录
+	    LoginByUsername({ commit }, userInfo) {
+	      const username = userInfo.mobile.trim()
+	      return new Promise((resolve, reject) => {
+		login({
+		    mobile: username,
+		    password: userInfo.password
+		  }).then(response => {
+		    const data = response.data.data
+		    // commit('SET_TOKEN', data.token)
+		    commit('SET_TOKEN', data)
+		    // setToken(data.token)
+		    setToken(data)
+		    resolve()
+		}).catch(error => {
+		  reject(error)
+		})
+	      })
+	    },
+
+39	
+	Vuex- Action的 { commit } {commit}是什么写法
+	Vuex- Action的 { commit }
+	　　Vuex 中 使用 Action 处理异步请求时，常规写法如下：
+
+	  getMenuAction:(context) =>{
+		    context.commit('SET_MENU_LIST',['承保2','核保2'])
+		}
+	    }
+	我们也可以使用如下简化写法，如下：
+
+	 actions:{
+		getMenuAction:({commit}) =>{
+		    commit('SET_MENU_LIST',['承保2','核保2'])
+		}
+	    }
+		
+38	
+	人的记忆真是非常记住,有时候能记住,有时候却要忘记
+
 37	
 	2020年7月20日
 	5.权限数据库的思维整理
@@ -104,6 +156,18 @@
 	
 26	创造奇迹策略
 	
+	23.最好的状态是永远充满希望的生活
+	22.尽可能的把工作生活当做游戏来玩
+	21.睡觉前记得缓慢均匀的享受呼吸
+
+	20.永远去努力战胜自己的消极情绪
+	19.做计划,衡量自己的工作进度
+	18.战胜自己的灵魂枷锁,每天培养自己的勇气,不要陷入永远猥琐的死循环
+	17.对你所学的知识,尽量形成完整的闭环,多验证
+	16.保持自信,多做力所能及的事情
+
+	15.笑章,游戏章,保持乐观情绪
+	14.登山则情满于山,观海则意溢于海
 	13.对过去的做法要怀疑
 	12.建立工作进展情况的自动检查系统
 	11.对错误承担责任并改正

@@ -1,3 +1,105 @@
+97	你在考虑将景区管理作为系统的菜单时又遇到了麻烦,说明你学习过系统的权限模块后并不能特别灵活的使用
+	景区的员工查看这个菜单,直接跳转到景区的详情页面,这一步你准备如何做
+	
+96	这里面的 :visible.sync="inputVisible" 好像无效  要隐藏可以使用v-if
+	<!-- <el-form-item label="景区id：">
+		<el-input v-model="formDataAirport.companyId" placeholder='' class="inputW" disabled :visible.sync="inputVisible" ></el-input>
+	    </el-form-item> -->
+
+95	今天发现vue中有个重复定义路由的警告:
+	vue-router.esm.js?e165:16 [vue-router] Duplicate named routes definition: { name: "details", path: "/companys/details/:id" }
+		
+94	今天发现脚手架工程也存在缓存的情况
+
+93	增删改查的模板参考
+	role-list.vue
+
+92	vue中的请求路由竟然对postman也适用
+	'/api/company': {
+		target: 'http://localhost:9088/api/company',
+		changeOrigin: true,
+		pathRewrite: {
+		  //这个配置究竟何用
+		  '^/api/company': ''
+		}
+	      }
+
+91     增删改查的样板可参考RoleController.java
+
+90     上次那个前端的bug是通过标志定位加修改返回数据的方式定位到具体问题的 	
+
+89     mock/index.js中对请求路径的拦截也是一个巨坑
+
+88     vue中引用组件的demo:
+		
+		<el-tab-pane label="机场信息2" name="third">
+                   <!-- import demo from '@/module-companys/pages/index.vue'  -->
+                    <component v-bind:is="demo" ref="demoref"></component> 
+                </el-tab-pane>
+
+                <el-tab-pane label="机场信息3" name="four">
+                   <!-- 新增员工弹层 -->
+                   <el-button  type="primary" size="mini" icon="el-icon-plus" @click="handlAdd">新增员工</el-button>
+                  <!-- <component v-bind:is="employeesAdd" ref="addUser" @doQuery="doQuery"></component> -->
+                  <component v-bind:is="employeesAdd" ref="addUser"></component>
+                </el-tab-pane>
+	
+87	
+	景区app和服务器连接:  
+				data=uid_sid_指令
+	ws://192.168.0.103:9088/ws?data=123_1_1001  
+	发送数据格式 123_1_1001  
+	
+	无人机和我连接
+	ws://192.168.0.103:9088/ws?sid=1
+		
+86	
+	看来做这个前端页面还是得画一个原型,有了原型才知道具体要怎么做,不能一直看脑海中抽象的记忆
+	
+85	能够把你学到的知识灵活使用就已经非常不简单了,
+	天底下最靠谱的东西就是你的熟练度
+	
+84	这种方式的路由也不对
+	<router-link :to="{'path':'/employees/details/' + scope.row.id}" class="el-button el-button--text el-button--small">
+                查看
+        </router-link>
+
+83	今天这个引入组件的问题,不是通过百度解决的,而是通过过去模糊的印象,结合过去的代码搞定的
+	现在定义4个步骤
+	05 通过ref引入导入页面的变量
+		 handlAdd() {
+		      alert("handlAdd")
+		      this.$refs.demoref.dialogFormVisible=true
+		    },
+		
+	04 组件引入
+		 <el-tab-pane label="机场信息2" name="third">
+                   <!-- import demo from '@/module-companys/pages/index.vue'  -->
+                    <component v-bind:is="demo" ref="demoref"></component> 
+                </el-tab-pane>
+
+	03 定义变量
+		data () {
+		    return {
+			demo:'demo',
+			//引入主键这个不能省
+			employeesAdd: 'employeesAdd',
+			activeName: 'first',
+	
+	02 声明主键
+		export default {
+		  name: 'companys-detail',
+		  components: {
+		   
+		    demo
+		  },
+	
+		
+	01 导入页面
+	import demo from '@/module-companys/pages/index.vue'
+
+82	对于你不熟悉的东西,你要做记录,记录要做到每一步都具体可行
+	
 81	景区管理相关页面的权限配置,数据写活
 	
 

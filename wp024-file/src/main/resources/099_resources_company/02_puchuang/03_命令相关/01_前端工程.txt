@@ -1,4 +1,60 @@
+24	
+	 //通过这种可以以编码的方式实现页面跳转
+	this.$router.push({ path: '/companys/details/1' });
+	
+	//这还有一种传参的写法
+	this.$router.push({ name: 'demo2', params: { userId: 123 }, query: { plan: 'private' } })
 
+23	工程中好像是通过  name: 'companys',   与权限表中code字段关联来实现不同角色显示权限不一样
+	export default [
+	  {
+	    root: true,
+	    path: '/companys',
+	    component: Layout,
+	    redirect: 'noredirect',
+	    name: 'companys',     //难道这里对应权限表code字段
+	    meta: {
+	      title: '景区管理',
+	      icon: 'component'
+	    },
+
+22	饿了么ui组件地址
+	https://element.eleme.cn/#/zh-CN/component/layout
+		
+
+21	今天这个引入组件的问题,不是通过百度解决的,而是通过过去模糊的印象,结合过去的代码搞定的
+	现在定义4个步骤
+	05 通过ref引入导入页面的变量
+		 handlAdd() {
+		      alert("handlAdd")
+		      this.$refs.demoref.dialogFormVisible=true
+		    },
+		
+	04 组件引入
+		 <el-tab-pane label="机场信息2" name="third">
+                   <!-- import demo from '@/module-companys/pages/index.vue'  -->
+                    <component v-bind:is="demo" ref="demoref"></component> 
+                </el-tab-pane>
+
+	03 定义变量
+		data () {
+		    return {
+			demo:'demo',
+			//引入主键这个不能省
+			employeesAdd: 'employeesAdd',
+			activeName: 'first',
+	
+	02 声明主键
+		export default {
+		  name: 'companys-detail',
+		  components: {
+		   
+		    demo
+		  },
+	
+	01 导入页面
+	import demo from '@/module-companys/pages/index.vue'
+	
 
 20	为什么 index.vue中的
 	<router-link :to="'/companys/details/'+scope.row.id">查看</router-link>可以跳转
@@ -9,9 +65,12 @@
 19	有很多tab的组件参照员工表中的详情页面
 	
 18	新增菜单步骤
-	05 编写业务页面
+	06 编写业务页面
 	   /src/module-saas-clients/pages/index.vue
-		
+
+	05 配置请求路径:
+	   /src/api/base/company	
+	   		
 	04 配置路由菜单
 	   /src/module-saas-clients/router/index.js		
 
