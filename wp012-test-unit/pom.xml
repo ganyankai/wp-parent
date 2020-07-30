@@ -22,6 +22,7 @@
         <module>tu09_springboot_websocket_work</module>
         <module>tu10_websocket</module>
         <module>tu11_shiro_test</module>
+        <module>tu12_jnitest_work</module>
 
     </modules>
 

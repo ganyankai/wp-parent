@@ -1,4 +1,38 @@
-43	
+
+
+43	生成C语言头文件时
+	找不到 't1.MyNative' 的类文件。
+	遇到的这个错误百度也没能帮我解决,我能怎么办
+	
+	javah -classpath .  -jni t1.MyNative
+	
+	javah -jni MyNative
+
+	javah -jni t1.MyNative
+	
+	javah  MyNative
+	
+	test
+	
+	set classpath=D:\01_work\014_jni
+
+	set classpath=D:\01_work\03_idea_code\wp-parent\wp012-test-unit\tu12_jnitest_work\src\main\java\t1
+	
+	javah -classpath .  -jni t1.MyNative
+	
+	以上这几种方式好像都不行,难道是文件的编码有问题
+
+	将文件的编码改为 utf-8好像也不行
+	
+	遇到这样的问题只能放弃吗?
+	
+	重新建一个Hello文件放到源码目录下,发现可以生成,主要还是这个包名的问题
+	原来这正是一个包名搞错导致找不到路径的低级错误
+	
+	复制时不要只复制类,记得把包名一起复制过来
+	
+	突然好想去直播象棋
+	
 
 42	@RequestParam(name="size",required=false,defaultValue="10") Integer size
 	用法举例
@@ -161,6 +195,8 @@
 	
 26	创造奇迹策略
 	
+	25.审判马上就会到来
+	24.时间很快就会过去
 	23.最好的状态是永远充满希望的生活
 	22.尽可能的把工作生活当做游戏来玩
 	21.睡觉前记得缓慢均匀的享受呼吸
