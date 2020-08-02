@@ -1,0 +1,11 @@
+01 mq的安装
+（1）下载并安装 Eralng
+	配套软件中已提供otp_win64_20.2.exe （以管理员身份运行安装）
+（2）下载并安装rabbitmq
+	配套软件中已提供rabbitmq-server-3.7.4.exe。双击安装，注意不要安装在包含中文和
+	空格的目录下！安装后window服务中就存在rabbitMQ了，并且是启动状态。
+（3）安装管理界面（插件）
+	进入rabbitMQ安装目录的sbin目录，输入命令
+	rabbitmq-plugins enable rabbitmq_management
+（4）重新启动服务
+（5）打开浏览器，地址栏输入http://127.0.0.1:15672 ,即可看到管理界面的登陆页

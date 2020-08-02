@@ -1,0 +1,19 @@
+04  为什么要使用熔断器 在微服务架构中通常会有多个服务层调用，
+	基础服务的故障可能会导致级联故障，
+	进而造成整个系统不可用的情况，这种现象被称为服务雪崩效应。
+	服务雪崩效应是一种 因“服务提供者”的不可用导致“服务消费者”的不可用,
+	并将不可用逐渐放大的过程。 如果下图所示：A作为服务提供者，B为A的服务消费者，
+	C和D是B的服务消费者。A 不可用引起了B的不可用，并将不可用像滚雪球一样放大到C和D时，
+	雪崩效应就形成了
+	
+03 SpringCloud主要框架
+	服务发现——Netflix Eureka
+	服务调用——Netflix Feign
+	熔断器——Netflix Hystrix
+	服务网关——Netflix Zuul
+	分布式配置——Spring Cloud Config
+	消息总线 —— Spring Cloud Bus
+	
+02 版本与spring boot 有对应关系
+
+01 基于spring boot 
