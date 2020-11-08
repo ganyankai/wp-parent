@@ -7,11 +7,20 @@
 	</head>
 	<body>
 		<div id="app">
-			
+			<li v-for="(key,value) in product">{{key}}====={{value}}</li>
 		</div>
 	</body>
 	<script>
 		//view model
-		
+        new Vue({
+            el:"#app",
+            data:{
+                product:{
+                    id:1,
+					name:"笔记本电脑",
+					price:5000
+				}
+            }
+        })
 	</script>
 </html>

@@ -11,7 +11,12 @@ public class TestLinkList {
 //        linkList.deleteFirst();
 //        linkList.display();
 
-        Node node = linkList.find(3);
-        node.display();
+//        Node node = linkList.find(3);
+//        node.display();
+
+        Node node1 = linkList.delete(3);
+        node1.display();
+        System.out.println();
+        linkList.display();
     }
 }

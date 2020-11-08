@@ -1,0 +1,98 @@
+01 佳软信息
+	
+
+	35 使用代码距离说明一个
+		单例 代理 装饰	建造者 外观模式 策略模式
+		
+		//原类
+		public class DBQuery{
+		    public String request() {
+			return "request str";
+		    }
+		}
+		
+		//代理类
+		public class DBQueryProxy extends DBQuery{
+		    private DBQuery real = null;
+
+		    public String request() {
+			return real.request();
+		    }
+		}
+		
+	34  我有很多营业厅
+		营业厅表
+		id  名称  评分
+
+		窗口表
+		id  名称 大厅id 评分  
+	
+		员工表 
+		id  姓名  窗口id  评分
+
+		
+	33  ioc di aop
+		ioc	Ioc意味着将你设计好的对象交给容器控制	
+		di	是组件之间依赖关系由容器在运行期决定
+		aop	面向切面编程
+
+	18  在hibernate开发中,关于pojo对象的状态说法正确的是?  D
+
+		1.自由状态（Transient）：实体在内存中自由存在，与数据库中的记录无关
+		2.持久状态（Persistent）：实体处于由Hibernate框架所管理的状态，对应了数据库中的一条记录，同时与某个session实例发生了关联
+		3.游离状态（Detached）：在session 关闭之后,可以使对象从持久状态转换到游离状态。
+		4.不能将对象从游离状态转换成持久态
+		
+		
+
+	17	哪个设计模式不属于创建型模式？	C
+		抽象工厂（abstract factory）
+		原型（prototype）
+		外观（facade）
+		单词（singleton）
+	
+	15   关于spring的事务,描述错误的是?	D
+		spring事务可以分为编程式事务和声明式事务
+		spring提供了一个事务的接口 PlatformTransactionManager接口，针对不同的事务，spring进行了不同的实现
+		声明式事务最大的优点就是不需要通过编程的方式管理事务，这样就不需要在业务逻辑代码中掺杂事务管理的代码
+		如果你的应用中存在大量事务操作，那么编程式事务管理通常是值得的
+
+
+	12 
+		HashMap和HashTable的描述，错误的是？	D
+		A.他们都实现了Map接口。
+		B.HashMap非线程安全，在多个线程访问Hashtable时，不需要自己为它的方法实现同步，而HashMap就必须为之提供额外同步。
+		C.HashMap允许将null作为一个entry的key或者value，而Hashtable不允许。
+		D.通过contains方法可以判断一个对象是否存在于HashMap或者Hashtable中。
+		
+
+	11 下列有关Servlet的生命周期，说法不正确的是？
+		正确答案:A 
+
+		A 在创建自己的Servlet时候，应该在初始化方法init()方法中创建Servlet实例
+		B 在Servlet生命周期的服务阶段，执行service()方法，根据用户请求的方法，执行相应的doGet()或是doPost()方法
+		C 在销毁阶段，执行destroy()方法后会释放Servlet 占用的资源
+		D destroy()方法仅执行一次，即在服务器停止且卸载Servlet时执行该方法
+
+		解析：
+		Servlet的生命周期分为5个阶段：加载、创建、初始化、处理客户请求、卸载。
+		(1)加载：容器通过类加载器使用servlet类对应的文件加载servlet
+		(2)创建：通过调用servlet构造函数创建一个servlet对象
+		(3)初始化：调用init方法初始化
+		(4)处理客户请求：每当有一个客户请求，容器会创建一个线程来处理客户请求
+		(5)卸载：调用destroy方法让servlet自己释放其占用的资源
+		servlet是由Servlet容器负责加载Servlet类，创建Servlet对象并实例化，然后调用Servlet的init方法，进行初始化，之后调用Service方法。实例化和初始化不同
+			
+	
+	9 关系型数据库 abc
+		oracle mysql ims 
+		
+		
+	8 ArrayList list = new ArrayList(20); list扩容几次  A.0
+		这种是指定数组大小的创建，创建时直接分配其大小，没有扩充。 
+
+	4.下列说法正确的是 (多选)  abcd
+		A.linkedlist实现了list选项   1 
+		B.hashset实现了set	     1 
+		C.hashset 继承自abstractset  1
+		D.arraylist继承自abstractlist 1

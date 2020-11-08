@@ -10,16 +10,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>uas_common_model</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <dependency>
-            <groupId>cn.puc.uas</groupId>
-            <artifactId>uas_common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>cn.puc.uas</groupId>-->
+            <!--<artifactId>uas_common</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
     </dependencies>
 </project>

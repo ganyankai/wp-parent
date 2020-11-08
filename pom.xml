@@ -17,6 +17,7 @@
         <module>wp064-mp-parent</module>
         <module>wp065_tensquare_parent</module>
         <module>wp066_uas_parent_work</module>
+        <module>wp067_ihrm_parent</module>
         <!--<module>wp028-wartest</module>-->
     </modules>
 

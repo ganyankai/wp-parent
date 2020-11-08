@@ -5,6 +5,7 @@ import cn.puc.uas.domain.system.Role;
 import cn.puc.uas.domain.system.User;
 import cn.puc.uas.system.dao.RoleDao;
 import cn.puc.uas.system.dao.UserDao;
+import org.apache.shiro.crypto.hash.Md5Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -45,7 +46,10 @@ public class UserService {
     public void save(User user) {
         //设置主键的值
         String id = idWorker.nextId()+"";
-        user.setPassword("123456");//设置初始密码
+//        user.setPassword("123456");//设置初始密码
+        String password = new Md5Hash("123456",user.getMobile(),3).toString();
+        user.setLevel("user");
+        user.setPassword(password);
         user.setEnableState(1);
         user.setId(id);
         //调用dao保存部门

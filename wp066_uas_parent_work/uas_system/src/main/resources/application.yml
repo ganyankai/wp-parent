@@ -20,6 +20,10 @@ spring:
   # spring.jpa.hibernate.ddl-auto=update
   # hibernate:
   #   ddl-auto: update
+  #4.redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
 jwt:
   config:
     key: puc-uas

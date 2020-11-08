@@ -23,6 +23,9 @@
         <module>tu10_websocket</module>
         <module>tu11_shiro_test</module>
         <module>tu12_jnitest_work</module>
+        <module>tu12_poi_test</module>
+        <module>tu13_qiniu_demo</module>
+        <module>tu14_jr_demo</module>
 
     </modules>
 

@@ -1,4 +1,31 @@
+017 设计模式cc
+	01 抽象工厂工厂模式的本质
+		选择产品zhu的实现
+		
 016 itcast_hrm
+	10 
+
+	09 七牛云相关
+		ak WFzeaLCOkcLsjUnaWiyU3kdwvehps9IeldM9HRrY
+
+		sk IUd1ETEfn9S3p2LmmnqsDrkY3QbQn3D9zdz8SLVD
+
+		ihrm-bucket-dante
+		
+	08 查询员工的离职信息并打印报表
+		1
+		select * from em_user_company_personal where time_of_entry like '2018-02%'
+		
+		2
+		select * from em_resignation where resignation_time like '2018-02%'
+		
+		3
+		select * from em_user_company_personal a left join em_resignation b 
+		on a.user_id = b.user_id
+		where a.time_of_entry like '2018-02%' or b.resignation_time like '2018-02%'	
+
+	07 目前采用刷年登录下的前端代码
+		
 	06 遇到这种工程导包不全的问题该如何解决呢?
 		可以考虑尝试在pom文件中 -> 右键 -> update maven indeces
 		

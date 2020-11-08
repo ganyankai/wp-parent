@@ -5,14 +5,19 @@ import cn.puc.uas.domain.system.Role;
 import cn.puc.uas.domain.system.User;
 import lombok.Getter;
 import lombok.Setter;
+import org.crazycake.shiro.AuthCachePrincipal;
 
+import java.io.Serializable;
 import java.util.*;
 
 @Setter
 @Getter
-public class ProfileResult {
+public class ProfileResult implements Serializable,AuthCachePrincipal {
     private String mobile;
     private String username;
+    private String companyId;
+    private String companyName;
+
     private Map<String,Object> roles = new HashMap<>();
 
     public ProfileResult(User user,List<Permission> list){
@@ -65,5 +70,10 @@ public class ProfileResult {
         this.roles.put("menus",menus);
         this.roles.put("points",points);
         this.roles.put("apis",apis);
+    }
+
+    @Override
+    public String getAuthCacheKey() {
+        return null;
     }
 }

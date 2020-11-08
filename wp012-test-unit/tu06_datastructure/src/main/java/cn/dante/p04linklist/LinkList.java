@@ -58,4 +58,28 @@ public class LinkList {
         }
         return current;
     }
+
+    /**
+     * 删除方法,根据数据域来进行删除
+     */
+    public Node delete(long value){
+        Node current = first;
+        Node previous = first;
+        while (current.data != value){
+            if (current.next == null){
+                return null;
+            }
+            previous = current;
+            current = current.next;
+        }
+        if (current == first){
+            first = first.next;
+        }else{
+            previous.next = current.next;
+        }
+
+        return current;
+    }
+
+
 }

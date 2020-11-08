@@ -1,9 +1,25 @@
 ﻿002值得分享的链接
+	
 	002.外卖小哥返乡 http://tv.cctv.com/2019/03/01/VIDE3hoH4nxMqKBNaXsDtPx6190301.shtml?spm=C52448022284.PcWqxSD7WlSZ.0.0
 	001.农业创业项目 http://baike.sm.cn/item/3b5fc55af59cc660c814fedd66c25ce2.html?from=smsc&uc_param_str=dnntnwvepffrgibijbpr
 	
 	
 001技术学习
+	29 百度云
+		02 应用
+		AppID 22948230
+		API Key uT8YvLyABmCzkQl4mdPj14Kn
+		Secret Key MIiu5UOXgHq2yiquU15sdgxGlCpynvRj
+		
+		01 账号 
+		https://cloud.baidu.com
+		13477907639
+		dantebdaidu
+		密码:
+		danteBAIDU1234
+		
+
+
 	28 中国码云
 		https://gitee.com/
 		13477907639  ------1234

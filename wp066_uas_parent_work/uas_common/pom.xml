@@ -21,6 +21,11 @@
             <artifactId>jjwt</artifactId>
             <version>0.6.0</version>
         </dependency>
+        <dependency>
+            <groupId>cn.puc.uas</groupId>
+            <artifactId>uas_common_model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

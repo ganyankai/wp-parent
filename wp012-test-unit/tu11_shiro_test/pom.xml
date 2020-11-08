@@ -11,6 +11,10 @@
 
     <groupId>cn.dante</groupId>
     <artifactId>tu11_shiro_test</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>shiro_springboot_m</module>
+    </modules>
 
     <dependencies>
         <dependency>

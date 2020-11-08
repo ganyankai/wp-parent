@@ -3,6 +3,7 @@ package cn.puc.uas.common.handler;
 import cn.puc.uas.common.entity.Result;
 import cn.puc.uas.common.entity.ResultCode;
 import cn.puc.uas.common.exception.CommonException;
+import org.apache.shiro.authz.AuthorizationException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -32,4 +33,11 @@ public class BaseExceptionHandler {
             return result;
         }
     }
+
+    @ExceptionHandler(value = AuthorizationException.class)
+    @ResponseBody
+    public Result error(HttpServletRequest request, HttpServletResponse response, AuthorizationException e) {
+       return new Result(ResultCode.UNAUTHORISE);
+    }
+
 }

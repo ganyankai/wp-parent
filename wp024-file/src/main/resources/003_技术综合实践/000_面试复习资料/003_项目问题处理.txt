@@ -1,0 +1,8 @@
+
+
+002.单点登录系统是使用redis模拟Session，实现Session的统一管理
+
+001.分布式session
+	tomcat可以通过集群配置的方式实现分布式session
+	tomcat会通过广播的形式自己的session发送到其他的tomcat集群
+

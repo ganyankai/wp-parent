@@ -16,8 +16,8 @@ public class MyKafkaProducer {
 		Producer producer = new Producer(new ProducerConfig(properties));
 		while(true){
 			
-			producer.send(new KeyedMessage("xm129", "zhang","我爱我的祖国abc"+UUID.randomUUID()));
-//			producer.send(new KeyedMessage("xm129", "zhang","abcdefg"+UUID.randomUUID()));
+//			producer.send(new KeyedMessage("xm129", "zhang","我爱我的祖国abc"+UUID.randomUUID()));
+			producer.send(new KeyedMessage("dante818", "zhang","abcdefg"+UUID.randomUUID()));
 			Thread.sleep(2000);
 		}
 		

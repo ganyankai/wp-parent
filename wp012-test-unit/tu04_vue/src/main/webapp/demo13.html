@@ -7,11 +7,24 @@
 	</head>
 	<body>
 		<div id="app">
-			
+			<span v-if="flag">hello itcast</span>
+			<span v-show="flag">hello ithemai</span>
+			<button @click="fun">切换</button>
 		</div>
 	</body>
 	<script>
 		//view model
-		
+        new Vue({
+            el:"#app",
+            data:{
+                flag:true //model
+            },
+            methods:{
+                fun:function(){
+
+                    this.flag=!this.flag;
+                }
+            }
+        });
 	</script>
 </html>

@@ -7,11 +7,26 @@
 	</head>
 	<body>
 		<div id="app">
-			<div></div>
-			<div></div>
+			<div v-text="message"></div>
+			<div v-html="message"></div>
+
+			<!--<div id="div1"></div>-->
+			<!--<div id="div2"></div>-->
 		</div>
 	</body>
 	<script>
 		//view model
+		new Vue({
+			el:"#app",
+			data:{
+				message : "<h1>hello vue</h1>"
+			}
+		});
+
+		//传统js
+		window.onload = function () {
+		    document.getElementById("div1").innerHTML="<h1>hello</h1>";
+            document.getElementById("div2").innerText="<h1>hello</h1>";
+		}
 	</script>
 </html>
